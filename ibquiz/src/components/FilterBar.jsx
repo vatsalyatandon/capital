@@ -1,8 +1,8 @@
 const DIFF_COLORS = {
-  'All':          { color: 'var(--accent)',  activeBg: 'var(--accent-light-md)', border: 'var(--accent)' },
-  'Basic':        { color: 'var(--accent)',  activeBg: 'var(--accent-light-md)', border: 'var(--accent)' },
-  'Advanced':     { color: '#7c5a14',        activeBg: 'rgba(124,90,20,0.1)',    border: '#a07620' },
-  'Brain Teaser': { color: '#5a3f7a',        activeBg: 'rgba(90,63,122,0.1)',    border: '#7a5aa0' },
+  'All':          { color: 'var(--accent)',              activeBg: 'var(--accent-light-md)',    border: 'var(--accent)' },
+  'Basic':        { color: 'var(--accent)',              activeBg: 'var(--accent-light-md)',    border: 'var(--accent)' },
+  'Advanced':     { color: 'var(--accent-amber-dark)',   activeBg: 'var(--accent-amber-light)', border: 'var(--accent-amber)' },
+  'Brain Teaser': { color: 'var(--accent-purple-dark)',  activeBg: 'var(--accent-purple-light)', border: 'var(--accent-purple)' },
 }
 
 function DiffPill({ label, selected, onClick }) {

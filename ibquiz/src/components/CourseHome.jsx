@@ -1,15 +1,15 @@
 const MODULE_COLORS = {
-  'Accounting':                     '#4a7c59',
-  'Valuation':                      'var(--accent-amber)',
-  'Restructuring / Distressed M&A': 'var(--accent-purple)',
-  'DCF':                            '#4a7c59',
-  'Enterprise / Equity Value':      '#4a6a7c',
-  'Merger Model':                   '#7c4a5a',
-  'Credit Analysis':                '#5a7c4a',
-  'LBO Model':                      'var(--accent-amber)',
-  'Private Equity':                 '#4a5a7c',
-  'Capital Markets':                '#7c6a4a',
-  'Brain Teasers':                  'var(--accent-purple)',
+  'Accounting':                     '#2d6a4f',  // deep sage
+  'Enterprise / Equity Value':      '#1e4d8c',  // deep navy
+  'DCF':                            '#3a6351',  // forest
+  'Valuation':                      '#b8952a',  // gold
+  'LBO Model':                      '#7b4f12',  // warm umber
+  'Credit Analysis':                '#1e5f74',  // deep teal
+  'Merger Model':                   '#6b2d2d',  // deep burgundy
+  'Restructuring / Distressed M&A': '#4a2d70',  // deep violet
+  'Private Equity':                 '#1a3a3a',  // dark forest teal
+  'Capital Markets':                '#3d2b1f',  // dark espresso
+  'Brain Teasers':                  '#5c4a1e',  // warm ochre
 }
 
 function ModuleCard({ sub, stats, onOpenModule }) {

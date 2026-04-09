@@ -6,40 +6,48 @@
 
 /* ─── Design Tokens ───────────────────────────────────────────────────────── */
 :root {
-  /* Backgrounds */
-  --bg:               #e8e4d8;
-  --bg-sidebar:       #dedad0;
-  --bg-card:          #f3f0e6;
-  --bg-card-hover:    #f7f5ee;
+  /* Content surface — warm ivory paper */
+  --bg:               #f8f5ee;
+  --bg-card:          #fdfaf2;
+  --bg-card-hover:    #fffef7;
 
-  /* Text */
-  --text-primary:     #1b2d1e;
-  --text-secondary:   #4d5e4e;
-  --text-muted:       #8a957c;
+  /* Sidebar surface — midnight navy */
+  --bg-sidebar:       #111827;
 
-  /* Primary accent — forest green */
-  --accent:           #2c4a2f;
-  --accent-hover:     #1f3521;
-  --accent-light:     rgba(44,74,47,0.08);
-  --accent-light-md:  rgba(44,74,47,0.13);
+  /* Content text */
+  --text-primary:     #111827;
+  --text-secondary:   #4b5563;
+  --text-muted:       #9ca3af;
 
-  /* Secondary accent — warm amber */
-  --accent-amber:        #a07620;
-  --accent-amber-dark:   #7c5a14;
-  --accent-amber-light:  rgba(160,118,32,0.1);
+  /* Primary accent — antique gold */
+  --accent:           #b8952a;
+  --accent-hover:     #9a7a1f;
+  --accent-light:     rgba(184,149,42,0.1);
+  --accent-light-md:  rgba(184,149,42,0.18);
 
-  /* Tertiary accent — muted violet */
-  --accent-purple:        #7a5aa0;
-  --accent-purple-dark:   #5a3f7a;
-  --accent-purple-light:  rgba(122,90,160,0.08);
+  /* Secondary accents */
+  --accent-amber:        #c07820;
+  --accent-amber-dark:   #8a5a10;
+  --accent-amber-light:  rgba(192,120,32,0.12);
+  --accent-purple:        #6b47a0;
+  --accent-purple-dark:   #4a2e7a;
+  --accent-purple-light:  rgba(107,71,160,0.1);
 
-  /* Borders */
-  --border:           rgba(44,74,47,0.1);
-  --border-strong:    rgba(44,74,47,0.2);
+  /* Content borders */
+  --border:           rgba(17,24,39,0.1);
+  --border-strong:    rgba(17,24,39,0.22);
+
+  /* Sidebar-specific tokens (dark surface) */
+  --sidebar-text:        rgba(255,255,255,0.82);
+  --sidebar-muted:       rgba(255,255,255,0.36);
+  --sidebar-border:      rgba(255,255,255,0.08);
+  --sidebar-hover-bg:    rgba(255,255,255,0.06);
+  --sidebar-active-text: #f0c84a;
+  --sidebar-active-bg:   rgba(184,149,42,0.2);
 
   /* Typography */
-  --font-sans:  'DM Sans', -apple-system, sans-serif;
-  --font-mono:  'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+  --font-sans: 'DM Sans', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
 
   /* Easing */
   --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
@@ -58,7 +66,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Paper grain texture — subtle depth on the cream background */
+/* Paper grain texture */
 body::after {
   content: '';
   position: fixed; inset: 0; pointer-events: none; z-index: 9998;
@@ -71,7 +79,7 @@ body::after {
 /* ─── Progress line ───────────────────────────────────────────────────────── */
 #progress-line {
   position: fixed; top: 0; left: 0; height: 2px;
-  background: var(--accent);
+  background: linear-gradient(90deg, var(--accent), #f0c84a);
   transition: width 300ms var(--ease-smooth);
   z-index: 9999; pointer-events: none;
 }
@@ -82,16 +90,14 @@ body::after {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Focus-in stagger — distinctive blur-resolve entrance for cards */
 @keyframes cardFocusIn {
   from { opacity: 0; transform: translateY(12px); filter: blur(3px); }
-  to   { opacity: 1; transform: translateY(0);    filter: blur(0);   }
+  to   { opacity: 1; transform: translateY(0);    filter: blur(0); }
 }
 
 .animate-card-enter    { animation: fadeUp 0.3s var(--ease-smooth) both; }
 .animate-answer-reveal { animation: fadeUp 0.22s var(--ease-smooth) both; }
 
-/* Stagger — sidebar items use fadeUp; CourseHome cards use cardFocusIn */
 .stagger > * {
   animation: fadeUp 0.4s var(--ease-smooth) both;
   opacity: 0;
