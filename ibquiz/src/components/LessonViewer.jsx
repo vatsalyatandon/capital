@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 const CALLOUT_ICONS = {
   tip: (color) => (
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
@@ -43,6 +45,208 @@ const CALLOUT_STYLES = {
     titleColor: '#8b2020',
   },
 }
+
+// ── New interactive block sub-components ─────────────────────────────────────
+
+function QuestionBlock({ block }) {
+  const [revealed, setRevealed] = useState(false)
+  return (
+    <div
+      className="my-6 rounded-xl overflow-hidden"
+      style={{ border: '1px solid var(--accent-purple)', background: 'var(--accent-purple-light)' }}
+    >
+      <div className="px-5 py-3 flex items-center gap-2" style={{ borderBottom: '1px solid var(--accent-purple)' }}>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent-purple)" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+        </svg>
+        <span className="font-mono text-[10px] uppercase tracking-widest" style={{ color: 'var(--accent-purple-dark)' }}>
+          Check Your Understanding
+        </span>
+      </div>
+      <div className="px-5 py-4">
+        <p className="text-sm leading-relaxed mb-3" style={{ color: 'var(--text-primary)', fontWeight: 450 }}>
+          {block.question}
+        </p>
+        {revealed ? (
+          <div className="animate-answer-reveal">
+            <div className="pt-3 mt-3" style={{ borderTop: '1px solid var(--accent-purple)' }}>
+              <p className="font-mono text-[10px] uppercase tracking-widest mb-2" style={{ color: 'var(--accent-purple-dark)' }}>Answer</p>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)', lineHeight: 1.7 }}>
+                {block.answer}
+              </p>
+            </div>
+            <button
+              onClick={() => setRevealed(false)}
+              className="mt-3 font-mono text-[10px] uppercase tracking-widest btn-press"
+              style={{ color: 'var(--text-muted)', transition: 'color 0.15s' }}
+              onMouseEnter={e => e.currentTarget.style.color = 'var(--text-secondary)'}
+              onMouseLeave={e => e.currentTarget.style.color = 'var(--text-muted)'}
+            >
+              Hide
+            </button>
+          </div>
+        ) : (
+          <button
+            onClick={() => setRevealed(true)}
+            className="px-4 py-1.5 rounded-full text-xs font-medium btn-press"
+            style={{
+              background: 'var(--accent-purple)',
+              color: 'white',
+              letterSpacing: '-0.01em',
+              transition: 'background 0.15s',
+            }}
+            onMouseEnter={e => e.currentTarget.style.background = 'var(--accent-purple-dark)'}
+            onMouseLeave={e => e.currentTarget.style.background = 'var(--accent-purple)'}
+          >
+            Show answer
+          </button>
+        )}
+      </div>
+    </div>
+  )
+}
+
+function ChartBlock({ block }) {
+  const max = Math.max(...block.data.map(d => d.value), 1)
+  return (
+    <div className="my-6 rounded-xl overflow-hidden" style={{ border: '1px solid var(--border)' }}>
+      {(block.title || block.subtitle) && (
+        <div className="px-5 py-3" style={{ background: 'var(--accent-light)', borderBottom: '1px solid var(--border)' }}>
+          {block.title && (
+            <p className="font-mono text-[10px] uppercase tracking-widest" style={{ color: 'var(--accent)' }}>
+              {block.title}
+            </p>
+          )}
+          {block.subtitle && (
+            <p className="text-xs mt-0.5" style={{ color: 'var(--text-muted)' }}>{block.subtitle}</p>
+          )}
+        </div>
+      )}
+      <div className="px-5 py-4 space-y-3" style={{ background: 'var(--bg-card)' }}>
+        {block.data.map((item, i) => (
+          <div key={i} className="flex items-center gap-3">
+            <span
+              className="text-xs shrink-0"
+              style={{ width: 176, color: 'var(--text-secondary)', lineHeight: 1.3 }}
+            >
+              {item.label}
+            </span>
+            <div
+              className="flex-1 rounded-full overflow-hidden"
+              style={{ height: 8, background: 'var(--border)' }}
+            >
+              <div
+                style={{
+                  height: '100%',
+                  width: `${(item.value / max) * 100}%`,
+                  background: item.color || 'var(--accent)',
+                  borderRadius: 100,
+                  transition: 'width 0.6s var(--ease-smooth)',
+                }}
+              />
+            </div>
+            <span
+              className="font-mono text-xs tabular-nums shrink-0"
+              style={{ width: 48, textAlign: 'right', color: 'var(--text-secondary)' }}
+            >
+              {item.value}{item.suffix || ''}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+function DiagramBlock({ block }) {
+  if (block.variant === 'steps') {
+    return (
+      <div className="my-6 rounded-xl overflow-hidden" style={{ border: '1px solid var(--border)' }}>
+        {block.title && (
+          <div className="px-5 py-3" style={{ background: 'var(--accent-light)', borderBottom: '1px solid var(--border)' }}>
+            <p className="font-mono text-[10px] uppercase tracking-widest" style={{ color: 'var(--accent)' }}>{block.title}</p>
+          </div>
+        )}
+        <div className="px-5 py-4 space-y-3" style={{ background: 'var(--bg-card)' }}>
+          {block.steps.map((step, i) => (
+            <div key={i} className="flex items-start gap-3">
+              <div
+                className="shrink-0 font-mono text-[10px] font-semibold flex items-center justify-center rounded-full"
+                style={{ width: 22, height: 22, background: 'var(--accent)', color: 'white', marginTop: 1 }}
+              >
+                {i + 1}
+              </div>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)', lineHeight: 1.65, flex: 1 }}>
+                {step}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    )
+  }
+
+  if (block.variant === 'stack') {
+    const total = block.layers.reduce((s, l) => s + l.pct, 0)
+    return (
+      <div className="my-6 rounded-xl overflow-hidden" style={{ border: '1px solid var(--border)' }}>
+        {block.title && (
+          <div className="px-5 py-3" style={{ background: 'var(--accent-light)', borderBottom: '1px solid var(--border)' }}>
+            <p className="font-mono text-[10px] uppercase tracking-widest" style={{ color: 'var(--accent)' }}>{block.title}</p>
+          </div>
+        )}
+        <div className="px-5 py-4" style={{ background: 'var(--bg-card)' }}>
+          {/* Stacked bar */}
+          <div className="flex rounded-lg overflow-hidden mb-4" style={{ height: 32 }}>
+            {block.layers.map((layer, i) => (
+              <div
+                key={i}
+                style={{ width: `${(layer.pct / total) * 100}%`, background: layer.color, borderRight: i < block.layers.length - 1 ? '2px solid var(--bg-card)' : 'none' }}
+              />
+            ))}
+          </div>
+          {/* Legend */}
+          <div className="space-y-1.5">
+            {block.layers.map((layer, i) => (
+              <div key={i} className="flex items-center gap-2.5">
+                <div style={{ width: 10, height: 10, borderRadius: 2, background: layer.color, flexShrink: 0 }} />
+                <span className="text-xs" style={{ color: 'var(--text-secondary)', flex: 1 }}>{layer.label}</span>
+                <span className="font-mono text-xs tabular-nums" style={{ color: 'var(--text-muted)' }}>{layer.pct}%</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  return null
+}
+
+function HighlightBlock({ block }) {
+  return (
+    <div
+      className="my-8 px-6 py-5 rounded-xl"
+      style={{ background: 'var(--accent-light-md)', borderLeft: '3px solid var(--accent)' }}
+    >
+      <p
+        className="font-serif m-0"
+        style={{
+          fontSize: 'clamp(16px, 1.8vw, 19px)',
+          fontWeight: 400,
+          fontStyle: 'italic',
+          letterSpacing: '-0.02em',
+          lineHeight: 1.55,
+          color: 'var(--text-primary)',
+        }}
+      >
+        "{block.text}"
+      </p>
+    </div>
+  )
+}
+
+// ── Main Block renderer ───────────────────────────────────────────────────────
 
 function Block({ block }) {
   switch (block.type) {
@@ -101,10 +305,7 @@ function Block({ block }) {
         <ListTag className="mb-4 pl-0 space-y-1.5" style={{ listStyle: 'none' }}>
           {block.items.map((item, i) => (
             <li key={i} className="flex gap-3" style={{ fontSize: 15, color: 'var(--text-secondary)', lineHeight: 1.65 }}>
-              <span
-                className="shrink-0 mt-1 font-mono text-[10px]"
-                style={{ color: 'var(--accent)', minWidth: 16 }}
-              >
+              <span className="shrink-0 mt-1 font-mono text-[10px]" style={{ color: 'var(--accent)', minWidth: 16 }}>
                 {block.ordered ? `${i + 1}.` : '●'}
               </span>
               <span>{item}</span>
@@ -139,10 +340,7 @@ function Block({ block }) {
             </thead>
             <tbody>
               {block.rows.map((row, ri) => (
-                <tr
-                  key={ri}
-                  style={{ background: ri % 2 === 0 ? 'transparent' : 'var(--accent-light)', borderBottom: '1px solid var(--border)' }}
-                >
+                <tr key={ri} style={{ background: ri % 2 === 0 ? 'transparent' : 'var(--accent-light)', borderBottom: '1px solid var(--border)' }}>
                   {row.map((cell, ci) => (
                     <td key={ci} className="px-4 py-2.5" style={{ color: 'var(--text-secondary)', fontSize: 13 }}>
                       {cell}
@@ -157,15 +355,9 @@ function Block({ block }) {
     case 'callout': {
       const s = CALLOUT_STYLES[block.variant] || CALLOUT_STYLES.insight
       return (
-        <div
-          className="my-5 rounded-xl px-5 py-4"
-          style={{ background: s.bg, borderLeft: `3px solid ${s.border}` }}
-        >
+        <div className="my-5 rounded-xl px-5 py-4" style={{ background: s.bg, borderLeft: `3px solid ${s.border}` }}>
           {block.title && (
-            <div
-              className="font-mono text-[10px] uppercase tracking-widest mb-2 flex items-center gap-1.5"
-              style={{ color: s.titleColor }}
-            >
+            <div className="font-mono text-[10px] uppercase tracking-widest mb-2 flex items-center gap-1.5" style={{ color: s.titleColor }}>
               {CALLOUT_ICONS[block.variant]?.(s.titleColor)}
               <span>{block.title}</span>
             </div>
@@ -176,16 +368,21 @@ function Block({ block }) {
         </div>
       )
     }
-    default:
-      return null
+    case 'question':  return <QuestionBlock block={block} />
+    case 'chart':     return <ChartBlock block={block} />
+    case 'diagram':   return <DiagramBlock block={block} />
+    case 'highlight': return <HighlightBlock block={block} />
+    default:          return null
   }
 }
+
+// ── LessonViewer ─────────────────────────────────────────────────────────────
 
 export default function LessonViewer({ lesson, lessonIndex, totalLessons, isRead, onComplete, onPrev, onNext, onBackToList }) {
   return (
     <div className="flex-1 overflow-y-auto">
       <div className="max-w-2xl mx-auto px-6 md:px-10 pt-10 pb-20">
-        {/* Breadcrumb nav */}
+        {/* Breadcrumb */}
         <div className="flex items-center gap-2 mb-8">
           <button
             onClick={onBackToList}
@@ -205,7 +402,7 @@ export default function LessonViewer({ lesson, lessonIndex, totalLessons, isRead
           </span>
         </div>
 
-        {/* Lesson title */}
+        {/* Title */}
         <div className="mb-8">
           <h1
             className="font-serif"
@@ -225,10 +422,9 @@ export default function LessonViewer({ lesson, lessonIndex, totalLessons, isRead
           </div>
         </div>
 
-        {/* Divider */}
         <div className="mb-8" style={{ height: 1, background: 'var(--border)' }} />
 
-        {/* Content blocks */}
+        {/* Content */}
         <div>
           {lesson.blocks.map((block, i) => (
             <Block key={i} block={block} />
@@ -237,10 +433,7 @@ export default function LessonViewer({ lesson, lessonIndex, totalLessons, isRead
 
         {/* Key takeaways */}
         {lesson.keyTakeaways?.length > 0 && (
-          <div
-            className="mt-10 rounded-xl p-5"
-            style={{ background: 'var(--accent-light-md)', border: '1px solid var(--border)' }}
-          >
+          <div className="mt-10 rounded-xl p-5" style={{ background: 'var(--accent-light-md)', border: '1px solid var(--border)' }}>
             <p className="font-mono text-[10px] uppercase tracking-widest mb-3" style={{ color: 'var(--accent)' }}>
               Key Takeaways
             </p>
@@ -257,10 +450,7 @@ export default function LessonViewer({ lesson, lessonIndex, totalLessons, isRead
 
         {/* Interview tip */}
         {lesson.interviewTip && (
-          <div
-            className="mt-4 rounded-xl px-5 py-4"
-            style={{ background: 'var(--accent-amber-light)', borderLeft: '3px solid var(--accent-amber)' }}
-          >
+          <div className="mt-4 rounded-xl px-5 py-4" style={{ background: 'var(--accent-amber-light)', borderLeft: '3px solid var(--accent-amber)' }}>
             <div className="font-mono text-[10px] uppercase tracking-widest mb-2 flex items-center gap-1.5" style={{ color: 'var(--accent-amber-dark)' }}>
               {CALLOUT_ICONS.example('var(--accent-amber-dark)')}
               <span>Interview Tip</span>
@@ -271,7 +461,7 @@ export default function LessonViewer({ lesson, lessonIndex, totalLessons, isRead
           </div>
         )}
 
-        {/* Navigation footer */}
+        {/* Navigation */}
         <div className="flex items-center justify-between mt-12 pt-8" style={{ borderTop: '1px solid var(--border)' }}>
           <button
             onClick={onPrev}

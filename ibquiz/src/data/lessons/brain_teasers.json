@@ -50,6 +50,25 @@
         },
         {
           "type": "h2",
+          "text": "The Rule of 70 and Other Estimation Rules"
+        },
+        {
+          "type": "p",
+          "text": "Beyond the Rule of 72, several other mental math rules are useful in interviews. The Rule of 70 is a simplified version that works identically: 70 / growth rate = years to double (used when you want round numbers). The Rule of 115 tells you how long to triple your money: 115 / annual return = years to triple. For compound growth more generally: if something grows at X% per year, after N years the multiple is approximately (1 + X/100)^N — memorize the common cases."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rule of 70: Years to double ≈ 70 / annual growth rate. Slightly less precise than Rule of 72 but easier to divide: 70/7 = 10, 70/5 = 14, 70/2 = 35.",
+            "Rule of 115: Years to triple ≈ 115 / annual growth rate. At 10% growth: 115/10 = 11.5 years to 3x. Exact: 1.10^11 = 2.85x, 1.10^12 = 3.14x. Close enough.",
+            "10% for 7 years ≈ 2x: The most useful single anchor in finance. At 10% compound growth, money approximately doubles in 7 years (exact: 1.10^7 = 1.949x). Use this constantly.",
+            "Percentage trick — swap order: X% of Y = Y% of X. So 15% of 80 = 80% of 15 = 12. This turns hard multiplications into easy ones.",
+            "Multiply by 9 trick: X × 9 = X × 10 - X. So 47 × 9 = 470 - 47 = 423. Faster than carrying digits."
+          ]
+        },
+        {
+          "type": "h2",
           "text": "Compound Growth Shortcuts"
         },
         {
@@ -67,6 +86,19 @@
             ["15%", "2.01x (~2x)", "2.66x", "4.05x"],
             ["20%", "2.49x (~2.5x)", "3.58x", "6.19x"],
             ["25%", "3.05x (~3x)", "4.77x", "9.31x"]
+          ]
+        },
+        {
+          "type": "chart",
+          "title": "$1 Invested at Various Rates — Value After 7 Years",
+          "subtitle": "Compound growth multiplier at common rates",
+          "data": [
+            {"label": "5% (conservative)", "value": 1.41, "suffix": "x"},
+            {"label": "8% (PE hurdle)", "value": 1.71, "suffix": "x"},
+            {"label": "10% (S&P 500 avg)", "value": 1.95, "suffix": "x"},
+            {"label": "15% (top PE)", "value": 2.66, "suffix": "x"},
+            {"label": "20% (great PE)", "value": 3.58, "suffix": "x"},
+            {"label": "25% (exceptional)", "value": 4.77, "suffix": "x"}
           ]
         },
         {
@@ -93,6 +125,11 @@
             "Division shortcuts: Dividing by 8 = dividing by 2 three times. 496 / 8 = 248 / 4 = 124 / 2 = 62.",
             "Squaring numbers near 50: 48^2 = (50-2)^2 = 2500 - 200 + 4 = 2304."
           ]
+        },
+        {
+          "type": "question",
+          "question": "What is 15% of 240? Walk through the mental math approach step by step as you would in an interview.",
+          "answer": "Narrate your approach out loud: 'Let me break this into parts. 10% of 240 is 24 — straightforward. 5% of 240 is half of 10%, so 24/2 = 12. Add them together: 15% = 10% + 5% = 24 + 12 = 36.' Alternatively, use the swap trick: 15% of 240 = 240% of 15 = 2.4 x 15. 2 x 15 = 30, 0.4 x 15 = 6, so 2.4 x 15 = 36. Both approaches give the same answer: 36. The key interview technique is to narrate your method — 'I'm breaking this into 10% plus 5%' — so the interviewer can follow your logic and see that you're thinking systematically, not just trying to remember an answer."
         },
         {
           "type": "h2",
@@ -123,6 +160,30 @@
           "text": "Question: A PE firm invests $100M and exits for $250M in 4 years. Approximate the IRR. Solution: MOIC = $250M / $100M = 2.5x. IRR = (2.5)^(1/4) - 1. From memory or the Rule of 72: at 25% IRR, money doubles every ~2.9 years (72/25 = 2.88). Two doublings in 5.8 years = 4x. But we need 2.5x in 4 years. A 4-year doubling implies 72/4 ≈ 18% rate = 2x. We need 2.5x, so the rate is between 18% and 25%. Answer: approximately 25-26% IRR. Exact: 2.5^0.25 - 1 = 1.257 - 1 = 25.7%. Your estimate was excellent."
         },
         {
+          "type": "callout",
+          "variant": "example",
+          "title": "Problem 5: Enterprise Value to Equity Value",
+          "text": "Question: A company has an EV/EBITDA multiple of 12x, EBITDA of $75M, $300M of debt, $50M of cash, and 20M shares outstanding. What is the share price? Solution: Step 1 — Enterprise value: $75M x 12x = $900M. Step 2 — Net debt: $300M debt - $50M cash = $250M net debt. Step 3 — Equity value: $900M - $250M = $650M. Step 4 — Share price: $650M / 20M shares = $32.50/share. Interview narration: 'EV is $900M. I subtract net debt of $250M to get equity value of $650M. Divide by 20M shares gives $32.50.' Common mistake: forgetting to subtract debt OR forgetting to add cash. Always compute net debt = gross debt minus cash."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Problem 6: Margin Calculation",
+          "text": "Question: A company has $450M in revenue and $63M of EBITDA. What is the EBITDA margin? If costs increase by $20M next year while revenue grows to $500M, what is the new margin? Solution: Current margin: $63M / $450M = 14%. Next year EBITDA: $63M - $20M cost increase + ($500M - $450M) new revenue = depends on whether new revenue brings costs. Assuming costs increase by the stated $20M only and revenue grows from additional volume at existing margins — new EBITDA = $63M + revenue uplift - $20M cost increase. If we assume revenue growth flows at 100% margin (unlikely but simplifying): $63M + $50M - $20M = $93M. New margin: $93M / $500M = 18.6%. In interviews, flag your assumption: 'I'm assuming the additional $50M revenue has no incremental cost — in reality, I'd want to know the variable cost ratio.'"
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Problem 7: LBO Quick Returns Check",
+          "text": "Question: A company is acquired at 8x EBITDA with $100M EBITDA, funded 60% debt / 40% equity. After 5 years, EBITDA is $140M, exit multiple is 9x, and debt is paid down from $480M to $280M. What is the MOIC? Solution: Entry EV: $100M x 8x = $800M. Entry equity: $800M x 40% = $320M. Exit EV: $140M x 9x = $1,260M. Exit equity: $1,260M - $280M = $980M. MOIC: $980M / $320M = 3.06x. IRR (approx): 3x over 5 years = ~25% IRR. For an interview response: 'The company exits at $1.26B enterprise value, $980M equity — about 3x return on the $320M equity invested, implying roughly 25% IRR over the 5-year hold period.'"
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Problem 8: Bond Yield Calculation",
+          "text": "Question: A $1,000 par value bond pays a 6% annual coupon and is priced at $920. Is the yield higher or lower than 6%? Approximate the yield. Solution: Directional answer first: the bond is priced at a DISCOUNT to par ($920 < $1,000), so the yield must be HIGHER than the stated coupon of 6%. This is because investors earn not only the coupon but also the $80 capital gain when the bond matures at par. Approximate yield = (Annual coupon + Annual capital gain) / Average price = ($60 + $80/10 years) / (($920 + $1,000)/2). Assuming 10-year maturity: = ($60 + $8) / $960 = $68 / $960 = 7.08%. The yield (~7%) is higher than the coupon (6%), as expected. Use the shortcut: discount bond → yield > coupon; premium bond → yield < coupon. Every bond yield question in interviews follows this logic."
+        },
+        {
           "type": "h2",
           "text": "Key Numbers to Memorize for Banking Interviews"
         },
@@ -139,6 +200,10 @@
             "US Federal Reserve target rate: 5.25-5.5% (peak 2023; cutting in 2024-2025).",
             "Rule of thumb: 1 basis point (bps) = 0.01%. 100bps = 1%."
           ]
+        },
+        {
+          "type": "highlight",
+          "text": "Mental math speed is a trainable skill, not a talent. Practice 5 problems per day for 4 weeks and you will be faster than 95% of interview candidates. The goal is not perfection — it is confident, narrated approximation that demonstrates genuine numeracy."
         }
       ],
       "keyTakeaways": [
@@ -166,6 +231,20 @@
         {
           "type": "p",
           "text": "Market sizing also reflects a real skill in investment banking: early in any M&A or ECM engagement, bankers need to quickly size the addressable market for a client's business to support the investment thesis or IPO narrative. A founder claiming a '$500 billion market opportunity' deserves scrutiny — and bankers who can sanity-check that number on the spot are genuinely valuable."
+        },
+        {
+          "type": "diagram",
+          "title": "The Market Sizing Framework",
+          "variant": "steps",
+          "steps": [
+            "Clarify: Confirm the exact market being sized (geography, product/service definition, retail vs. wholesale revenue, current vs. potential)",
+            "Choose Approach: Decide between top-down (population segmentation) and bottom-up (unit economics x volume). State which you'll use and why",
+            "Anchor with Key Assumptions: State your population anchor, penetration rate, and unit economics assumptions explicitly before computing",
+            "Top-Down Calculation: Population → Relevant Segment → Penetration → Usage Frequency → Price per Unit = Market Size",
+            "Bottom-Up Cross-Check: Number of providers / locations x Revenue per location x Operating days = Market Size",
+            "Convergence Check: Compare top-down and bottom-up estimates. If they're within 20%, you're in good shape. If they diverge sharply, find the assumption error",
+            "State Your Answer: Give a specific number with appropriate precision ('approximately $X billion') and flag your least-certain assumption"
+          ]
         },
         {
           "type": "h2",
@@ -196,6 +275,26 @@
         },
         {
           "type": "h2",
+          "text": "The US Gym and Fitness Market"
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Worked Example: US Gym Market",
+          "text": "Top-Down Approach: US population: 335 million. Adults 18+: 250 million. Gym members (IHRSA surveys ~21% of US adults): ~52 million members. Average monthly membership fee: blended across budget gyms ($25/month), mid-tier ($50/month), premium/boutique ($120/month). Roughly 50% budget, 35% mid-tier, 15% premium. Blended: 0.50x$25 + 0.35x$50 + 0.15x$120 = $12.50 + $17.50 + $18 = $48/month. Annual spend per member: $48 x 12 = $576. Total membership revenue: 52M x $576 = $30 billion. Add personal training, classes, merchandise (~20% of membership revenue): $30B x 1.2 = $36 billion. Bottom-Up Approach: ~41,000 commercial gyms in the US (IHRSA data). Average annual gym revenue: $900,000/year (small independent gyms $250K, large facilities $5M+). Blended estimate: ~$800K. Total: 41,000 x $800K = $33 billion. Convergence: Both methods imply a $30-36B US gym market. Sanity check: IHRSA reports the US fitness industry generates ~$35B annually — our estimate is right on target. State: 'I estimate the US gym and fitness market at approximately $33-36 billion annually.'"
+        },
+        {
+          "type": "h2",
+          "text": "The US Ridesharing Market"
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Worked Example: US Ridesharing Market",
+          "text": "Bottom-Up Approach: Uber and Lyft dominate US ridesharing with roughly 75/25 market share. Uber US gross bookings (public filings, 2023): approximately $35 billion US rides segment. Lyft US gross bookings (public filings): approximately $12 billion. Total US ridesharing gross bookings: ~$47 billion. Note: gross bookings include driver earnings (~75% of fare) plus platform fee (~25%). Platform revenue (what Uber/Lyft report): ~25% x $47B = ~$12B. Top-Down Cross-Check: US trips per year: 335M people, ~15% use rideshare monthly = 50M users. Average 2 trips/month = 100M trips/month = 1.2 billion trips/year. Average fare: $20/trip. Total gross bookings: 1.2B x $20 = $24B. This diverges from the filing-based figure — suggests our trip frequency or average fare is too low. Revisit: Uber alone claims 1.9B annual trips in the US (implies our 1.2B is low). At 2.5B trips x $18 average = $45B, aligning with public data. Lesson: when your top-down diverges from known data, find and fix the assumption. State: 'The US ridesharing market is approximately $45-50 billion in gross bookings annually, with Uber and Lyft generating about $12B in platform revenue on that volume.'"
+        },
+        {
+          "type": "h2",
           "text": "Classic Fermi Questions"
         },
         {
@@ -221,6 +320,11 @@
           "variant": "example",
           "title": "Smartphone Market in India",
           "text": "Step 1 — India population: 1.44 billion. Addressable population (those who can afford smartphones): approximately 500 million (middle class and above). Step 2 — Current penetration: approximately 55-60% of addressable population already has a smartphone = 280 million existing smartphone users. Step 3 — Upgrade cycle: users upgrade every 2-3 years. New purchases: 280M / 2.5 years = 112M phones/year from upgrades. Step 4 — New adopters: remaining 220M without smartphones; 10-15% convert annually = 25M new users/year. Step 5 — Total annual volume: 112M + 25M = 137M phones/year. Step 6 — Average selling price: blended average across budget (~$100) and mid-range (~$250) and premium (~$800). India is budget-dominated: 70% budget, 25% mid, 5% premium. Blended ASP: 0.70 x $100 + 0.25 x $250 + 0.05 x $800 = $70 + $62.50 + $40 = $172.50. Step 7 — Market size: 137M x $172 = approximately $24 billion. Note: Actual India smartphone market in 2023-2024 was approximately $26-30B — very close!"
+        },
+        {
+          "type": "question",
+          "question": "Estimate the annual revenue of the US pizza delivery market. Use both top-down and bottom-up approaches and reconcile the two estimates.",
+          "answer": "Top-Down Approach: US population: 335 million. US households: ~130 million. Households that order pizza delivery: assume 45% order at least once per month = ~60M ordering households. Average orders per household per month: 1.5 orders (some households order weekly, many monthly). Annual orders: 60M x 1.5 x 12 = 1.08 billion orders. Average order size: $25 (includes delivery fee and tip, which go to the restaurant/platform). Total market: 1.08B x $25 = $27 billion. Bottom-Up Approach: Major pizza delivery chains (Domino's, Pizza Hut, Papa John's) plus local independents. Domino's US system sales: ~$8B annually (public filings). Pizza Hut US delivery sales: estimated ~$3B. Papa John's: ~$2.5B. Little Caesars, local delivery: ~$8B. Total delivery-specific revenue: approximately $21-22B. Add delivery platform markups (DoorDash, Uber Eats): additional 15-20% on 40% of orders = ~$1.5B. Total: ~$23B. Convergence: Top-down gives $27B, bottom-up gives $23B — within 15% of each other, which is good convergence. State: 'I estimate the US pizza delivery market at approximately $24-27 billion annually, with my top-down and bottom-up estimates converging around $25B.' Caveat: my least confident assumption is order frequency per household — I'd want to validate that 1.5 orders/month/household is realistic."
         },
         {
           "type": "h2",
@@ -310,6 +414,45 @@
           "text": "This is one of the most fundamental macro finance questions. Bond Prices: Fall. Existing bonds have fixed coupons. When market rates rise, new bonds offer higher yields, making existing bonds less attractive. Their prices must fall until their yield equals the new market rate. A bond with a 4% coupon becomes unattractive when new bonds offer 6% — investors will only buy it at a discount to par. DCF Values: Fall. In a DCF, future cash flows are discounted at the WACC (which includes the risk-free rate). Higher rates increase the WACC (higher risk-free rate = higher cost of equity and debt). Higher discount rate = lower present value of future cash flows = lower DCF value. Growth companies (with more cash flows far in the future) are hurt more than mature companies. P/E Multiples: Tend to fall. The theoretical P/E multiple is 1/(Cost of Equity - Growth). Higher rates increase the cost of equity, compressing the justified P/E. Additionally, higher rates increase borrowing costs, reduce corporate earnings, and make bonds more competitive vs. equities, all of which compress multiples. This is what happened in 2022: the Fed hiked rates aggressively, bond prices fell, stocks fell (especially growth stocks), and P/E multiples compressed significantly."
         },
         {
+          "type": "question",
+          "question": "If a company does a 2-for-1 stock split, what happens to the share price, earnings per share (EPS), and P/E ratio? Does any economic value change?",
+          "answer": "A 2-for-1 stock split simply divides each existing share into two shares. No economic value changes — this is purely a cosmetic restructuring of the share count. Share Price: The price is cut exactly in half. If shares traded at $200 before the split, they trade at $100 after. The total market capitalization is unchanged: 100M shares x $200 = 200M shares x $100 = $20 billion. Earnings Per Share (EPS): EPS is also cut in half. Net income does not change; it is just divided across twice as many shares. If net income was $500M and shares were 100M (EPS = $5.00), post-split: EPS = $500M / 200M = $2.50. P/E Ratio: Unchanged. P/E = Price / EPS = $100 / $2.50 = 40x. Before split: $200 / $5.00 = 40x. Same result. This is the key insight: P/E is scale-invariant with respect to share splits. Economic value: Absolutely nothing changes economically. The total market cap, total earnings, total equity value, and P/E ratio are all identical before and after the split. Why do companies do splits then? Two reasons: (1) Accessibility — a $200 stock becomes a $100 stock, making it easier for retail investors to buy round lots without needing $20,000 per 100 shares. (2) Perception — stocks above certain price thresholds (historically ~$100-200) are sometimes perceived as expensive, and a split can attract more retail participation, potentially increasing liquidity and reducing the bid-ask spread."
+        },
+        {
+          "type": "h2",
+          "text": "Five Additional Finance Riddles"
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Riddle 1: Working Capital Increases — What Happens to Cash Flow?",
+          "text": "Question: A company's working capital increases by $50M year-over-year. Is this good or bad? What happens to free cash flow? Answer: Working capital = Current Assets - Current Liabilities. An increase in working capital means the company is tying up more cash in operations — typically either collecting receivables more slowly, building more inventory, or paying suppliers faster. Effect on cash flow: Working capital increase = cash OUTFLOW. Free cash flow = EBITDA - Capex - Change in Working Capital - Taxes. A $50M increase in working capital reduces FCF by $50M (all else equal). This is why a company can be profitable but still running out of cash. The inverse — a working capital decrease (e.g., collecting receivables faster or paying suppliers more slowly) — releases cash. Classic follow-up: 'Is increasing working capital always bad?' Answer: Not necessarily — if a company is growing rapidly, it naturally needs more working capital. The question is whether the working capital intensity is reasonable relative to revenue growth."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Riddle 2: Company Has $100M Net Income But $0 Free Cash Flow — How?",
+          "text": "Question: A company reports $100M of net income but generates $0 of free cash flow. What could explain this? This is a classic cash flow vs. earnings riddle. Multiple explanations: (1) High capex: The company spends $100M on capital expenditures (factories, equipment, technology). OCF = $100M net income + depreciation - capex. If capex = OCF, FCF = $0. This is common for capital-intensive industries (semiconductors, railroads). (2) Working capital consumption: If working capital increases by $100M (receivables surge on rapid revenue growth), the cash is tied up in operations. OCF = net income - working capital increase = $100M - $100M = $0. FCF = $0 assuming no additional capex. (3) High non-cash income: If $100M of net income includes non-cash gains (gains on asset sales, mark-to-market investment gains), the company may generate no actual cash despite strong reported earnings. (4) Debt repayment confusion: Note — FCF is typically measured before financing activities, so debt repayment does NOT explain the difference between net income and FCF. Always trace the specific line items on the cash flow statement."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Riddle 3: Deferred Revenue Increases — What Happens to Revenue and Cash?",
+          "text": "Question: A SaaS company's deferred revenue balance increases by $30M in a quarter. What does this tell you about cash and reported revenue? Answer: Deferred revenue is a liability that represents cash received from customers but not yet recognized as revenue (because the service hasn't been delivered yet). An increase of $30M means: Cash: The company received $30M MORE in cash from customers than it recognized as revenue. Cash flow is POSITIVE — customers paid in advance. Revenue: The $30M sits on the balance sheet as deferred revenue (a liability), NOT on the income statement as revenue. The company will recognize this revenue in future periods as it delivers service. Cash flow statement treatment: The $30M deferred revenue increase appears as a positive adjustment in the 'Changes in working capital' section of operating cash flow. This is one reason why SaaS companies often have higher cash flow than GAAP revenue would suggest — annual and multi-year subscription payments create deferred revenue that will be recognized over time, but cash was received upfront. Interview insight: 'Deferred revenue increasing means customers are paying before the company has to work — a great sign for cash flow quality.'"
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Riddle 4: Why Does Depreciation Matter in a DCF If It's Non-Cash?",
+          "text": "Question: If depreciation is a non-cash charge, why does it matter in a DCF analysis? Answer: This is a great conceptual question. Depreciation doesn't matter for CASH FLOW directly — you add it back in the cash flow statement because it's non-cash. But it matters for two critical reasons in a DCF. First, taxes: depreciation reduces taxable income (it IS a deductible expense for tax purposes even though it doesn't consume cash). Lower taxable income = lower tax payment = more cash in the company's pocket. This is the 'tax shield' value of depreciation. If a company has $100M EBITDA, $20M D&A, and a 25% tax rate: EBIT = $80M. Tax = $80M x 25% = $20M. NOPAT = $60M. If D&A were $0: Tax = $100M x 25% = $25M. NOPAT = $75M. The $20M of D&A creates $5M of tax savings annually (20M x 25% = $5M). Second, replacement capex: depreciation signals how much capex is needed to maintain assets. A company depreciating $20M of PP&E per year must eventually spend $20M on replacement capex, or the assets deteriorate. In a DCF, maintenance capex (often approximated by depreciation) is subtracted from EBITDA to get unlevered free cash flow."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Riddle 5: What Is the Difference Between Enterprise Value and Equity Value?",
+          "text": "Question: When should you use enterprise value vs. equity value in valuation? Answer: Enterprise Value (EV) = Total value of the business to ALL capital providers — debt holders AND equity holders. It represents the cost to acquire the entire business, paying off all debt and buying all equity. EV = Market Cap + Net Debt (+ Preferred Stock + Minority Interest). Equity Value = Value that belongs ONLY to equity holders, after all obligations to debt holders are satisfied. Equity Value = EV - Net Debt. When to use each: Use EV when: (1) comparing companies with different capital structures (levered vs. unlevered) — EV removes the distorting effect of debt; (2) using EBITDA or EBIT multiples, which are pre-debt metrics. EV/EBITDA is standard for M&A and LBO analysis. Use Equity Value when: (1) using earnings-based metrics (P/E ratio, EPS) — these are post-debt, post-interest metrics that belong entirely to equity holders; (2) discussing stock price and shares outstanding. Common mistake: applying an EV multiple to net income, or a P/E multiple to EBITDA. These are apples-to-oranges errors. The numerator and denominator must be consistent — both at the enterprise level (EV / EBITDA) or both at the equity level (P/E = Equity Value / Net Income)."
+        },
+        {
           "type": "h2",
           "text": "Framework for Unknown Questions"
         },
@@ -324,6 +467,23 @@
         {
           "type": "p",
           "text": "One of the most common mistakes in IB interviews is guessing randomly when faced with an unknown. A better approach: 'I'm not immediately sure, but let me think through it logically...' then attempt the problem. If you are genuinely stuck after a genuine attempt: 'I'm not certain of the exact answer, but here's how I would approach finding it: I would [describe your research/reasoning process].' This demonstrates intellectual honesty — a quality top banks specifically seek. The worst answer is a confidently stated wrong answer. The second-worst is silence."
+        },
+        {
+          "type": "h2",
+          "text": "How to Handle Questions You Don't Know: A Framework"
+        },
+        {
+          "type": "p",
+          "text": "In any interview, you will face at least one question you genuinely cannot answer. The right approach is a three-step process that interviewers respect far more than a confident wrong answer."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Acknowledge without apologizing: 'That's a great question — I don't know the exact answer off the top of my head, but I'd like to think through it.' Do not say 'I'm sorry, I don't know' — it sounds weak. Do not say 'I know this!' and then get it wrong.",
+            "Reason from first principles: 'Let me think about what I do know about this topic...' Then use analogies, related concepts, or logical deduction to approach the answer. For a quantitative question, estimate the range: 'I'd expect the answer to be somewhere between X and Y because...'",
+            "Flag your uncertainty and offer to follow up: 'I'm not fully confident in this answer — would it be helpful if I followed up with more detail after this conversation?' This shows intellectual humility, initiative, and the kind of self-awareness that good bankers need when they're out of their depth with a client."
+          ]
         },
         {
           "type": "callout",

@@ -36,6 +36,38 @@
           "text": "In every distress situation, the first question is: is this a liquidity problem or a solvency problem? A liquidity problem is temporary — the company has a debt maturity it cannot refinance or a covenant breach, but the underlying business generates positive cash flow and the enterprise value exceeds total debt. A solvency problem is structural — the enterprise value is less than the total debt, meaning creditors are impaired even in an orderly sale. Restructuring bankers must quickly diagnose which situation they're in, because the solutions are very different. A liquidity problem may be solved with amend-and-extend or a new DIP facility; a solvency problem requires a fundamental deleveraging (debt-for-equity exchange or 363 sale)."
         },
         {
+          "type": "chart",
+          "title": "Leverage at Distress vs. Healthy Peers",
+          "subtitle": "Median Net Debt / EBITDA at time of restructuring engagement vs. healthy industry peers",
+          "data": [
+            {"label": "Healthy IG Company", "value": 2.1, "suffix": "x"},
+            {"label": "Healthy HY Company", "value": 4.3, "suffix": "x"},
+            {"label": "Stressed (Watch List)", "value": 6.2, "suffix": "x"},
+            {"label": "Distressed (Restructuring)", "value": 8.7, "suffix": "x"},
+            {"label": "Chapter 11 Filing", "value": 11.4, "suffix": "x"}
+          ]
+        },
+        {
+          "type": "question",
+          "question": "A company has $500M EBITDA declining 20% per year and $3B in debt. At what EBITDA level does it breach a 6x net leverage covenant? Walk through the math.",
+          "answer": "The covenant requires Net Debt / EBITDA ≤ 6.0x. With $3B of net debt, the covenant is breached when EBITDA falls below $3B / 6x = $500M. Since the company currently has exactly $500M EBITDA, it is right at the covenant threshold today. At 20% annual decline: Year 1 EBITDA = $500M × 0.80 = $400M, giving leverage of $3B / $400M = 7.5x — a clear breach in Year 1. The company is in technical default the moment it tests this covenant next quarter unless it negotiates a waiver, reduces debt, or improves EBITDA. This illustrates why a restructuring advisor would be retained immediately — even before a formal breach — to negotiate a covenant holiday or amend-and-extend while the company still has negotiating leverage."
+        },
+        {
+          "type": "diagram",
+          "title": "The Distress-to-Restructuring Timeline",
+          "variant": "steps",
+          "steps": [
+            "Early Warning: Covenant tightening, EBITDA decline, revolver draws — company retains restructuring advisor confidentially",
+            "Creditor Engagement: Management meets with major lenders; waiver or amendment negotiations begin out of court",
+            "Out-of-Court Attempt: Amend-and-extend, exchange offer, or LMT attempted with organized creditor groups",
+            "Restructuring Support Agreement (RSA): Key creditors sign RSA supporting agreed plan before any filing",
+            "Chapter 11 Filing (if needed): Automatic stay imposed; DIP financing secured; first day motions filed",
+            "Plan Negotiation: Creditor classes negotiate treatment; fulcrum security identified; valuation contested",
+            "Plan Confirmation: Court confirms POR; cramdown applied to rejecting classes if necessary",
+            "Emergence: New equity issued; debt reduced; reorganized company begins trading or operates under new owners"
+          ]
+        },
+        {
           "type": "h2",
           "text": "Early Warning Signs of Financial Distress"
         },
@@ -66,6 +98,10 @@
             "Cost structure rigidity: Companies with high fixed costs (airlines, steel manufacturers) generate highly cyclical EBITDA. In downturns, EBITDA evaporates but interest expense stays fixed — coverage ratios collapse rapidly.",
             "Rising interest rates: Companies with floating-rate debt (TLBs) face dramatically higher interest expense when rates rise. The Fed's rate hike cycle (2022–2023) drove SOFR from 0% to 5.25%, increasing interest expense by 525bps on floating-rate debt — an annual increase of $52.5M for every $1B of TLB outstanding."
           ]
+        },
+        {
+          "type": "highlight",
+          "text": "The fundamental test in any distress situation: can this business generate enough cash flow to service its debt if given more time, or is the enterprise value itself less than the face value of the debt? The answer determines everything — from the solution to the creditor recoveries to who ends up owning the company."
         },
         {
           "type": "h2",
@@ -141,6 +177,25 @@
           ]
         },
         {
+          "type": "diagram",
+          "title": "The Amend-and-Extend Process",
+          "variant": "steps",
+          "steps": [
+            "Company identifies approaching maturity or covenant breach and retains restructuring counsel and financial advisor",
+            "Advisor conducts liquidity analysis and drafts a 'lender presentation' showing the business case for extension",
+            "Company approaches steering committee of major lenders in confidence; shares financial projections under NDA",
+            "Negotiations begin on new terms: extended maturity, higher rate (step-up or PIK toggle), covenant reset, amendment fee",
+            "Drafting of amended credit agreement by legal counsel; consent solicitation launched to all lenders of record",
+            "Majority consent threshold met (51% for most amendments); sacred rights require 100% (maturity, principal, rate changes)",
+            "Amendment effective; company continues to operate with runway extended — no court filing, no public disclosure required"
+          ]
+        },
+        {
+          "type": "question",
+          "question": "Why would creditors agree to extend maturities rather than force immediate repayment if a company is struggling? Aren't they just delaying the inevitable?",
+          "answer": "Creditors extend for several rational economic reasons. First, a forced repayment or immediate default often triggers a fire-sale liquidation where the collateral value is far below face value of the debt — creditors recover less than if they give the business time to stabilize. Second, the credit markets may be temporarily dislocated: a company with a viable business might be unable to refinance today due to macro conditions but could refinance in 18 months if conditions improve. Third, lenders demand compensation for the extension (higher spread, PIK, amendment fees) so the economics of extending are often better than the economics of forcing a messy default. Fourth, lenders who force default often trigger cross-default provisions across the entire capital structure, creating a chaotic multi-creditor dispute that is expensive and time-consuming for everyone. The key question is always: 'Is extending buying real value, or just delaying an inevitable impairment?' If EBITDA is declining with no clear catalyst, extension is kicking the can; if there is a clear operational plan, extension is genuinely value-preserving."
+        },
+        {
           "type": "h2",
           "text": "Debt-for-Equity Exchange"
         },
@@ -185,6 +240,12 @@
           "text": "LMTs have fundamentally changed the out-of-court restructuring landscape. Rather than negotiating consensually with all creditors, companies and their advisors can now partner with a majority creditor coalition to extract value from non-participating minority creditors. This has sparked a wave of litigation and an arms race in credit documentation — lenders now negotiate extensive protective provisions ('anti-LMT' protections) to prevent these maneuvers. The Oxford Law Blog noted in April 2026 that 'LMTs have reached their limits' as courts increasingly void these transactions under the implied covenant of good faith. This is the most actively evolving area of restructuring practice."
         },
         {
+          "type": "callout",
+          "variant": "example",
+          "title": "LMT In Practice: Why Lenders Fight Back",
+          "text": "In the Serta Simmons Bedding case (2020), Serta approached its majority lenders with a proposal to convert their existing first lien term loans into new 'super priority' term loans that would rank ahead of the remaining minority lenders. The minority lenders — who held approximately 35% of the existing first lien — were not invited to participate. Their existing 'first lien' debt became effectively second-lien overnight, as the new super-priority debt was issued above them. The minority lenders argued this violated the pro-rata sharing provisions of the credit agreement. The 5th Circuit ultimately ruled against Serta in 2024, holding that the transaction breached the credit agreement — a landmark ruling that has significantly chilled uptier exchange activity. Analysts now expect borrowers to seek more traditional out-of-court solutions or pre-packaged Chapter 11 filings, rather than aggressive LMTs."
+        },
+        {
           "type": "h2",
           "text": "When Out-of-Court Fails — The Triggers for In-Court"
         },
@@ -223,6 +284,34 @@
           "text": "Chapter 11 of the U.S. Bankruptcy Code is a court-supervised reorganization process that allows a financially distressed company to continue operating while it restructures its debt and obligations under court protection. Critically, Chapter 11 is reorganization — not liquidation. The company does not close its doors, terminate employees, or sell its assets immediately (that's Chapter 7 or Chapter 11 Section 363, which we cover separately). In Chapter 11, the company keeps running its business while working out a long-term plan to restructure its balance sheet. Airlines continue flying, retailers continue ringing cash registers, and restaurants continue serving food — all under Chapter 11."
         },
         {
+          "type": "diagram",
+          "title": "Chapter 11 Process: Filing to Emergence",
+          "variant": "steps",
+          "steps": [
+            "Day 1 — Filing: Company files voluntary Chapter 11 petition in bankruptcy court; automatic stay takes immediate effect; all creditor actions halted",
+            "Days 1-10 — First Day Motions: Emergency hearings for critical vendor payments, employee wages, cash management, and interim DIP financing approval",
+            "Weeks 1-4 — DIP Financing: Court approves final DIP credit facility; company has liquidity to fund operations through the case",
+            "Month 1 — UCC Appointment: US Trustee appoints Official Committee of Unsecured Creditors; UCC retains its own financial advisor and counsel",
+            "Months 1-6 — Claims Process: Bar date set; all creditors must file proofs of claim; claims reconciliation and objection process begins",
+            "Months 3-12 — Plan Negotiation: Debtor proposes Plan of Reorganization; creditor groups negotiate treatment; valuation experts retained by each party",
+            "Months 6-18 — Disclosure Statement & Voting: Court approves Disclosure Statement; ballots mailed to impaired classes; voting period (28-42 days)",
+            "Confirmation Hearing: Court confirms plan if legal requirements met (voting thresholds, APR compliance, feasibility); cramdown applied to rejecting classes",
+            "Emergence: New equity distributed; restructured debt issued; existing equity cancelled; DIP repaid; company exits bankruptcy as reorganized entity"
+          ]
+        },
+        {
+          "type": "chart",
+          "title": "Typical Chapter 11 Duration by Case Type",
+          "subtitle": "Months from filing to plan confirmation",
+          "data": [
+            {"label": "Prepackaged (Prepack)", "value": 2, "suffix": " mo"},
+            {"label": "Prearranged (RSA filed)", "value": 6, "suffix": " mo"},
+            {"label": "Traditional (consensual)", "value": 14, "suffix": " mo"},
+            {"label": "Traditional (contested)", "value": 22, "suffix": " mo"},
+            {"label": "Large Complex Cases", "value": 30, "suffix": " mo"}
+          ]
+        },
+        {
           "type": "h2",
           "text": "The Automatic Stay — The Most Powerful Feature of Chapter 11"
         },
@@ -239,6 +328,11 @@
             "Strategic value: The automatic stay prevents any single creditor from racing to the courthouse to grab assets before others. It levels the playing field and ensures all creditors are treated collectively rather than in a first-come-first-served scramble.",
             "Duration: The automatic stay remains in effect for the duration of the Chapter 11 case (unless specifically lifted by the court on a secured creditor's motion)."
           ]
+        },
+        {
+          "type": "question",
+          "question": "What is the automatic stay and why is it so valuable to a debtor filing Chapter 11? Give a concrete example of the chaos that would occur without it.",
+          "answer": "The automatic stay is an immediate, court-imposed injunction that halts all creditor collection actions the moment a Chapter 11 petition is filed. It prevents creditors from filing lawsuits, foreclosing on property, repossessing equipment, offsetting bank accounts, or continuing arbitration. Without the automatic stay, a Chapter 11 filing would trigger a creditor race: each lender would rush to the courthouse to grab assets before others, the strongest and fastest creditors would seize collateral, and the business would be torn apart before any reorganization plan could be negotiated. Consider a retail chain with $200M in inventory sitting in 300 stores: without a stay, secured lenders could immediately repossess the inventory, landlords could lock the stores, and trade creditors could pursue collections simultaneously — destroying in days a business that generates $2B in annual revenue. The automatic stay freezes this chaos instantly, giving the debtor and its advisors the breathing room to negotiate a rational restructuring. It is the foundational feature that makes Chapter 11 reorganization (rather than chaotic liquidation) possible."
         },
         {
           "type": "h2",
@@ -376,6 +470,11 @@
           "text": "RetailCo has the following capital structure: First Lien Term Loan: $300M; Second Lien Notes: $200M; Senior Unsecured Bonds: $250M; Total Debt: $750M. The bankruptcy advisor's valuation concludes that RetailCo's enterprise value is $425M (between $350M liquidation value and $500M going concern value; using midpoint $425M). Applying APR: First Lien ($300M) → Enterprise Value = $425M; first lien fully covered → 100% recovery. Second Lien ($200M) → Remaining EV = $425M – $300M = $125M. Second lien recovers $125M of its $200M claim → 62.5 cents on the dollar. FULCRUM SECURITY = SECOND LIEN NOTES. Senior Unsecured ($250M) → Remaining EV = $0 (all consumed by first and second lien) → 0% recovery. Conclusion: First lien lenders receive new debt at par. Second lien holders are the fulcrum — they receive the reorganized equity (in exchange for their $200M of notes, they receive equity valued at $125M — a 37.5% haircut to face but better than the ~40-60 cents they were likely trading at pre-bankruptcy). Unsecured bondholders receive nothing."
         },
         {
+          "type": "question",
+          "question": "A company has $800M of total debt — $400M senior secured (first lien) and $400M senior unsecured — and a reorganization enterprise value of $600M. What are the recovery percentages for each class? Work through the absolute priority rule step by step.",
+          "answer": "Step 1 — Determine total enterprise value available for distribution: $600M. Step 2 — Apply APR from most senior to most junior. Senior Secured (First Lien, $400M): Remaining EV = $600M. Recovery = min($400M, $600M) = $400M recovered. Recovery rate = $400M / $400M = 100%. Remaining EV after first lien = $600M - $400M = $200M. Senior Unsecured ($400M): Remaining EV = $200M. Recovery = min($400M, $200M) = $200M recovered. Recovery rate = $200M / $400M = 50 cents on the dollar. Remaining EV after unsecured = $0. Existing Equity: Remaining EV = $0. Recovery = 0%. Existing equity is wiped out. Conclusion: Senior secured holders are paid in full (100% recovery). Senior unsecured holders receive 50 cents on the dollar — they are the FULCRUM SECURITY and receive equity in the reorganized company representing their $200M recovery. The reorganized company equity is worth $200M (the remaining EV after senior secured is made whole), and the former unsecured holders own 100% of it. If the unsecured holders believe the reorganized company can grow in value post-emergence, they have significant upside — this is why distressed debt investors target the fulcrum."
+        },
+        {
           "type": "h2",
           "text": "Classification of Claims and Voting on the POR"
         },
@@ -420,6 +519,10 @@
             ["Senior Unsecured Bonds", "$200M", "15%", "0%", "Scraps of remaining value; often gets a small equity allocation"],
             ["Existing Common Equity", "$0", "0%", "0%", "Wiped out; PE sponsor loses investment"]
           ]
+        },
+        {
+          "type": "highlight",
+          "text": "The fulcrum security is not merely an academic concept — it is the most hotly contested issue in every restructuring. Whoever holds the fulcrum controls the negotiation, because they receive equity in the reorganized company and become its new owners. Distressed debt funds specifically buy into the fulcrum tranche to gain this control."
         }
       ],
       "keyTakeaways": [
@@ -445,6 +548,21 @@
           "text": "Section 363 of the Bankruptcy Code allows a debtor to sell assets 'outside the ordinary course of business' with bankruptcy court approval. A 363 sale is not a liquidation — it is a court-supervised M&A process where the assets of a bankrupt company are sold to the highest bidder, free and clear of virtually all liens, claims, and liabilities. The 'free and clear' feature is the defining characteristic of a 363 sale and the primary reason buyers prefer to acquire distressed assets through this mechanism rather than through a traditional out-of-court purchase."
         },
         {
+          "type": "diagram",
+          "title": "The 363 Sale Auction Process",
+          "variant": "steps",
+          "steps": [
+            "Debtor retains investment banker and restructuring counsel; prepares confidential information memorandum (CIM) describing the assets",
+            "Stalking Horse Selected: Debtor negotiates binding APA with a stalking horse bidder at a floor price; break-up fee (1-4%) agreed",
+            "Bidding Procedures Motion: Debtor files motion to approve auction rules — qualified bidder requirements, minimum bid increments, timeline; court holds hearing",
+            "Marketing Period (30-45 days): Banker contacts potential buyers; distributes CIM under NDA; management presentations held; buyers conduct diligence",
+            "Bid Deadline: Qualified bids submitted by court-approved deadline; debtor and advisors evaluate bids for value and executability",
+            "Auction: Live or virtual auction among all qualified bidders; successive rounds with minimum bid increments until highest bid determined",
+            "Sale Hearing: Winning bid presented to court; UCC, creditors, and other parties may object; court approves sale if in best interests of estate",
+            "Closing: Court order entered; assets transferred free and clear of all liens and successor liabilities; proceeds flow into bankruptcy estate for distribution per APR"
+          ]
+        },
+        {
           "type": "h2",
           "text": "Why Buyers Prefer 363 Sales — The Free and Clear Principle"
         },
@@ -458,6 +576,11 @@
             "Limited reps and warranties: Because the sale is court-approved and 'as-is,' sellers provide minimal representations and warranties. Buyers may seek R&W insurance but generally accept a lower standard of protection than in an out-of-court deal — which is why 363 sale prices are often at a discount to the equivalent out-of-court transaction.",
             "Section 363(m) protection: Once a sale to a 'good faith purchaser' closes and the proceeds are distributed, the sale cannot be reversed on appeal unless a court-ordered stay was obtained before the sale closed. This 'mootness' doctrine provides buyers with extraordinary finality."
           ]
+        },
+        {
+          "type": "question",
+          "question": "Why would a secured creditor prefer a 363 sale over a traditional Chapter 11 reorganization where the company emerges with a new plan of reorganization?",
+          "answer": "A secured creditor has several strong reasons to prefer a 363 sale. First, speed and certainty: a 363 sale can close in 90-120 days, delivering cash recovery quickly, rather than waiting 12-24 months for a traditional plan confirmation. For a distressed debt fund that bought the secured debt at 70 cents, receiving 85 cents in 4 months is far superior to waiting 18 months for the same recovery. Second, eliminates reorganization risk: in a traditional plan, the court must determine enterprise value through an often-contentious valuation fight — if the court concludes the enterprise value is lower than expected, secured creditors get less. A 363 auction discovers market value through an open competitive process, providing objective evidence of value that is harder to dispute. Third, credit bidding option: a secured creditor can credit bid its debt to acquire the assets directly if no competing bidder emerges above the credit bid amount — effectively taking ownership of the collateral at face value. This gives the secured creditor an extraordinary backstop. Fourth, avoids plan confirmation risk: a contested plan can fail if the debtor cannot confirm over objections or if competing plans emerge. A 363 sale, once court-approved, has finality via Section 363(m)."
         },
         {
           "type": "h2",
@@ -498,6 +621,12 @@
           "variant": "insight",
           "title": "Strategic Implications of Credit Bidding",
           "text": "Credit bidding creates a strategic asymmetry: secured lenders can acquire the collateral at 'face value' even when the market price is much lower, effectively foreclosing on the asset. This is powerful when the lender believes the assets are worth more than the distressed market implies — by credit bidding, they acquire the business and can run it themselves or re-sell it for a profit. However, credit bidding can also chill the auction by deterring cash buyers who don't want to compete against an effectively limitless bidder. Courts have occasionally limited credit bidding when it would significantly impair the sale process or when the creditor's lien is disputed. Buyers in distressed auctions must model whether a credit bid is likely and factor this into their bidding strategy."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Credit Bidding Strategy: Toy Story at Toys R Us (2018)",
+          "text": "In the Toys R Us bankruptcy, secured lenders had approximately $1.9B in first-lien debt. When the 363 sale process attracted insufficient third-party interest — bidders were deterred by the complexity and the weak retail environment — the first-lien lenders submitted a credit bid of approximately $1.76B, effectively acquiring the US and Canadian retail operations. The lenders then formed a new operating company, taking ownership of the brand and assets. This outcome was not what the lenders originally wanted (they preferred a full cash exit), but the credit bid preserved optionality. They later attempted to relaunch the brand before ultimately licensing the Toys R Us name — a strategy that extracted meaningful value from what would have been a worse outcome in a distressed auction against reluctant cash buyers."
         },
         {
           "type": "h2",

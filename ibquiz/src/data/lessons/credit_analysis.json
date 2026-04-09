@@ -45,31 +45,11 @@
             "How Analysts Evaluate It"
           ],
           "rows": [
-            [
-              "Character",
-              "Management's integrity, track record, and willingness to honor obligations",
-              "Management team history, prior defaults, transparency in reporting, board governance, related-party transactions"
-            ],
-            [
-              "Capacity",
-              "The borrower's ability to generate sufficient cash flow to service debt",
-              "Leverage ratios (Debt/EBITDA), coverage ratios (EBITDA/Interest), free cash flow, DSCR"
-            ],
-            [
-              "Capital",
-              "The borrower's equity cushion and financial reserves available as a buffer",
-              "Debt/equity ratio, tangible net worth, liquidity (cash + revolver availability)"
-            ],
-            [
-              "Collateral",
-              "Assets that can be seized and liquidated by creditors in a default scenario",
-              "Asset appraisals, LTV ratios, quality and liquidity of collateral (real estate vs. software)"
-            ],
-            [
-              "Conditions",
-              "The macroeconomic environment and industry-specific headwinds or tailwinds",
-              "GDP growth, interest rates, commodity prices, regulatory environment, competitive dynamics"
-            ]
+            ["Character", "Management's integrity, track record, and willingness to honor obligations", "Management team history, prior defaults, transparency in reporting, board governance, related-party transactions"],
+            ["Capacity", "The borrower's ability to generate sufficient cash flow to service debt", "Leverage ratios (Debt/EBITDA), coverage ratios (EBITDA/Interest), free cash flow, DSCR"],
+            ["Capital", "The borrower's equity cushion and financial reserves available as a buffer", "Debt/equity ratio, tangible net worth, liquidity (cash + revolver availability)"],
+            ["Collateral", "Assets that can be seized and liquidated by creditors in a default scenario", "Asset appraisals, LTV ratios, quality and liquidity of collateral (real estate vs. software)"],
+            ["Conditions", "The macroeconomic environment and industry-specific headwinds or tailwinds", "GDP growth, interest rates, commodity prices, regulatory environment, competitive dynamics"]
           ]
         },
         {
@@ -90,54 +70,26 @@
             "Description"
           ],
           "rows": [
-            [
-              "Investment Grade — Prime",
-              "Aaa",
-              "AAA",
-              "Highest quality, minimal credit risk. Apple, Microsoft, Johnson & Johnson."
-            ],
-            [
-              "Investment Grade — High",
-              "Aa1/Aa2/Aa3",
-              "AA+/AA/AA−",
-              "Very high quality. Exxon, Berkshire Hathaway."
-            ],
-            [
-              "Investment Grade — Upper-Medium",
-              "A1/A2/A3",
-              "A+/A/A−",
-              "Strong capacity to meet obligations. Most IG industrials."
-            ],
-            [
-              "Investment Grade — Medium",
-              "Baa1/Baa2/Baa3",
-              "BBB+/BBB/BBB−",
-              "Adequate capacity. 'BBB' is the largest IG bucket. Ford, AT&T."
-            ],
-            [
-              "High Yield — Speculative",
-              "Ba1/Ba2/Ba3",
-              "BB+/BB/BB−",
-              "Speculative elements, substantial credit risk. Broadly syndicated LBO loans."
-            ],
-            [
-              "High Yield — More Speculative",
-              "B1/B2/B3",
-              "B+/B/B−",
-              "Speculative, subject to high credit risk. Typical LBO companies 12-18 months post-deal."
-            ],
-            [
-              "High Yield — Poor Quality",
-              "Caa1/Caa2/Caa3",
-              "CCC+/CCC/CCC−",
-              "Poor standing, very high risk. Near-distressed situations."
-            ],
-            [
-              "Default",
-              "Ca/C",
-              "CC/C/D",
-              "In or near default."
-            ]
+            ["Investment Grade — Prime", "Aaa", "AAA", "Highest quality, minimal credit risk. Apple, Microsoft, Johnson & Johnson."],
+            ["Investment Grade — High", "Aa1/Aa2/Aa3", "AA+/AA/AA−", "Very high quality. Exxon, Berkshire Hathaway."],
+            ["Investment Grade — Upper-Medium", "A1/A2/A3", "A+/A/A−", "Strong capacity to meet obligations. Most IG industrials."],
+            ["Investment Grade — Medium", "Baa1/Baa2/Baa3", "BBB+/BBB/BBB−", "Adequate capacity. 'BBB' is the largest IG bucket. Ford, AT&T."],
+            ["High Yield — Speculative", "Ba1/Ba2/Ba3", "BB+/BB/BB−", "Speculative elements, substantial credit risk. Broadly syndicated LBO loans."],
+            ["High Yield — More Speculative", "B1/B2/B3", "B+/B/B−", "Speculative, subject to high credit risk. Typical LBO companies 12-18 months post-deal."],
+            ["High Yield — Poor Quality", "Caa1/Caa2/Caa3", "CCC+/CCC/CCC−", "Poor standing, very high risk. Near-distressed situations."],
+            ["Default", "Ca/C", "CC/C/D", "In or near default."]
+          ]
+        },
+        {
+          "type": "chart",
+          "title": "Credit Spreads by Rating Category (bps Over Treasuries)",
+          "subtitle": "Normal market conditions — spreads widen sharply in credit downturns",
+          "data": [
+            {"label": "AAA", "value": 50, "suffix": " bps"},
+            {"label": "BBB", "value": 150, "suffix": " bps"},
+            {"label": "BB", "value": 300, "suffix": " bps"},
+            {"label": "B", "value": 500, "suffix": " bps"},
+            {"label": "CCC", "value": 900, "suffix": " bps"}
           ]
         },
         {
@@ -153,6 +105,25 @@
           "variant": "example",
           "title": "Fallen Angel: Ford Motor Company (March 2020)",
           "text": "In March 2020, Moody's downgraded Ford Motor Company from Baa3 to Ba2 — two notches below investment grade — following the COVID-19 pandemic's impact on auto sales. This was the largest 'fallen angel' downgrade since the global financial crisis, with approximately $36 billion of Ford debt suddenly becoming 'junk' rated. Insurance companies and pension funds that could only hold investment-grade debt were forced to sell. Ford's existing bonds immediately traded down 10–15 points, and the company faced significantly higher borrowing costs going forward. Ford had to access the high-yield market to refinance — at a substantially wider spread."
+        },
+        {
+          "type": "h2",
+          "text": "Default Probability vs. Loss Given Default — A Critical Distinction"
+        },
+        {
+          "type": "p",
+          "text": "Credit analysis requires decomposing credit risk into two components: the probability that a borrower defaults (PD), and the loss given default (LGD) — how much of the principal is lost if default occurs. These two inputs combine to determine Expected Loss (EL = PD × LGD), which is the true risk metric that rational lenders price. A company can have a high default probability but low LGD (if its assets fully cover the debt), making it a reasonable credit. Conversely, a company with moderate default risk but almost no recoverable assets (tech with all intangible assets) can be a dangerous credit because LGD approaches 100%. Sophisticated credit analysis always addresses both dimensions."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "PD vs. LGD in Practice — Two Credits Compared",
+          "text": "Credit A: Real Estate Company. Net Debt/EBITDA = 6.0x (B rated). Default probability ≈ 8% over 5 years. But: the company owns $1.2B of appraised real estate against $800M of secured debt. LTV = 67%. In default, lenders sell the properties and recover 90–100% of principal. LGD ≈ 10%. Expected Loss = 8% × 10% = 0.8% — very low despite speculative rating.\n\nCredit B: Software Company. Net Debt/EBITDA = 4.5x (BB rated). Default probability ≈ 4% over 5 years. But: the company's only assets are customer lists and proprietary code — nearly zero recoverable value in a distressed sale. LGD ≈ 80%. Expected Loss = 4% × 80% = 3.2% — four times higher than Credit A despite a better credit rating.\n\nConclusion: The B-rated real estate credit has materially lower expected loss than the BB-rated software credit. Rating agencies increasingly incorporate both PD and LGD into their analysis, but market-clearing prices (spreads) should always reflect both."
+        },
+        {
+          "type": "question",
+          "question": "A company has stable, recurring cash flows from long-term contracts, Net Debt/EBITDA of 3.0x, and EBITDA/Interest coverage of 5.0x. The industry is healthcare services. Would it likely be investment grade or high yield? Why? What rating range would you estimate?",
+          "answer": "This company would very likely be investment grade, probably in the BBB range (Baa2/Baa3 to Baa1).\n\nWhy investment grade:\n1. Leverage of 3.0x Net Debt/EBITDA is comfortably within IG territory. For reference: BBB-rated companies typically carry 1.5–3.5x leverage; BB-rated companies typically carry 3.5–5.5x. At 3.0x, this falls solidly in IG range.\n\n2. Interest coverage of 5.0x is strong. IG minimum is generally 3.5–4.0x; most IG companies run 5–10x. At 5.0x, this comfortably clears IG thresholds.\n\n3. Stable, recurring cash flows from long-term contracts reduce default probability. Rating agencies reward revenue predictability because it means the company can reliably service debt through economic downturns.\n\n4. Healthcare services is a defensive, non-cyclical industry. S&P and Moody's methodologies assign lower business risk scores to healthcare services than to cyclical sectors like retail or automotive — this translates to higher ratings at the same financial metrics.\n\nEstimated rating: BBB / Baa2. For a 'pure operations' BBB credit with 3.0x leverage and stable healthcare cash flows, expect a spread of 120–175 bps over Treasuries and access to the IG bond market at maturities up to 30 years.\n\nWhat would push it lower: Adding more debt (e.g., a leveraged acquisition), losing a major contract (revenue concentration risk), or operating in a more regulated/reimbursement-dependent subsector could push it to BBB− or BB+."
         },
         {
           "type": "h2",
@@ -175,13 +146,17 @@
         {
           "type": "p",
           "text": "When analyzing a company for a credit decision, a trained credit analyst follows a structured process: (1) Understand the business model — how does the company make money and how stable is that? (2) Analyze the financial profile — run all leverage and coverage metrics, build a downside case. (3) Assess the capital structure — where does this borrower sit in the debt stack? What is the collateral coverage? (4) Evaluate the liquidity position — does the company have enough cash and revolver availability to survive the next 12–18 months even in a stress scenario? (5) Form a credit opinion — is the company a good credit at the proposed terms, and at what price?"
+        },
+        {
+          "type": "highlight",
+          "text": "The best credit analysts don't ask 'can this company grow?' — they ask 'can this company survive a 20–30% EBITDA decline while still servicing its debt?' That stress-test framing is what separates credit thinking from equity thinking."
         }
       ],
       "keyTakeaways": [
         "Creditors have a capped upside (coupon + principal) but full downside risk (potential loss of principal) — this asymmetry drives the entire framework of credit analysis.",
         "The 5 Cs (Character, Capacity, Capital, Collateral, Conditions) provide a systematic framework for evaluating any borrower's creditworthiness.",
         "The BBB−/BB+ boundary separates investment grade from high yield — crossing it triggers forced selling by IG-only investors (fallen angel effect) and dramatically increases borrowing costs.",
-        "Credit ratings reflect both quantitative metrics (leverage, coverage) and qualitative factors (business risk, management quality, industry dynamics).",
+        "Credit risk decomposes into Probability of Default (PD) and Loss Given Default (LGD). Expected Loss = PD × LGD. Both must be analyzed independently — high LGD can make a moderate-PD credit dangerous.",
         "Notching adjusts issue-level ratings from the issuer rating based on structural seniority: senior secured debt gets 1–2 notch uplift; subordinated debt gets 1–2 notch downgrade."
       ],
       "interviewTip": "When asked 'What do credit investors care about?' the key answer is: (1) cash flow adequacy — can the company service its debt from operations? (2) downside protection — what do creditors recover if the company defaults? (3) covenant protection — what restrictions prevent management from taking actions that harm creditors? Contrast this explicitly with equity investors, who focus on growth, margins, and multiple expansion. This contrast demonstrates conceptual clarity and is highly valued in leveraged finance and direct lending interviews."
@@ -217,36 +192,11 @@
             "Typical Use"
           ],
           "rows": [
-            [
-              "Total Debt / EBITDA",
-              "Total Debt ÷ EBITDA",
-              "How many years of EBITDA to pay off all debt",
-              "Primary LBO underwriting metric; covenant testing"
-            ],
-            [
-              "Net Debt / EBITDA",
-              "(Total Debt − Cash) ÷ EBITDA",
-              "Leverage net of cash on hand; most widely used",
-              "Rating agency analysis; bank credit agreements"
-            ],
-            [
-              "Total Debt / Total Capital",
-              "Total Debt ÷ (Total Debt + Book Equity)",
-              "Debt as % of total financing; capital structure view",
-              "IG credit analysis; balance sheet structure"
-            ],
-            [
-              "Net Debt / (EBITDA − Capex)",
-              "Net Debt ÷ (EBITDA − Capex)",
-              "Leverage relative to free cash flow generation",
-              "Capex-intensive industries: telecom, cable, industrials"
-            ],
-            [
-              "Senior Secured Debt / EBITDA",
-              "Senior Secured Debt ÷ EBITDA",
-              "Leverage specifically at secured level",
-              "First lien coverage; collateral adequacy analysis"
-            ]
+            ["Total Debt / EBITDA", "Total Debt ÷ EBITDA", "How many years of EBITDA to pay off all debt", "Primary LBO underwriting metric; covenant testing"],
+            ["Net Debt / EBITDA", "(Total Debt − Cash) ÷ EBITDA", "Leverage net of cash on hand; most widely used", "Rating agency analysis; bank credit agreements"],
+            ["Total Debt / Total Capital", "Total Debt ÷ (Total Debt + Book Equity)", "Debt as % of total financing; capital structure view", "IG credit analysis; balance sheet structure"],
+            ["Net Debt / (EBITDA − Capex)", "Net Debt ÷ (EBITDA − Capex)", "Leverage relative to free cash flow generation", "Capex-intensive industries: telecom, cable, industrials"],
+            ["Senior Secured Debt / EBITDA", "Senior Secured Debt ÷ EBITDA", "Leverage specifically at secured level", "First lien coverage; collateral adequacy analysis"]
           ]
         },
         {
@@ -254,6 +204,19 @@
           "variant": "insight",
           "title": "Why Net Debt Is Preferred Over Gross Debt",
           "text": "Net Debt = Total Debt − Cash. Companies hold varying amounts of cash on their balance sheets, and cash can be used to repay debt. Using net debt gives a more accurate picture of true financial leverage. For example, a company with $500M of debt and $200M of cash has net debt of $300M — its true economic leverage is much lower than its gross debt suggests. However, analysts sometimes revert to gross debt when cash is 'trapped' in foreign subsidiaries, required for operations, or restricted by the credit agreement."
+        },
+        {
+          "type": "chart",
+          "title": "Typical Net Leverage by Industry (Net Debt / EBITDA)",
+          "subtitle": "Industry-level benchmarks for investment-grade and leveraged credits",
+          "data": [
+            {"label": "Cable / Telecom", "value": 5.5, "suffix": "x"},
+            {"label": "Airline", "value": 4.5, "suffix": "x"},
+            {"label": "Utility", "value": 4.5, "suffix": "x"},
+            {"label": "Healthcare Services", "value": 3.0, "suffix": "x"},
+            {"label": "Technology (Software)", "value": 2.5, "suffix": "x"},
+            {"label": "Investment Grade (BBB)", "value": 2.0, "suffix": "x"}
+          ]
         },
         {
           "type": "h2",
@@ -273,36 +236,11 @@
             "Typical Threshold"
           ],
           "rows": [
-            [
-              "Interest Coverage (EBITDA/Interest)",
-              "EBITDA ÷ Cash Interest Expense",
-              "Multiples by which EBITDA covers interest payments",
-              "IG: >4x; HY: 2.5–4x; Distressed: <2x"
-            ],
-            [
-              "EBIT Interest Coverage",
-              "EBIT ÷ Interest Expense",
-              "More conservative — includes D&A as a real cost",
-              "IG: >3x; HY: 1.5–3x"
-            ],
-            [
-              "Fixed Charge Coverage Ratio (FCCR)",
-              "(EBITDA − Capex) ÷ (Interest + Debt Amortization)",
-              "Cash flow after capex covers all fixed charges",
-              "Covenant minimum often 1.1x–1.25x"
-            ],
-            [
-              "Debt Service Coverage Ratio (DSCR)",
-              "Net Operating Income ÷ Total Debt Service",
-              "Typical in project finance and real estate",
-              "Minimum 1.25x in project finance"
-            ],
-            [
-              "Cash Interest Coverage",
-              "EBITDA ÷ Cash Interest (excl. PIK)",
-              "Ignores PIK interest that doesn't require cash",
-              "Useful when PIK notes in capital structure"
-            ]
+            ["Interest Coverage (EBITDA/Interest)", "EBITDA ÷ Cash Interest Expense", "Multiples by which EBITDA covers interest payments", "IG: >4x; HY: 2.5–4x; Distressed: <2x"],
+            ["EBIT Interest Coverage", "EBIT ÷ Interest Expense", "More conservative — includes D&A as a real cost", "IG: >3x; HY: 1.5–3x"],
+            ["Fixed Charge Coverage Ratio (FCCR)", "(EBITDA − Capex) ÷ (Interest + Debt Amortization)", "Cash flow after capex covers all fixed charges", "Covenant minimum often 1.1x–1.25x"],
+            ["Debt Service Coverage Ratio (DSCR)", "Net Operating Income ÷ Total Debt Service", "Typical in project finance and real estate", "Minimum 1.25x in project finance"],
+            ["Cash Interest Coverage", "EBITDA ÷ Cash Interest (excl. PIK)", "Ignores PIK interest that doesn't require cash", "Useful when PIK notes in capital structure"]
           ]
         },
         {
@@ -314,6 +252,11 @@
           "type": "formula",
           "label": "Fixed Charge Coverage Ratio (FCCR)",
           "formula": "FCCR = (EBITDA − Capex) ÷ (Interest Expense + Mandatory Debt Amortization)"
+        },
+        {
+          "type": "question",
+          "question": "EBITDA is $200M, Total Debt is $800M, Cash is $50M, Cash Interest Expense is $40M, Capex is $30M, and Mandatory Amortization is $10M. Calculate Net Leverage, Interest Coverage, and FCCR. What do these metrics tell you about this credit?",
+          "answer": "Step 1 — Net Leverage:\n  Net Debt = $800M − $50M = $750M\n  Net Debt / EBITDA = $750M / $200M = 3.75x\n  Assessment: 3.75x is moderate — solidly in the BB range for most industries. Below the 4.5–5.0x threshold where lenders start to get concerned.\n\nStep 2 — Interest Coverage:\n  EBITDA / Cash Interest = $200M / $40M = 5.0x\n  Assessment: 5.0x is quite strong — well above the 2.5x distress threshold. For HY credits, 3.0x+ is healthy; 5.0x suggests significant capacity to absorb EBITDA volatility.\n\nStep 3 — FCCR:\n  (EBITDA − Capex) / (Interest + Amortization)\n  = ($200M − $30M) / ($40M + $10M)\n  = $170M / $50M\n  = 3.40x\n  Assessment: 3.40x is robust — above the typical covenant minimum of 1.1–1.25x by a wide margin. The company has substantial headroom.\n\nOverall credit assessment: This is a solid credit. 3.75x net leverage is moderate, coverage ratios are strong, and there appears to be room for EBITDA to decline meaningfully before stress. The interest coverage of 5.0x means EBITDA could fall by 60% before failing to cover interest — implying very strong debt service capacity. This profile is consistent with a BB+ / Baa3 rated company. Recommended action: credit is lendable at current leverage; recommend covenanting at max Net Leverage 5.0x (33% headroom) and min FCCR 2.0x (41% headroom)."
         },
         {
           "type": "h2",
@@ -329,54 +272,14 @@
             "Notes"
           ],
           "rows": [
-            [
-              "Investment Grade (BBB)",
-              "1.5x–3.0x",
-              ">4.0x",
-              "Conservative; maintains IG rating"
-            ],
-            [
-              "Broadly Syndicated Leveraged Loan (B/BB)",
-              "4.0x–6.5x",
-              "2.5x–4.0x",
-              "Standard LBO range; TLB market"
-            ],
-            [
-              "Direct Lending / Middle Market",
-              "3.5x–6.0x",
-              "2.5x–4.0x",
-              "Smaller companies, often tighter covenants"
-            ],
-            [
-              "Healthcare / Pharma (IG)",
-              "1.0x–2.5x",
-              ">5x",
-              "Stable, recession-resistant cash flows"
-            ],
-            [
-              "Oil & Gas (E&P, B/BB)",
-              "1.5x–3.5x",
-              "3.0x–5.0x",
-              "Commodity-linked; ratios vary with oil price"
-            ],
-            [
-              "Telecom / Cable (BB/BBB)",
-              "3.5x–5.5x",
-              "3.0x–5.0x",
-              "High capex; use EBITDA–Capex leverage metric"
-            ],
-            [
-              "Retail (B/BB)",
-              "3.0x–5.0x",
-              "2.0x–3.5x",
-              "Secular headwinds; highly cyclical"
-            ],
-            [
-              "Near Distressed (CCC)",
-              ">7.0x",
-              "<2.0x",
-              "Red zone; covenant breach likely"
-            ]
+            ["Investment Grade (BBB)", "1.5x–3.0x", ">4.0x", "Conservative; maintains IG rating"],
+            ["Broadly Syndicated Leveraged Loan (B/BB)", "4.0x–6.5x", "2.5x–4.0x", "Standard LBO range; TLB market"],
+            ["Direct Lending / Middle Market", "3.5x–6.0x", "2.5x–4.0x", "Smaller companies, often tighter covenants"],
+            ["Healthcare / Pharma (IG)", "1.0x–2.5x", ">5x", "Stable, recession-resistant cash flows"],
+            ["Oil & Gas (E&P, B/BB)", "1.5x–3.5x", "3.0x–5.0x", "Commodity-linked; ratios vary with oil price"],
+            ["Telecom / Cable (BB/BBB)", "3.5x–5.5x", "3.0x–5.0x", "High capex; use EBITDA–Capex leverage metric"],
+            ["Retail (B/BB)", "3.0x–5.0x", "2.0x–3.5x", "Secular headwinds; highly cyclical"],
+            ["Near Distressed (CCC)", ">7.0x", "<2.0x", "Red zone; covenant breach likely"]
           ]
         },
         {
@@ -397,6 +300,20 @@
           ]
         },
         {
+          "type": "h2",
+          "text": "EBITDA Adjustments — How They Inflate Credit Metrics"
+        },
+        {
+          "type": "p",
+          "text": "The definition of EBITDA in a credit agreement — called 'Consolidated EBITDA' or 'Adjusted EBITDA' — is one of the most heavily negotiated provisions in any leveraged loan. Companies and their PE sponsors push aggressively for maximum add-backs because a higher Adjusted EBITDA denominator makes leverage look lower and allows more debt to be incurred under financial covenants."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "EBITDA Add-Back Manipulation — Worked Example",
+          "text": "A PE-backed company reports GAAP EBITDA of $100M. For covenant purposes, the credit agreement's Adjusted EBITDA definition allows:\n  + $15M restructuring charges (non-recurring — valid add-back)\n  + $8M stock-based compensation (non-cash — market standard)\n  + $12M 'run-rate' cost savings from an announced-but-not-started headcount reduction\n  + $20M 'pro forma' EBITDA from an acquisition closed 2 months ago (full 12-month run-rate)\n  + $5M management consulting fees paid to the PE sponsor (non-arm's-length costs)\n  = Adjusted EBITDA: $160M\n\nThe difference: $160M Adjusted EBITDA vs. $100M reported EBITDA — a 60% inflation. If debt is $700M:\n  Leverage on reported EBITDA: $700M / $100M = 7.0x (distressed territory)\n  Leverage on Adjusted EBITDA: $700M / $160M = 4.4x (sounds reasonable)\n\nFor a credit analyst, the discipline is to haircut aggressive add-backs and test leverage on both reported and adjusted bases. The $12M 'planned cost savings' and $20M 'pro forma EBITDA' deserve particular scrutiny — these are the most commonly inflated and least reliable."
+        },
+        {
           "type": "callout",
           "variant": "example",
           "title": "Worked Example: Evaluating a Leveraged Loan Credit",
@@ -415,7 +332,7 @@
         "Net Debt/EBITDA is the primary leverage metric in leveraged finance; typical IG companies are 1–3x, typical LBO companies are 4–6.5x at deal close.",
         "Interest Coverage (EBITDA/Interest) measures the EBITDA buffer above required interest payments; below 2.0x is typically a distress signal.",
         "The Fixed Charge Coverage Ratio (FCCR) is the most conservative coverage metric, deducting capex and mandatory amortization before measuring coverage.",
-        "EBITDA has significant limitations in credit analysis — it ignores capex, working capital, and can be heavily adjusted through add-backs in credit agreements.",
+        "EBITDA has significant limitations in credit analysis — it ignores capex, working capital, and can be heavily adjusted through add-backs in credit agreements. Adjusted EBITDA can be 30–60% above reported EBITDA in aggressive deals.",
         "Credit metrics must be interpreted in industry context: 5.0x leverage is alarming for a retailer but acceptable for a cable company with predictable subscription revenue."
       ],
       "interviewTip": "In leveraged finance and credit interviews, be ready to calculate leverage and coverage metrics on the spot. Given EBITDA = $150M, Total Debt = $700M, Cash = $50M, Interest = $55M, Capex = $30M, Mandatory Amort = $10M: Net Debt/EBITDA = $650M/$150M = 4.3x; Interest Coverage = $150M/$55M = 2.7x; FCCR = ($150M–$30M)/($55M+$10M) = $120M/$65M = 1.85x. Then comment: 'Coverage is reasonably adequate but not exceptional — the credit would need EBITDA growth or debt paydown to achieve meaningful headroom.' This shows you can calculate AND interpret."
@@ -434,6 +351,18 @@
           "text": "A company's capital structure is a carefully engineered stack of debt and equity, each layer with different risk characteristics, pricing, and rights in a default scenario. Understanding the hierarchy of claims — who gets paid first in a bankruptcy, and who gets wiped out — is fundamental to credit analysis and restructuring. The general rule: higher seniority = lower risk = lower return. Lower seniority = higher risk = higher required return."
         },
         {
+          "type": "diagram",
+          "title": "Typical Leveraged Company Capital Structure — Priority Stack",
+          "variant": "stack",
+          "layers": [
+            {"label": "Common Equity (10%)", "pct": 10, "color": "#b8952a"},
+            {"label": "HY Bonds / Senior Unsecured (20%)", "pct": 20, "color": "#6b2d2d"},
+            {"label": "Term Loan B — Senior Secured (40%)", "pct": 40, "color": "#1e5f74"},
+            {"label": "Term Loan A (20%)", "pct": 20, "color": "#2980b9"},
+            {"label": "Revolver (10%)", "pct": 10, "color": "#3498db"}
+          ]
+        },
+        {
           "type": "h2",
           "text": "The Debt Waterfall — Priority of Claims"
         },
@@ -448,56 +377,19 @@
             "Characteristics"
           ],
           "rows": [
-            [
-              "1 — Senior Secured",
-              "Revolving Credit Facility",
-              "SOFR + 150–250bps",
-              "80–100%",
-              "First lien; typically asset-backed; drawn for working capital; undrawn = liquidity buffer"
-            ],
-            [
-              "1 — Senior Secured",
-              "Term Loan A (TLA)",
-              "SOFR + 150–250bps",
-              "80–100%",
-              "First lien; held by banks; 5-year maturity; 5–10% annual amortization"
-            ],
-            [
-              "1 — Senior Secured",
-              "Term Loan B (TLB)",
-              "SOFR + 250–400bps",
-              "70–90%",
-              "First lien; held by CLOs/credit funds; 7-year maturity; 1% annual amortization; the workhorse of LBO financing"
-            ],
-            [
-              "2 — Second Lien",
-              "Second Lien Term Loan",
-              "SOFR + 600–800bps",
-              "25–60%",
-              "Second priority on same collateral as first lien; substantially higher risk; less liquid market"
-            ],
-            [
-              "3 — Senior Unsecured",
-              "High Yield Bonds (8yr)",
-              "6–10%+ fixed",
-              "20–50%",
-              "No collateral; rely on covenant protection; public market; 144A for life; callable"
-            ],
-            [
-              "4 — Subordinated",
-              "Mezzanine Debt",
-              "12–20% (cash + PIK)",
-              "5–30%",
-              "Below HY bonds; often PIK component; quasi-equity; used in complex capital structures"
-            ],
-            [
-              "5 — Equity",
-              "Common Equity",
-              "20–25%+ target IRR",
-              "0–30%",
-              "Last in line; owns the upside; wiped out in most leveraged defaults"
-            ]
+            ["1 — Senior Secured", "Revolving Credit Facility", "SOFR + 150–250bps", "80–100%", "First lien; typically asset-backed; drawn for working capital; undrawn = liquidity buffer"],
+            ["1 — Senior Secured", "Term Loan A (TLA)", "SOFR + 150–250bps", "80–100%", "First lien; held by banks; 5-year maturity; 5–10% annual amortization"],
+            ["1 — Senior Secured", "Term Loan B (TLB)", "SOFR + 250–400bps", "70–90%", "First lien; held by CLOs/credit funds; 7-year maturity; 1% annual amortization; the workhorse of LBO financing"],
+            ["2 — Second Lien", "Second Lien Term Loan", "SOFR + 600–800bps", "25–60%", "Second priority on same collateral as first lien; substantially higher risk; less liquid market"],
+            ["3 — Senior Unsecured", "High Yield Bonds (8yr)", "6–10%+ fixed", "20–50%", "No collateral; rely on covenant protection; public market; 144A for life; callable"],
+            ["4 — Subordinated", "Mezzanine Debt", "12–20% (cash + PIK)", "5–30%", "Below HY bonds; often PIK component; quasi-equity; used in complex capital structures"],
+            ["5 — Equity", "Common Equity", "20–25%+ target IRR", "0–30%", "Last in line; owns the upside; wiped out in most leveraged defaults"]
           ]
+        },
+        {
+          "type": "question",
+          "question": "Why does Term Loan B (TLB) typically pay a higher spread than Term Loan A (TLA), despite both being senior secured instruments with first-lien claims on the same collateral?",
+          "answer": "Both TLA and TLB sit at the same structural priority in the capital structure — both are first-lien senior secured debt. So why does TLB command a higher spread (SOFR+300–400bps vs. SOFR+150–250bps for TLA)?\n\nFour reasons:\n\n1. Amortization profile and duration risk: TLA amortizes 5–10% annually over 5 years, reducing outstanding principal quickly. By maturity, much of the loan is already repaid. TLB amortizes only 1% per year, with a massive bullet repayment at Year 7. TLB investors hold more duration risk and reinvestment uncertainty — the company must refinance the bullet at market rates in 7 years, which may be unfavorable. Higher duration = higher required yield.\n\n2. Investor base and liquidity: TLA is held by relationship banks that also provide other services to the borrower. Banks are 'relationship lenders' — they have leverage and communication access in a distress scenario. TLB is held by institutional investors (CLOs, hedge funds) that are price-takers with no special access. Institutional investors demand a premium for this arm's-length relationship.\n\n3. Prepayment optionality: TLB is typically prepayable at par after a short soft call period (101 for 6 months). This means TLB investors face reinvestment risk if the company performs well and refinances at better rates — the best scenarios lead to early repayment, leaving investors to find new investments at potentially lower yields. TLA investors face similar risk but with more frequent amortization payments that naturally return capital. The embedded optionality costs TLB investors relative yield.\n\n4. Covenant protection: TLAs typically come with maintenance covenants (tested quarterly) that provide lenders early intervention rights. TLBs are increasingly cov-lite (incurrence-only), giving investors less protection in a deteriorating credit. Less covenant protection = higher required yield to compensate."
         },
         {
           "type": "h2",
@@ -510,6 +402,14 @@
         {
           "type": "p",
           "text": "The Term Loan B (TLB) is the primary instrument of the leveraged loan market. Unlike investment-grade term loans (which amortize meaningfully over their life), TLBs feature minimal amortization (1% per year) with a large balloon payment at maturity (7 years). This structure suits PE-backed companies that expect to refinance or sell the business before maturity. TLBs are typically held by institutional investors — Collateralized Loan Obligations (CLOs), hedge funds, and credit funds — rather than traditional banks, because banks prefer amortizing loans that reduce exposure over time."
+        },
+        {
+          "type": "h2",
+          "text": "CLOs — Who Actually Buys Leveraged Loans"
+        },
+        {
+          "type": "p",
+          "text": "Collateralized Loan Obligations (CLOs) are the largest single buyer of leveraged loans, representing roughly 60–65% of the broadly syndicated TLB market. A CLO is a structured finance vehicle that pools leveraged loans as collateral and issues tranches of debt (AAA to BB-rated notes) and equity against that pool. The economics work because the blended coupon on the loans (say 8.5%) exceeds the weighted average cost of the CLO's funding (say 6.0%), generating excess spread ('equity excess cash flow') that accrues to the CLO's equity investors. CLOs are managed by credit funds (Blackstone Credit, PGIM, Ares) who actively monitor the underlying loan portfolios and trade loans to maintain compliance with CLO concentration limits and quality tests. Because CLOs fund themselves with long-dated liabilities, they are natural 'buy and hold' investors in TLBs — they provide stable demand that supports the leveraged loan market even in volatile periods."
         },
         {
           "type": "h2",
@@ -558,62 +458,13 @@
             "Annual Interest ($M)"
           ],
           "rows": [
-            [
-              "Revolver ($100M, undrawn at close)",
-              "$0",
-              "0.0x",
-              "SOFR + 2.50%",
-              "5yr",
-              "$0 (undrawn)"
-            ],
-            [
-              "Term Loan B (First Lien)",
-              "$600M",
-              "4.0x",
-              "SOFR + 3.50% (~9.0%)",
-              "7yr",
-              "$54.0M"
-            ],
-            [
-              "Senior Secured Subtotal",
-              "$600M",
-              "4.0x",
-              "—",
-              "—",
-              "$54.0M"
-            ],
-            [
-              "Senior Unsecured Notes (HY)",
-              "$300M",
-              "6.0x",
-              "8.5% fixed",
-              "8yr",
-              "$25.5M"
-            ],
-            [
-              "Total Debt",
-              "$900M",
-              "6.0x",
-              "—",
-              "—",
-              "$79.5M"
-            ],
-            [
-              "Sponsor Equity",
-              "$600M",
-              "—",
-              "—",
-              "—",
-              "—"
-            ],
-            [
-              "Total Capitalization",
-              "$1,500M",
-              "—",
-              "—",
-              "—",
-              "—"
-            ]
+            ["Revolver ($100M, undrawn at close)", "$0", "0.0x", "SOFR + 2.50%", "5yr", "$0 (undrawn)"],
+            ["Term Loan B (First Lien)", "$600M", "4.0x", "SOFR + 3.50% (~9.0%)", "7yr", "$54.0M"],
+            ["Senior Secured Subtotal", "$600M", "4.0x", "—", "—", "$54.0M"],
+            ["Senior Unsecured Notes (HY)", "$300M", "6.0x", "8.5% fixed", "8yr", "$25.5M"],
+            ["Total Debt", "$900M", "6.0x", "—", "—", "$79.5M"],
+            ["Sponsor Equity", "$600M", "—", "—", "—", "—"],
+            ["Total Capitalization", "$1,500M", "—", "—", "—", "—"]
           ]
         },
         {
@@ -634,9 +485,9 @@
       "keyTakeaways": [
         "The debt capital structure is a prioritized stack: revolvers and first-lien term loans rank highest, followed by second lien, senior unsecured bonds, mezzanine, and finally equity.",
         "Term Loan B (SOFR + 250–400bps, 7yr, 1% amortization) is the primary LBO financing instrument, held by CLOs and credit funds rather than banks.",
+        "CLOs are the largest buyer of leveraged loans (~60% of the TLB market), funding themselves with tranched liabilities and generating excess spread to equity investors.",
         "High yield bonds are fixed-rate, public market, 8-year bullet instruments with call protection (NC3–NC4), change of control puts, and incurrence-based covenants.",
-        "The waterfall analysis shows who recovers what in a default — first lien lenders typically recover 70–100%, unsecured bondholders 20–50%, and equity holders often nothing.",
-        "Mezzanine debt bridges the gap between senior debt capacity and equity, commanding 12–20%+ returns through high cash coupons, PIK accruals, and equity warrants."
+        "The waterfall analysis shows who recovers what in a default — first lien lenders typically recover 70–100%, unsecured bondholders 20–50%, and equity holders often nothing."
       ],
       "interviewTip": "A classic interview question: 'Walk me through a typical leveraged capital structure.' Structure your answer: (1) Revolver — first lien, flexible, drawn for WC; (2) Term Loan B — first lien, 7yr, 1% amortization, SOFR + 300–400bps, institutional; (3) High Yield Bonds — second lien or unsecured, 8yr bullet, fixed rate, public market, NC3–4 call structure; (4) Equity — sponsor contribution. Then add the leverage turns: TLB at 4.0–4.5x, total debt at 5.5–6.5x for a typical LBO. Interviewers reward candidates who can quickly build a credible capital structure table in their head."
     },
@@ -670,41 +521,13 @@
             "Incurrence Covenants"
           ],
           "rows": [
-            [
-              "When Tested",
-              "Every quarter, regardless of actions taken",
-              "Only when the borrower takes a specific action (e.g., raises debt, pays dividend)"
-            ],
-            [
-              "Typical Instruments",
-              "Bank credit agreements (TLA, Revolver)",
-              "High yield bond indentures"
-            ],
-            [
-              "Example",
-              "Net Debt/EBITDA must be ≤ 5.0x at all times",
-              "Cannot incur new debt if Pro Forma Net Debt/EBITDA > 4.5x"
-            ],
-            [
-              "Effect of Deterioration",
-              "Breach immediately if metrics worsen",
-              "No breach unless borrower takes a restricted action"
-            ],
-            [
-              "Lender Benefit",
-              "Early warning — intervention before crisis",
-              "Less protection; deteriorating credits can slide further"
-            ],
-            [
-              "Borrower Preference",
-              "Disfavored — creates constant compliance burden",
-              "Favored — allows operational flexibility"
-            ],
-            [
-              "Market Trend",
-              "Disappearing in broadly syndicated loans (cov-lite)",
-              "Dominant in HY bonds; now creeping into TLBs"
-            ]
+            ["When Tested", "Every quarter, regardless of actions taken", "Only when the borrower takes a specific action (e.g., raises debt, pays dividend)"],
+            ["Typical Instruments", "Bank credit agreements (TLA, Revolver)", "High yield bond indentures"],
+            ["Example", "Net Debt/EBITDA must be ≤ 5.0x at all times", "Cannot incur new debt if Pro Forma Net Debt/EBITDA > 4.5x"],
+            ["Effect of Deterioration", "Breach immediately if metrics worsen", "No breach unless borrower takes a restricted action"],
+            ["Lender Benefit", "Early warning — intervention before crisis", "Less protection; deteriorating credits can slide further"],
+            ["Borrower Preference", "Disfavored — creates constant compliance burden", "Favored — allows operational flexibility"],
+            ["Market Trend", "Disappearing in broadly syndicated loans (cov-lite)", "Dominant in HY bonds; now creeping into TLBs"]
           ]
         },
         {
@@ -729,6 +552,11 @@
           ]
         },
         {
+          "type": "question",
+          "question": "A company's leverage covenant is maximum Net Debt/EBITDA of 5.0x. Current EBITDA is $100M and Net Debt is $450M. (a) What is the current leverage ratio and headroom? (b) How much can EBITDA decline before a breach? (c) What if the company acquires a business for $50M all-debt? Does this immediately breach the covenant?",
+          "answer": "(a) Current leverage and headroom:\n  Net Debt/EBITDA = $450M / $100M = 4.5x\n  Covenant maximum = 5.0x\n  Headroom = 5.0x − 4.5x = 0.5x of EBITDA room\n  In dollar terms: at 5.0x covenant max with $450M net debt, EBITDA can fall to $450M / 5.0x = $90M before breach\n  → EBITDA can decline from $100M to $90M = $10M decline, or 10%\n\n(b) EBITDA decline to breach:\n  Breach occurs when EBITDA = Net Debt / Covenant Max = $450M / 5.0x = $90M\n  Decline = ($100M − $90M) / $100M = 10%\n  Formula: % decline to breach = 1 − (Current Leverage / Covenant Max) = 1 − (4.5/5.0) = 10%\n  For a volatile business, 10% headroom is alarmingly thin. In a downturn, EBITDA can drop 15–25% — this covenant is at serious risk.\n\n(c) $50M debt-funded acquisition — does it breach the maintenance covenant?\n  This depends on covenant type. For a MAINTENANCE covenant (tested quarterly regardless of actions):\n  → New Net Debt = $450M + $50M = $500M\n  → If acquisition closes mid-quarter, Q1 leverage = $500M / $100M = 5.0x — right at the limit (not a breach)\n  → But if acquired business's EBITDA is not immediately added (no pro forma treatment), leverage is 5.0x exactly\n  → Most credit agreements allow pro forma EBITDA addition for qualifying acquisitions → leverage = $500M / ($100M + acquired EBITDA)\n  For an INCURRENCE covenant: the covenant is only tested at the moment of incurrence. If the company's pro forma leverage at the time of the acquisition closing is ≤ 5.0x (using full-year acquired EBITDA), the covenant allows the acquisition.\n  Key takeaway: The EBITDA definition and pro forma treatment are critical — this is why EBITDA add-back language is so heavily negotiated."
+        },
+        {
           "type": "h2",
           "text": "Affirmative vs. Negative Covenants"
         },
@@ -741,16 +569,8 @@
             "Examples"
           ],
           "rows": [
-            [
-              "Affirmative (Positive)",
-              "Borrower MUST do something",
-              "Maintain insurance; provide quarterly financials; pay taxes; preserve corporate existence; comply with laws"
-            ],
-            [
-              "Negative (Restrictive)",
-              "Borrower MUST NOT do something without lender consent",
-              "Incur additional debt above basket; pay dividends; sell assets; make acquisitions > threshold; grant liens; merge or consolidate; change business"
-            ]
+            ["Affirmative (Positive)", "Borrower MUST do something", "Maintain insurance; provide quarterly financials; pay taxes; preserve corporate existence; comply with laws"],
+            ["Negative (Restrictive)", "Borrower MUST NOT do something without lender consent", "Incur additional debt above basket; pay dividends; sell assets; make acquisitions > threshold; grant liens; merge or consolidate; change business"]
           ]
         },
         {
@@ -845,56 +665,29 @@
             "High Yield"
           ],
           "rows": [
-            [
-              "Typical Rating",
-              "BBB−/Baa3 and above",
-              "BB+/Ba1 and below"
-            ],
-            [
-              "Maturity",
-              "5–30 years (very flexible)",
-              "7–10 years (shorter due to risk)"
-            ],
-            [
-              "Amortization",
-              "Bullet maturity (no amortization)",
-              "Bullet maturity"
-            ],
-            [
-              "Interest Rate",
-              "Fixed rate (almost always)",
-              "Fixed rate (typical); floating rare"
-            ],
-            [
-              "Call Provisions",
-              "Make-whole call (premium calculated from Treasuries); increasingly callable at par after first call date",
-              "Non-call 3–4 years; then callable at par + step-down premium"
-            ],
-            [
-              "Covenants",
-              "Very few; generally no incurrence covenants; negative pledge and change-of-control only",
-              "Extensive: debt basket, restricted payments, asset sales, affiliate transactions, liens"
-            ],
-            [
-              "Change of Control",
-              "Occasionally triggers rating review; not typically a 'put' right",
-              "101% put right — bondholders can force buyback at 101 if CofC occurs"
-            ],
-            [
-              "Registration",
-              "SEC-registered (public S-3/ASR), very fast issuance",
-              "144A for life (private placement to QIBs); some register after 1 year"
-            ],
-            [
-              "Market Size",
-              "$10+ trillion (U.S. IG corporate bond market)",
-              "~$1.4 trillion (U.S. HY bond market)"
-            ],
-            [
-              "Typical Issuers",
-              "Large-cap corporates: Apple, Exxon, JPMorgan",
-              "LBO companies, cyclical industrials, media, cable"
-            ]
+            ["Typical Rating", "BBB−/Baa3 and above", "BB+/Ba1 and below"],
+            ["Maturity", "5–30 years (very flexible)", "7–10 years (shorter due to risk)"],
+            ["Amortization", "Bullet maturity (no amortization)", "Bullet maturity"],
+            ["Interest Rate", "Fixed rate (almost always)", "Fixed rate (typical); floating rare"],
+            ["Call Provisions", "Make-whole call (premium calculated from Treasuries); increasingly callable at par after first call date", "Non-call 3–4 years; then callable at par + step-down premium"],
+            ["Covenants", "Very few; generally no incurrence covenants; negative pledge and change-of-control only", "Extensive: debt basket, restricted payments, asset sales, affiliate transactions, liens"],
+            ["Change of Control", "Occasionally triggers rating review; not typically a 'put' right", "101% put right — bondholders can force buyback at 101 if CofC occurs"],
+            ["Registration", "SEC-registered (public S-3/ASR), very fast issuance", "144A for life (private placement to QIBs); some register after 1 year"],
+            ["Market Size", "$10+ trillion (U.S. IG corporate bond market)", "~$1.4 trillion (U.S. HY bond market)"],
+            ["Typical Issuers", "Large-cap corporates: Apple, Exxon, JPMorgan", "LBO companies, cyclical industrials, media, cable"]
+          ]
+        },
+        {
+          "type": "chart",
+          "title": "IG vs. HY Bond Comparison — Key Structural Dimensions",
+          "subtitle": "Side-by-side on five critical dimensions (illustrative scale)",
+          "data": [
+            {"label": "IG Covenant Protection", "value": 1, "suffix": " (minimal)"},
+            {"label": "HY Covenant Protection", "value": 9, "suffix": " (extensive)"},
+            {"label": "IG Market Liquidity", "value": 10, "suffix": " (deep)"},
+            {"label": "HY Market Liquidity", "value": 5, "suffix": " (moderate)"},
+            {"label": "IG Investor Access", "value": 10, "suffix": " (universal)"},
+            {"label": "HY Investor Access", "value": 4, "suffix": " (restricted)"}
           ]
         },
         {
@@ -915,55 +708,20 @@
             "Notes"
           ],
           "rows": [
-            [
-              "AAA / Aaa",
-              "20–40 bps",
-              "4.7–4.9%",
-              "Near-risk-free; Apple, Microsoft"
-            ],
-            [
-              "AA",
-              "40–70 bps",
-              "4.9–5.2%",
-              "Very high quality; rare IG category"
-            ],
-            [
-              "A",
-              "70–120 bps",
-              "5.2–5.7%",
-              "Solid IG; most large-cap industrials"
-            ],
-            [
-              "BBB+ / BBB",
-              "100–175 bps",
-              "5.5–6.25%",
-              "Largest IG bucket; most corporate debt"
-            ],
-            [
-              "BBB− (IG floor)",
-              "150–250 bps",
-              "6.0–7.0%",
-              "Vulnerable to downgrade to HY"
-            ],
-            [
-              "BB (Highest HY)",
-              "250–400 bps",
-              "7.0–8.5%",
-              "'Crossover' credits; active IG/HY boundary"
-            ],
-            [
-              "B",
-              "400–600 bps",
-              "8.5–10.5%",
-              "Typical LBO credit 1–3 years post-deal"
-            ],
-            [
-              "CCC",
-              "600–1500+ bps",
-              "10.5–19%+",
-              "Near-distressed; high default probability"
-            ]
+            ["AAA / Aaa", "20–40 bps", "4.7–4.9%", "Near-risk-free; Apple, Microsoft"],
+            ["AA", "40–70 bps", "4.9–5.2%", "Very high quality; rare IG category"],
+            ["A", "70–120 bps", "5.2–5.7%", "Solid IG; most large-cap industrials"],
+            ["BBB+ / BBB", "100–175 bps", "5.5–6.25%", "Largest IG bucket; most corporate debt"],
+            ["BBB− (IG floor)", "150–250 bps", "6.0–7.0%", "Vulnerable to downgrade to HY"],
+            ["BB (Highest HY)", "250–400 bps", "7.0–8.5%", "'Crossover' credits; active IG/HY boundary"],
+            ["B", "400–600 bps", "8.5–10.5%", "Typical LBO credit 1–3 years post-deal"],
+            ["CCC", "600–1500+ bps", "10.5–19%+", "Near-distressed; high default probability"]
           ]
+        },
+        {
+          "type": "question",
+          "question": "An 8-year HY bond has an 8.5% coupon and is currently priced at 105 (105 cents on the dollar). In 3 years (year 4), the bond becomes callable at 104.25. If interest rates fall significantly in Year 3 and the issuer is likely to call the bond, what price would you expect the bond to trade at today, and how should you analyze the yield?",
+          "answer": "This is the classic 'yield to worst' (YTW) analysis that HY bond investors perform on every callable bond.\n\nStep 1 — Understand the call schedule:\n  The bond is NC3 (non-call for Years 1–3), then callable at 104.25 in Year 4.\n  If the issuer is expected to call in Year 4 (because rates have fallen, making refinancing attractive), investors should price the bond to the call date, not maturity.\n\nStep 2 — Yield to Call (YTC) vs. Yield to Maturity (YTM):\n  At a price of 105, the YTM (to 8-year maturity) would be approximately 7.8% (coupon of 8.5% with 3 points of discount baked in over 8 years).\n  The YTC (assuming call at 104.25 in Year 4) would be approximately: annual coupon = $85, received for 3 years from now (years 4 from issuance) + $1,042.50 call price at year 4. If current price is $1,050, YTC ≈ 7.5%.\n\nStep 3 — Yield to Worst (YTW):\n  YTW = min(YTM, YTC) = min(7.8%, 7.5%) = 7.5%\n  HY investors always buy to YTW, because the issuer will call when it's advantageous for them (i.e., disadvantageous for bond investors).\n\nStep 4 — Price implication:\n  If the market expects the call, the bond's price is 'capped' near 104.25 (the call price), because buyers won't pay more than what they'll receive at the call. At $105 in the example, buyers are paying $0.75 above the call price — they're assuming the bond is NOT called or they're getting compensated for short-term coupon income. In practice, if call is highly expected, bonds converge toward 104.25–105 range.\n\nKey lesson: In a falling rate environment, callable HY bonds exhibit 'negative convexity' — price appreciation is limited by the call price ceiling. Investors demand a higher spread to compensate for this optionality that the issuer holds against them."
         },
         {
           "type": "h2",
@@ -996,36 +754,11 @@
             "Effective Yield to Call"
           ],
           "rows": [
-            [
-              "Years 1–3",
-              "Non-call",
-              "Cannot be redeemed at issuer's option (except make-whole at T+50bps)",
-              "N/A"
-            ],
-            [
-              "Year 4 (First Call Date)",
-              "Callable at 104.25 (par + ½ coupon)",
-              "104.25%",
-              "5.5% approx."
-            ],
-            [
-              "Year 5",
-              "Callable at 102.125 (par + ¼ coupon)",
-              "102.125%",
-              "6.5% approx."
-            ],
-            [
-              "Year 6",
-              "Callable at par",
-              "100.000%",
-              "8.5% (full coupon)"
-            ],
-            [
-              "Years 7–8",
-              "Callable at par",
-              "100.000%",
-              "8.5%"
-            ]
+            ["Years 1–3", "Non-call", "Cannot be redeemed at issuer's option (except make-whole at T+50bps)", "N/A"],
+            ["Year 4 (First Call Date)", "Callable at 104.25 (par + ½ coupon)", "104.25%", "5.5% approx."],
+            ["Year 5", "Callable at 102.125 (par + ¼ coupon)", "102.125%", "6.5% approx."],
+            ["Year 6", "Callable at par", "100.000%", "8.5% (full coupon)"],
+            ["Years 7–8", "Callable at par", "100.000%", "8.5%"]
           ]
         },
         {
@@ -1034,11 +767,25 @@
         },
         {
           "type": "h2",
-          "text": "Leveraged Loans vs. High Yield Bonds"
+          "text": "Fallen Angels and Rising Stars — Market Dynamics"
         },
         {
           "type": "p",
-          "text": "Leveraged loans (Term Loan B) and high yield bonds are both below-investment-grade instruments, but they differ in important structural ways that affect investor preferences and company financing decisions:"
+          "text": "Fallen angels are companies downgraded from investment grade to high yield (BBB− to BB+). Rising stars are companies upgraded from high yield to investment grade (BB+ to BBB−). Both events create significant technical price dislocations. Fallen angels see immediate spread widening and price declines as IG-mandated investors are forced to sell, but HY fund managers cannot absorb the supply immediately — this creates buying opportunities."
+        },
+        {
+          "type": "p",
+          "text": "Studies show that fallen angels, on average, outperform other HY bonds in the 12–24 months following their downgrade because they often carry better fundamentals than native HY issuers and the initial forced selling overshoots fair value. The supply shock from forced IG sellers typically overshoots fair value by 200–400bps, and as HY-mandated buyers absorb the bonds, spreads revert. Dedicated 'crossover' credit funds (with mandates covering both IG and HY) specifically target fallen angels during this dislocation window, buying bonds from forced sellers at distressed prices."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Fallen Angel Dynamics — Ford Motor Credit (2020)",
+          "text": "When Ford's $36B bond portfolio fell to HY in March 2020, the immediate forced selling by IG-only investors pushed Ford bonds from ~95 cents to ~70–75 cents on the dollar — a 20+ point drop in days. HY fund mandates could not absorb the massive new supply overnight (Ford's HY debt issuance was roughly 2.5% of the entire HY market). However, within 6 months, Ford bonds had recovered to 95–100 cents as HY buyers absorbed the supply, the Fed announced credit support programs, and Ford's business stabilized. Investors who bought at 70–75 cents earned 25–35% returns in 6 months. This is the fallen angel trade in action — the forced seller creates the price dislocation; the patient buyer captures the reversion."
+        },
+        {
+          "type": "h2",
+          "text": "Leveraged Loans vs. High Yield Bonds"
         },
         {
           "type": "table",
@@ -1049,60 +796,16 @@
             "High Yield Bonds"
           ],
           "rows": [
-            [
-              "Interest Rate",
-              "Floating (SOFR + spread)",
-              "Fixed rate"
-            ],
-            [
-              "Seniority",
-              "Typically first lien (secured)",
-              "Typically second lien or unsecured"
-            ],
-            [
-              "Covenants",
-              "Incurrence only (cov-lite)",
-              "Incurrence (HY indenture)"
-            ],
-            [
-              "Callability",
-              "Callable at any time (101 soft call for 6 months)",
-              "NC3 hard call protection"
-            ],
-            [
-              "Market",
-              "Private (loan market, not public)",
-              "Public (144A; some SEC registered)"
-            ],
-            [
-              "Price discovery",
-              "Quoted at par; traded OTC",
-              "Quoted as percentage of par; traded by dealer"
-            ],
-            [
-              "Investor type",
-              "CLOs (60%+), credit funds, hedge funds",
-              "Mutual funds, insurance, hedge funds"
-            ],
-            [
-              "Maturity",
-              "7 years",
-              "8 years"
-            ],
-            [
-              "Prepayment risk to issuer",
-              "Low — can be prepaid without premium (after 6 months)",
-              "High cost — must pay call premium or make-whole"
-            ]
+            ["Interest Rate", "Floating (SOFR + spread)", "Fixed rate"],
+            ["Seniority", "Typically first lien (secured)", "Typically second lien or unsecured"],
+            ["Covenants", "Incurrence only (cov-lite)", "Incurrence (HY indenture)"],
+            ["Callability", "Callable at any time (101 soft call for 6 months)", "NC3 hard call protection"],
+            ["Market", "Private (loan market, not public)", "Public (144A; some SEC registered)"],
+            ["Price discovery", "Quoted at par; traded OTC", "Quoted as percentage of par; traded by dealer"],
+            ["Investor type", "CLOs (60%+), credit funds, hedge funds", "Mutual funds, insurance, hedge funds"],
+            ["Maturity", "7 years", "8 years"],
+            ["Prepayment risk to issuer", "Low — can be prepaid without premium (after 6 months)", "High cost — must pay call premium or make-whole"]
           ]
-        },
-        {
-          "type": "h2",
-          "text": "Fallen Angels and Rising Stars"
-        },
-        {
-          "type": "p",
-          "text": "Fallen angels are companies downgraded from investment grade to high yield (BBB− to BB+). Rising stars are companies upgraded from high yield to investment grade (BB+ to BBB−). Both events create significant technical price dislocations. Fallen angels see immediate spread widening and price declines as IG-mandated investors are forced to sell, but HY fund managers cannot absorb the supply immediately — this creates buying opportunities. Studies show that fallen angels, on average, outperform other HY bonds in the 12–24 months following their downgrade because they often carry better fundamentals than native HY issuers and the initial forced selling overshoots fair value."
         },
         {
           "type": "callout",
@@ -1115,7 +818,7 @@
         "Investment grade bonds feature minimal covenants, long maturities (to 30yr), narrow spreads (100–250bps), and are accessible to insurance companies, pension funds, and central banks.",
         "High yield bonds feature extensive incurrence covenants, NC3–4 call protection, 101% change-of-control puts, 8-year maturities, and spreads of 300–800+ bps over Treasuries.",
         "HY bonds are fixed-rate while leveraged loans are floating-rate (SOFR + spread); HY has hard call protection while loans can be prepaid at any time (after soft call period).",
-        "Fallen angels (IG to HY downgrades) create forced selling by IG mandates, often overshooting to the downside and creating buying opportunities for HY and distressed investors.",
+        "Fallen angels (IG to HY downgrades) create forced selling by IG mandates, often overshooting to the downside and creating buying opportunities for HY and distressed investors. Studies show fallen angels outperform generic HY by 200–400bps in the 12–24 months post-downgrade.",
         "Bonds trading below 70 cents on the dollar are considered distressed; they attract specialized distressed debt investors who anticipate either recovery or conversion to equity in a restructuring."
       ],
       "interviewTip": "When asked to compare IG vs. HY bonds in a leveraged finance interview, hit five dimensions: (1) covenants — IG has very few, HY has extensive incurrence covenants; (2) call provisions — IG has make-whole calls, HY has NC3–4 hard call protection; (3) investor base — IG accessed by pension funds and insurance companies, HY limited to institutional credit funds and mutual funds; (4) spreads — IG at 100–250bps, HY at 300–1000bps+ depending on quality; (5) structural features — HY has 101% change-of-control put, equity clawback, and basket permissions for specific restricted actions. A candidate who can walk through all five dimensions fluently signals genuine market knowledge."

@@ -22,6 +22,26 @@
         },
         {
           "type": "h2",
+          "text": "PE Strategies: Not All PE Is the Same"
+        },
+        {
+          "type": "p",
+          "text": "The term 'private equity' is used loosely to describe several distinct investment strategies. Understanding these differences is essential for interviews at PE firms, which often specialize in one strategy."
+        },
+        {
+          "type": "table",
+          "caption": "PE Strategy Comparison",
+          "headers": ["Strategy", "Target Company", "Leverage Used", "Typical Return Target", "Examples"],
+          "rows": [
+            ["Leveraged Buyout (LBO)", "Mature, cash-flow positive; $50M–$5B+ EBITDA", "Heavy (4–7x EBITDA)", "2–3x MOIC, 20–25% IRR", "KKR, Blackstone, Apollo, Carlyle"],
+            ["Growth Equity", "High-growth, scaling; may be pre-profitable", "Little to none", "3–5x MOIC, 25–35% IRR", "General Atlantic, Summit Partners, TA Associates"],
+            ["Venture Capital", "Early-stage startups; pre-revenue or early revenue", "None", "10x+ on winners; 3x fund MOIC", "Sequoia, Andreessen Horowitz, Accel"],
+            ["Distressed / Special Situations", "Companies in or near financial distress", "None to moderate (new money post-reorg)", "2–4x MOIC; 20–30% IRR", "Apollo, Oaktree, Cerberus, Avenue Capital"],
+            ["Growth Buyout", "Profitable but growing; hybrid of LBO and growth equity", "Moderate (2–4x EBITDA)", "3–4x MOIC, 25–30% IRR", "Vista Equity, Francisco Partners, Thoma Bravo"]
+          ]
+        },
+        {
+          "type": "h2",
           "text": "PE vs. Other Asset Classes"
         },
         {
@@ -78,8 +98,21 @@
           ]
         },
         {
-          "type": "p",
-          "text": "Management fees are used to pay salaries, office costs, deal expenses, and fund operations — they are NOT meant to be profit centers for the GP. The real upside for GP professionals is the carried interest, which is distributed from investment profits and can generate tens or hundreds of millions for senior partners at successful firms."
+          "type": "chart",
+          "title": "GP Carry Earned at Different Fund Returns ($1B Fund)",
+          "subtitle": "Gross return scenarios with 8% hurdle, 20% carry above hurdle",
+          "data": [
+            {"label": "1.5x MoM (fund break-even)", "value": 0, "suffix": "M carry"},
+            {"label": "2x MoM (below hurdle net)", "value": 18, "suffix": "M carry"},
+            {"label": "2.5x MoM", "value": 64, "suffix": "M carry"},
+            {"label": "3x MoM", "value": 112, "suffix": "M carry"},
+            {"label": "3.5x MoM", "value": 160, "suffix": "M carry"}
+          ]
+        },
+        {
+          "type": "question",
+          "question": "A PE fund has $1B AUM and earns a 2% management fee annually. Over 5 years it generates a 3x gross MoM. How much carry does the GP earn, assuming 20% carry above an 8% hurdle rate? Show the full waterfall calculation.",
+          "answer": "Step 1 — Management fees: 2% x $1B x 5 years = $100M in management fees (paid out to GP regardless). Step 2 — Total gross proceeds: 3x MoM on $1B = $3B total proceeds from exits. Step 3 — Distribution waterfall. Return of capital: LPs receive $1B back first. Remaining proceeds: $3B - $1B = $2B. Preferred return (8% compounded over 5 years): $1B x (1.08^5 - 1) = $1B x 0.469 = $469M owed to LPs as preferred return. Since $2B remains, LPs receive their $469M pref. Remaining after pref: $2B - $469M = $1.531B. GP catch-up: GP must 'catch up' to receive 20% of total profits ($2B total profit x 20% = $400M). GP has earned $0 so far, so it receives catch-up distributions until GP has received $400M total carry (or until catch-up pool exhausted). Catch-up pool: $1.531B. GP catch-up = min($400M, $1.531B x [catch-up rate]). At a 100% catch-up rate, GP receives up to $400M before the 80/20 split kicks in. GP takes $400M in catch-up (leaving $1.131B). Remaining split (80/20): LPs receive 80% x $1.131B = $905M. GP receives 20% x $1.131B = $226M additional carry. Total GP carry: $400M (catch-up) - but wait, we need to net back to the true 20% split. Total profits = $2B. GP carry = 20% x $2B = $400M gross carry. LP receives: $1B (capital) + $469M (pref) + 80% x ($2B - $469M) = $1B + $469M + $1.225B = $2.694B. GP receives: $400M carry + $100M management fees = $500M total gross compensation."
         },
         {
           "type": "h2",
@@ -146,6 +179,10 @@
           "variant": "insight",
           "title": "Key Insight: Why LP-GP Alignment Matters",
           "text": "The '2 and 20' model creates a potential misalignment: GPs earn management fees regardless of performance, which can incentivize them to raise larger and larger funds (more fees) even if deployment becomes harder. The preferred return / hurdle rate is the primary mechanism to realign incentives — GPs earn carry only after LPs have received an 8% return. In down markets or for underperforming funds, GPs may operate for years earning only management fees with no carry in sight, which is why top firms focus obsessively on building track records of consistent top-quartile returns."
+        },
+        {
+          "type": "highlight",
+          "text": "The GP earns meaningful wealth not through management fees — which merely pay operating costs — but through carried interest, which can be tens or hundreds of millions of dollars on a successful fund. This is why alignment with LPs through the hurdle rate and GP commitment is the cornerstone of every LP-GP relationship."
         }
       ],
       "keyTakeaways": [
@@ -181,6 +218,28 @@
           ]
         },
         {
+          "type": "question",
+          "question": "What is the difference between a proprietary deal and a banker-run process, and why do PE firms strongly prefer proprietary sourcing? What are the realistic limits of proprietary sourcing?",
+          "answer": "In a proprietary deal, the PE firm approaches a company directly — often through a relationship built over months or years with the founder, CEO, or board — before any banker has been engaged. The firm negotiates bilaterally, often at a price that reflects the absence of competitive tension. In a banker-run process, the investment bank solicits bids from 15-50 potential buyers simultaneously, creating an auction dynamic that drives prices to the highest competitive level. PE firms prefer proprietary deals for three reasons: (1) Price: without auction dynamics, prices tend to be 1-3x lower on EBITDA multiple — meaning a firm might pay 8x vs. 11x for the same business. This dramatically improves return prospects. (2) Information advantage: in a bilateral process, the PE firm can spend more time building rapport with management and gaining comfort on nuanced issues that are hard to analyze in a 6-week banker auction. (3) Relationship capital: the company's management team tends to prefer a buyer who approached them thoughtfully over one that won a commoditized auction. The limits of proprietary sourcing: most sizeable ($500M+ enterprise value) deals are run by bankers because sellers understand their market power and hire advisors to maximize proceeds. True proprietary deals are increasingly concentrated in the lower middle market ($25-150M EBITDA) where bankers are less involved and founder-owned businesses still dominate."
+        },
+        {
+          "type": "diagram",
+          "title": "PE Deal Process: Sourcing to Close",
+          "variant": "steps",
+          "steps": [
+            "Deal Sourcing: Proprietary outreach or banker CIM received; initial review against fund mandate criteria",
+            "Initial Screen (1-2 weeks): Deal team builds high-level financial model; investment thesis drafted; go/no-go decision",
+            "Management Presentation: NDA signed; company management presents business; preliminary questions answered",
+            "LOI / Indication of Interest: PE firm submits non-binding letter of intent with indicative price range and deal structure",
+            "Due Diligence (6-12 weeks): Parallel commercial, financial, legal, management, IT, and ESG workstreams; QofE report from Big 4",
+            "Investment Committee Approval: Final IC presentation with full financial model, risk analysis, and return scenarios; approval to sign",
+            "Financing Commitment: Leveraged finance banks commit to debt package; commitment letters signed",
+            "SPA Negotiation and Signing: Definitive purchase agreement signed; reps and warranties negotiated; R&W insurance obtained",
+            "Regulatory Approvals: HSR antitrust clearance; other regulatory filings as needed (CFIUS, industry-specific)",
+            "Closing: Funds transferred; shares acquired; 100-day plan execution begins on Day 1"
+          ]
+        },
+        {
           "type": "h2",
           "text": "Initial Screening and the Investment Thesis"
         },
@@ -193,6 +252,29 @@
           "variant": "example",
           "title": "Example Investment Thesis",
           "text": "Target: Regional veterinary clinic chain with $30M EBITDA. Thesis: 'We believe the US veterinary services market is highly fragmented and structurally growing due to rising pet ownership and humanization of pets. We can acquire Regional Vet at 8x EBITDA, execute a buy-and-build strategy acquiring 20+ independent clinics over 5 years, achieve cost synergies through group purchasing and back-office consolidation, and exit at 12-14x EBITDA to a strategic acquirer or larger PE firm, generating a 3.5-4.0x MOIC and 25%+ IRR.'"
+        },
+        {
+          "type": "h2",
+          "text": "The Investment Memorandum Structure"
+        },
+        {
+          "type": "p",
+          "text": "For every serious deal, the deal team prepares an Investment Memorandum (IM) — a comprehensive internal document presented to the Investment Committee. Understanding the IM structure is important for interviews: it shows you understand how PE firms think about investment decisions systematically. A well-organized IM typically runs 40-80 pages and covers:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Executive Summary: Investment thesis in 3-5 bullets; entry/exit metrics; summary return analysis — this page must stand alone.",
+            "Industry Analysis: Market size and growth; competitive dynamics; key secular trends driving the thesis; barriers to entry; risks to the industry.",
+            "Company Overview: Business description; revenue segments; customer analysis (concentration, churn, NPS); go-to-market model; unit economics.",
+            "Financial Analysis: Historical P&L (3-5 years), normalized EBITDA bridge, working capital analysis, capex requirements, free cash flow conversion.",
+            "LBO Model: Full 5-year projection model; sensitivity tables on entry multiple, exit multiple, and EBITDA growth; return analysis (IRR, MOIC) under base, bull, and bear cases.",
+            "Value Creation Plan: Specific 100-day, Year 1, and Year 3 operational initiatives; revenue growth levers; margin improvement opportunities; M&A pipeline.",
+            "Management Team Assessment: CEO and CFO backgrounds; track record with PE ownership; retention plan; any replacements planned.",
+            "Risk Factors and Mitigants: Top 5-10 investment risks with specific mitigation strategies; deal breakers identified during diligence.",
+            "Exit Analysis: Likely exit route (strategic, IPO, SBO); comparable exit multiples; potential strategic acquirers identified; timeline to exit."
+          ]
         },
         {
           "type": "h2",
@@ -305,6 +387,16 @@
           "text": "Bain Capital's 2024 Global Private Equity Report found that operational improvement (EBITDA growth) now contributes the majority of PE returns for 2018-2023 vintage funds, while leverage and multiple expansion contribute meaningfully less than in prior decades. This shift reflects both more competitive markets (limiting multiple expansion) and higher interest rates (making leverage more expensive). Top PE firms today win on operational excellence, not financial engineering."
         },
         {
+          "type": "chart",
+          "title": "PE Return Attribution — Historical Average",
+          "subtitle": "Contribution to total equity return across 2015-2022 vintage US buyout funds",
+          "data": [
+            {"label": "EBITDA Growth", "value": 52, "suffix": "%"},
+            {"label": "Multiple Expansion", "value": 28, "suffix": "%"},
+            {"label": "Leverage Paydown", "value": 20, "suffix": "%"}
+          ]
+        },
+        {
           "type": "h2",
           "text": "Lever 1: EBITDA Growth"
         },
@@ -371,6 +463,11 @@
         {
           "type": "p",
           "text": "The leverage paydown effect is most powerful when: (1) the company has high and stable free cash flows relative to its debt load, (2) the debt is amortizing (mandatory principal payments) rather than bullet maturity, and (3) the hold period is long enough for meaningful debt to be repaid. A company with $300M of debt at acquisition that pays down to $150M by exit has created $150M of equity value from leverage paydown alone — assuming no change in enterprise value."
+        },
+        {
+          "type": "question",
+          "question": "A PE firm buys a company at 8x EBITDA ($800M deal, $100M EBITDA) using $480M debt and $320M equity. After 5 years, EBITDA is $150M, debt is paid down to $200M, and the exit multiple is 9x. Calculate the total equity value at exit and decompose the return into the three value creation levers.",
+          "answer": "Step 1 — Calculate exit enterprise value: Exit EV = $150M EBITDA x 9x = $1,350M. Step 2 — Calculate exit equity value: Exit Equity = Exit EV - Remaining Debt = $1,350M - $200M = $1,150M. Step 3 — MOIC: $1,150M / $320M = 3.59x MOIC. IRR (approx.) = (3.59)^(1/5) - 1 = 29% IRR. Step 4 — Decompose returns into three levers. Entry equity value: $800M - $480M = $320M. Lever 1 — EBITDA Growth: EBITDA increased $50M ($100M to $150M). Value created = $50M x exit multiple 9x = $450M of incremental EV. Since debt unchanged for this calculation = $450M flows to equity. Lever 2 — Multiple Expansion: EBITDA at exit ($150M) x (exit multiple 9x - entry multiple 8x) = $150M x 1 = $150M of incremental EV attributable to multiple expansion. Lever 3 — Leverage Paydown: Debt reduced from $480M to $200M = $280M reduction. All flows to equity. Cross-check: Entry equity $320M + EBITDA growth $450M + multiple expansion $150M + debt paydown $280M = $1,200M. Small difference from $1,150M due to interaction effects in the decomposition. For interview purposes: EBITDA growth drove the most value (~52%), leverage paydown second (~32%), and multiple expansion contributed smaller incremental lift (~17%). The lesson: even modest multiple expansion (8x to 9x) matters because it applies to a larger EBITDA base."
         },
         {
           "type": "h2",
@@ -440,6 +537,17 @@
           "text": "Private equity firms think about exit from the moment they acquire a company. The choice of exit path — IPO, strategic sale, secondary buyout, or recapitalization — depends on market conditions, company characteristics, fund lifecycle constraints, and the relative attractiveness of each option at the time of exit. Exit timing is one of the most important drivers of IRR: because IRR is time-weighted, exiting earlier at the same multiple generates a higher IRR than holding longer."
         },
         {
+          "type": "chart",
+          "title": "PE Exit Routes by Frequency (2020-2024 Average)",
+          "subtitle": "Share of global PE exits by type",
+          "data": [
+            {"label": "Strategic Sale", "value": 45, "suffix": "%"},
+            {"label": "Secondary Buyout", "value": 35, "suffix": "%"},
+            {"label": "IPO", "value": 15, "suffix": "%"},
+            {"label": "Other (recap, partial)", "value": 5, "suffix": "%"}
+          ]
+        },
+        {
           "type": "h2",
           "text": "Exit Route 1: Strategic Sale (Trade Sale)"
         },
@@ -505,6 +613,12 @@
           "text": "PE firm buys company at $500M (50% debt/$250M, 50% equity/$250M). After 2 years, EBITDA has grown and the company can support more debt. Firm adds $150M of new debt and pays a $150M dividend to the PE fund. IRR impact: the PE fund received $150M in Year 2 and only needs to generate $100M+ at final exit (Year 5) to still achieve 2.5x MOIC. The early cash return boosts IRR from approximately 22% (without recap) to approximately 28% (with recap), even if the final exit value is the same."
         },
         {
+          "type": "callout",
+          "variant": "example",
+          "title": "When Dividend Recaps Go Wrong",
+          "text": "The risk of dividend recaps crystallized during the 2022-2023 rate spike. Companies that had taken on additional leverage through dividend recaps in 2020-2021 (when rates were near zero) suddenly found their interest expense had doubled or tripled. A company that executed a $200M dividend recap at SOFR + 400bps in 2021 was paying ~4.1% interest ($8.2M/year). By 2023, the same floating-rate debt cost ~9.6% ($19.2M/year) — an additional $11M of annual interest burden that could tip a marginally cash-flow-positive business into distress. PE firms learned a painful lesson: recaps should only be done when the underlying business has robust, recession-resilient free cash flows, not just favorable credit market conditions."
+        },
+        {
           "type": "h2",
           "text": "IRR Calculation: The Core Interview Question"
         },
@@ -528,6 +642,11 @@
             ["3.5x", "52%", "29%", "20%"],
             ["4.0x", "59%", "32%", "22%"]
           ]
+        },
+        {
+          "type": "question",
+          "question": "A PE firm bought a company for $500M (50% equity = $250M, 50% debt = $250M). It exits for $900M with $150M of debt remaining. What is the MOIC on equity? Approximate the IRR if the hold period was 4 years. Walk through every step.",
+          "answer": "Step 1 — Calculate entry equity: Entry equity = Total EV - Total Debt = $500M - $250M = $250M invested by the PE firm. Step 2 — Calculate exit equity: Exit equity = Exit EV - Remaining Debt = $900M - $150M = $750M. Step 3 — Calculate MOIC: MOIC = Exit Equity / Entry Equity = $750M / $250M = 3.0x MOIC. Step 4 — Approximate IRR over 4 years: IRR = (3.0)^(1/4) - 1 = (3.0)^(0.25) - 1. Using the table: 3.0x over 5 years = 25% IRR. Over 4 years, the same 3x requires a higher IRR (money came back faster). Approximate: 3.0^(0.25) = 1.316, so IRR = 31.6%, approximately 32%. Step 5 — Decompose sources of value: Entry EV was $500M. Exit EV is $900M. EV increase = $400M. Additionally, debt was paid down from $250M to $150M = $100M debt reduction. Total equity value increase = $400M (EV growth) + $100M (debt paydown) = $500M gain on $250M investment = 3.0x MOIC. Key insight: the 80% increase in enterprise value ($500M to $900M) combined with $100M of debt paydown generated a 3x equity return — illustrating how leverage amplifies EV gains into equity returns."
         },
         {
           "type": "callout",

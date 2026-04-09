@@ -49,6 +49,33 @@
           "text": "'Walk me through how the three financial statements are linked' is the single most common opening technical question in investment banking interviews. It appears at Goldman Sachs, Morgan Stanley, Evercore, Lazard, and every boutique. Interviewers ask it not because the answer is complex, but because it is the most reliable filter for whether a candidate truly understands accounting. A candidate who memorizes the answer can answer it. A candidate who understands it can answer follow-up questions like: 'If depreciation increases by $10, what happens to all three statements?' These follow-up questions require genuine comprehension, not memorization."
         },
         {
+          "type": "diagram",
+          "title": "How the Three Statements Flow Together",
+          "variant": "steps",
+          "steps": [
+            "Revenue is earned and expenses are incurred — captured on the Income Statement under accrual accounting",
+            "Net Income flows from the bottom of the IS into Retained Earnings on the Balance Sheet, growing equity",
+            "Non-cash charges (D&A, SBC) are added back on the Cash Flow Statement to reconcile earnings to cash",
+            "Working capital changes (AR, inventory, AP) bridge the Balance Sheet to operating cash flows",
+            "Ending cash balance on the Cash Flow Statement ties directly to the Cash line on the Balance Sheet"
+          ]
+        },
+        {
+          "type": "chart",
+          "title": "Key Metric Each Statement Reveals",
+          "subtitle": "What analysts extract from each financial statement",
+          "data": [
+            {"label": "Income Statement — EBITDA Margin", "value": 35, "suffix": "%", "color": "#4F46E5"},
+            {"label": "Balance Sheet — Book Equity / NWC", "value": 25, "suffix": "%", "color": "#7C3AED"},
+            {"label": "Cash Flow — Free Cash Flow Yield", "value": 40, "suffix": "%", "color": "#2563EB"}
+          ]
+        },
+        {
+          "type": "question",
+          "question": "A company purchases $10M of equipment for cash. Which financial statement would first reflect this transaction, and how?",
+          "answer": "The Cash Flow Statement reflects it immediately as a $10M outflow in investing activities (capital expenditures). The Balance Sheet also reflects it on the same date: PP&E increases by $10M and Cash decreases by $10M — net asset impact is zero, and the equation stays balanced. The Income Statement is not affected on the purchase date — instead, depreciation expense will appear over the asset's useful life (e.g., $1M/year for 10 years), reducing net income gradually. This illustrates why net income and cash flows diverge: the cash left all at once but the income statement impact is spread over 10 years."
+        },
+        {
           "type": "table",
           "caption": "The Three Financial Statements at a Glance",
           "headers": [
@@ -77,6 +104,26 @@
               "Free Cash Flow"
             ]
           ]
+        },
+        {
+          "type": "h3",
+          "text": "Accrual vs. Cash Accounting: Why the Gap Exists"
+        },
+        {
+          "type": "p",
+          "text": "Under accrual accounting, a company recognizes revenue when it earns it and expenses when it incurs them — regardless of when cash changes hands. This creates structural gaps between the income statement and cash flows. A consulting firm that bills $2M in December for work done in Q4 records $2M of revenue in December even if the client doesn't pay until February. The income statement looks strong; the cash flow is delayed. GAAP mandates accrual accounting for all public companies precisely because it gives a more accurate picture of long-run economics — but it means you must always read the cash flow statement to understand what the business actually generated in cash."
+        },
+        {
+          "type": "h3",
+          "text": "The Role of Each Statement in Banking Work"
+        },
+        {
+          "type": "p",
+          "text": "In practice, investment bankers use the three statements for distinct purposes. The income statement drives valuation: EBITDA is the primary metric for EV/EBITDA multiples, and revenue growth dictates forward projections. The balance sheet drives the EV bridge (how much debt must be repaid, what cash is available) and working capital normalization in M&A. The cash flow statement drives LBO analysis (debt serviceability, FCF for paydown), DCF modeling (unlevered free cash flow is projected directly), and quality of earnings analysis. No single statement is more important — they work as a system, and the analyst who can move fluidly between all three has a significant edge."
+        },
+        {
+          "type": "highlight",
+          "text": "The three statements are not three separate documents — they are one integrated system. Every business transaction touches at least two of the three simultaneously. A banker who reads only the income statement sees half the picture at best; true insight requires understanding how cash generation, asset base, and financing interact over time."
         },
         {
           "type": "callout",
@@ -126,6 +173,20 @@
           "text": "Revenue (also called sales or turnover) is the total value of goods or services sold to customers during the period. Under GAAP (ASC 606), revenue is recognized when it is earned — when the performance obligation is satisfied — not when cash is received. A software company selling a 2-year subscription for $240,000 upfront will recognize $10,000/month in revenue, not $240,000 on the day of the sale. This creates deferred revenue on the balance sheet (a liability) representing the obligation yet to be fulfilled. In an LBO or M&A deal, bankers examine revenue quality: Is it recurring or one-time? Is it contractual? How concentrated is the customer base?"
         },
         {
+          "type": "h3",
+          "text": "Revenue Recognition Under ASC 606"
+        },
+        {
+          "type": "p",
+          "text": "ASC 606 (effective for US public companies since 2018) established a five-step framework for revenue recognition: (1) Identify the contract with a customer, (2) identify the performance obligations in the contract, (3) determine the transaction price, (4) allocate the transaction price to performance obligations, and (5) recognize revenue when each performance obligation is satisfied. This framework has major implications for SaaS companies, construction contractors, and multi-element arrangements. A SaaS company that bundles software licenses with implementation services must allocate the contract price across both obligations and recognize each separately. Getting revenue recognition wrong is one of the most common restatement triggers — and a key focus area in M&A diligence."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Worked Example: ASC 606 Revenue Recognition in SaaS",
+          "text": "CloudCo sells a 2-year software subscription plus a one-time implementation service. Total contract value: $480,000 — $400,000 for the subscription (recognized ratably at $16,667/month over 24 months) and $80,000 for implementation (recognized upon go-live, which occurs in Month 2). In Month 1: CloudCo recognizes $16,667 (subscription) but zero implementation revenue (not yet live). In Month 2: it recognizes $16,667 + $80,000 = $96,667. The full $480,000 in cash might have been received on Day 1, but only $113,334 of revenue appears in the first two months. The remainder ($366,666) sits as deferred revenue on the balance sheet — a liability representing the obligation to deliver software service over the remaining term."
+        },
+        {
           "type": "h2",
           "text": "Cost of Goods Sold (COGS) and Gross Profit"
         },
@@ -144,12 +205,30 @@
           "formula": "Gross Margin % = Gross Profit / Revenue × 100"
         },
         {
+          "type": "chart",
+          "title": "Gross Margin by Industry",
+          "subtitle": "Typical gross margin ranges — higher margin reflects pricing power and capital-light models",
+          "data": [
+            {"label": "SaaS / Software", "value": 72, "suffix": "%", "color": "#4F46E5"},
+            {"label": "Healthcare Services", "value": 55, "suffix": "%", "color": "#7C3AED"},
+            {"label": "Consumer Branded", "value": 48, "suffix": "%", "color": "#2563EB"},
+            {"label": "Manufacturing (Diversified)", "value": 35, "suffix": "%", "color": "#0891B2"},
+            {"label": "Retail", "value": 28, "suffix": "%", "color": "#059669"},
+            {"label": "Commodity / Distribution", "value": 15, "suffix": "%", "color": "#D97706"}
+          ]
+        },
+        {
           "type": "h2",
           "text": "SG&A, D&A, and EBITDA/EBIT"
         },
         {
           "type": "p",
           "text": "Selling, General & Administrative (SG&A) expenses cover the costs of running the business that are not directly tied to production: salaries for sales reps, marketing spend, rent for the corporate office, executive compensation, and back-office functions. Depreciation & Amortization (D&A) is a non-cash charge that allocates the cost of long-term assets (PP&E for depreciation; intangibles for amortization) over their useful lives. A $50M factory depreciated over 10 years generates $5M/year of depreciation expense even though no cash changes hands. EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) adds D&A back to EBIT, making it a useful — though imperfect — proxy for operating cash flow. Investment bankers use EBITDA as the primary valuation metric because it is capital structure-neutral and strips out accounting differences."
+        },
+        {
+          "type": "question",
+          "question": "A company has $200M revenue, 40% gross margin, 25% SG&A margin, and 8% D&A margin. What is EBITDA and EBITDA margin?",
+          "answer": "Step 1 — Gross Profit: $200M × 40% = $80M. Step 2 — EBIT: Gross Profit $80M minus SG&A ($200M × 25% = $50M) minus D&A ($200M × 8% = $16M) = $14M. EBIT margin = 7%. Step 3 — EBITDA: EBIT + D&A = $14M + $16M = $30M. EBITDA margin = $30M / $200M = 15%. Key insight: even though EBIT margin is only 7%, EBITDA margin is 15% because D&A (a non-cash charge) is added back. For a capital-intensive business with high D&A, the gap between EBIT and EBITDA can be very significant — which is exactly why bankers prefer EBITDA for valuation of asset-heavy companies."
         },
         {
           "type": "h2",
@@ -170,6 +249,16 @@
           "text": "Revenue: $100M (selling 1M units at $100 avg. price). COGS: $60M (raw materials $35M, direct labor $15M, manufacturing overhead $10M). Gross Profit: $40M (40% gross margin). SG&A: $15M (sales team $8M, marketing $3M, G&A $4M). D&A: $5M ($3M depreciation on equipment, $2M amortization of customer lists from prior acquisition). EBIT: $20M (20% EBIT margin). Add back D&A → EBITDA: $25M (25% EBITDA margin). Interest Expense: $6M ($100M term loan × 6%). EBT: $14M. Taxes: $3.5M (25% effective rate). Net Income: $10.5M (10.5% net margin). This company trades at 8x EBITDA = $200M EV. That's a standard industrial multiple."
         },
         {
+          "type": "h3",
+          "text": "Building a Full P&L from Scratch: SaaS Company"
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Worked Example: BuildSaaS Inc. — Full P&L from Scratch (FY2024)",
+          "text": "REVENUE: Subscription revenue $150M + Professional services $20M = Total Revenue $170M.\n\nCOGS: Hosting/infrastructure $12M + Customer support $8M + Capitalized software amortization $5M = COGS $25M. Gross Profit: $145M (85.3% gross margin — high, as expected for software).\n\nOPERATING EXPENSES: Sales & Marketing $60M (35% of revenue — typical for growth-stage SaaS). R&D $35M (21% of revenue). G&A $15M (9% of revenue). Total OpEx: $110M.\n\nEBITDA: $145M - $110M = $35M (20.6% EBITDA margin).\n\nD&A (already in COGS, plus corp. D&A): $8M total → EBIT = $27M (15.9%).\n\nInterest Expense: $3M (modest revolver). EBT: $24M. Taxes: $6M (25%). Net Income: $18M (10.6% net margin).\n\nNote: GAAP net income would be significantly lower if SBC is $20M (not shown here) — a common adjustment in SaaS reporting."
+        },
+        {
           "type": "h2",
           "text": "Operating vs. Non-Operating Items"
         },
@@ -184,6 +273,14 @@
         {
           "type": "p",
           "text": "Companies often report both GAAP and non-GAAP results. Non-GAAP adjustments typically add back: stock-based compensation (SBC), restructuring charges, acquisition-related amortization, litigation settlements, and impairment charges. A tech company might report GAAP net income of -$50M but non-GAAP 'adjusted net income' of +$30M after adding back $80M of SBC. Analysts must decide whether these add-backs are legitimate. Recurring SBC is a real economic cost; ignoring it overstates profitability. One-time restructuring charges from a genuine plant closure are legitimately non-recurring."
+        },
+        {
+          "type": "h3",
+          "text": "Why Gross Margin Varies So Dramatically Across Industries"
+        },
+        {
+          "type": "p",
+          "text": "Gross margin differences across industries reflect fundamentally different business models. SaaS companies achieve 70-80% gross margins because their marginal cost of delivering software to one additional customer is near zero — the code is already written, hosting costs are minimal. Healthcare services companies achieve 50-60% because care delivery requires skilled labor (nurses, physicians) at significant cost. Retailers achieve 25-45% because they buy inventory at wholesale and sell at retail with real storage, shrinkage, and logistics costs. Manufacturers at 25-40% bear raw material, labor, and overhead costs. Commodity distributors at 10-15% earn thin margins on volume throughput. Understanding where a company sits in this spectrum immediately reveals how it makes money and what risks it faces."
         },
         {
           "type": "table",
@@ -300,12 +397,43 @@
           "text": "Long-term debt (bonds, term loans, senior secured facilities) is the largest non-current liability for most leveraged companies. Other long-term liabilities include deferred tax liabilities (from timing differences between book and tax accounting), lease liabilities, and pension obligations. Shareholders' equity has three main components: (1) Paid-in capital (common stock + additional paid-in capital, or APIC) — representing capital raised from investors; (2) Retained earnings — cumulative net income minus dividends paid since inception; and (3) Accumulated other comprehensive income (AOCI) — unrealized gains/losses on certain investments and derivatives. Total equity = total assets minus total liabilities."
         },
         {
+          "type": "question",
+          "question": "A company has $500M in total assets and $300M in total liabilities. What is book value of equity? If market cap is $800M, what is the Price-to-Book (P/B) ratio, and what does it imply?",
+          "answer": "Book value of equity = Assets - Liabilities = $500M - $300M = $200M. Price-to-Book = Market Cap / Book Equity = $800M / $200M = 4.0x. A 4.0x P/B means investors are paying $4 for every $1 of accounting equity on the balance sheet. This premium reflects the market's expectation of future earnings above book value — intangible value from brand, customer relationships, technology, and growth that the balance sheet does not capture. P/B above 1.0x generally indicates the market believes the company generates returns above its cost of equity. P/B below 1.0x — common in banks during crises — implies the market values the business at less than its accounting net worth, suggesting asset quality concerns or expected losses."
+        },
+        {
           "type": "h2",
           "text": "Book Value vs. Market Value"
         },
         {
           "type": "p",
           "text": "A critical concept: book value (the balance sheet value) rarely equals market value. Book value of equity is historical — it reflects what investors originally paid in, plus retained earnings accumulated over time. Market value of equity (market cap) is forward-looking — it reflects what investors expect the company to generate in the future. Amazon's book value of equity might be $70B while its market cap is $1.8 trillion — a Price/Book ratio of ~26x. For a 30-year-old factory, the book value after depreciation might be near zero, while its replacement cost and earnings potential are very high. In banking, we always work with market values for valuation, not book values."
+        },
+        {
+          "type": "h3",
+          "text": "Off-Balance-Sheet Items and Their Significance"
+        },
+        {
+          "type": "p",
+          "text": "Not everything that creates economic obligations appears on the balance sheet. Operating leases (pre-ASC 842) were the most famous off-balance-sheet item — companies rented hundreds of millions of dollars of store space, aircraft, or equipment without it appearing as debt. ASC 842 (effective 2019 for US public companies) brought most leases onto the balance sheet as right-of-use assets and lease liabilities, substantially improving transparency. However, other off-balance-sheet items remain: purchase commitments (contractual obligations to buy inventory or capacity), contingent liabilities (pending litigation, environmental remediation), letters of credit, and certain joint ventures structured to avoid consolidation. In M&A diligence, lawyers and bankers specifically examine footnotes for off-balance-sheet exposures that could represent hidden liabilities not reflected in the EV bridge."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Worked Example: Off-Balance-Sheet Operating Lease Impact",
+          "text": "Retailer Co. has 200 stores. Pre-ASC 842: annual lease expense is $50M/year, average remaining lease term 8 years. The lease liability is purely a footnote disclosure — $400M in commitments does not appear on the balance sheet as debt. Post-ASC 842: the $400M present value of lease obligations is capitalized as a right-of-use asset ($400M) and lease liability ($400M). The balance sheet now shows $400M more debt and $400M more assets. This dramatically increases the company's apparent leverage ratio from, say, 3.0x to 5.0x Net Debt+Leases / EBITDAR. Bankers now include lease liabilities in EV bridges for retail, airlines, and restaurant companies — this is why you see EV/EBITDAR (adding rent back) in those sectors."
+        },
+        {
+          "type": "chart",
+          "title": "Current Ratio by Industry",
+          "subtitle": "Higher current ratio = more short-term liquidity cushion; industry norms vary significantly",
+          "data": [
+            {"label": "Technology / Software", "value": 2.8, "suffix": "x", "color": "#4F46E5"},
+            {"label": "Healthcare / Pharma", "value": 2.4, "suffix": "x", "color": "#7C3AED"},
+            {"label": "Manufacturing", "value": 1.9, "suffix": "x", "color": "#2563EB"},
+            {"label": "Retail", "value": 1.3, "suffix": "x", "color": "#0891B2"},
+            {"label": "Restaurants / Food Service", "value": 0.6, "suffix": "x", "color": "#D97706"}
+          ]
         },
         {
           "type": "table",
@@ -442,6 +570,18 @@
           "text": "There are two ways to present operating cash flows. The direct method shows actual cash receipts from customers and cash payments to suppliers and employees. The indirect method starts with net income and adjusts for non-cash items and working capital changes. Almost all US companies use the indirect method (GAAP permits both but strongly encourages indirect; only ~3% of large US companies use direct). The indirect method is preferred because it clearly links the income statement to cash flows, making the source of cash generation or consumption transparent to analysts. Investment banking models always use the indirect method."
         },
         {
+          "type": "diagram",
+          "title": "Building CFO Using the Indirect Method",
+          "variant": "steps",
+          "steps": [
+            "Start with Net Income — the accrual-based bottom line from the Income Statement",
+            "Add back non-cash charges: D&A, stock-based compensation, impairment charges, deferred taxes",
+            "Remove non-operating gains: subtract gains on asset sales (these belong in investing activities)",
+            "Adjust for working capital changes: increases in assets (AR, inventory) are outflows; increases in liabilities (AP, accruals) are inflows",
+            "Result = Cash from Operations (CFO) — actual cash generated by the core business"
+          ]
+        },
+        {
           "type": "h2",
           "text": "Building CFO from Net Income: The Indirect Method"
         },
@@ -461,12 +601,33 @@
           "text": "Net Income: $10.5M. Add: D&A of $5M (non-cash). Add: SBC of $2M (non-cash). Subtract: Increase in AR of $3M (customers owe more → cash not yet received). Subtract: Increase in Inventory of $2M (bought more inventory → cash spent). Add: Increase in AP of $4M (owe suppliers more → haven't paid yet → cash retained). Add: Decrease in Prepaid Expenses of $0.5M. Operating Cash Flow: $10.5 + $5 + $2 - $3 - $2 + $4 + $0.5 = $17M. Note how CFO ($17M) is significantly higher than net income ($10.5M) due to D&A and favorable working capital movements. This is common for mature businesses."
         },
         {
+          "type": "question",
+          "question": "Net income is $50M, D&A is $20M, AR increased by $15M, AP increased by $10M, and capex is $30M. What is free cash flow?",
+          "answer": "Step 1 — Calculate CFO: Net income $50M + D&A $20M - AR increase $15M (cash outflow, earned but not collected) + AP increase $10M (cash inflow, owe more to suppliers) = $65M CFO. Step 2 — Subtract capex: FCF = CFO - Capex = $65M - $30M = $35M. Check: EBITDA = $50M net income + $20M D&A = $70M (before interest and taxes adjustments for simplicity). FCF conversion = $35M / $70M = 50% — typical for a capital-intensive business. The AR increase is the key drain — $15M of revenue was recognized but not yet cash-collected, so it shows up as a working capital outflow. The AP increase is a source of cash — paying suppliers later is an interest-free loan."
+        },
+        {
           "type": "h2",
           "text": "Cash from Investing: Capex and Its Relationship to D&A"
         },
         {
           "type": "p",
           "text": "Capital expenditures (capex) is the largest item in investing activities for most companies. When a company buys a $50M factory, it appears as a $50M cash outflow in investing activities, and the factory is capitalized on the balance sheet at cost. Over time, the factory is depreciated — say $5M/year for 10 years — which appears as a $5M expense on the income statement and an add-back on the cash flow statement. The relationship between capex and D&A is important: if a company's capex consistently exceeds D&A, it is growing its asset base (investing in growth). If capex is well below D&A, the company is harvesting assets without reinvesting — useful for cash generation in the near term but potentially value-destructive long-term."
+        },
+        {
+          "type": "h3",
+          "text": "Maintenance vs. Growth Capex"
+        },
+        {
+          "type": "p",
+          "text": "Not all capex is equal. Maintenance capex is spending required to keep existing assets operational — replacing worn equipment, routine facility upgrades, safety-related expenditures. This capex is necessary just to stay in business. Growth capex is discretionary spending that creates new revenue-generating capacity: building a new factory, expanding into a new geography, purchasing additional production lines. In LBO modeling, PE firms distinguish between these two types because maintenance capex must continue regardless of strategy, while growth capex is discretionary. A mature industrial business might have $50M of annual D&A but only $20M of maintenance capex — implying $30M of excess depreciation over 'real' asset consumption. Free cash flow using only maintenance capex would be significantly higher than using total capex."
+        },
+        {
+          "type": "h3",
+          "text": "Quality of Cash Flow Analysis"
+        },
+        {
+          "type": "p",
+          "text": "Not all operating cash flow is equally reliable. High-quality cash flow is generated by core recurring operations with stable working capital dynamics. Low-quality cash flow can result from temporarily stretching payables (AP balloon), selling receivables (factoring), or one-time working capital improvements that borrow from future cash flows. A company that generates $100M of CFO in Year 1 by extending payables from 30 days to 90 days will face a significant headwind when payables normalize. Analysts assess cash flow quality by looking at: (1) multi-year consistency, (2) the ratio of CFO to EBITDA (should be 50-80% for most businesses), (3) whether CFO tracks net income directionally, and (4) whether working capital changes are structural or timing-driven."
         },
         {
           "type": "h2",
@@ -515,15 +676,15 @@
         },
         {
           "type": "callout",
-          "variant": "tip",
-          "title": "Interview Tip",
-          "text": "Common interview question: 'What's the difference between capex and an operating expense?' Say: 'An operating expense is fully recognized in the current period — it hits the income statement immediately and reduces net income dollar for dollar. Capital expenditures are capitalized on the balance sheet and then depreciated over the asset's useful life, spreading the income statement impact over multiple years. The cash outflow happens upfront in both cases — but for capex, it appears in investing cash flows, not operating. This is why EBITDA adds back D&A: it removes the income statement effect of past capex decisions.'"
-        },
-        {
-          "type": "callout",
           "variant": "warning",
           "title": "EBITDA Is Not Free Cash Flow — and the Difference Is Enormous",
           "text": "EBITDA adds D&A back to operating income but still ignores three cash realities: taxes (real money paid to governments), capital expenditures (the actual cash required to maintain and grow the asset base), and changes in working capital (cash consumed as a business grows). For a capital-light software company spending 3% of revenue on capex, EBITDA is a reasonable approximation. For a manufacturer spending 18% on capex, EBITDA overstates true cash flow by 3–4x. The cash flow statement — not the income statement — tells you what the business is actually generating."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Interview Tip",
+          "text": "Common interview question: 'What's the difference between capex and an operating expense?' Say: 'An operating expense is fully recognized in the current period — it hits the income statement immediately and reduces net income dollar for dollar. Capital expenditures are capitalized on the balance sheet and then depreciated over the asset's useful life, spreading the income statement impact over multiple years. The cash outflow happens upfront in both cases — but for capex, it appears in investing cash flows, not operating. This is why EBITDA adds back D&A: it removes the income statement effect of past capex decisions.'"
         }
       ],
       "keyTakeaways": [
@@ -553,6 +714,19 @@
         {
           "type": "p",
           "text": "The three financial statements are not separate documents — they are a fully integrated system where every significant transaction flows through multiple statements simultaneously. Understanding these linkages is the most-tested accounting concept in investment banking interviews, for good reason: it proves you can think about accounting dynamically, not just statically. The four primary linkages are: (1) Net income → Retained Earnings, (2) D&A → PP&E accumulated depreciation → CF add-back, (3) Working capital changes on the BS → CF adjustments, and (4) Debt on BS → interest expense on IS → debt repayment in CFF. Let's walk through each with a concrete example."
+        },
+        {
+          "type": "diagram",
+          "title": "Three-Statement Linkage Map",
+          "variant": "steps",
+          "steps": [
+            "Income Statement: Revenue - Costs = Net Income (the starting point for everything downstream)",
+            "Net Income → Balance Sheet: flows into Retained Earnings, permanently growing (or shrinking) equity",
+            "Net Income → Cash Flow Statement: starting line for CFO under the indirect method",
+            "D&A: expense on IS → reduces PP&E net on BS → add-back in CFO (non-cash reconciliation)",
+            "Working Capital: AR/AP/inventory changes on BS appear as cash adjustments in CFO",
+            "Debt: on BS as liability → interest expense on IS → repayments appear in CFF → ending cash ties to BS cash"
+          ]
         },
         {
           "type": "h2",
@@ -592,6 +766,11 @@
           "text": "Debt touches all three statements. On the balance sheet, debt appears as a liability (short-term and long-term). The interest expense flowing from that debt appears on the income statement (below EBIT). Cash flows related to debt appear in financing activities: borrowing = inflow, repayment = outflow. When a company issues $50M of new debt, it records: CFF +$50M (cash inflow), BS liability +$50M (new debt), BS cash +$50M. When it pays $6M of annual interest, it records: IS interest expense -$6M (reducing EBT and then net income), CFO -$6M (interest payments reduce operating cash flow under US GAAP — though under IFRS, companies can classify interest payments in either operating or financing activities)."
         },
         {
+          "type": "question",
+          "question": "Walk through all three statements for a $10M depreciation increase. Tax rate is 40%.",
+          "answer": "INCOME STATEMENT: D&A expense increases by $10M → EBIT decreases by $10M → EBT decreases by $10M → Taxes decrease by $4M (40% × $10M) → Net income decreases by $6M. CASH FLOW STATEMENT: Net income is -$6M (starting point). D&A add-back increases by +$10M. Net CFO impact = -$6M + $10M = +$4M. This +$4M is the tax shield — depreciation is non-cash, so higher depreciation lowers the tax bill by $4M, which is a real cash benefit. BALANCE SHEET: Accumulated depreciation increases by $10M → PP&E net decreases by $10M. Cash increases by $4M (from the CFO impact). Net asset change = -$10M + $4M = -$6M. Equity: retained earnings decreases by $6M (lower net income). Check: Assets changed -$6M, Equity changed -$6M. Balance sheet still balances perfectly."
+        },
+        {
           "type": "h2",
           "text": "Full Integration Example: $10M Revenue Company"
         },
@@ -610,6 +789,11 @@
           "variant": "example",
           "title": "Classic Interview: If Depreciation Increases by $10, What Happens?",
           "text": "This question has a definitive answer. Assume 40% tax rate for simplicity.\n\nINCOME STATEMENT: D&A expense increases by $10 → EBIT decreases by $10 → EBT decreases by $10 → Taxes decrease by $4 (40% × $10) → Net income decreases by $6.\n\nCASH FLOW STATEMENT: Net income decreases by $6 (starting point). D&A add-back increases by $10. Net effect on CFO: -$6 + $10 = +$4. This makes sense: depreciation is non-cash, so higher depreciation lowers taxes by $4 (tax shield), which is a cash benefit.\n\nBALANCE SHEET: Accumulated depreciation increases by $10 → PP&E net decreases by $10 (asset side). Cash increases by $4 (from CFO impact). Net asset change: -$10 + $4 = -$6. Equity side: Retained earnings decreases by $6 (lower net income). Equation checks: Assets -$6 = Equity -$6. Balance sheet still balances."
+        },
+        {
+          "type": "question",
+          "question": "A company writes off $20M of inventory (marks it down to zero) with a 30% tax rate. Walk through all three statements.",
+          "answer": "INCOME STATEMENT: COGS increases by $20M (write-off is an operating expense against cost of goods). EBIT decreases by $20M. EBT decreases by $20M. Taxes decrease by $6M (30% × $20M). Net income decreases by $14M. CASH FLOW STATEMENT: Net income decreases by $14M. Add back the $20M inventory write-off as a non-cash adjustment (it reduced net income but no cash left the company for this write-off — the cash was spent when inventory was originally purchased, which already hit CFO in a prior period). Net CFO impact = -$14M + $20M = +$6M. The write-off generates a $6M tax benefit. BALANCE SHEET: Inventory decreases by $20M. Cash increases by $6M (from tax benefit flowing through CFO). Net asset change = -$20M + $6M = -$14M. Retained earnings decreases by $14M (lower net income). Check: Assets -$14M = Equity -$14M. Balance sheet balances."
         },
         {
           "type": "callout",
@@ -654,6 +838,20 @@
           "formula": "Gross Margin = Gross Profit / Revenue | EBITDA Margin = EBITDA / Revenue | ROE = Net Income / Avg. Equity | ROIC = NOPAT / (Debt + Equity – Cash)"
         },
         {
+          "type": "h3",
+          "text": "DuPont Decomposition of ROE"
+        },
+        {
+          "type": "p",
+          "text": "ROE (net income / equity) can be decomposed into three drivers using the DuPont framework: ROE = Net Margin × Asset Turnover × Financial Leverage. Net margin (net income / revenue) captures profitability. Asset turnover (revenue / assets) captures operational efficiency — how much revenue each dollar of assets generates. Financial leverage (assets / equity) captures the capital structure effect — leverage amplifies returns to equity. A retailer with thin 3% net margins can achieve 15%+ ROE by combining high asset turnover (2.5x — high revenue per dollar of assets) and some leverage (2.0x). A luxury goods company with 20% margins might have lower asset turnover (0.8x) but still achieves similar ROE. The DuPont decomposition explains why identical ROEs can result from completely different business models and risk profiles."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Worked Example: DuPont Decomposition",
+          "text": "Company A (Retailer): Revenue $1B, Net Income $30M, Assets $400M, Equity $200M. Net Margin = 3%. Asset Turnover = $1B / $400M = 2.5x. Leverage = $400M / $200M = 2.0x. ROE = 3% × 2.5x × 2.0x = 15%.\n\nCompany B (Software): Revenue $200M, Net Income $40M, Assets $250M, Equity $200M. Net Margin = 20%. Asset Turnover = $200M / $250M = 0.8x. Leverage = $250M / $200M = 1.25x. ROE = 20% × 0.8x × 1.25x = 20%.\n\nConclusion: Company B achieves higher ROE through margin superiority, not leverage. Company A requires high volume and some leverage to compensate for thin margins. Both 'work' as business models but carry very different risks: Company A is volume-dependent and sensitive to sales declines; Company B is resilient but needs to maintain pricing power."
+        },
+        {
           "type": "h2",
           "text": "Liquidity Ratios"
         },
@@ -675,12 +873,30 @@
           "formula": "Net Debt / EBITDA = (Total Debt – Cash) / EBITDA | Interest Coverage = EBIT / Interest Expense | Debt/Equity = Total Debt / Total Shareholders' Equity"
         },
         {
+          "type": "chart",
+          "title": "Typical Leverage (Net Debt / EBITDA) by Industry",
+          "subtitle": "Higher leverage is acceptable in stable, capital-intensive businesses with predictable cash flows",
+          "data": [
+            {"label": "Utilities", "value": 4.5, "suffix": "x", "color": "#4F46E5"},
+            {"label": "Telecom", "value": 3.8, "suffix": "x", "color": "#7C3AED"},
+            {"label": "Healthcare Services", "value": 3.0, "suffix": "x", "color": "#2563EB"},
+            {"label": "Industrials", "value": 2.2, "suffix": "x", "color": "#0891B2"},
+            {"label": "Consumer Staples", "value": 1.8, "suffix": "x", "color": "#059669"},
+            {"label": "Technology / Software", "value": 0.8, "suffix": "x", "color": "#D97706"}
+          ]
+        },
+        {
           "type": "h2",
           "text": "Efficiency Ratios"
         },
         {
           "type": "p",
-          "text": "Efficiency ratios measure how well management deploys assets and manages working capital. Days Sales Outstanding (DSO = AR / Revenue × 365) measures how long it takes to collect cash from customers. A retailer might have DSO of 5 days (cash sales), while a B2B software company might have 45-60 days. Days Inventory Outstanding (DIO = Inventory / COGS × 365) measures how long goods sit before being sold. A just-in-time manufacturer targets 20-30 days; a luxury goods company might have 150+ days. Days Payable Outstanding (DPO = AP / COGS × 365) measures how long the company takes to pay suppliers. Higher DPO is better — it means the company is effectively borrowing from suppliers. Asset turnover (revenue / total assets) measures revenue generated per dollar of assets."
+          "text": "Efficiency ratios measure how well management deploys assets and manages working capital. Days Sales Outstanding (DSO = AR / Revenue × 365) measures how long it takes to collect cash from customers. A retailer might have DSO of 5 days (cash or credit card sales settle in 1-3 days). B2B software companies might have 45-60 days. A rising DSO trend is a red flag: it may indicate customers are struggling to pay, the company is offering looser credit terms to boost revenue, or collections processes are deteriorating. Days Inventory Outstanding (DIO = Inventory / COGS × 365) measures how long goods sit before being sold. Days Payable Outstanding (DPO = AP / COGS × 365) measures how long the company takes to pay suppliers. Higher DPO is better — it means the company is effectively borrowing from suppliers interest-free."
+        },
+        {
+          "type": "question",
+          "question": "How do you calculate ROIC? A company has EBIT of $50M, a tax rate of 25%, debt of $200M, equity of $300M, and cash of $50M. What is ROIC?",
+          "answer": "ROIC = NOPAT / Invested Capital. Step 1 — NOPAT (Net Operating Profit After Tax) = EBIT × (1 - Tax Rate) = $50M × (1 - 25%) = $37.5M. Step 2 — Invested Capital = Debt + Equity - Cash = $200M + $300M - $50M = $450M. Step 3 — ROIC = $37.5M / $450M = 8.3%. Interpretation: If this company's WACC is 10%, then ROIC < WACC — the company is destroying value on every dollar of capital invested. If WACC is 7%, ROIC > WACC and the company creates value. ROIC vs. WACC is the fundamental test of value creation, which is why PE firms obsess over operational improvement strategies that can increase ROIC above the hurdle rate."
         },
         {
           "type": "table",
@@ -771,7 +987,7 @@
         },
         {
           "type": "p",
-          "text": "Valuation multiples are ratios that connect the market's assessment of value to financial metrics. P/E (price per share / earnings per share) is the most widely used equity multiple — the S&P 500 has historically traded at 15-20x P/E. EV/EBITDA is the most widely used enterprise multiple in banking — most industrial companies trade at 7-12x, while software companies can trade at 20-40x. EV/Revenue is used for early-stage or pre-EBITDA companies — high-growth SaaS companies might trade at 10-15x revenue. These multiples will be explored in full in the Valuation module."
+          "text": "Valuation multiples are ratios that connect the market's assessment of value to financial metrics. P/E (price per share / earnings per share) is the most widely used equity multiple globally — the S&P 500 has historically traded at 15-20x P/E. EV/EBITDA is the most widely used enterprise multiple in banking — most industrial companies trade at 7-12x, while software companies can trade at 20-40x. EV/Revenue is used for early-stage or pre-EBITDA companies — high-growth SaaS companies might trade at 10-15x revenue. These multiples will be explored in full in the Valuation module."
         },
         {
           "type": "callout",
@@ -866,6 +1082,11 @@
           "formula": "DPO = (Accounts Payable / COGS) × 365"
         },
         {
+          "type": "question",
+          "question": "A company has DSO of 45 days, DIO of 60 days, and DPO of 30 days. What is the cash conversion cycle? What does it mean operationally?",
+          "answer": "Cash Conversion Cycle (CCC) = DSO + DIO - DPO = 45 + 60 - 30 = 75 days. This means the company takes 75 days from the time it spends cash on inventory until it collects cash from customers. Operationally: on Day 1 the company pays cash for raw materials (or rather, on Day 30 since DPO = 30 days). By Day 60, inventory is sold (DIO = 60). By Day 105 (Day 60 + DSO 45), cash is finally collected. The company funds 75 days of the cycle with its own capital — capital that could otherwise be used to reduce debt or invest in growth. For a business with $100M of COGS, a 75-day CCC requires roughly $20.5M of working capital ($100M × 75/365). Reducing CCC by 20 days would free approximately $5.5M of cash — significant in any deal context."
+        },
+        {
           "type": "h2",
           "text": "The Cash Conversion Cycle (CCC)"
         },
@@ -877,6 +1098,18 @@
           "type": "formula",
           "label": "Cash Conversion Cycle",
           "formula": "CCC = DSO + DIO – DPO"
+        },
+        {
+          "type": "chart",
+          "title": "Cash Conversion Cycle by Industry",
+          "subtitle": "Negative CCC means suppliers and customers fund the business — a structural advantage",
+          "data": [
+            {"label": "E-commerce (Amazon model)", "value": -15, "suffix": " days", "color": "#059669"},
+            {"label": "Retail (Walmart model)", "value": -5, "suffix": " days", "color": "#0891B2"},
+            {"label": "Software / SaaS", "value": 10, "suffix": " days", "color": "#2563EB"},
+            {"label": "Manufacturing (Industrial)", "value": 75, "suffix": " days", "color": "#D97706"},
+            {"label": "Pharmaceutical", "value": 115, "suffix": " days", "color": "#DC2626"}
+          ]
         },
         {
           "type": "table",
@@ -936,6 +1169,12 @@
         },
         {
           "type": "callout",
+          "variant": "example",
+          "title": "Worked Example: NWC Peg Calculation",
+          "text": "Target company has trailing 12-month average NWC of $22M. The parties agree to a $22M NWC peg in the purchase agreement. At deal close, the seller delivers NWC of $18M. The buyer receives $4M less NWC than expected.\n\nPurchase price adjustment: Purchase price is reduced by $4M to compensate the buyer for the shortfall. The buyer will need to inject $4M of cash into the business to bring NWC back to the $22M operating level.\n\nHow sellers manipulate NWC pre-close: (1) Accelerate collections — call customers and offer 2% discount for early payment, reducing AR below normal levels. (2) Delay vendor payments — stretch AP, but only to the extent suppliers tolerate it. (3) Draw down inventory — fulfill orders from existing stock without reordering.\n\nThis is why buy-side M&A advisors demand a normalized NWC calculation based on 18-24 months of monthly data, excluding the 2-3 months immediately pre-close from the averaging period."
+        },
+        {
+          "type": "callout",
           "variant": "tip",
           "title": "Interview Tip",
           "text": "A classic NWC question: 'Why does an increase in working capital reduce free cash flow?' Say: 'Working capital is the operating capital tied up in the business. If AR increases by $10M, that means we recognized $10M of revenue but haven't collected the cash yet — it's sitting in a receivable on the balance sheet. Our income statement shows the revenue and profit, but our cash flow statement must subtract that $10M because we haven't received it. The cash is stuck in the operating cycle. So: higher NWC = more capital consumed = lower FCF. This is why rapidly growing businesses often have strong earnings but negative free cash flow.'"
@@ -962,6 +1201,14 @@
         {
           "type": "p",
           "text": "GAAP financial statements follow strict accounting rules that often include items management argues obscure the true operating performance of the business. Stock-based compensation is a real economic cost, but it's non-cash. An acquisition made 10 years ago generates annual amortization of acquired intangibles — a required GAAP expense that has nothing to do with current operating decisions. A factory closure generates a one-time restructuring charge of $50M that won't repeat. Companies argue that adjusting for these items makes it easier for investors to understand the underlying earnings power. The SEC permits non-GAAP reporting, but requires reconciliation to the nearest GAAP metric. However, the practice has become increasingly aggressive — and distinguishing legitimate adjustments from manipulation is a core skill."
+        },
+        {
+          "type": "h3",
+          "text": "The Quality of Earnings Framework"
+        },
+        {
+          "type": "p",
+          "text": "Quality of earnings (QofE) analysis is the systematic process of determining which earnings are recurring, sustainable, and representative of the true earnings power of the business. High-quality earnings are: (1) backed by cash — revenue is collected, not just recognized; (2) recurring — driven by the ongoing business, not asset sales or one-time events; (3) growing organically, not through accounting changes; and (4) consistent with industry norms. Low-quality earnings exhibit the opposite: revenue recognized aggressively ahead of cash, frequent one-time charges, margins expanding through cost deferrals rather than operational improvement. In PE, QofE analysis by an independent accounting firm is a standard part of buy-side diligence and typically costs $200K-$500K. The QofE conclusion directly anchors the final deal price."
         },
         {
           "type": "h2",
@@ -994,6 +1241,11 @@
           "text": "Company: Tech-Enabled Services Business (FY2024)\nGAAP Net Income: $8M\n+ Interest Expense: $12M\n+ Taxes: $4M\n+ D&A: $15M\n= EBITDA: $39M\n\nAdjustments:\n+ Stock-Based Compensation: $6M (non-cash; debatable but widely accepted)\n+ Restructuring Charges: $4M (one-time plant consolidation; legitimate if truly non-recurring)\n+ Transaction Costs: $2M (advisory fees for a completed acquisition; one-time)\n+ Integration Costs: $3M (post-close integration of prior acquisition; one-time)\n+ Management Bonus Normalization: $2M (owner-operator took $6M salary; normalized to $4M market rate)\n= Adjusted EBITDA: $56M (44% higher than GAAP EBITDA)\n\nAt a 12x multiple: GAAP EBITDA → EV of $468M vs. Adjusted EBITDA → EV of $672M. Difference: $204M. This is why every add-back is hotly contested in M&A negotiations."
         },
         {
+          "type": "question",
+          "question": "How would you identify whether a company is using aggressive vs. conservative accounting? Give three specific tests.",
+          "answer": "Test 1 — Revenue vs. Cash Flow Gap: Compare revenue growth to operating cash flow growth over 3 years. If revenue grows 20% but CFO grows only 5%, cash conversion is deteriorating. This suggests either premature revenue recognition (recognizing revenue before obligations are fully satisfied) or customers are taking longer to pay (rising DSO). Both are red flags. Test 2 — GAAP vs. Non-GAAP Divergence: Calculate the ratio of Adjusted EBITDA to GAAP EBITDA each year. If this ratio is widening — say from 1.05x in 2021 to 1.20x in 2022 to 1.40x in 2023 — the company is adding increasingly aggressive adjustments. Conservative companies show stable or narrowing gaps. Test 3 — Recurring 'One-Time' Charges: Scan 5 years of income statements for restructuring charges. If they appear in 4 of 5 years, they are not one-time — they are an operating cost being misclassified to protect reported EBITDA. Also look for acceleration of revenue recognition or changes in depreciation assumptions, which are quieter forms of earnings manipulation."
+        },
+        {
           "type": "h2",
           "text": "Pro Forma Metrics"
         },
@@ -1008,6 +1260,14 @@
         {
           "type": "p",
           "text": "Financial statement red flags can indicate aggressive accounting, deteriorating fundamentals, or outright fraud. Key red flags to watch: (1) Revenue growing faster than cash from operations — this could signal channel stuffing or premature revenue recognition; (2) DSO increasing while revenue is flat or declining — customers may not be able to pay; (3) Inventory growing faster than revenue — potential demand shortfall or obsolescence; (4) The gap between GAAP and non-GAAP metrics widening every year — increasingly aggressive adjustments; (5) Auditor changes, particularly to a less well-known firm; (6) High and growing related-party transactions; (7) Frequent restatements of prior-period financials; (8) Management consistently missing guidance and then taking non-recurring charges to explain the miss; (9) Cash balance declining despite positive net income — check the cash flow statement."
+        },
+        {
+          "type": "h3",
+          "text": "The Most Dangerous Red Flag Combinations"
+        },
+        {
+          "type": "p",
+          "text": "Individual red flags are concerning; combinations of multiple red flags are often conclusive. The most dangerous combinations: high revenue growth + declining CFO/net income ratio + rising DSO = almost certainly aggressive revenue recognition or channel stuffing. Recurring restructuring charges + widening GAAP/non-GAAP gap + management guidance misses = systematic manipulation of reported results. Inventory growth > revenue growth + gross margin expansion = likely premature revenue recognition combined with deferred costs. Rapid acquisitions + goodwill as % of assets > 50% + falling ROIC = value-destructive M&A strategy being masked by inorganic revenue growth. These patterns appear repeatedly in accounting fraud cases and were present in companies like Wirecard, Luckin Coffee, and Autonomy years before their fraud became public."
         },
         {
           "type": "table",
@@ -1065,6 +1325,10 @@
           "variant": "insight",
           "title": "Key Insight: The Quality of Earnings",
           "text": "In M&A diligence, accounting firms perform a 'Quality of Earnings' (QofE) analysis — a detailed examination of adjusted EBITDA that tests whether each add-back is legitimate, whether revenue is recurring and growing, and whether expenses are understated. A QofE typically costs $200K-$500K and can dramatically shift the purchase price. A target marketing itself at $60M Adjusted EBITDA might be revised to $45M 'sustainable EBITDA' after a QofE — at a 12x multiple, that's a $180M reduction in valuation. Investment bankers on buy-side mandates read QofE reports closely and often use them as the basis for price renegotiation."
+        },
+        {
+          "type": "highlight",
+          "text": "Adjusted EBITDA is not a fact — it is an argument. Every add-back is a claim that a cost is non-recurring or non-economic. The analyst's job is to challenge every claim rigorously, because at a 10x multiple, a $5M disputed add-back is worth $50M of purchase price."
         },
         {
           "type": "callout",

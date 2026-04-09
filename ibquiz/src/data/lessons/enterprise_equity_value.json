@@ -41,6 +41,17 @@
           "formula": "Enterprise Value = Equity Value + Total Debt + Preferred Stock + Minority Interest – Cash & Cash Equivalents"
         },
         {
+          "type": "diagram",
+          "title": "Components of Enterprise Value",
+          "variant": "stack",
+          "layers": [
+            {"label": "Common Equity (Market Cap)", "pct": 55, "color": "#4F46E5"},
+            {"label": "Total Debt (all interest-bearing)", "pct": 30, "color": "#DC2626"},
+            {"label": "Preferred Stock", "pct": 5, "color": "#D97706"},
+            {"label": "Minority Interest", "pct": 10, "color": "#0891B2"}
+          ]
+        },
+        {
           "type": "h2",
           "text": "The House Analogy — The Most Intuitive Explanation"
         },
@@ -55,6 +66,37 @@
         {
           "type": "p",
           "text": "The most common point of confusion in this topic is why cash is subtracted when going from equity value to enterprise value. The intuition: if you are acquiring a company for $1 billion (enterprise value), and that company has $200 million of cash sitting in its bank account, you can immediately use that cash after the acquisition. Your effective 'net' cost is only $800 million — because you paid $1 billion but got $200 million in cash back. Therefore: EV = Equity Value + Debt - Cash. The cash is not a productive asset of the operating business — it's just money sitting idle. Note an important nuance: only 'excess' cash that isn't required to run the business should theoretically be subtracted. In practice, bankers subtract the entire reported cash balance unless significant amounts are clearly restricted or operationally trapped."
+        },
+        {
+          "type": "question",
+          "question": "A company has a market cap of $500M, $200M of total debt, and $50M of cash. What is Enterprise Value? If a second company has identical operations but $0 debt and $50M cash, what is its EV?",
+          "answer": "Company 1: EV = Equity Value + Debt - Cash = $500M + $200M - $50M = $650M. Company 2: EV = $500M (market cap, but now equity value reflects no debt) + $0 debt - $50M cash. However, with identical operations, if the market is rational, Company 2's market cap should be higher than Company 1's because it has no debt obligation. If we assume both companies have the same $650M operating value (EV), then Company 2's equity value = EV - Debt + Cash = $650M - $0 + $50M = $700M. Key insight: identical businesses can have very different market caps (equity values) based purely on capital structure. This is exactly why EV/EBITDA is superior to P/E for comparing companies — EV strips out the financing noise and focuses on the operating business."
+        },
+        {
+          "type": "h2",
+          "text": "Real Company Examples: EV vs. Equity Value"
+        },
+        {
+          "type": "p",
+          "text": "Understanding EV vs. equity value becomes vivid when applied to real companies with very different capital structures. Some of the clearest illustrations come from companies in capital-intensive industries (utilities, telecom) where debt dominates, versus capital-light technology companies where cash accumulation can actually make EV lower than equity value."
+        },
+        {
+          "type": "chart",
+          "title": "Equity Value vs. Enterprise Value: Real Company Examples",
+          "subtitle": "Approximate figures — illustrating how capital structure creates the EV-equity gap",
+          "data": [
+            {"label": "Microsoft (net cash, EV < equity)", "value": 95, "suffix": "% of equity value", "color": "#4F46E5"},
+            {"label": "Apple (large net cash position)", "value": 93, "suffix": "% of equity value", "color": "#7C3AED"},
+            {"label": "Tesla (modest net debt/cash mix)", "value": 100, "suffix": "% of equity value", "color": "#2563EB"},
+            {"label": "Ford (significant debt, EV >> equity)", "value": 175, "suffix": "% of equity value", "color": "#D97706"},
+            {"label": "Verizon (heavy debt loads, telecom)", "value": 240, "suffix": "% of equity value", "color": "#DC2626"}
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Worked Example: Five Companies — EV Bridge at a Glance",
+          "text": "Microsoft: Market Cap ~$3,100B, Debt ~$50B, Cash ~$75B → EV ~$3,075B (EV slightly below equity value — net cash position). Apple: Market Cap ~$2,900B, Debt ~$110B, Cash ~$165B → EV ~$2,845B (also net cash). Tesla: Market Cap ~$550B, Debt ~$10B, Cash ~$30B → EV ~$530B (modest net cash). Ford: Market Cap ~$45B, Debt ~$120B, Cash ~$20B → EV ~$145B (EV is 3.2x equity value due to massive automotive financing debt). Verizon: Market Cap ~$165B, Debt ~$150B, Cash ~$5B → EV ~$310B (EV is nearly 2x equity value — heavy capital requirements financed by debt). Implication: Comparing Ford and Tesla on price/earnings would be misleading; comparing on EV/EBITDA reveals their true relative valuations independent of how each is financed."
         },
         {
           "type": "h2",
@@ -106,6 +148,10 @@
           ]
         },
         {
+          "type": "highlight",
+          "text": "Enterprise value is not what shares trade for — it is the total price to buy the entire business from all capital providers, including the assumption of debt. This distinction is the single most important conceptual separation in all of valuation, and every M&A deal, LBO, and DCF rests on understanding it precisely."
+        },
+        {
           "type": "callout",
           "variant": "insight",
           "title": "The Most Common Interview Mistake",
@@ -141,6 +187,20 @@
           "text": "The EV-to-Equity Value bridge is a structured framework for moving between the total firm value and what belongs to common shareholders. In practice, you will perform this bridge in almost every transaction — whether starting from a comparable companies analysis (which gives you EV/EBITDA multiples) and working to implied equity value per share, or starting from a public company's market cap and backing into EV for a multiples comparison. The bridge has five main components: cash (subtracts from EV to get equity value), total debt (adds to equity value to get EV), preferred stock (adds to equity value), minority interest (adds to equity value), and equity investments / unconsolidated affiliates (subtracts from EV). Getting each component right requires understanding what it represents economically."
         },
         {
+          "type": "diagram",
+          "title": "The EV to Equity Value Bridge — Step by Step",
+          "variant": "steps",
+          "steps": [
+            "Start with Equity Value: Share Price × Fully Diluted Shares Outstanding",
+            "Add Total Debt: all interest-bearing obligations (term loans, bonds, revolvers, capital leases) — a buyer assumes these",
+            "Add Preferred Stock: at liquidation preference — preferred holders must be bought out in a full acquisition",
+            "Add Minority Interest: because 100% of subsidiary EBITDA is consolidated, 100% of subsidiary value must be in EV",
+            "Subtract Cash & Equivalents: a buyer receives this cash immediately post-close, reducing effective cost",
+            "Subtract Equity Investments: investee EBITDA is NOT in the parent's financials, so the investment value must be excluded from operating EV",
+            "Result = Enterprise Value: the total, capital-structure-neutral value of the operating business"
+          ]
+        },
+        {
           "type": "h2",
           "text": "Component 1: Total Debt (All Interest-Bearing Obligations)"
         },
@@ -173,12 +233,31 @@
           "text": "Minority interest (formally called non-controlling interest, or NCI, under GAAP) arises when a parent company owns a majority stake (typically 50-100%) in a subsidiary but not 100%. The parent consolidates 100% of the subsidiary's revenue, EBITDA, and other financials into its financial statements — but it only owns, say, 75%. The remaining 25% belongs to minority shareholders. Because EBITDA in the numerator includes 100% of the subsidiary's earnings, the EV denominator must also include 100% of the subsidiary's value — including the 25% belonging to minority holders. This means minority interest must be added to equity value to reach full EV. Failing to add minority interest understates EV and makes EV/EBITDA multiples appear artificially low."
         },
         {
+          "type": "callout",
+          "variant": "example",
+          "title": "Worked Example: Minority Interest in the Bridge",
+          "text": "ParentCo owns 80% of SubsidiaryCo. SubsidiaryCo generates $100M of EBITDA. Under GAAP consolidation, ParentCo's income statement and segment reporting include the full $100M of SubsidiaryCo EBITDA — even though ParentCo only owns 80% of the economics. If ParentCo's total consolidated EBITDA is $400M and EV/EBITDA comps are 10x, implied EV = $4,000M. But this EV must reflect 100% of SubsidiaryCo — including the 20% that belongs to minority holders. If the minority interest balance sheet value is $200M (representing the 20% stake), it gets added to equity value when computing EV: EV = Market Cap + Debt + Minority Interest $200M - Cash. Omitting it would mean the EV is understated by $200M while the EBITDA numerator is correct — creating an artificially depressed EV/EBITDA multiple."
+        },
+        {
           "type": "h2",
           "text": "Component 5: Equity Investments / Unconsolidated Affiliates"
         },
         {
           "type": "p",
           "text": "Equity investments (also called unconsolidated affiliates or equity method investments) arise when a company owns a significant but non-controlling stake in another entity — typically 20-50% ownership. Under GAAP, these investments are accounted for using the equity method: only the company's proportional share of the investee's net income flows through the income statement (not revenue or EBITDA). Since EBITDA doesn't include revenue or earnings from these affiliates, but the market value of the equity investment is part of the company's total value, the EV bridge must subtract the equity investment value (typically at fair market value or book value). This is the reverse of minority interest — where minority interest adds back because financials are over-included, equity investments subtract because financials are under-included."
+        },
+        {
+          "type": "h3",
+          "text": "Treatment of Pension Obligations"
+        },
+        {
+          "type": "p",
+          "text": "Pension liabilities represent another important adjustment in the EV bridge — particularly for industrial companies, airlines, and legacy manufacturers with defined-benefit pension plans. Under accounting rules, the 'underfunded' portion of a pension (pension obligation minus pension assets) appears as a net liability on the balance sheet. In an M&A transaction, a buyer inherits this underfunded obligation — it will require future cash contributions to fund retired employees' benefits. For this reason, many bankers add the pension underfunding to debt when computing EV: EV = Equity Value + Debt + Pension Underfunding + Minority Interest + Preferred - Cash. Similarly, unfunded post-retirement medical obligations (OPEB) are treated the same way. For companies with large legacy workforces (GM, Boeing, legacy airlines), pension adjustments can represent billions of dollars and significantly impact the deal EV."
+        },
+        {
+          "type": "question",
+          "question": "Build the EV bridge: Share price $40, basic shares 200M, 10M in-the-money options (net 3M dilutive shares via TSM), $500M term loan, $200M senior notes, $50M cash, $75M preferred stock at liquidation value, $120M minority interest, $80M equity investments. What is EV?",
+          "answer": "Step 1 — Fully Diluted Shares: 200M basic + 3M net option dilution = 203M. Step 2 — Equity Value: 203M × $40 = $8,120M. Step 3 — EV Bridge: Start with equity value $8,120M. Add total debt: $500M + $200M = $700M. Add preferred stock: $75M. Add minority interest: $120M. Subtract cash: -$50M. Subtract equity investments: -$80M. Enterprise Value = $8,120M + $700M + $75M + $120M - $50M - $80M = $8,885M. Sanity check: if EBITDA = $800M, implied EV/EBITDA = 11.1x — reasonable for a mid-cap diversified company. Note: the equity investments are subtracted because their earnings (at the investee level) are NOT included in this company's consolidated EBITDA — including them in EV would overstate it relative to the earnings base."
         },
         {
           "type": "h2",
@@ -288,6 +367,21 @@
           "formula": "Net New Shares = Options Exercisable – (Exercise Proceeds / Current Share Price) = Options – (Options × Strike Price / Share Price)"
         },
         {
+          "type": "question",
+          "question": "A company has 100M basic shares, 10M options at a $5 strike price, and the current share price is $20. What is the fully diluted share count using the treasury stock method?",
+          "answer": "Step 1 — Check if in-the-money: Strike price $5 < current price $20 → YES, these options are in-the-money and will cause dilution. Step 2 — Calculate exercise proceeds: 10M options × $5 strike = $50M of proceeds received by the company. Step 3 — Calculate buyback: $50M / $20 current price = 2.5M shares repurchased. Step 4 — Net dilution: 10M shares issued - 2.5M shares repurchased = 7.5M net new shares. Step 5 — Fully diluted shares: 100M basic + 7.5M net = 107.5M fully diluted shares. Note: if the share price were $5 (equal to strike), net dilution = 10M - (10M × $5/$5) = 10M - 10M = 0 dilution. At-the-money options create zero dilution because all proceeds are used to buy back an equal number of shares. This is the mathematical proof that TSM dilution only occurs when the stock price exceeds the strike."
+        },
+        {
+          "type": "h2",
+          "text": "Worked Example: Treasury Stock Method"
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Worked Example: Full TSM Calculation with Multiple Tranches",
+          "text": "Company: IndustrialCo — Current Share Price: $25\n\nBASIC SHARES: 50M\n\nOPTION TRANCHES:\nTranche A: 2M options at $10 strike (deeply in-the-money)\n  Proceeds: 2M × $10 = $20M → Buyback: $20M / $25 = 0.8M shares\n  Net dilution: 2.0M - 0.8M = 1.2M shares\n\nTranche B: 3M options at $22 strike (slightly in-the-money)\n  Proceeds: 3M × $22 = $66M → Buyback: $66M / $25 = 2.64M shares\n  Net dilution: 3.0M - 2.64M = 0.36M shares\n\nTranche C: 4M options at $30 strike (out-of-the-money at $25 price)\n  OUT-OF-THE-MONEY → zero dilution\n\nTOTAL NET DILUTION FROM OPTIONS: 1.2M + 0.36M = 1.56M shares\nFULLY DILUTED SHARES: 50M + 1.56M = 51.56M\nIMPLIED EQUITY VALUE: 51.56M × $25 = $1,289M\n\nNote how Tranche C (4M options) contributes zero dilution despite being the largest tranche — because it's out of the money. This is why dilution analysis must be done tranche-by-tranche."
+        },
+        {
           "type": "h2",
           "text": "Restricted Stock Units (RSUs) and Performance Share Units (PSUs)"
         },
@@ -302,6 +396,14 @@
         {
           "type": "p",
           "text": "Convertible notes are a hybrid security — part debt, part option. They pay interest like regular bonds but give holders the right to convert into common stock at a pre-specified conversion price. For dilution purposes, the treatment depends on whether the notes are in-the-money (current share price exceeds conversion price). If in-the-money: use the 'if-converted' method — assume conversion, add the shares issued, and add back the after-tax interest expense (since the debt no longer exists). If out-of-the-money: treat as straight debt, add to EV bridge as debt, include face value in the debt balance. Example: $500M convertible note at a conversion price of $40/share, current stock at $55. The notes are in-the-money. Shares from conversion: $500M / $40 = 12.5M new shares. The $500M is removed from debt and replaced with 12.5M diluted shares in the equity value calculation."
+        },
+        {
+          "type": "h3",
+          "text": "Anti-Dilutive Securities — When Securities Are Excluded"
+        },
+        {
+          "type": "p",
+          "text": "Anti-dilutive securities are those that, if included, would increase EPS rather than decrease it — making diluted EPS higher than basic EPS. This can happen when a company reports a net loss: adding dilutive shares to the denominator while the numerator (net income) is negative would make the per-share loss look smaller, which would be misleading. GAAP requires that when a company reports a net loss, all dilutive securities are excluded from the diluted share count — so diluted EPS equals basic EPS in loss years. A second scenario: certain convertible instruments, when 'converted,' add so much interest back to the numerator (improving the loss) that the per-share result improves — these are also anti-dilutive and excluded. In practice, this means fast-growing companies with losses often report identical basic and diluted EPS, even if they have substantial options and RSU grants outstanding."
         },
         {
           "type": "callout",
@@ -395,6 +497,20 @@
           "text": "EV/EBITDA is the most widely used multiple in investment banking. It is capital-structure-neutral (EBITDA is before interest), strips out non-cash D&A, and is relatively comparable across companies with different accounting policies. The typical range varies enormously by industry: software companies can trade at 20-40x EBITDA (high growth, high margins, capital-light); industrials at 7-12x; consumer staples at 9-14x; telecommunications at 6-10x. EV/EBIT is similar but includes D&A, making it more appropriate for capital-intensive businesses where depreciation is economically meaningful (you must replace assets). EV/Revenue is used for companies with no EBITDA or negative EBITDA — early-stage SaaS, biotech, or high-growth businesses where revenue is the primary metric. In M&A, bankers typically use EV/EBITDA as the primary benchmark and EV/EBIT or EV/Revenue as secondary."
         },
         {
+          "type": "chart",
+          "title": "Typical EV/EBITDA Multiples by Sector",
+          "subtitle": "Higher multiples reflect faster growth, higher margins, more predictable cash flows, and lower capex intensity",
+          "data": [
+            {"label": "SaaS / Software (high growth)", "value": 30, "suffix": "x", "color": "#4F46E5"},
+            {"label": "Healthcare / MedTech", "value": 18, "suffix": "x", "color": "#7C3AED"},
+            {"label": "Consumer Staples", "value": 12, "suffix": "x", "color": "#2563EB"},
+            {"label": "Industrials / Manufacturing", "value": 10, "suffix": "x", "color": "#0891B2"},
+            {"label": "Energy (Midstream)", "value": 11, "suffix": "x", "color": "#059669"},
+            {"label": "Telecom", "value": 8, "suffix": "x", "color": "#D97706"},
+            {"label": "Retail", "value": 7, "suffix": "x", "color": "#DC2626"}
+          ]
+        },
+        {
           "type": "h2",
           "text": "Equity Multiples: P/E, P/BV, P/FCF, PEG"
         },
@@ -409,6 +525,19 @@
         {
           "type": "p",
           "text": "A critical trap to avoid: you cannot combine EV in the numerator with net income in the denominator. Net income is a post-interest, post-tax metric — it belongs only to equity holders. But EV includes debt (belonging to debt holders). Pairing them creates an incoherent hybrid: the numerator includes claims by debt holders, but the denominator has already paid out the debt holders (via interest expense). The result is a nonsensical metric that is inconsistent across capital structures. As leverage increases (more debt → more interest expense → lower net income), EV goes up while net income goes down, making the ratio explode even for identical operating businesses. This is why bankers use EV/EBITDA (not EV/Net Income) and P/E (not MC/EBITDA)."
+        },
+        {
+          "type": "question",
+          "question": "Two identical businesses each generate $100M of EBITDA. Company A has zero debt; Company B has $300M of debt at 7% interest. Tax rate 25%. Both trade at 10x EV/EBITDA. What are their respective P/E ratios, and what does this prove?",
+          "answer": "Both companies: EV = 10x × $100M = $1,000M. Company A equity value = $1,000M (no debt, no cash adjustment). Company B equity value = $1,000M - $300M debt = $700M. Net income: Company A: EBITDA $100M - D&A $0 (assume zero for simplicity) = EBIT $100M - Interest $0 = EBT $100M × (1-25%) = Net Income $75M. Company B: EBIT $100M - Interest ($300M × 7% = $21M) = EBT $79M × 75% = Net Income $59.25M. P/E ratios: Company A = $1,000M / $75M = 13.3x. Company B = $700M / $59.25M = 11.8x. Identical businesses, identical EV/EBITDA of 10x, but different P/E ratios (13.3x vs. 11.8x) purely because of capital structure. This proves that P/E is NOT a capital-structure-neutral metric and should not be used to compare companies with different leverage levels. EV/EBITDA gives the same multiple for both companies; P/E gives misleading different multiples."
+        },
+        {
+          "type": "h3",
+          "text": "When to Prefer Equity Multiples"
+        },
+        {
+          "type": "p",
+          "text": "Despite the superiority of EV multiples for cross-company comparison, equity multiples have specific, important use cases. Banks and financial institutions are best valued on P/E and P/Book because their balance sheets are the business — lending institutions cannot be meaningfully analyzed on EV/EBITDA (the concept of 'operating income before interest' is incoherent for a bank whose primary business IS interest income). Insurance companies are valued on P/Book (book value tracks investment portfolio and policy liabilities) and P/E. Investment managers are often valued on P/E or Price/AUM (assets under management). Dividend-paying utilities and mature consumer staples are often compared using P/E alongside EV/EBITDA because income investors specifically care about earnings available to shareholders. The rule: use EV multiples as the primary benchmark for industrial, technology, healthcare, and consumer companies. Shift to equity multiples for financials and when the analysis specifically concerns equity investor returns."
         },
         {
           "type": "h2",
@@ -548,6 +677,10 @@
           "variant": "insight",
           "title": "Why Capital Structure Neutrality Matters",
           "text": "Consider two identical businesses, each generating $100M of EBITDA. Company A has zero debt. Company B has $300M of debt at 7% interest ($21M annual interest). After taxes (25% rate), Company A has net income of $75M (assuming $0 interest) and Company B has net income of $59.25M ($100M - $21M interest = $79M EBT × 75% = $59.25M). If both companies trade at 10x EV/EBITDA, both have EV = $1,000M. Company A's equity value = $1,000M (no debt). Company B's equity value = $1,000M - $300M = $700M. P/E ratios: Company A = $1,000M / $75M = 13.3x; Company B = $700M / $59.25M = 11.8x. Same business, same EV/EBITDA, but different P/E ratios — because leverage mechanically depresses net income and affects equity value. This proves why EV/EBITDA is superior for cross-company comparison."
+        },
+        {
+          "type": "highlight",
+          "text": "The matching principle of multiples is non-negotiable: EV multiples must pair with pre-interest metrics (EBITDA, EBIT, Revenue) and equity multiples must pair with post-interest metrics (net income, book equity). Violating this rule produces meaningless numbers — and in an M&A context, it means mispricing a deal by potentially hundreds of millions of dollars."
         },
         {
           "type": "callout",

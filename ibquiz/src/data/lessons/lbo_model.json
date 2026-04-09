@@ -40,6 +40,18 @@
           "formula": "Without Leverage:\n  Acquisition Price: $500M (all equity)\n  Exit Price after 5 years: $750M (50% increase in value)\n  Return on Equity: 50% total, ~8.5% IRR\n\nWith Leverage (60% Debt / 40% Equity):\n  Acquisition Price: $500M\n  Debt: $300M | Equity: $200M\n  Exit Price: $750M\n  Debt Repaid: $240M (assuming $60M paydown over 5 years)\n  Remaining Debt at Exit: $240M\n  Exit Equity: $750M - $240M = $510M\n  Return on $200M equity: 2.55x, ~20.6% IRR\n\nSame business appreciation, dramatically different equity return."
         },
         {
+          "type": "diagram",
+          "title": "How Leverage Amplifies Equity Returns — Step by Step",
+          "variant": "steps",
+          "steps": [
+            "Step 1 — Borrow cheap capital: Debt costs 7–9% annually (tax-deductible). Equity requires 20%+ returns. The spread between debt cost and business ROC accrues to equity.",
+            "Step 2 — Smaller equity check: Financing $600M of a $1B deal with debt means the sponsor invests only $400M. A given exit equity value generates higher IRR on a smaller denominator.",
+            "Step 3 — Business cash flows repay debt: Over a 5-year hold, FCF sweeps reduce debt from $600M to $250M. Each dollar of debt repaid transfers value from creditors to equity holders.",
+            "Step 4 — Tax shield amplifies FCF: Interest expense is tax-deductible. At 21% corporate tax, $50M of interest saves $10.5M in taxes annually — subsidizing part of the financing cost.",
+            "Step 5 — Exit equity is the residual: Exit EV minus remaining net debt equals equity value. The entire benefit of debt paydown and EBITDA growth flows to equity — not shared with lenders."
+          ]
+        },
+        {
           "type": "p",
           "text": "The second benefit is the interest tax shield. In the US, interest expense is tax-deductible. A company generating $100M EBITDA that pays $50M in interest only pays taxes on the remaining $50M of earnings, saving approximately $10.5M per year in taxes at a 21% rate. These tax savings effectively subsidize part of the interest cost, making debt even more attractive from an after-tax perspective. This is the same principle that makes mortgage interest deductible for homeowners — the government shares in the cost of your financing."
         },
@@ -56,6 +68,16 @@
             "Subordinated Lenders (Credit Funds): Provide mezzanine or high-yield bond financing. Higher yield, unsecured, subordinate to senior debt. Typically 1–2x additional EBITDA.",
             "Management Team: Often retains 3–10% equity stake (the 'rollover') and participates in option plans. Aligned with the PE sponsor to grow the business and execute the exit.",
             "Sellers: Receive the acquisition price (equity value) at close. In secondary buyouts, the seller is a prior PE sponsor; in take-privates, the seller is the public market."
+          ]
+        },
+        {
+          "type": "chart",
+          "title": "Typical PE Deal Capital Structure by Leverage Level",
+          "subtitle": "Debt/equity split across deal sizes and market conditions",
+          "data": [
+            {"label": "Equity (30%)", "value": 30, "suffix": "%"},
+            {"label": "Senior Secured TLB (50%)", "value": 50, "suffix": "%"},
+            {"label": "HY / Unsecured Notes (20%)", "value": 20, "suffix": "%"}
           ]
         },
         {
@@ -78,6 +100,11 @@
             "Non-cyclical or counter-cyclical revenue: Healthcare services, waste management, and essential business services — essential nature means revenue is recession-resistant.",
             "Clean balance sheet: Limited existing debt and no complex off-balance-sheet liabilities makes the financing structure simpler to execute."
           ]
+        },
+        {
+          "type": "question",
+          "question": "A company is acquired for $500M (5x EBITDA of $100M) with 60% debt / 40% equity. EBITDA grows to $130M over 5 years. The company exits at 6x EV/EBITDA with debt paid down to $200M. What is the equity value at exit, the MoM, and the approximate IRR?",
+          "answer": "Step 1 — Entry structure: Purchase price = $500M. Debt = 60% × $500M = $300M. Equity check = 40% × $500M = $200M.\n\nStep 2 — Exit enterprise value: Exit EBITDA = $130M. Exit multiple = 6.0x. Exit EV = $130M × 6.0x = $780M.\n\nStep 3 — Exit equity value: Remaining debt = $200M (given — paid down from $300M to $200M over 5 years). Exit equity = $780M − $200M = $580M.\n\nStep 4 — Returns: MoM = $580M / $200M = 2.9x. IRR = (2.9)^(1/5) − 1 = 1.237 − 1 = 23.7%.\n\nKey insight: Three things created value here. (1) EBITDA growth from $100M to $130M = $180M incremental EV at 6x exit. (2) Debt paydown of $100M transferred $100M from creditors to equity. (3) Note that exit multiple contracted from entry 5x to exit 6x — in this case it expanded, which added further value. If exit multiple had stayed at 5x, exit EV = $650M, equity = $650M − $200M = $450M, MoM = 2.25x ≈ 18% IRR. The multiple expansion from 5x to 6x was responsible for raising IRR from ~18% to ~24% — illustrating how sensitive LBO returns are to exit multiple."
         },
         {
           "type": "h2",
@@ -106,48 +133,12 @@
             "7-Year Hold"
           ],
           "rows": [
-            [
-              "1.5x",
-              "14.5%",
-              "10.7%",
-              "8.4%",
-              "5.9%"
-            ],
-            [
-              "2.0x",
-              "26.0%",
-              "18.9%",
-              "14.9%",
-              "10.4%"
-            ],
-            [
-              "2.5x",
-              "35.7%",
-              "25.7%",
-              "20.1%",
-              "14.0%"
-            ],
-            [
-              "3.0x",
-              "44.2%",
-              "31.6%",
-              "24.6%",
-              "17.0%"
-            ],
-            [
-              "3.5x",
-              "51.8%",
-              "36.8%",
-              "28.5%",
-              "19.7%"
-            ],
-            [
-              "4.0x",
-              "58.7%",
-              "41.4%",
-              "32.0%",
-              "21.9%"
-            ]
+            ["1.5x", "14.5%", "10.7%", "8.4%", "5.9%"],
+            ["2.0x", "26.0%", "18.9%", "14.9%", "10.4%"],
+            ["2.5x", "35.7%", "25.7%", "20.1%", "14.0%"],
+            ["3.0x", "44.2%", "31.6%", "24.6%", "17.0%"],
+            ["3.5x", "51.8%", "36.8%", "28.5%", "19.7%"],
+            ["4.0x", "58.7%", "41.4%", "32.0%", "21.9%"]
           ]
         },
         {
@@ -155,6 +146,10 @@
           "variant": "tip",
           "title": "The Two IRR Rules of Thumb to Memorize",
           "text": "Rule 1: '2x in 5 years ≈ 15% IRR' and '3x in 5 years ≈ 25% IRR.' These anchor your mental math for any quick PE deal evaluation.\n\nRule 2: The Rule of 72 — divide 72 by the annual interest rate to get the approximate years to double your money. At 25% IRR, money doubles every ~72/25 = ~2.9 years. So in 5 years at 25% IRR, you roughly triple your money (2.9 × 2 ≈ 5.8 years to 4x, meaning 5 years is just under 3x) — which checks out against the table."
+        },
+        {
+          "type": "highlight",
+          "text": "The entry multiple is the most controllable risk in any LBO. Every extra turn of entry multiple paid is a direct headwind to IRR that no amount of operational improvement can undo — discipline at entry is the hallmark of great PE investing."
         },
         {
           "type": "callout",
@@ -191,6 +186,16 @@
           "formula": "USES OF FUNDS:\n  Purchase Price = Entry Multiple × LTM EBITDA\n  + Transaction Fees (banking, legal, due diligence) ≈ 1–2% of deal value\n  + Financing Fees ≈ 1–3% of debt raised\n  + Refinanced Target Debt (if existing debt is paid off at close)\n  = Total Uses\n\nSOURCES OF FUNDS:\n  Senior Secured Term Loan (TLB) = x.x× EBITDA\n  Senior Secured Notes (optional)\n  High Yield / Senior Unsecured Notes (optional)\n  Mezzanine / PIK Notes (optional)\n  PE Sponsor Equity = Total Uses - Total Debt\n  = Total Sources\n\nCheck: Total Sources = Total Uses (always)"
         },
         {
+          "type": "diagram",
+          "title": "Typical LBO Capital Structure — Tranche Stack",
+          "variant": "stack",
+          "layers": [
+            {"label": "PE Sponsor Equity (30%)", "pct": 30, "color": "#b8952a"},
+            {"label": "HY Bonds / Unsecured Notes (20%)", "pct": 20, "color": "#6b2d2d"},
+            {"label": "Term Loan B — Senior Secured (50%)", "pct": 50, "color": "#1e5f74"}
+          ]
+        },
+        {
           "type": "h2",
           "text": "Typical Leverage Ratios by Market Environment"
         },
@@ -209,34 +214,21 @@
             "Context"
           ],
           "rows": [
-            [
-              "Hot Credit Market (2005–2007, 2020–2021)",
-              "4.0–5.0x",
-              "5.5–7.0x",
-              "25–35%",
-              "Easy money, tight spreads, high risk appetite"
-            ],
-            [
-              "Normal Credit Market (2012–2019)",
-              "3.0–4.0x",
-              "4.5–6.0x",
-              "35–45%",
-              "Post-crisis recovery, Basel III constraints"
-            ],
-            [
-              "Tight Credit Market (2009, 2022–2023)",
-              "2.0–3.0x",
-              "3.5–5.0x",
-              "45–60%",
-              "Rate shock, spread widening, lender caution"
-            ],
-            [
-              "Middle Market (all environments)",
-              "2.5–4.0x",
-              "4.0–6.0x",
-              "35–50%",
-              "Smaller companies, less capital market access"
-            ]
+            ["Hot Credit Market (2005–2007, 2020–2021)", "4.0–5.0x", "5.5–7.0x", "25–35%", "Easy money, tight spreads, high risk appetite"],
+            ["Normal Credit Market (2012–2019)", "3.0–4.0x", "4.5–6.0x", "35–45%", "Post-crisis recovery, Basel III constraints"],
+            ["Tight Credit Market (2009, 2022–2023)", "2.0–3.0x", "3.5–5.0x", "45–60%", "Rate shock, spread widening, lender caution"],
+            ["Middle Market (all environments)", "2.5–4.0x", "4.0–6.0x", "35–50%", "Smaller companies, less capital market access"]
+          ]
+        },
+        {
+          "type": "chart",
+          "title": "Interest Rate by Debt Tranche — Typical LBO Financing",
+          "subtitle": "All-in rates in a normal-to-tight credit market (2024 context)",
+          "data": [
+            {"label": "Revolver", "value": 7.0, "suffix": "%"},
+            {"label": "Term Loan B (SOFR+350)", "value": 8.75, "suffix": "%"},
+            {"label": "HY Bonds (fixed)", "value": 8.5, "suffix": "%"},
+            {"label": "Mezzanine", "value": 13.5, "suffix": "%"}
           ]
         },
         {
@@ -261,6 +253,11 @@
           ]
         },
         {
+          "type": "question",
+          "question": "Why do PE firms prefer Term Loan B over Term Loan A for leveraged buyouts?",
+          "answer": "There are four core reasons PE firms strongly prefer TLB over TLA:\n\n1. Minimal amortization: TLB requires only 1% annual amortization (vs. 5–10% per year for TLA). This preserves cash flow for operations, dividends, and add-on acquisitions rather than mandatory debt repayment. Over a 5-year hold, TLB requires only 5% amortization vs. 25–50% for TLA — a massive FCF difference.\n\n2. Institutional investor base: TLBs are held by CLOs, hedge funds, and credit funds — not relationship banks. This means no 'credit relationship' pressure. PE firms can refinance TLBs opportunistically without worrying about annoying a key bank relationship, and pricing is purely market-driven.\n\n3. Prepayment flexibility: TLBs are callable with only a 101 soft call for the first 6 months, then prepayable at par. This means the PE firm can refinance if rates improve or credit markets tighten. TLA prepayment provisions vary but are generally more restrictive.\n\n4. Longer maturity: TLBs typically have 7-year maturities vs. 5 years for TLA, giving more runway before refinancing is required — reducing maturity risk during the hold period.\n\nThe trade-off: TLBs price at a higher spread than TLAs (SOFR+300–400bps vs. SOFR+200–250bps) because institutional lenders demand more yield for the bullet structure. But the FCF preservation from minimal amortization more than compensates."
+        },
+        {
           "type": "table",
           "caption": "LBO Debt Tranche Comparison — Summary",
           "headers": [
@@ -271,49 +268,21 @@
             "Held By"
           ],
           "rows": [
-            [
-              "Revolving Credit",
-              "Most Senior",
-              "SOFR + 150–250 bps (~6.6–7.6%)",
-              "Revolver — flexible",
-              "Banks"
-            ],
-            [
-              "Term Loan B",
-              "Senior Secured",
-              "SOFR + 300–400 bps (~7.7–8.7%)",
-              "1%/yr + bullet",
-              "CLOs, Hedge Funds"
-            ],
-            [
-              "Senior Secured Notes",
-              "Senior Secured",
-              "7.0–9.0% fixed",
-              "Bullet at maturity",
-              "Bond investors"
-            ],
-            [
-              "Senior Unsecured Notes",
-              "Senior Unsecured",
-              "9.0–11.0% fixed",
-              "Bullet at maturity",
-              "High yield funds"
-            ],
-            [
-              "Mezzanine / PIK",
-              "Junior / Subordinated",
-              "12–18%+ (cash + PIK)",
-              "PIK or small cash",
-              "Credit opps funds"
-            ],
-            [
-              "Sponsor Equity",
-              "Subordinated (Equity)",
-              "Variable (equity return)",
-              "Exit proceeds",
-              "PE Firm + Management"
-            ]
+            ["Revolving Credit", "Most Senior", "SOFR + 150–250 bps (~6.6–7.6%)", "Revolver — flexible", "Banks"],
+            ["Term Loan B", "Senior Secured", "SOFR + 300–400 bps (~7.7–8.7%)", "1%/yr + bullet", "CLOs, Hedge Funds"],
+            ["Senior Secured Notes", "Senior Secured", "7.0–9.0% fixed", "Bullet at maturity", "Bond investors"],
+            ["Senior Unsecured Notes", "Senior Unsecured", "9.0–11.0% fixed", "Bullet at maturity", "High yield funds"],
+            ["Mezzanine / PIK", "Junior / Subordinated", "12–18%+ (cash + PIK)", "PIK or small cash", "Credit opps funds"],
+            ["Sponsor Equity", "Subordinated (Equity)", "Variable (equity return)", "Exit proceeds", "PE Firm + Management"]
           ]
+        },
+        {
+          "type": "h2",
+          "text": "Covenant-Lite Structure — What It Means for PE"
+        },
+        {
+          "type": "p",
+          "text": "A 'covenant-lite' (cov-lite) TLB contains only incurrence covenants — restrictions triggered only when the borrower takes a specific action — rather than maintenance covenants that are tested every quarter. By 2022, over 90% of broadly syndicated TLBs were cov-lite. For PE sponsors, cov-lite is enormously valuable: if EBITDA misses projections in Year 2, the company does not automatically face a covenant breach and forced lender renegotiation. The sponsor has time to execute their operational plan without lender interference. The flip side: lenders lose their early-warning system and intervention rights. This has been a major structural shift that has meaningfully transferred power from lenders to borrowers in the leveraged loan market."
         },
         {
           "type": "h2",
@@ -367,6 +336,21 @@
           "text": "A complete LBO model follows a structured sequence. Unlike a DCF where the objective is to determine enterprise value, the LBO model starts with the price you're paying (given or assumed) and works forward to determine what returns the PE sponsor will earn at exit. Each of the 8 steps builds on the previous one, and errors in early steps cascade through the entire model. Disciplined model architecture — clear assumptions tabs, consistent row structure, robust error checks — is not optional; it's what separates junior analyst models from models that actually get used on live deals."
         },
         {
+          "type": "diagram",
+          "title": "The 8-Step LBO Model Build",
+          "variant": "steps",
+          "steps": [
+            "Step 1 — Transaction Assumptions: Set entry multiple, LTM EBITDA, purchase price, debt/equity split, individual tranche amounts and interest rates, management rollover, and transaction fees.",
+            "Step 2 — Sources and Uses Table: Build the full S&U table. Confirm total funding equals total acquisition cost. Calculate the sponsor equity check as the residual after all debt and rollover equity.",
+            "Step 3 — Opening Balance Sheet: Apply purchase accounting adjustments — goodwill creation, debt refinancing, equity rollover. This produces the Day 1 post-close balance sheet.",
+            "Step 4 — Operating Model Projection: Build a 5–7 year P&L and cash flow projection. Key drivers: revenue growth, EBITDA margin, D&A, taxes, capex, and working capital changes.",
+            "Step 5 — Debt Schedule: For each debt tranche, track beginning balance, interest expense, mandatory amortization, optional prepayments from the cash sweep, and ending balance.",
+            "Step 6 — Cash Flow Sweep: Calculate FCF available after mandatory amortization, interest, taxes, capex, and working capital. Apply the cash sweep to repay debt optionally.",
+            "Step 7 — Exit Assumptions: Set exit year (typically Year 5) and exit EV/EBITDA multiple. Calculate exit enterprise value = Exit EBITDA × Exit Multiple.",
+            "Step 8 — Exit Proceeds Waterfall: From exit EV, subtract remaining net debt to get exit equity value. Allocate between sponsor, management rollover, and incentive equity. Calculate IRR and MoM."
+          ]
+        },
+        {
           "type": "list",
           "ordered": true,
           "items": [
@@ -379,6 +363,17 @@
             "Step 7 — Exit Assumptions: Set exit year (typically Year 5) and exit multiple (EV/EBITDA at exit). Calculate exit enterprise value = Exit EBITDA × Exit Multiple.",
             "Step 8 — Exit Proceeds Waterfall: From exit EV, subtract remaining net debt to get exit equity value. Allocate exit equity between PE sponsor, management rollover, and any incentive equity. Calculate sponsor IRR and MoM."
           ]
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Sources and Uses — Full Worked Example for an $800M Deal",
+          "text": "Entry: 8.0x LTM EBITDA of $100M = $800M Purchase Price\nFinancing structure: 50% TLB + 20% HY + 30% equity\n\nUSES:\n  Equity Purchase Price:       $800M\n  Transaction Fees (2%):       $ 16M\n  Financing Fees (1.5%):       $ 11M  (OID/upfront fees on debt)\n  Total Uses:                  $827M\n\nSOURCES:\n  Term Loan B (50% of PP):     $400M at SOFR+350 (~8.0% all-in)\n  HY Bonds (20% of PP):        $160M at 9.0% fixed\n  PE Equity (residual):        $267M\n  Total Sources:               $827M ✓\n\nCredit Statistics:\n  Total Debt: $560M | Leverage: 5.6x EBITDA\n  Blended Interest Rate: ~8.3%\n  Year 1 Interest Expense: $560M × 8.3% ≈ $46.5M\n  Interest Coverage: $100M / $46.5M = 2.15x (acceptable at close)"
+        },
+        {
+          "type": "question",
+          "question": "Entry purchase price is $800M (8x EBITDA of $100M). Financing: 50% TLB at SOFR+350 (assume 8% all-in), 20% HY at 9% fixed, 30% equity. What is Year 1 interest expense? Show your work.",
+          "answer": "Step 1 — Size each tranche:\n  TLB = 50% × $800M = $400M\n  HY Bonds = 20% × $800M = $160M\n  Equity = 30% × $800M = $240M\n\nStep 2 — Calculate interest on each tranche:\n  TLB interest: $400M × 8.0% = $32.0M\n  HY interest: $160M × 9.0% = $14.4M\n\nStep 3 — Total Year 1 interest expense:\n  $32.0M + $14.4M = $46.4M\n\nStep 4 — Quick sanity checks:\n  Interest as % of EBITDA: $46.4M / $100M = 46.4% (high but manageable for LBO at close)\n  Interest coverage: $100M / $46.4M = 2.16x (borderline adequate — minimum acceptable)\n  Note: The TLB is floating-rate — if SOFR rises from the assumed level, interest expense increases. If SOFR is 4.3% and spread is 3.5%, you get 7.8%, not exactly 8%. Always specify the SOFR assumption.\n\nStep 5 — Year 2 interest will be slightly lower:\n  TLB mandatory amortization = 1% × $400M = $4M/year\n  Year 2 TLB balance ≈ $396M, interest ≈ $31.7M\n  Plus any FCF sweep applied to TLB reduces balance further"
         },
         {
           "type": "h2",
@@ -501,12 +496,27 @@
           "formula": "MoM = Total Exit Proceeds / Total Equity Invested\n\nTotal Exit Proceeds = Sponsor Exit Equity + Dividends Received During Hold\nTotal Equity Invested = Initial Equity Check\n\nRelationship between MoM and IRR:\nMoM = (1 + IRR)^n   [where n = hold period in years]\nIRR = MoM^(1/n) - 1\n\nInteractive Example:\n  2.5x MoM in 3 years: IRR = 2.5^(1/3) - 1 = 35.7%\n  2.5x MoM in 5 years: IRR = 2.5^(1/5) - 1 = 20.1%\n  2.5x MoM in 7 years: IRR = 2.5^(1/7) - 1 = 14.0%\nSame multiple, dramatically different IRRs based on time."
         },
         {
+          "type": "chart",
+          "title": "IRR by Deal Scenario — Base / Upside / Downside",
+          "subtitle": "ManufacturCo: 5-year hold, 10x entry. Scenarios vary EBITDA growth and exit multiple.",
+          "data": [
+            {"label": "Downside (6% growth, 9x exit)", "value": 16, "suffix": "% IRR"},
+            {"label": "Base (8% growth, 10x exit)", "value": 24, "suffix": "% IRR"},
+            {"label": "Upside (11% growth, 11x exit)", "value": 33, "suffix": "% IRR"}
+          ]
+        },
+        {
           "type": "h2",
           "text": "PE Return Targets — What Funds Require"
         },
         {
           "type": "p",
           "text": "Top-tier PE funds (KKR, Blackstone, Apollo, Carlyle) typically target gross IRRs of 20–25%+ and gross MoM multiples of 2.5–3.5x. After fees and carry, net returns to LPs are 200–300 bps lower. Middle market funds often target higher gross IRRs (25–30%+) because smaller deals carry more execution risk and less competitive pressure. Historically, top-quartile PE funds have delivered net IRRs of 15–20%+ to their investors — comfortably above the public equity benchmark of ~10% annual returns."
+        },
+        {
+          "type": "question",
+          "question": "A PE firm buys a company at 8x for $800M (EBITDA = $100M). EBITDA grows from $100M to $140M over 5 years. Exit at 9x EV/EBITDA. For simplicity, assume no debt paydown (debt stays at $560M throughout). Equity at entry = $240M. What is MoM and approximate IRR?",
+          "answer": "Step 1 — Entry structure:\n  Purchase price = $800M\n  Debt = $560M (70% of purchase price assumed)\n  Equity check = $800M − $560M = $240M\n\nStep 2 — Exit enterprise value:\n  Exit EBITDA = $140M\n  Exit multiple = 9.0x\n  Exit EV = $140M × 9.0x = $1,260M\n\nStep 3 — Exit equity (no debt paydown assumed):\n  Remaining debt = $560M\n  Exit equity = $1,260M − $560M = $700M\n\nStep 4 — Return metrics:\n  MoM = $700M / $240M = 2.92x\n  IRR = (2.92)^(1/5) − 1 = 1.239 − 1 ≈ 23.9%\n\nStep 5 — Return attribution (where did value come from?):\n  EBITDA growth contribution: $40M EBITDA × 9x = $360M incremental EV\n  Multiple expansion: Entry was 8x, exit is 9x → on $140M EBITDA, +1x = +$140M EV\n  Debt paydown: $0 (assumed away for simplicity)\n  Total EV increase: $360M + $140M = $500M (from $800M to $1,260M ✓)\n\nKey lesson: Even with zero debt paydown, this deal generates ~24% IRR. The 40% EBITDA growth and modest 1x multiple expansion drove the return. Now imagine $200M of debt was paid down — exit equity would be $700M + $200M = $900M, MoM = 3.75x, IRR ≈ 30%. Debt paydown is return amplification on top of business value creation."
         },
         {
           "type": "h2",
@@ -524,6 +534,14 @@
             "Multiple Expansion: If you buy a company at 8x EBITDA and sell it at 12x EBITDA (while EBITDA stays constant), you've made 50% more on the same business simply from multiple expansion. Multiple expansion happens when: credit markets loosen and debt becomes cheaper (raising what buyers can pay), the sector re-rates upward (all companies in the space get richer), or the company becomes a more attractive acquisition target (larger scale, cleaner story, better growth profile) at exit.",
             "Leverage Paydown (Deleveraging): Starting with $600M of debt and repaying $306M over 5 years means the PE firm's equity stake grew from $400M to $400M + $306M in equity value = a bigger equity claim even if EV stays flat. This effect — often called 'debt paydown' or 'financial engineering' — accounts for 20–40% of total returns in most buyouts."
           ]
+        },
+        {
+          "type": "h2",
+          "text": "Return Attribution Analysis — Breaking Down the IRR"
+        },
+        {
+          "type": "p",
+          "text": "A rigorous return attribution analysis isolates each driver's contribution to total equity value creation. This is a standard deliverable in PE investment committees and LP reporting. The three-box attribution framework is: (1) isolate the EBITDA growth effect by holding leverage and multiple constant; (2) isolate multiple expansion by holding EBITDA and leverage constant; (3) isolate deleveraging by holding EBITDA and multiple constant. The residual (if any) represents synergies, add-on acquisitions, or dividend recaps during the hold period."
         },
         {
           "type": "callout",
@@ -594,46 +612,11 @@
             "Exit 12.0x"
           ],
           "rows": [
-            [
-              "Entry 9.0x",
-              "21.4%",
-              "25.7%",
-              "29.7%",
-              "33.3%",
-              "36.7%"
-            ],
-            [
-              "Entry 10.0x",
-              "16.2%",
-              "20.2%",
-              "24.6%",
-              "27.5%",
-              "30.8%"
-            ],
-            [
-              "Entry 11.0x",
-              "11.3%",
-              "15.0%",
-              "18.5%",
-              "21.8%",
-              "24.8%"
-            ],
-            [
-              "Entry 12.0x",
-              "6.8%",
-              "10.2%",
-              "13.5%",
-              "16.5%",
-              "19.3%"
-            ],
-            [
-              "Entry 13.0x",
-              "2.5%",
-              "5.7%",
-              "8.8%",
-              "11.7%",
-              "14.4%"
-            ]
+            ["Entry 9.0x", "21.4%", "25.7%", "29.7%", "33.3%", "36.7%"],
+            ["Entry 10.0x", "16.2%", "20.2%", "24.6%", "27.5%", "30.8%"],
+            ["Entry 11.0x", "11.3%", "15.0%", "18.5%", "21.8%", "24.8%"],
+            ["Entry 12.0x", "6.8%", "10.2%", "13.5%", "16.5%", "19.3%"],
+            ["Entry 13.0x", "2.5%", "5.7%", "8.8%", "11.7%", "14.4%"]
           ]
         },
         {
@@ -655,42 +638,17 @@
             "Margin +6%"
           ],
           "rows": [
-            [
-              "Revenue Growth 4%",
-              "12.8%",
-              "17.1%",
-              "20.8%",
-              "24.2%"
-            ],
-            [
-              "Revenue Growth 6%",
-              "16.4%",
-              "20.5%",
-              "24.1%",
-              "27.4%"
-            ],
-            [
-              "Revenue Growth 8%",
-              "20.3%",
-              "24.6%",
-              "28.0%",
-              "31.4%"
-            ],
-            [
-              "Revenue Growth 10%",
-              "24.5%",
-              "28.9%",
-              "32.2%",
-              "35.4%"
-            ],
-            [
-              "Revenue Growth 12%",
-              "28.8%",
-              "33.2%",
-              "36.5%",
-              "39.8%"
-            ]
+            ["Revenue Growth 4%", "12.8%", "17.1%", "20.8%", "24.2%"],
+            ["Revenue Growth 6%", "16.4%", "20.5%", "24.1%", "27.4%"],
+            ["Revenue Growth 8%", "20.3%", "24.6%", "28.0%", "31.4%"],
+            ["Revenue Growth 10%", "24.5%", "28.9%", "32.2%", "35.4%"],
+            ["Revenue Growth 12%", "28.8%", "33.2%", "36.5%", "39.8%"]
           ]
+        },
+        {
+          "type": "question",
+          "question": "From the sensitivity table above, management presents a base case of 8% revenue growth with +4% margin expansion (28% IRR) and a downside of 4% growth / flat margins (12.8% IRR). A PE partner asks: 'What margin expansion do we need to achieve our 20% hurdle even in the low-growth scenario?' How do you answer?",
+          "answer": "Reading the 'Revenue Growth 4%' row in the sensitivity table:\n  Margin +0%: 12.8% IRR — misses 20% hurdle\n  Margin +2%: 17.1% IRR — still misses\n  Margin +4%: 20.8% IRR — just clears the 20% hurdle\n  Margin +6%: 24.2% IRR — comfortably above\n\nAnswer: At only 4% revenue growth, you need approximately +4% of EBITDA margin expansion over the hold period to just clear the 20% hurdle. That translates to ~80bps of margin improvement per year — achievable but requires disciplined cost control.\n\nHow to frame this insight for the IC: 'Even in a downside scenario where revenue growth decelerates to half our base case rate, the deal still clears the hurdle if the management team delivers on the margin improvement plan. The deal is not purely a growth bet — it has a viable margin-only path to acceptable returns. However, if both growth misses AND margins don't expand, we're at 12.8% IRR — below the fund's 20% hurdle. The key risk to monitor is operational execution on the cost reduction initiatives in Years 1–2.'\n\nThis is exactly how PE investment professionals frame sensitivity analysis in investment committee presentations — not just reporting the numbers, but interpreting the risk landscape."
         },
         {
           "type": "h2",
@@ -711,41 +669,11 @@
             "Year 5 IRR"
           ],
           "rows": [
-            [
-              "4.0x",
-              "$600M",
-              "28%",
-              "3.6x",
-              "19.8%"
-            ],
-            [
-              "5.0x",
-              "$500M",
-              "35%",
-              "2.9x",
-              "22.4%"
-            ],
-            [
-              "6.0x",
-              "$400M",
-              "41%",
-              "2.4x",
-              "24.6%"
-            ],
-            [
-              "7.0x",
-              "$300M",
-              "49%",
-              "2.0x",
-              "27.8%"
-            ],
-            [
-              "7.5x",
-              "$250M",
-              "53%",
-              "1.9x",
-              "30.1% (covenant risk)"
-            ]
+            ["4.0x", "$600M", "28%", "3.6x", "19.8%"],
+            ["5.0x", "$500M", "35%", "2.9x", "22.4%"],
+            ["6.0x", "$400M", "41%", "2.4x", "24.6%"],
+            ["7.0x", "$300M", "49%", "2.0x", "27.8%"],
+            ["7.5x", "$250M", "53%", "1.9x", "30.1% (covenant risk)"]
           ]
         },
         {
@@ -769,10 +697,39 @@
           ]
         },
         {
+          "type": "h2",
+          "text": "Worked Paper LBO — Step-by-Step Full Exercise"
+        },
+        {
+          "type": "p",
+          "text": "Practice this exercise until you can complete it in under 15 minutes with pen and paper. The worked solution below demonstrates the exact thought process interviewers expect."
+        },
+        {
           "type": "callout",
           "variant": "example",
-          "title": "Paper LBO — Full Practice Problem",
-          "text": "Problem: A PE firm is evaluating the acquisition of HealthServicesCo at 9.0x LTM EBITDA. LTM EBITDA is $80M. The deal is financed with 5.5x total leverage. Revenue is growing 8% per year and EBITDA margins are expanding 1% per year from a base of 22%. Assume 50% FCF conversion of EBITDA for debt repayment purposes. Exit at Year 5 at 9.0x EBITDA. What is the approximate IRR?\n\nStep 1: Purchase Price = 9.0x × $80M = $720M\nStep 2: Debt = 5.5x × $80M = $440M | Equity = $720M - $440M = $280M\nStep 3: Year 5 Revenue ≈ $80M/22% × (1.08)^5 = $364M × 1.469 = $535M (Year 5 Rev)\n  Year 5 EBITDA margin = 22% + 5% = 27% → EBITDA = $535M × 27% = $144M\n  Quick check: $80M growing at EBITDA-implied rate ≈ $80M × (1 + blended growth)^5\n  Blended growth ≈ 12%/yr: $80M × 1.762 = $141M ✓\nStep 4: Debt Repayment ≈ $80M avg EBITDA × 50% × 5 years ≈ $200M repaid\n  Remaining Debt ≈ $440M - $200M = $240M\nStep 5: Exit EV = $141M × 9.0x = $1,269M | Exit Equity = $1,269M - $240M = $1,029M\nStep 6: MoM = $1,029M / $280M = 3.68x\n  IRR ≈ 3.68^(1/5) - 1 ≈ 1.298 - 1 ≈ 29.8%\n\nAnswer: ~30% IRR — well above the typical 20–25% hurdle. HealthServicesCo looks attractive at 9x entry."
+          "title": "Paper LBO — Full Practice Problem with Complete Solution",
+          "text": "PROMPT: A PE firm is evaluating the acquisition of IndustrialCo at 9.0x LTM EBITDA. LTM EBITDA = $75M. Revenue = $375M. Financing: 5.5x total leverage. Revenue grows 7% per year; EBITDA margin expands from 20% to 24% over 5 years (linear, ~80bps/yr). FCF conversion: 50% of EBITDA. Exit at Year 5 at 9.0x EBITDA. Ignore transaction fees. What is the MoM and approximate IRR?\n\nSTEP 1 — Purchase Price:\n  9.0x × $75M = $675M\n\nSTEP 2 — Sources and Uses:\n  Debt = 5.5x × $75M = $412.5M\n  Equity Check = $675M − $412.5M = $262.5M\n\nSTEP 3 — Year 5 EBITDA:\n  Year 5 Revenue = $375M × (1.07)^5 = $375M × 1.403 = $526M\n  Year 5 EBITDA margin = 24%\n  Year 5 EBITDA = $526M × 24% = $126M\n  (Quick cross-check: $75M × implied 11%/yr blended growth ≈ $75M × 1.685 = $126M ✓)\n\nSTEP 4 — Debt Repayment:\n  Average EBITDA over hold ≈ ($75M + $126M) / 2 ≈ $100M\n  FCF per year ≈ $100M × 50% = $50M\n  Total FCF over 5 years ≈ $250M → repay $220M of debt\n  Remaining debt = $412.5M − $220M ≈ $192.5M\n\nSTEP 5 — Exit Equity:\n  Exit EV = $126M × 9.0x = $1,134M\n  Exit Equity = $1,134M − $192.5M = $941.5M\n\nSTEP 6 — Returns:\n  MoM = $941.5M / $262.5M = 3.59x\n  IRR = (3.59)^(1/5) − 1 = (3.59)^0.20 − 1 ≈ 1.291 − 1 ≈ 29%\n  Cross-check: 3.5x in 5 years ≈ 28.5% from memory table — consistent ✓\n\nCONCLUSION: IndustrialCo looks very attractive at 9x entry — ~29% IRR driven by significant margin expansion (20%→24%) and modest revenue growth. Even if margin expansion halves (20%→22%), EBITDA would be ~$116M, exit equity ~$851M, MoM ~3.2x, IRR ~26% — still well above the 20–25% hurdle."
+        },
+        {
+          "type": "h2",
+          "text": "Common LBO Interview Pitfalls to Avoid"
+        },
+        {
+          "type": "p",
+          "text": "Beyond the mechanics, experienced interviewers test whether candidates understand the nuances and failure modes of LBO analysis. The following pitfalls regularly derail candidates who know the formulas but haven't thought through the economics."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Pitfall 1 — Using gross debt instead of net debt at exit: Exit equity = Exit EV minus NET debt (total debt minus cash). Forgetting to subtract accumulated cash from debt balance overstates remaining obligations and understates equity value.",
+            "Pitfall 2 — Ignoring transaction fees: Always ask if fees are included. A 2% fee on a $1B deal is $20M — this increases the equity check and reduces IRR. Many candidates forget this in paper LBOs.",
+            "Pitfall 3 — Using 100% FCF conversion: A common shortcut is to assume all EBITDA converts to FCF for debt repayment. In reality, capex (typically 3–6% of revenue), taxes, and working capital consume 35–50% of EBITDA. Use 50–60% FCF conversion as your shortcut, not 100%.",
+            "Pitfall 4 — Assuming exit multiple always equals entry multiple: Entry and exit multiples can diverge significantly. Sector rotation, credit market shifts, and company-specific quality improvements all affect exit pricing. Always run a sensitivity showing exit at entry multiple as your 'no multiple expansion' base case.",
+            "Pitfall 5 — Conflating EBITDA growth with value creation: EBITDA growth at the expense of FCF (e.g., through massive capex investment) does not create LBO value. What matters is FCF generation — growth that consumes all its own cash has limited LBO value.",
+            "Pitfall 6 — Not checking coverage ratios: High leverage improves IRR in the model but triggers covenant breach in reality. Always check that EBITDA/Interest > 2.0x in Year 1 and stays above 1.5x throughout the hold period.",
+            "Pitfall 7 — Forgetting the management promote at exit: If management owns 10% of exit equity, the sponsor owns only 90%. Not accounting for this overstates sponsor returns. Always clarify sponsor ownership percentage in your answer."
+          ]
         },
         {
           "type": "h2",

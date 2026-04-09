@@ -38,6 +38,40 @@
           ]
         },
         {
+          "type": "chart",
+          "title": "ECM Fee Rates by Transaction Type",
+          "subtitle": "Typical gross spread as % of deal proceeds",
+          "data": [
+            {"label": "IPO", "value": 5.25, "suffix": "%"},
+            {"label": "Follow-On Offering", "value": 2.5, "suffix": "%"},
+            {"label": "Convertible Bond", "value": 2.25, "suffix": "%"},
+            {"label": "Rights Offering", "value": 1.75, "suffix": "%"},
+            {"label": "Block Trade / ABB", "value": 1.0, "suffix": "%"}
+          ]
+        },
+        {
+          "type": "question",
+          "question": "Why is an IPO typically more expensive (higher underwriting fees) than a follow-on offering for the same issuer? Give at least three distinct reasons.",
+          "answer": "IPOs command fees of 3.5-7% versus 1.5-3.5% for follow-ons for several interconnected reasons. First, information asymmetry and due diligence burden: in an IPO, investors have no prior market price or public track record to reference. Banks must conduct extensive due diligence (typically 3-6 months), produce a comprehensive S-1 registration statement, and invest significant time educating investors about the business — this is far more labor-intensive than a follow-on where investors already know the company. Second, underwriting risk: in an IPO, banks commit to buying all shares at the offer price (on a firm-commitment basis) and reselling them to investors. For a company that has never been publicly traded, the 'right' price is genuinely uncertain — if demand disappoints, the banks bear the risk of an unsold inventory of shares. In a follow-on, the market price provides an anchor and demand is far more predictable. Third, distribution complexity: IPO shares must be placed with hundreds of new institutional investors who have never owned the stock. Building this initial investor base requires a multi-city roadshow, extensive one-on-one meetings, and significant sales force effort. Follow-on shares are sold to investors who already know the company, making distribution faster and cheaper. Fourth, compliance and regulatory costs: IPO companies must go through a full SEC registration process for the first time, including multiple rounds of SEC comment letters — a process that takes 3-4 months and requires significant legal and accounting resources that are bundled into the banking fee."
+        },
+        {
+          "type": "diagram",
+          "title": "ECM Deal Process: Mandate to Pricing",
+          "variant": "steps",
+          "steps": [
+            "Mandate Won: Company selects lead bookrunner after competitive beauty contest; engagement letter signed; fees agreed",
+            "Kick-Off Meeting: Full working group assembles (company, banks, lawyers, auditors); roles assigned; timeline set",
+            "Due Diligence: Banks conduct extensive business diligence; lawyers review contracts, IP, litigation; accountants verify financials",
+            "Registration Statement Drafting: S-1 (for IPO) or prospectus supplement (for follow-on) drafted; risk factors, MD&A, financials prepared",
+            "SEC Review (IPO only): Initial S-1 filed; SEC issues comment letter (30-80 questions); company responds; 2-3 rounds typical",
+            "Pre-Marketing / NDR: Non-deal roadshow with select institutional investors to test messaging and gauge demand",
+            "Roadshow Launch: Official roadshow commences; management meets 8-12 investor groups per day; indications of interest collected",
+            "Bookbuilding: Syndicate builds order book; price guidance set; book typically reaches 3-8x oversubscription for well-received deals",
+            "Pricing: Pricing meeting on final evening; issuer and banks agree on final price based on demand quality and strategic objectives",
+            "First Day Trading / Settlement: Shares begin trading; greenshoe option available; settlement on T+2"
+          ]
+        },
+        {
           "type": "h2",
           "text": "ECM Team Structure"
         },
@@ -150,6 +184,25 @@
           ]
         },
         {
+          "type": "chart",
+          "title": "Investment Grade Bond Spread by Rating Over 10-Year Treasury",
+          "subtitle": "Approximate credit spread in basis points (bps) — 2024 US market",
+          "data": [
+            {"label": "AAA", "value": 35, "suffix": " bps"},
+            {"label": "AA", "value": 65, "suffix": " bps"},
+            {"label": "A", "value": 100, "suffix": " bps"},
+            {"label": "BBB", "value": 155, "suffix": " bps"},
+            {"label": "BB (HY)", "value": 280, "suffix": " bps"},
+            {"label": "B (HY)", "value": 460, "suffix": " bps"},
+            {"label": "CCC (HY)", "value": 850, "suffix": " bps"}
+          ]
+        },
+        {
+          "type": "question",
+          "question": "A company issues a $500M 10-year bond at a coupon of 5.5% when 10-year Treasuries yield 4.0%. What is the spread in basis points? The company is rated BBB. Is this spread reasonable? What does it imply about the company's credit quality?",
+          "answer": "Step 1 — Calculate the spread: Spread = Bond yield - Treasury yield = 5.5% - 4.0% = 1.5% = 150 basis points. Step 2 — Annual interest cost: $500M x 5.5% = $27.5M per year in interest. Total coupon payments over 10 years: $275M, plus return of $500M principal at maturity. Step 3 — Evaluate reasonableness for a BBB-rated issuer: BBB is the lowest investment-grade rating. In a normal market environment, BBB bonds typically price at spreads of 100-200bps over comparable Treasuries, with the exact spread depending on the sector, company-specific credit metrics, and prevailing market conditions. A 150bps spread (T+150) is squarely in the middle of the BBB range — this is a reasonable and market-appropriate spread for a solid lower-investment-grade issuer. Step 4 — Credit quality implication: A 150bps spread over Treasuries signals that the market views this issuer as having moderate credit risk — meaningfully better than speculative-grade (BB+ starts at ~280bps), but not as strong as single-A rated issuers (~100bps). If the same company issued 5 years earlier with a 100bps spread and now prices at 150bps, that widening signals credit deterioration or tighter overall market conditions. Step 5 — Sanity check via interest coverage: If this is a BBB company paying 5.5% on $500M debt, annual interest is $27.5M. A BBB company typically has EBITDA interest coverage of at least 4-6x, implying EBITDA of at least $110-165M — reasonable for a company large enough to issue a $500M bond."
+        },
+        {
           "type": "h2",
           "text": "Investment Grade Bond Issuance Process"
         },
@@ -254,6 +307,21 @@
           "text": "Taking a company public through an Initial Public Offering (IPO) is one of the most transformative events in a company's lifecycle. The decision to go public is driven by multiple motivations, and understanding these is essential for advising companies and impressing interviewers. The primary reasons include: (1) Access to Capital — public markets can raise far more capital than private markets at lower cost, enabling large-scale investment in growth, R&D, and M&A; (2) Liquidity for Shareholders — founders, employees, and early investors can sell shares after lock-up, monetizing years of equity value creation; (3) Currency for M&A — public companies can use their stock as acquisition currency, avoiding cash payment; (4) Enhanced Brand and Talent — public company status can strengthen brand reputation and help attract top talent through stock-based compensation; (5) Competitive Advantage — access to lower-cost capital can fund strategies competitors cannot."
         },
         {
+          "type": "diagram",
+          "title": "The Full IPO Process — 8 Key Stages",
+          "variant": "steps",
+          "steps": [
+            "Bank Selection (Bake-Off): Company invites 5-10 banks to compete; selects left-lead bookrunner plus 2-4 joint bookrunners based on valuation, distribution, research quality, and fees",
+            "Organizational Meeting: Full working group (company, banks, lawyers, auditors) assembles; roles assigned; timeline built; due diligence process launched",
+            "S-1 Drafting and Due Diligence: 3-5 months of intensive document drafting and business diligence; S-1 covers business description, risk factors, financials, use of proceeds, and MD&A",
+            "SEC Review Process: S-1 filed (confidentially or publicly); SEC issues comment letter within 28-30 days; company responds; typically 2-3 rounds of comments over 3-4 months total",
+            "Testing the Waters (Pre-Marketing): Under JOBS Act, management meets select institutional investors to gauge demand before formal roadshow; no specific offering details discussed",
+            "Roadshow (10-15 Days): Management presents to 8-12 institutional investor groups per day across major financial cities; indications of interest collected; book builds organically",
+            "Pricing Night: Syndicate analyzes order book quality and quantity; pricing committee convenes; final IPO price set based on demand, valuation anchors, and market conditions",
+            "First Day Trading and Greenshoe: Stock begins trading on exchange; banks may exercise greenshoe (over-allotment) option to issue up to 15% additional shares if demand is strong, supporting aftermarket price"
+          ]
+        },
+        {
           "type": "h2",
           "text": "Step-by-Step IPO Process"
         },
@@ -282,16 +350,13 @@
         {
           "type": "callout",
           "variant": "example",
-          "title": "IPO Valuation Example",
-          "text": "Company: TechCo, a SaaS business with $200M ARR growing 35% YoY, 70% gross margins. Comps: ServiceNow trades at 12x EV/Revenue; Salesforce at 8x; Workday at 10x. Average: 10x EV/Revenue. Implied EV: $200M x 10 = $2B. IPO Discount (15%): $2B x 0.85 = $1.7B. With 100M shares outstanding and 10M new shares in the IPO, the diluted share count is 110M. Implied IPO price: $1.7B / 110M = $15.45/share. Price range set: $14-$16/share. If book is oversubscribed 8x and demand is concentrated at $16+, bankers will price at the top of the range or raise the range before pricing."
+          "title": "IPO Pricing Range Determination — Worked Example",
+          "text": "Company: TechCo, a SaaS business with $200M ARR growing 35% YoY, 70% gross margins, and $30M of EBITDA. Step 1 — Select comps: ServiceNow (12x EV/Revenue), Salesforce (8x), Workday (10x), HubSpot (9x), Veeva (11x). Average comp multiple: 10x EV/Revenue. Step 2 — Apply comp multiple to TechCo: EV = $200M ARR x 10x = $2.0B. Step 3 — Apply IPO discount (15% for a company with TechCo's strong but unproven public markets track record): $2.0B x 0.85 = $1.7B post-money enterprise value. Step 4 — Convert to equity value: TechCo has $50M net cash, so equity value = $1.7B + $50M = $1.75B. Step 5 — Determine share count and price: Company has 100M shares outstanding pre-IPO. Selling 10M new primary shares + 5M secondary shares (founders) = 15M total IPO shares. Post-IPO shares: 110M. Implied IPO price: $1.75B / 110M = $15.91/share. Price range: $15-$17/share. Step 6 — If book is 8x oversubscribed with orders concentrated at $17+, bankers will price at $17 or raise the range to $17-$19 before pricing. If book is light, they may price at the bottom ($15) or below. Total IPO proceeds at $16 midpoint: 15M shares x $16 = $240M (of which $160M primary / $80M secondary)."
         },
         {
-          "type": "h2",
-          "text": "Underpricing and the IPO Pop"
-        },
-        {
-          "type": "p",
-          "text": "The 'IPO pop' — a large first-day price increase — is a consistent phenomenon in US IPOs. On average, IPOs pop 10-20% on the first day of trading. This pop represents 'money left on the table' — capital the company could have raised if priced higher. In 2021's hot IPO market, some deals popped 50-100%+. From the issuer's perspective, a large pop means they sold shares too cheaply. But banks and institutional investors prefer pops: banks earn goodwill by getting investors into winning deals, and institutional investors generate quick profits that justify their participation in future IPOs. This creates a structural misalignment between issuers and banks on pricing."
+          "type": "question",
+          "question": "What is a 'greenshoe' option in an IPO, and why does the underwriting syndicate use it? What happens if the stock trades above vs. below the IPO price in the days after listing?",
+          "answer": "The greenshoe (formally, the 'over-allotment option') is an option granted by the issuer to the underwriting syndicate, allowing the banks to sell up to 15% more shares than originally planned in the IPO. Here is exactly how it works and why it exists. At pricing: the syndicate allocates 115% of the planned shares (e.g., if the IPO is 10M shares, the banks allocate 11.5M shares to investors). The extra 1.5M shares represents a 'short position' — the banks owe shares they don't yet have. Scenario 1 — Stock trades above IPO price (strong demand): The banks exercise the greenshoe option, buying 1.5M new shares from the issuer at the IPO price to cover their short. The issuer receives more proceeds (15% more capital raised). Investors are happy; the stock is performing well; the banks do not need to intervene in the market. Scenario 2 — Stock trades below IPO price ('breaks issue'): The syndicate 'covers' its short by buying shares in the open market at market prices below the IPO price. These purchases provide aftermarket support — effectively a price stabilization mechanism. The banks do NOT exercise the greenshoe; instead they return the extra shares via market purchases. The economic result: banks make money on the price difference (bought below IPO price, receive IPO price from issuer as they settle the original over-allocation). In practice, the greenshoe creates a two-way stabilization mechanism: strong demand triggers exercise (more capital for issuer); weak demand triggers market purchases (price support for investors)."
         },
         {
           "type": "h2",
@@ -300,6 +365,21 @@
         {
           "type": "p",
           "text": "A Special Purpose Acquisition Company (SPAC) — also called a 'blank check company' — is a shell company that raises capital via an IPO for the specific purpose of merging with a private company, taking it public. SPACs surged in popularity in 2020-2021, with over 600 SPAC IPOs raising $163 billion in 2021 alone. SPACs offer private companies a faster, more price-certain path to public markets. However, post-2021, SPACs fell out of favor: most SPAC mergers (de-SPACs) saw severe stock underperformance, and the SEC introduced new regulations in 2022-2023 imposing stricter disclosure requirements. SPACs remain a viable but niche alternative."
+        },
+        {
+          "type": "table",
+          "caption": "SPAC vs. Traditional IPO: Key Comparison",
+          "headers": ["Feature", "Traditional IPO", "SPAC Merger (De-SPAC)"],
+          "rows": [
+            ["Timeline", "12-18 months from decision to trading", "3-6 months from merger announcement to close"],
+            ["Price Certainty", "Price set at roadshow — market-dependent", "Negotiated price agreed before announcement — more certain"],
+            ["Disclosure Requirements", "Full S-1 SEC review; extensive public disclosure required", "Merger proxy; historically lighter disclosure (now tightening)"],
+            ["Valuation", "Market-determined via bookbuilding; reflects public investor demand", "Negotiated between target and SPAC sponsor; often more optimistic"],
+            ["Dilution", "~10-15% dilution from new primary shares", "SPAC promote (20% founder shares) adds ~20% dilution; warrant dilution on top"],
+            ["Post-Transaction Performance", "Mixed; depends heavily on deal quality and market conditions", "Historically poor — most de-SPACs traded significantly below trust value"],
+            ["Cost", "3.5-7% underwriting fee", "~5.5% deferred underwriting + sponsor promote = often higher effective cost"],
+            ["Best For", "High-quality companies ready for full public markets scrutiny", "Companies that need speed or cannot withstand full IPO process — now very limited market"]
+          ]
         },
         {
           "type": "h2",
@@ -318,10 +398,22 @@
           "text": "Many tech IPOs include dual-class share structures, where founders retain supervoting shares (typically 10 votes per share vs. 1 vote for public shares). This allows founders to access public capital while retaining operating control. Notable examples: Alphabet/Google (Class A: 1 vote, Class B: 10 votes, Class C: 0 votes), Meta Platforms (Class A: 1 vote, Class B: 10 votes), Snap Inc. (Class A: 0 votes, allowing founders to retain full control). Dual-class structures are controversial — institutional investors and proxy advisors often oppose them as anti-democratic governance — but they remain common for high-profile founder-led tech IPOs."
         },
         {
+          "type": "h2",
+          "text": "Underpricing and the IPO Pop"
+        },
+        {
+          "type": "p",
+          "text": "The 'IPO pop' — a large first-day price increase — is a consistent phenomenon in US IPOs. On average, IPOs pop 10-20% on the first day of trading. This pop represents 'money left on the table' — capital the company could have raised if priced higher. In 2021's hot IPO market, some deals popped 50-100%+. From the issuer's perspective, a large pop means they sold shares too cheaply. But banks and institutional investors prefer pops: banks earn goodwill by getting investors into winning deals, and institutional investors generate quick profits that justify their participation in future IPOs. This creates a structural misalignment between issuers and banks on pricing."
+        },
+        {
           "type": "callout",
           "variant": "tip",
           "title": "Interview Tip: IPO Pop Question",
           "text": "When asked 'why does IPO underpricing occur?', give a multi-factor answer: (1) Asymmetric information — banks know more than all investors collectively; they set prices conservatively to ensure deal success; (2) Institutional investor demand — banks want to keep institutional clients happy with first-day gains to maintain relationships for future deals; (3) Risk of deal failure — if an IPO breaks issue (trades below offer price), it is deeply embarrassing and costly; (4) Winner's curse — in oversubscribed deals, investors who get shares know they competed; underpricing compensates them for the risk of not getting allocation in future deals."
+        },
+        {
+          "type": "highlight",
+          "text": "The IPO process is ultimately a trust exercise: the issuer trusts the banks to find the right price and the right investors, and the investor trusts the banks that the company is worth the price they're paying. The bank earns its fee by bridging this information gap and managing both relationships simultaneously — which is why IPO mandates are won on relationships, not just technical capability."
         }
       ],
       "keyTakeaways": [
@@ -351,6 +443,18 @@
           "text": "LevFin sits at an exciting intersection of investment banking and trading: it requires deep credit analysis, structuring creativity, and real-time market awareness. The global leveraged loan market outstanding is approximately $1.4 trillion (US) and $400 billion (Europe), while the US high yield bond market stands at approximately $1.3 trillion outstanding."
         },
         {
+          "type": "diagram",
+          "title": "Typical LBO Capital Structure — $1B Enterprise Value",
+          "variant": "stack",
+          "layers": [
+            {"label": "Equity (PE Sponsor)", "pct": 35, "color": "#2D6A4F"},
+            {"label": "Senior Unsecured HY Bonds", "pct": 15, "color": "#74C69D"},
+            {"label": "Senior Secured Notes (2nd Lien)", "pct": 15, "color": "#52B788"},
+            {"label": "Term Loan B (1st Lien)", "pct": 30, "color": "#40916C"},
+            {"label": "Revolving Credit Facility", "pct": 5, "color": "#1B4332"}
+          ]
+        },
+        {
           "type": "h2",
           "text": "Leveraged Loans vs. High Yield Bonds"
         },
@@ -372,6 +476,23 @@
           ]
         },
         {
+          "type": "chart",
+          "title": "Leveraged Loan vs. HY Bond Spread Over SOFR/Treasury — 2024",
+          "subtitle": "Approximate spread in basis points for BB/B-rated issuers",
+          "data": [
+            {"label": "BB Leveraged Loan", "value": 285, "suffix": " bps"},
+            {"label": "B Leveraged Loan", "value": 430, "suffix": " bps"},
+            {"label": "BB High Yield Bond", "value": 260, "suffix": " bps"},
+            {"label": "B High Yield Bond", "value": 400, "suffix": " bps"},
+            {"label": "CCC High Yield Bond", "value": 820, "suffix": " bps"}
+          ]
+        },
+        {
+          "type": "question",
+          "question": "Why do CLOs (Collateralized Loan Obligations) prefer leveraged loans over high yield bonds? Give at least three structural reasons. What does this mean for the leveraged loan market?",
+          "answer": "CLOs prefer leveraged loans for several interconnected structural reasons. First, floating rate vs. fixed rate: CLOs fund themselves by issuing their own tranched liabilities (AAA notes, AA notes, etc.), most of which pay floating rates tied to SOFR. Leveraged loans also pay floating rates (SOFR + spread), creating a natural asset-liability match — the CLO earns more when SOFR rises, and its own funding costs also rise with SOFR. High yield bonds pay fixed coupons but the CLO's liabilities are floating — an interest rate mismatch that would require expensive hedging. Second, no call protection: leveraged loans are freely prepayable (with minor soft-call provisions), which is critical for CLO portfolio management. CLO managers need to reinvest proceeds as loans prepay — without this flexibility, they cannot maintain target portfolio leverage and yield. HY bonds have 3-4 year non-call periods that lock up capital and prevent reinvestment. Third, covenant package: historically, leveraged loans had maintenance covenants that gave early warning of credit deterioration and gave lenders intervention rights before a full default. Even in the cov-lite era, loans still tend to have more creditor-friendly documentation than HY bonds. Fourth, seniority and recovery: leveraged loans are almost always senior secured (first lien), giving CLOs priority in bankruptcy recovery. HY bonds are often unsecured, with historically lower recovery rates. Market implication: because CLOs represent 60-70% of all leveraged loan demand, the health of the CLO market IS the health of the leveraged loan market. When CLO formation slows (as in Q4 2018 and March 2020), leveraged loan spreads widen sharply and LBO activity falls — because the marginal buyer disappears."
+        },
+        {
           "type": "h2",
           "text": "A Typical LBO Capital Structure"
         },
@@ -389,6 +510,20 @@
             "Senior Unsecured / High Yield Bonds: $300M, fixed rate, 10.5% coupon, 8-year maturity. Subordinated to secured debt; higher yield reflects greater risk.",
             "Equity Contribution: $450M (22.5% of $2B EV). Provided by the PE sponsor. The residual after-debt financing."
           ]
+        },
+        {
+          "type": "h2",
+          "text": "Flex Pricing in Leveraged Finance"
+        },
+        {
+          "type": "p",
+          "text": "When a bank commits to underwrite a leveraged loan or HY bond for an LBO, it provides the PE sponsor with a 'commitment letter' that specifies the terms of the financing. However, the final terms — especially the spread/coupon — are subject to market flex. The flex provision allows the bank to adjust pricing and certain structural terms within a specified range ('flexing up' the spread by up to a capped amount) to ensure successful distribution to institutional investors. There is also 'reverse flex': if demand significantly exceeds supply, the bank can flex down the spread, reducing the borrower's cost of debt. Flex is a key risk management tool for banks underwriting leveraged deals."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Flex Pricing Example",
+          "text": "Commitment letter for $800M TLB: initial price guidance SOFR + 350bps, with flex up to SOFR + 425bps and reverse flex down to SOFR + 300bps. During syndication, investor demand is light due to market volatility. The bank flexes the spread up to SOFR + 400bps (+50bps from original guidance). This flex adds approximately $4M/year in additional interest expense to the borrower ($800M x 0.50% = $4M). If the bank had needed to flex to the maximum +75bps, additional annual interest would be $6M. The PE sponsor must decide whether to accept the flexed terms or walk the deal. In extreme market disruptions (as in 2022), some LBOs were 'hung' — banks were left holding underwritten debt they could not syndicate at any reasonable price, taking significant mark-to-market losses."
         },
         {
           "type": "h2",
