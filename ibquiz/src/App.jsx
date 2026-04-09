@@ -378,9 +378,9 @@ export default function App() {
             )}
             {activeTab === 'quiz' && !quizComplete && (
               <div className="px-6 py-2 shrink-0 flex items-center" style={{ borderBottom: '1px solid var(--border)', background: 'var(--bg)' }}>
-                <span className="font-mono text-[10px] uppercase tracking-widest" style={{ color: 'var(--text-muted)' }}>Rate each answer after revealing</span>
+                <span className="font-mono text-[10px] uppercase tracking-widest" style={{ color: 'var(--text-muted)' }}>Select the correct answer</span>
                 <span className="ml-auto font-mono text-[10px] tabular-nums" style={{ color: 'var(--text-muted)' }}>
-                  {quizSession.ratings.size} / {sessionQuestions.length} rated
+                  {quizSession.ratings.size} / {sessionQuestions.length} answered
                 </span>
               </div>
             )}

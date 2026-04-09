@@ -62,7 +62,7 @@ export default function ScoreScreen({ result, moduleName, onGoHome, onStudyAgain
                 {gotIt}
               </p>
               <p className="font-mono text-[10px] uppercase tracking-widest mt-1" style={{ color: 'var(--text-muted)' }}>
-                Got it
+                Correct
               </p>
             </div>
             <div style={{ width: 1, background: 'var(--border)' }} />
@@ -74,7 +74,7 @@ export default function ScoreScreen({ result, moduleName, onGoHome, onStudyAgain
                 {stillLearning}
               </p>
               <p className="font-mono text-[10px] uppercase tracking-widest mt-1" style={{ color: 'var(--text-muted)' }}>
-                Still learning
+                Incorrect
               </p>
             </div>
             <div style={{ width: 1, background: 'var(--border)' }} />
