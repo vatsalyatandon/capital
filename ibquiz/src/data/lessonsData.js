@@ -22,7 +22,7 @@ const LESSONS_DATA = {
   'Restructuring / Distressed M&A': restructuring,
   'Private Equity':                 privateEquity,
   'Capital Markets':                capitalMarkets,
-  'Brain Teasers':                  brainTeasers,
+  'Puzzles':                  brainTeasers,
 }
 
 export default LESSONS_DATA

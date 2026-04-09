@@ -21,7 +21,7 @@ const subcategoryList = [
   'Restructuring / Distressed M&A',
   'Private Equity',
   'Capital Markets',
-  'Brain Teasers',
+  'Puzzles',
 ]
 
 function shuffle(arr) {

@@ -1,5 +1,5 @@
 {
-  "subcategory": "Brain Teasers",
+  "subcategory": "Puzzles",
   "overview": "Brain teasers in investment banking interviews test three things: your ability to think under pressure, structure your reasoning clearly, and perform mental arithmetic accurately without a calculator. Interviewers are not looking for the 'right answer' — they are evaluating your cognitive process, composure, and intellectual honesty when faced with an unfamiliar problem. The questions fall into three categories: mental math and quantitative estimation, market sizing and Fermi problems, and logic puzzles or finance-specific riddles. Mastering all three requires practice with a consistent framework, not memorization of answers.",
   "estimatedHours": 1.5,
   "lessons": [
@@ -36,16 +36,52 @@
         {
           "type": "table",
           "caption": "Rule of 72: Quick Reference",
-          "headers": ["Annual Return", "Years to Double", "Real World Example"],
+          "headers": [
+            "Annual Return",
+            "Years to Double",
+            "Real World Example"
+          ],
           "rows": [
-            ["6%", "12 years", "S&P 500 long-run average return"],
-            ["8%", "9 years", "PE fund hurdle rate"],
-            ["10%", "7.2 years", "Stock market rough estimate"],
-            ["12%", "6 years", "Good PE fund return"],
-            ["18%", "4 years", "Top quartile PE fund"],
-            ["24%", "3 years", "Exceptional PE deal IRR"],
-            ["36%", "2 years", "VC home run return"],
-            ["72%", "1 year", "Mathematically trivial, rarely realistic"]
+            [
+              "6%",
+              "12 years",
+              "S&P 500 long-run average return"
+            ],
+            [
+              "8%",
+              "9 years",
+              "PE fund hurdle rate"
+            ],
+            [
+              "10%",
+              "7.2 years",
+              "Stock market rough estimate"
+            ],
+            [
+              "12%",
+              "6 years",
+              "Good PE fund return"
+            ],
+            [
+              "18%",
+              "4 years",
+              "Top quartile PE fund"
+            ],
+            [
+              "24%",
+              "3 years",
+              "Exceptional PE deal IRR"
+            ],
+            [
+              "36%",
+              "2 years",
+              "VC home run return"
+            ],
+            [
+              "72%",
+              "1 year",
+              "Mathematically trivial, rarely realistic"
+            ]
           ]
         },
         {
@@ -78,14 +114,49 @@
         {
           "type": "table",
           "caption": "Compound Growth Quick Reference",
-          "headers": ["Growth Rate", "5 Years", "7 Years", "10 Years"],
+          "headers": [
+            "Growth Rate",
+            "5 Years",
+            "7 Years",
+            "10 Years"
+          ],
           "rows": [
-            ["5%", "1.28x (28% total)", "1.41x", "1.63x"],
-            ["7%", "1.40x (40% total)", "1.61x (~2x via Rule 72)", "2.00x"],
-            ["10%", "1.61x (61% total)", "1.95x (~2x)", "2.59x"],
-            ["15%", "2.01x (~2x)", "2.66x", "4.05x"],
-            ["20%", "2.49x (~2.5x)", "3.58x", "6.19x"],
-            ["25%", "3.05x (~3x)", "4.77x", "9.31x"]
+            [
+              "5%",
+              "1.28x (28% total)",
+              "1.41x",
+              "1.63x"
+            ],
+            [
+              "7%",
+              "1.40x (40% total)",
+              "1.61x (~2x via Rule 72)",
+              "2.00x"
+            ],
+            [
+              "10%",
+              "1.61x (61% total)",
+              "1.95x (~2x)",
+              "2.59x"
+            ],
+            [
+              "15%",
+              "2.01x (~2x)",
+              "2.66x",
+              "4.05x"
+            ],
+            [
+              "20%",
+              "2.49x (~2.5x)",
+              "3.58x",
+              "6.19x"
+            ],
+            [
+              "25%",
+              "3.05x (~3x)",
+              "4.77x",
+              "9.31x"
+            ]
           ]
         },
         {
@@ -93,12 +164,36 @@
           "title": "$1 Invested at Various Rates — Value After 7 Years",
           "subtitle": "Compound growth multiplier at common rates",
           "data": [
-            {"label": "5% (conservative)", "value": 1.41, "suffix": "x"},
-            {"label": "8% (PE hurdle)", "value": 1.71, "suffix": "x"},
-            {"label": "10% (S&P 500 avg)", "value": 1.95, "suffix": "x"},
-            {"label": "15% (top PE)", "value": 2.66, "suffix": "x"},
-            {"label": "20% (great PE)", "value": 3.58, "suffix": "x"},
-            {"label": "25% (exceptional)", "value": 4.77, "suffix": "x"}
+            {
+              "label": "5% (conservative)",
+              "value": 1.41,
+              "suffix": "x"
+            },
+            {
+              "label": "8% (PE hurdle)",
+              "value": 1.71,
+              "suffix": "x"
+            },
+            {
+              "label": "10% (S&P 500 avg)",
+              "value": 1.95,
+              "suffix": "x"
+            },
+            {
+              "label": "15% (top PE)",
+              "value": 2.66,
+              "suffix": "x"
+            },
+            {
+              "label": "20% (great PE)",
+              "value": 3.58,
+              "suffix": "x"
+            },
+            {
+              "label": "25% (exceptional)",
+              "value": 4.77,
+              "suffix": "x"
+            }
           ]
         },
         {
@@ -253,10 +348,25 @@
         {
           "type": "table",
           "caption": "Top-Down vs. Bottom-Up Approach",
-          "headers": ["Approach", "Method", "Best For", "Weakness"],
+          "headers": [
+            "Approach",
+            "Method",
+            "Best For",
+            "Weakness"
+          ],
           "rows": [
-            ["Top-Down", "Start with total population or economy; narrow by relevant segments", "Consumer markets with clear penetration rates", "Segmentation assumptions can compound errors"],
-            ["Bottom-Up", "Start with unit economics (per store/customer/transaction); multiply by count", "B2B markets, specific retail businesses", "Requires knowing unit count, which itself needs estimation"]
+            [
+              "Top-Down",
+              "Start with total population or economy; narrow by relevant segments",
+              "Consumer markets with clear penetration rates",
+              "Segmentation assumptions can compound errors"
+            ],
+            [
+              "Bottom-Up",
+              "Start with unit economics (per store/customer/transaction); multiply by count",
+              "B2B markets, specific retail businesses",
+              "Requires knowing unit count, which itself needs estimation"
+            ]
           ]
         },
         {

@@ -9,7 +9,7 @@ const MODULE_COLORS = {
   'Restructuring / Distressed M&A': '#4a2d70',  // deep violet
   'Private Equity':                 '#1a3a3a',  // dark forest teal
   'Capital Markets':                '#3d2b1f',  // dark espresso
-  'Brain Teasers':                  '#5c4a1e',  // warm ochre
+  'Puzzles':                  '#5c4a1e',  // warm ochre
 }
 
 function ModuleCard({ sub, stats, onOpenModule }) {
