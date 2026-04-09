@@ -1,0 +1,1124 @@
+{
+  "subcategory": "Credit Analysis",
+  "overview": "Credit analysis is the discipline of evaluating a borrower's ability and willingness to repay its obligations in full and on time. Unlike equity analysis — which focuses on upside and growth — credit analysis is fundamentally about downside protection and loss avoidance. Mastery of credit analysis is essential for roles in leveraged finance, high yield research, direct lending, distressed debt investing, and credit rating agencies. This module builds from first principles through the full toolkit of leverage metrics, debt instruments, covenants, and the critical distinctions between investment-grade and high-yield credit.",
+  "estimatedHours": 2.5,
+  "lessons": [
+    {
+      "id": "credit_analysis_l1",
+      "title": "Credit Fundamentals — Lending from First Principles",
+      "estimatedMinutes": 25,
+      "blocks": [
+        {
+          "type": "callout",
+          "variant": "insight",
+          "title": "The Core Question",
+          "text": "Why would you lend $500 million to a company knowing you can never share in the upside — only collect interest and recover your principal? Because the risk-return profile for lenders is fundamentally different: they have priority in bankruptcy, and their downside is bounded by collateral and covenants. Credit analysis is the discipline of deciding whether that bounded risk-return tradeoff is worth taking — and getting it wrong is how financial crises happen."
+        },
+        {
+          "type": "h2",
+          "text": "The Creditor's Mindset: Asymmetric Return Profile"
+        },
+        {
+          "type": "p",
+          "text": "The fundamental insight of credit analysis is this: creditors do not participate in upside. A bondholder who lends $100M at 8% per year receives exactly that — $8M per year plus the return of principal at maturity. If the company performs brilliantly and its equity triples, the bondholder still gets $8M and $100M back. But if the company defaults, the bondholder may receive only 40 cents on the dollar. This asymmetric payoff profile — capped upside, unlimited downside — is what drives the entire discipline of credit analysis. The job is not to find companies that will thrive; the job is to find companies that will survive."
+        },
+        {
+          "type": "callout",
+          "variant": "insight",
+          "title": "Debt vs. Equity: The Return Profile Comparison",
+          "text": "Equity holders have unlimited upside (stock can go to infinity) and limited downside (you only lose what you invest). Debt holders have capped upside (you get your coupon and principal back) but can lose their entire principal in a default scenario. This fundamental asymmetry means equity investors focus on growth, while credit analysts focus on cash flow adequacy, asset coverage, and downside scenarios. The best credit analysts think like distressed investors — they ask 'what happens if everything goes wrong?' rather than 'what happens if everything goes right?'"
+        },
+        {
+          "type": "h2",
+          "text": "The 5 Cs of Credit"
+        },
+        {
+          "type": "p",
+          "text": "The '5 Cs of Credit' is a foundational framework used by credit analysts across commercial banking, leveraged finance, and direct lending to systematically evaluate a borrower's creditworthiness. While originally developed for consumer lending, the framework applies directly to corporate credit analysis."
+        },
+        {
+          "type": "table",
+          "caption": "The 5 Cs of Credit — Framework for Corporate Credit Analysis",
+          "headers": [
+            "C",
+            "What It Means",
+            "How Analysts Evaluate It"
+          ],
+          "rows": [
+            [
+              "Character",
+              "Management's integrity, track record, and willingness to honor obligations",
+              "Management team history, prior defaults, transparency in reporting, board governance, related-party transactions"
+            ],
+            [
+              "Capacity",
+              "The borrower's ability to generate sufficient cash flow to service debt",
+              "Leverage ratios (Debt/EBITDA), coverage ratios (EBITDA/Interest), free cash flow, DSCR"
+            ],
+            [
+              "Capital",
+              "The borrower's equity cushion and financial reserves available as a buffer",
+              "Debt/equity ratio, tangible net worth, liquidity (cash + revolver availability)"
+            ],
+            [
+              "Collateral",
+              "Assets that can be seized and liquidated by creditors in a default scenario",
+              "Asset appraisals, LTV ratios, quality and liquidity of collateral (real estate vs. software)"
+            ],
+            [
+              "Conditions",
+              "The macroeconomic environment and industry-specific headwinds or tailwinds",
+              "GDP growth, interest rates, commodity prices, regulatory environment, competitive dynamics"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "The Credit Rating Spectrum"
+        },
+        {
+          "type": "p",
+          "text": "Credit ratings are opinions issued by Moody's, S&P, and Fitch on the relative likelihood that a borrower will default on its obligations. Ratings are assigned to both issuers (corporate credit ratings) and individual debt instruments (issue-level ratings, which reflect both issuer quality and structural position in the capital structure)."
+        },
+        {
+          "type": "table",
+          "caption": "Credit Rating Scale — Moody's vs. S&P/Fitch",
+          "headers": [
+            "Category",
+            "Moody's",
+            "S&P / Fitch",
+            "Description"
+          ],
+          "rows": [
+            [
+              "Investment Grade — Prime",
+              "Aaa",
+              "AAA",
+              "Highest quality, minimal credit risk. Apple, Microsoft, Johnson & Johnson."
+            ],
+            [
+              "Investment Grade — High",
+              "Aa1/Aa2/Aa3",
+              "AA+/AA/AA−",
+              "Very high quality. Exxon, Berkshire Hathaway."
+            ],
+            [
+              "Investment Grade — Upper-Medium",
+              "A1/A2/A3",
+              "A+/A/A−",
+              "Strong capacity to meet obligations. Most IG industrials."
+            ],
+            [
+              "Investment Grade — Medium",
+              "Baa1/Baa2/Baa3",
+              "BBB+/BBB/BBB−",
+              "Adequate capacity. 'BBB' is the largest IG bucket. Ford, AT&T."
+            ],
+            [
+              "High Yield — Speculative",
+              "Ba1/Ba2/Ba3",
+              "BB+/BB/BB−",
+              "Speculative elements, substantial credit risk. Broadly syndicated LBO loans."
+            ],
+            [
+              "High Yield — More Speculative",
+              "B1/B2/B3",
+              "B+/B/B−",
+              "Speculative, subject to high credit risk. Typical LBO companies 12-18 months post-deal."
+            ],
+            [
+              "High Yield — Poor Quality",
+              "Caa1/Caa2/Caa3",
+              "CCC+/CCC/CCC−",
+              "Poor standing, very high risk. Near-distressed situations."
+            ],
+            [
+              "Default",
+              "Ca/C",
+              "CC/C/D",
+              "In or near default."
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "The Investment Grade / High Yield Divide"
+        },
+        {
+          "type": "p",
+          "text": "The boundary between BBB−/Baa3 (lowest investment grade) and BB+/Ba1 (highest high yield) is one of the most consequential lines in all of finance. Investment-grade issuers can access the IG bond market — the largest, most liquid bond market in the world, with the lowest borrowing costs. High-yield issuers must pay significantly higher spreads and accept more restrictive terms. Many institutional investors (insurance companies, pension funds, money market funds) are prohibited by charter or regulation from holding sub-investment-grade debt, creating an enormous forced-selling effect when a company is downgraded from BBB− to BB+ — these are called 'fallen angels.'"
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Fallen Angel: Ford Motor Company (March 2020)",
+          "text": "In March 2020, Moody's downgraded Ford Motor Company from Baa3 to Ba2 — two notches below investment grade — following the COVID-19 pandemic's impact on auto sales. This was the largest 'fallen angel' downgrade since the global financial crisis, with approximately $36 billion of Ford debt suddenly becoming 'junk' rated. Insurance companies and pension funds that could only hold investment-grade debt were forced to sell. Ford's existing bonds immediately traded down 10–15 points, and the company faced significantly higher borrowing costs going forward. Ford had to access the high-yield market to refinance — at a substantially wider spread."
+        },
+        {
+          "type": "h2",
+          "text": "How Credit Ratings Are Determined"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Quantitative factors (typically 50–60% of the rating): Revenue size and stability, EBITDA margins, leverage ratios (Debt/EBITDA), coverage ratios (EBITDA/Interest), free cash flow generation, liquidity position.",
+            "Qualitative factors (40–50% of the rating): Business risk (industry cyclicality, competitive position, geographic diversification), management quality and strategy, regulatory risk, environmental/social/governance (ESG) profile.",
+            "Industry context: Rating agencies publish specific sector methodologies with different rating 'anchors' for each industry. A 3.0x Debt/EBITDA ratio might be BBB in a utility (stable cash flows) but only B+ in a media company (volatile revenue, secular headwinds).",
+            "Notching: Individual debt instruments are rated differently from the issuer. Senior secured debt is typically rated one to two notches ABOVE the issuer rating; subordinated debt is rated one to two notches BELOW. This notching reflects the structural priority of claims in a default."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "The Credit Analyst's Process"
+        },
+        {
+          "type": "p",
+          "text": "When analyzing a company for a credit decision, a trained credit analyst follows a structured process: (1) Understand the business model — how does the company make money and how stable is that? (2) Analyze the financial profile — run all leverage and coverage metrics, build a downside case. (3) Assess the capital structure — where does this borrower sit in the debt stack? What is the collateral coverage? (4) Evaluate the liquidity position — does the company have enough cash and revolver availability to survive the next 12–18 months even in a stress scenario? (5) Form a credit opinion — is the company a good credit at the proposed terms, and at what price?"
+        }
+      ],
+      "keyTakeaways": [
+        "Creditors have a capped upside (coupon + principal) but full downside risk (potential loss of principal) — this asymmetry drives the entire framework of credit analysis.",
+        "The 5 Cs (Character, Capacity, Capital, Collateral, Conditions) provide a systematic framework for evaluating any borrower's creditworthiness.",
+        "The BBB−/BB+ boundary separates investment grade from high yield — crossing it triggers forced selling by IG-only investors (fallen angel effect) and dramatically increases borrowing costs.",
+        "Credit ratings reflect both quantitative metrics (leverage, coverage) and qualitative factors (business risk, management quality, industry dynamics).",
+        "Notching adjusts issue-level ratings from the issuer rating based on structural seniority: senior secured debt gets 1–2 notch uplift; subordinated debt gets 1–2 notch downgrade."
+      ],
+      "interviewTip": "When asked 'What do credit investors care about?' the key answer is: (1) cash flow adequacy — can the company service its debt from operations? (2) downside protection — what do creditors recover if the company defaults? (3) covenant protection — what restrictions prevent management from taking actions that harm creditors? Contrast this explicitly with equity investors, who focus on growth, margins, and multiple expansion. This contrast demonstrates conceptual clarity and is highly valued in leveraged finance and direct lending interviews."
+    },
+    {
+      "id": "credit_analysis_l2",
+      "title": "Leverage and Coverage Metrics",
+      "estimatedMinutes": 25,
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Why Metrics Matter in Credit Analysis"
+        },
+        {
+          "type": "p",
+          "text": "Leverage and coverage ratios are the quantitative language of credit markets. They appear in every credit agreement as covenant thresholds, in every rating agency report as key inputs, and in every bank credit memo as the core of the financial analysis. Knowing these metrics — their formulas, their economic intuition, and their industry benchmarks — is table stakes for any leveraged finance, direct lending, or restructuring interview."
+        },
+        {
+          "type": "h2",
+          "text": "Leverage Ratios"
+        },
+        {
+          "type": "p",
+          "text": "Leverage ratios measure how much debt a company carries relative to its earnings or capital base. Higher leverage means more risk for creditors — but also more potential return for equity. In leveraged finance, leverage is the central underwriting variable: the question is always 'can this company support this level of debt?'"
+        },
+        {
+          "type": "table",
+          "caption": "Key Leverage Ratios — Formulas and Context",
+          "headers": [
+            "Ratio",
+            "Formula",
+            "Economic Meaning",
+            "Typical Use"
+          ],
+          "rows": [
+            [
+              "Total Debt / EBITDA",
+              "Total Debt ÷ EBITDA",
+              "How many years of EBITDA to pay off all debt",
+              "Primary LBO underwriting metric; covenant testing"
+            ],
+            [
+              "Net Debt / EBITDA",
+              "(Total Debt − Cash) ÷ EBITDA",
+              "Leverage net of cash on hand; most widely used",
+              "Rating agency analysis; bank credit agreements"
+            ],
+            [
+              "Total Debt / Total Capital",
+              "Total Debt ÷ (Total Debt + Book Equity)",
+              "Debt as % of total financing; capital structure view",
+              "IG credit analysis; balance sheet structure"
+            ],
+            [
+              "Net Debt / (EBITDA − Capex)",
+              "Net Debt ÷ (EBITDA − Capex)",
+              "Leverage relative to free cash flow generation",
+              "Capex-intensive industries: telecom, cable, industrials"
+            ],
+            [
+              "Senior Secured Debt / EBITDA",
+              "Senior Secured Debt ÷ EBITDA",
+              "Leverage specifically at secured level",
+              "First lien coverage; collateral adequacy analysis"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "insight",
+          "title": "Why Net Debt Is Preferred Over Gross Debt",
+          "text": "Net Debt = Total Debt − Cash. Companies hold varying amounts of cash on their balance sheets, and cash can be used to repay debt. Using net debt gives a more accurate picture of true financial leverage. For example, a company with $500M of debt and $200M of cash has net debt of $300M — its true economic leverage is much lower than its gross debt suggests. However, analysts sometimes revert to gross debt when cash is 'trapped' in foreign subsidiaries, required for operations, or restricted by the credit agreement."
+        },
+        {
+          "type": "h2",
+          "text": "Coverage Ratios"
+        },
+        {
+          "type": "p",
+          "text": "Coverage ratios measure whether a company generates enough earnings or cash flow to comfortably cover its debt service obligations. While leverage ratios tell you how much debt exists, coverage ratios tell you whether the company can actually afford that debt. Both lenses are essential."
+        },
+        {
+          "type": "table",
+          "caption": "Key Coverage Ratios — Formulas and Context",
+          "headers": [
+            "Ratio",
+            "Formula",
+            "Economic Meaning",
+            "Typical Threshold"
+          ],
+          "rows": [
+            [
+              "Interest Coverage (EBITDA/Interest)",
+              "EBITDA ÷ Cash Interest Expense",
+              "Multiples by which EBITDA covers interest payments",
+              "IG: >4x; HY: 2.5–4x; Distressed: <2x"
+            ],
+            [
+              "EBIT Interest Coverage",
+              "EBIT ÷ Interest Expense",
+              "More conservative — includes D&A as a real cost",
+              "IG: >3x; HY: 1.5–3x"
+            ],
+            [
+              "Fixed Charge Coverage Ratio (FCCR)",
+              "(EBITDA − Capex) ÷ (Interest + Debt Amortization)",
+              "Cash flow after capex covers all fixed charges",
+              "Covenant minimum often 1.1x–1.25x"
+            ],
+            [
+              "Debt Service Coverage Ratio (DSCR)",
+              "Net Operating Income ÷ Total Debt Service",
+              "Typical in project finance and real estate",
+              "Minimum 1.25x in project finance"
+            ],
+            [
+              "Cash Interest Coverage",
+              "EBITDA ÷ Cash Interest (excl. PIK)",
+              "Ignores PIK interest that doesn't require cash",
+              "Useful when PIK notes in capital structure"
+            ]
+          ]
+        },
+        {
+          "type": "formula",
+          "label": "Interest Coverage Ratio",
+          "formula": "Interest Coverage = EBITDA ÷ Cash Interest Expense"
+        },
+        {
+          "type": "formula",
+          "label": "Fixed Charge Coverage Ratio (FCCR)",
+          "formula": "FCCR = (EBITDA − Capex) ÷ (Interest Expense + Mandatory Debt Amortization)"
+        },
+        {
+          "type": "h2",
+          "text": "Industry Benchmarks — What Constitutes Good vs. Concerning Ratios"
+        },
+        {
+          "type": "table",
+          "caption": "Typical Leverage and Coverage Ratios by Industry / Credit Category",
+          "headers": [
+            "Category / Industry",
+            "Net Debt/EBITDA",
+            "Interest Coverage",
+            "Notes"
+          ],
+          "rows": [
+            [
+              "Investment Grade (BBB)",
+              "1.5x–3.0x",
+              ">4.0x",
+              "Conservative; maintains IG rating"
+            ],
+            [
+              "Broadly Syndicated Leveraged Loan (B/BB)",
+              "4.0x–6.5x",
+              "2.5x–4.0x",
+              "Standard LBO range; TLB market"
+            ],
+            [
+              "Direct Lending / Middle Market",
+              "3.5x–6.0x",
+              "2.5x–4.0x",
+              "Smaller companies, often tighter covenants"
+            ],
+            [
+              "Healthcare / Pharma (IG)",
+              "1.0x–2.5x",
+              ">5x",
+              "Stable, recession-resistant cash flows"
+            ],
+            [
+              "Oil & Gas (E&P, B/BB)",
+              "1.5x–3.5x",
+              "3.0x–5.0x",
+              "Commodity-linked; ratios vary with oil price"
+            ],
+            [
+              "Telecom / Cable (BB/BBB)",
+              "3.5x–5.5x",
+              "3.0x–5.0x",
+              "High capex; use EBITDA–Capex leverage metric"
+            ],
+            [
+              "Retail (B/BB)",
+              "3.0x–5.0x",
+              "2.0x–3.5x",
+              "Secular headwinds; highly cyclical"
+            ],
+            [
+              "Near Distressed (CCC)",
+              ">7.0x",
+              "<2.0x",
+              "Red zone; covenant breach likely"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "EBITDA — The Central Denominator and Its Limitations"
+        },
+        {
+          "type": "p",
+          "text": "EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) serves as the primary earnings proxy in credit analysis because it approximates cash earnings from operations before capital structure decisions (interest) and accounting choices (D&A). However, EBITDA has meaningful limitations that every credit analyst must understand:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "EBITDA ignores capital expenditures: A utility company that generates $500M EBITDA but must spend $300M on capex has only $200M of real free cash flow — very different from a software company with the same EBITDA but negligible capex. This is why 'EBITDA minus capex' is a better coverage metric for capex-intensive industries.",
+            "EBITDA ignores working capital changes: A fast-growing company may consume cash in working capital even if it reports strong EBITDA. Revenue growth burns cash if receivables grow faster than payables.",
+            "EBITDA add-backs can be manipulated: Modern credit agreements allow 'Adjusted EBITDA' with numerous add-backs: restructuring costs, management fees, stock compensation, 'synergies' from acquisitions not yet closed, and 'cost savings' from identified but not-yet-executed initiatives. In some highly leveraged deals, Adjusted EBITDA can be 30–50% above reported EBITDA — a critical quality-of-earnings issue."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Worked Example: Evaluating a Leveraged Loan Credit",
+          "text": "TechCo is being taken private by a private equity firm at a $1.0 billion enterprise value. The financing consists of: $600M Term Loan B (6.0x EBITDA) at SOFR + 3.75% (approximately 9.25% all-in), $100M Revolving Credit Facility (undrawn at close). EBITDA = $100M. Interest expense on TLB = $600M × 9.25% = $55.5M. Capex = $20M/year. Analysis: Net Debt/EBITDA = $600M / $100M = 6.0x (high — typical LBO at top of market). Interest Coverage = $100M / $55.5M = 1.80x (tight — below 2.0x, the threshold for concern). FCCR = ($100M – $20M) / ($55.5M + $6M mandatory amortization) = $80M / $61.5M = 1.30x (borderline). Red flags: limited headroom on all metrics; any EBITDA shortfall of more than 10% would breach FCCR covenant. Recommendation: Acceptable only if business has extremely stable cash flows and no near-term revenue risk."
+        },
+        {
+          "type": "h2",
+          "text": "How Leverage Varies Through the Cycle"
+        },
+        {
+          "type": "p",
+          "text": "Credit markets are highly cyclical. At the peak of a credit cycle (2006–2007, 2021), competition among lenders drives down standards: leverage multiples creep up, covenants disappear, and EBITDA add-backs proliferate. At the trough (2009, 2020), markets shut down entirely, and even investment-grade companies struggle to access credit. A critical skill for credit analysts is understanding where we are in the cycle and how much cushion current leverage metrics provide against a stress scenario. As a rule of thumb, at cycle peak, underwrite to a 20–30% EBITDA decline scenario. If the credit cannot survive that haircut, it's too risky at peak pricing."
+        }
+      ],
+      "keyTakeaways": [
+        "Net Debt/EBITDA is the primary leverage metric in leveraged finance; typical IG companies are 1–3x, typical LBO companies are 4–6.5x at deal close.",
+        "Interest Coverage (EBITDA/Interest) measures the EBITDA buffer above required interest payments; below 2.0x is typically a distress signal.",
+        "The Fixed Charge Coverage Ratio (FCCR) is the most conservative coverage metric, deducting capex and mandatory amortization before measuring coverage.",
+        "EBITDA has significant limitations in credit analysis — it ignores capex, working capital, and can be heavily adjusted through add-backs in credit agreements.",
+        "Credit metrics must be interpreted in industry context: 5.0x leverage is alarming for a retailer but acceptable for a cable company with predictable subscription revenue."
+      ],
+      "interviewTip": "In leveraged finance and credit interviews, be ready to calculate leverage and coverage metrics on the spot. Given EBITDA = $150M, Total Debt = $700M, Cash = $50M, Interest = $55M, Capex = $30M, Mandatory Amort = $10M: Net Debt/EBITDA = $650M/$150M = 4.3x; Interest Coverage = $150M/$55M = 2.7x; FCCR = ($150M–$30M)/($55M+$10M) = $120M/$65M = 1.85x. Then comment: 'Coverage is reasonably adequate but not exceptional — the credit would need EBITDA growth or debt paydown to achieve meaningful headroom.' This shows you can calculate AND interpret."
+    },
+    {
+      "id": "credit_analysis_l3",
+      "title": "Debt Instruments and Capital Structure",
+      "estimatedMinutes": 25,
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "The Capital Structure Hierarchy"
+        },
+        {
+          "type": "p",
+          "text": "A company's capital structure is a carefully engineered stack of debt and equity, each layer with different risk characteristics, pricing, and rights in a default scenario. Understanding the hierarchy of claims — who gets paid first in a bankruptcy, and who gets wiped out — is fundamental to credit analysis and restructuring. The general rule: higher seniority = lower risk = lower return. Lower seniority = higher risk = higher required return."
+        },
+        {
+          "type": "h2",
+          "text": "The Debt Waterfall — Priority of Claims"
+        },
+        {
+          "type": "table",
+          "caption": "Typical Leveraged Company Capital Structure — Priority Stack",
+          "headers": [
+            "Level",
+            "Instrument",
+            "Typical Yield",
+            "Recovery in Default",
+            "Characteristics"
+          ],
+          "rows": [
+            [
+              "1 — Senior Secured",
+              "Revolving Credit Facility",
+              "SOFR + 150–250bps",
+              "80–100%",
+              "First lien; typically asset-backed; drawn for working capital; undrawn = liquidity buffer"
+            ],
+            [
+              "1 — Senior Secured",
+              "Term Loan A (TLA)",
+              "SOFR + 150–250bps",
+              "80–100%",
+              "First lien; held by banks; 5-year maturity; 5–10% annual amortization"
+            ],
+            [
+              "1 — Senior Secured",
+              "Term Loan B (TLB)",
+              "SOFR + 250–400bps",
+              "70–90%",
+              "First lien; held by CLOs/credit funds; 7-year maturity; 1% annual amortization; the workhorse of LBO financing"
+            ],
+            [
+              "2 — Second Lien",
+              "Second Lien Term Loan",
+              "SOFR + 600–800bps",
+              "25–60%",
+              "Second priority on same collateral as first lien; substantially higher risk; less liquid market"
+            ],
+            [
+              "3 — Senior Unsecured",
+              "High Yield Bonds (8yr)",
+              "6–10%+ fixed",
+              "20–50%",
+              "No collateral; rely on covenant protection; public market; 144A for life; callable"
+            ],
+            [
+              "4 — Subordinated",
+              "Mezzanine Debt",
+              "12–20% (cash + PIK)",
+              "5–30%",
+              "Below HY bonds; often PIK component; quasi-equity; used in complex capital structures"
+            ],
+            [
+              "5 — Equity",
+              "Common Equity",
+              "20–25%+ target IRR",
+              "0–30%",
+              "Last in line; owns the upside; wiped out in most leveraged defaults"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Senior Secured Debt — Revolvers, TLA, and TLB"
+        },
+        {
+          "type": "p",
+          "text": "The revolving credit facility (revolver) is the Swiss Army knife of corporate finance — a flexible line of credit that borrowers can draw and repay repeatedly, up to an agreed commitment amount. Unlike term loans (which are fully funded at close and must be repaid on a schedule), revolvers are drawn only when needed. The revolver typically has a 5-year maturity and is priced at SOFR plus a spread that varies with the company's leverage. Revolvers are typically secured on the same first-lien collateral package as the term loans, giving revolver lenders priority over subordinated creditors."
+        },
+        {
+          "type": "p",
+          "text": "The Term Loan B (TLB) is the primary instrument of the leveraged loan market. Unlike investment-grade term loans (which amortize meaningfully over their life), TLBs feature minimal amortization (1% per year) with a large balloon payment at maturity (7 years). This structure suits PE-backed companies that expect to refinance or sell the business before maturity. TLBs are typically held by institutional investors — Collateralized Loan Obligations (CLOs), hedge funds, and credit funds — rather than traditional banks, because banks prefer amortizing loans that reduce exposure over time."
+        },
+        {
+          "type": "h2",
+          "text": "High Yield Bonds — Structure and Features"
+        },
+        {
+          "type": "p",
+          "text": "High yield (HY) bonds — also called junk bonds — are fixed-rate, public market bonds issued by below-investment-grade companies. They are typically issued via a 144A for life offering (exempt from SEC registration, sold to qualified institutional buyers). Key structural features include:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Maturity: Typically 8 years (vs. 7 for TLB). HY bonds have bullet maturities — no amortization, full principal due at maturity.",
+            "Call provisions: HY bonds are typically non-call for the first 3–4 years ('NC3' or 'NC4'), then callable at par plus a declining call premium (e.g., 50% of coupon in year 4, 25% in year 5, at par in year 6). This protects investors from having their bonds called away if rates decline or the company improves.",
+            "Equity clawback: The issuer can redeem up to 35–40% of the bonds at par + coupon using proceeds from a qualified equity offering within the first 3 years. This provides an exit route if the company IPOs early.",
+            "Change of control put: If the company is acquired, bondholders can put (sell back) their bonds to the company at 101 cents on the dollar — providing downside protection.",
+            "Covenants: More extensive than investment-grade bonds (though less restrictive than bank loans). Typical HY covenants include debt incurrence tests, restricted payments basket, asset sale provisions, and affiliate transaction limitations."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Mezzanine and Subordinated Debt"
+        },
+        {
+          "type": "p",
+          "text": "Mezzanine debt sits between senior debt and equity in the capital structure — 'middle floor' financing. It is typically used when senior debt capacity has been exhausted but the PE sponsor does not want to contribute more equity (which dilutes returns). Mezzanine features: (1) high interest rates (12–18%+), often split between cash pay (e.g., 10%) and PIK (e.g., 5%) where interest accretes on the principal; (2) warrants attached that give the mezzanine lender a small equity stake; (3) 5–7 year maturity, subordinated to all senior debt; (4) typically held by a single mezzanine fund or small club of investors, so consent processes are manageable."
+        },
+        {
+          "type": "h2",
+          "text": "Worked Example: $1 Billion Company Capital Structure"
+        },
+        {
+          "type": "p",
+          "text": "TechCo is a PE-backed SaaS company with $150M EBITDA acquired at 10.0x ($1.5 billion EV). The company has a market-standard leveraged capital structure."
+        },
+        {
+          "type": "table",
+          "caption": "TechCo Capital Structure — $1.5B EV, $150M EBITDA",
+          "headers": [
+            "Instrument",
+            "Amount ($M)",
+            "Turn of EBITDA",
+            "Rate",
+            "Maturity",
+            "Annual Interest ($M)"
+          ],
+          "rows": [
+            [
+              "Revolver ($100M, undrawn at close)",
+              "$0",
+              "0.0x",
+              "SOFR + 2.50%",
+              "5yr",
+              "$0 (undrawn)"
+            ],
+            [
+              "Term Loan B (First Lien)",
+              "$600M",
+              "4.0x",
+              "SOFR + 3.50% (~9.0%)",
+              "7yr",
+              "$54.0M"
+            ],
+            [
+              "Senior Secured Subtotal",
+              "$600M",
+              "4.0x",
+              "—",
+              "—",
+              "$54.0M"
+            ],
+            [
+              "Senior Unsecured Notes (HY)",
+              "$300M",
+              "6.0x",
+              "8.5% fixed",
+              "8yr",
+              "$25.5M"
+            ],
+            [
+              "Total Debt",
+              "$900M",
+              "6.0x",
+              "—",
+              "—",
+              "$79.5M"
+            ],
+            [
+              "Sponsor Equity",
+              "$600M",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "Total Capitalization",
+              "$1,500M",
+              "—",
+              "—",
+              "—",
+              "—"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "insight",
+          "title": "Waterfall Analysis: How Proceeds Flow in Default",
+          "text": "If TechCo defaults and its assets are sold for $750M: First lien Term Loan B holders ($600M outstanding) receive $600M — 100% recovery. Remaining proceeds: $750M – $600M = $150M. Senior Unsecured HY bondholders ($300M outstanding) receive $150M — 50 cents on the dollar. Equity: $0. This waterfall analysis illustrates why the first lien TLB is considered 'safe' while the HY bonds face meaningful impairment risk. It also shows why the HY bonds must yield significantly more to compensate investors for this subordination risk."
+        },
+        {
+          "type": "h2",
+          "text": "Convertible Notes — Hybrid Instruments"
+        },
+        {
+          "type": "p",
+          "text": "Convertible notes are a hybrid between debt and equity: they pay a coupon (typically lower than a pure debt instrument — often 0–3% vs. 6–8% for HY bonds) but allow the holder to convert the debt into equity at a pre-set conversion price. The conversion option has option value — it is essentially an embedded call option on the issuer's stock. Companies like to issue converts because the coupon is cheaper than straight debt. Investors like them because they provide debt-like downside protection with equity-like upside participation. Converts are typically used by growth companies (tech, biotech) and are junior to most other debt in the capital structure."
+        }
+      ],
+      "keyTakeaways": [
+        "The debt capital structure is a prioritized stack: revolvers and first-lien term loans rank highest, followed by second lien, senior unsecured bonds, mezzanine, and finally equity.",
+        "Term Loan B (SOFR + 250–400bps, 7yr, 1% amortization) is the primary LBO financing instrument, held by CLOs and credit funds rather than banks.",
+        "High yield bonds are fixed-rate, public market, 8-year bullet instruments with call protection (NC3–NC4), change of control puts, and incurrence-based covenants.",
+        "The waterfall analysis shows who recovers what in a default — first lien lenders typically recover 70–100%, unsecured bondholders 20–50%, and equity holders often nothing.",
+        "Mezzanine debt bridges the gap between senior debt capacity and equity, commanding 12–20%+ returns through high cash coupons, PIK accruals, and equity warrants."
+      ],
+      "interviewTip": "A classic interview question: 'Walk me through a typical leveraged capital structure.' Structure your answer: (1) Revolver — first lien, flexible, drawn for WC; (2) Term Loan B — first lien, 7yr, 1% amortization, SOFR + 300–400bps, institutional; (3) High Yield Bonds — second lien or unsecured, 8yr bullet, fixed rate, public market, NC3–4 call structure; (4) Equity — sponsor contribution. Then add the leverage turns: TLB at 4.0–4.5x, total debt at 5.5–6.5x for a typical LBO. Interviewers reward candidates who can quickly build a credible capital structure table in their head."
+    },
+    {
+      "id": "credit_analysis_l4",
+      "title": "Credit Covenants",
+      "estimatedMinutes": 25,
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "What Covenants Are and Why They Exist"
+        },
+        {
+          "type": "p",
+          "text": "Credit covenants are contractual provisions in a loan or bond indenture that place restrictions on the borrower's behavior and require the maintenance of certain financial metrics. They are the primary tool through which lenders protect themselves against borrower opportunism: over-leveraging, asset stripping, excessive dividend payments, and other actions that transfer value from creditors to equity holders. Understanding covenants is essential for anyone in leveraged finance, direct lending, restructuring, or credit research — they determine when a company is in 'technical default' even if it hasn't missed a payment."
+        },
+        {
+          "type": "h2",
+          "text": "Maintenance Covenants vs. Incurrence Covenants"
+        },
+        {
+          "type": "p",
+          "text": "The most fundamental covenant distinction in credit markets is between maintenance covenants (bank-style) and incurrence covenants (bond-style). This distinction defines the entire structure of credit protection across the leveraged finance market."
+        },
+        {
+          "type": "table",
+          "caption": "Maintenance vs. Incurrence Covenants — Key Differences",
+          "headers": [
+            "Feature",
+            "Maintenance Covenants",
+            "Incurrence Covenants"
+          ],
+          "rows": [
+            [
+              "When Tested",
+              "Every quarter, regardless of actions taken",
+              "Only when the borrower takes a specific action (e.g., raises debt, pays dividend)"
+            ],
+            [
+              "Typical Instruments",
+              "Bank credit agreements (TLA, Revolver)",
+              "High yield bond indentures"
+            ],
+            [
+              "Example",
+              "Net Debt/EBITDA must be ≤ 5.0x at all times",
+              "Cannot incur new debt if Pro Forma Net Debt/EBITDA > 4.5x"
+            ],
+            [
+              "Effect of Deterioration",
+              "Breach immediately if metrics worsen",
+              "No breach unless borrower takes a restricted action"
+            ],
+            [
+              "Lender Benefit",
+              "Early warning — intervention before crisis",
+              "Less protection; deteriorating credits can slide further"
+            ],
+            [
+              "Borrower Preference",
+              "Disfavored — creates constant compliance burden",
+              "Favored — allows operational flexibility"
+            ],
+            [
+              "Market Trend",
+              "Disappearing in broadly syndicated loans (cov-lite)",
+              "Dominant in HY bonds; now creeping into TLBs"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "insight",
+          "title": "The Rise of Covenant-Lite and What It Means",
+          "text": "Covenant-lite (cov-lite) loans contain only incurrence covenants and no maintenance covenants. By 2022, over 90% of U.S. broadly syndicated leveraged loans were cov-lite — a stark contrast to the pre-2005 market where maintenance covenants were universal. The rise of cov-lite has been driven by the institutionalization of the leveraged loan market (CLOs are price-takers, not covenant negotiators) and intense competition among lenders. The practical implication: lenders lose their early warning system. Under traditional maintenance covenants, a breach would trigger a renegotiation where lenders could extract fees and tighter terms — or demand repayment. Under cov-lite, a deteriorating borrower can continue until actual default or until it wants to take a restricted action."
+        },
+        {
+          "type": "h2",
+          "text": "Financial Maintenance Covenants — Examples with Thresholds"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Maximum Leverage Covenant: Net Debt/EBITDA ≤ 5.0x. Tested quarterly on a trailing-twelve-month (TTM) EBITDA basis. If the company's leverage exceeds 5.0x, it is in default of the covenant — even if it has made all cash interest payments.",
+            "Minimum Interest Coverage Covenant: EBITDA/Cash Interest ≥ 2.5x. Ensures the company retains a minimum buffer between earnings and interest obligations.",
+            "Minimum Liquidity Covenant: Cash + Undrawn Revolver Availability ≥ $50M. Common in direct lending. Ensures the company maintains a liquidity floor.",
+            "Maximum Capital Expenditure Covenant: Annual capex ≤ $30M (or some formula). Prevents the borrower from depleting cash on expansionary investment that could harm debt repayment.",
+            "Minimum EBITDA Covenant: LTM EBITDA ≥ $80M. Sometimes used in direct lending as a simple floor on earnings."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Affirmative vs. Negative Covenants"
+        },
+        {
+          "type": "table",
+          "caption": "Affirmative vs. Negative Covenants — Examples",
+          "headers": [
+            "Type",
+            "What It Requires/Prohibits",
+            "Examples"
+          ],
+          "rows": [
+            [
+              "Affirmative (Positive)",
+              "Borrower MUST do something",
+              "Maintain insurance; provide quarterly financials; pay taxes; preserve corporate existence; comply with laws"
+            ],
+            [
+              "Negative (Restrictive)",
+              "Borrower MUST NOT do something without lender consent",
+              "Incur additional debt above basket; pay dividends; sell assets; make acquisitions > threshold; grant liens; merge or consolidate; change business"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "EBITDA Definition and Add-Backs in Credit Agreements"
+        },
+        {
+          "type": "p",
+          "text": "Perhaps no section of a modern credit agreement is more intensely negotiated than the definition of EBITDA. The credit agreement's EBITDA definition — often called 'Consolidated EBITDA' or 'Adjusted EBITDA' — is what is used to test maintenance covenants, calculate incurrence baskets, and determine permitted payment capacity. The difference between reported EBITDA and Adjusted EBITDA for covenant purposes can be enormous."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Standard add-backs: Non-cash charges (stock compensation, impairment), restructuring costs, non-recurring litigation charges, management fees.",
+            "Aggressive add-backs (2015–2022 vintage): Run-rate cost savings from announced-but-not-yet-realized restructuring; synergies from acquisitions not yet closed (capped at 18–24 months); 'identified' cost savings from initiatives underway.",
+            "Pro forma EBITDA adjustments: If an acquisition is completed during the LTM period, the full-year contribution of the acquired company can be added to EBITDA even for periods before the acquisition closed. This inflates LTM EBITDA for covenant purposes.",
+            "Cap on add-backs: More conservative credit agreements cap total add-backs at 20–25% of reported EBITDA. Aggressive deals in 2020–2022 had no effective caps."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "What Happens When Covenants Are Breached"
+        },
+        {
+          "type": "p",
+          "text": "A covenant breach (also called a 'technical default') does not immediately trigger bankruptcy. However, it gives lenders significant leverage. The typical sequence of events following a covenant breach:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Discovery and Notice: Borrower or lender identifies the breach. Borrower has a grace period (typically 30 days) to formally cure or notify lenders.",
+            "Waiver Negotiation: The borrower approaches lenders seeking a waiver — a one-time forgiveness of the breach. In exchange, lenders typically demand a waiver fee (12.5–50bps), tighter future covenant thresholds, an equity cure contribution, or a margin step-up on the loan.",
+            "Amendment: If the borrower expects the issue to persist, it may seek a permanent amendment to the credit agreement — resetting the covenant threshold at a more achievable level. Amendments require consent from a majority (typically 51%) of lenders.",
+            "Acceleration: If the borrower cannot obtain a waiver or amendment, lenders can declare the debt immediately due and payable ('accelerate' the maturity). This effectively triggers a liquidity crisis since most borrowers cannot repay all debt instantly.",
+            "Bankruptcy: If the borrower cannot resolve the breach, file Chapter 11 to restructure. The automatic stay halts all creditor collection actions, buying time to negotiate a restructuring."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Covenant Headroom Analysis"
+        },
+        {
+          "type": "p",
+          "text": "Headroom analysis quantifies how much 'cushion' a borrower has before breaching its covenants. If the maximum leverage covenant is 5.0x Net Debt/EBITDA and the current ratio is 4.2x, the company has 0.8x of headroom — EBITDA can decline by approximately 16% before breaching. Headroom analysis is a standard deliverable in credit committee memos and bank credit reviews."
+        },
+        {
+          "type": "formula",
+          "label": "EBITDA Decline to Breach (Leverage Covenant)",
+          "formula": "% EBITDA Decline to Breach = 1 − (Current Net Debt/EBITDA ÷ Covenant Maximum Net Debt/EBITDA)"
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Headroom Analysis: RetailCo",
+          "text": "RetailCo has Net Debt of $600M and LTM EBITDA of $120M. Net Debt/EBITDA = 5.0x. The maintenance covenant requires Net Debt/EBITDA ≤ 5.5x. Headroom: 5.5x – 5.0x = 0.5x of EBITDA room. EBITDA can decline from $120M to $109M ($600M / 5.5x) before breach — a decline of just 9.2%. Given that retail EBITDA can swing 15–20% in a bad year, this credit is dangerously close to a covenant breach. Interest coverage = $120M / $45M interest = 2.67x; minimum covenant is 2.25x. EBITDA can fall to $101M before breaching coverage. Conclusion: two distinct covenant near-breaches; requires close monitoring. Recommend reducing exposure to maximum 80% of current position."
+        }
+      ],
+      "keyTakeaways": [
+        "Maintenance covenants are tested every quarter regardless of borrower actions; incurrence covenants are only tested when the borrower takes a specific restricted action.",
+        "Over 90% of broadly syndicated U.S. leveraged loans are cov-lite (incurrence only), eliminating lenders' early warning system and shifting power to borrowers.",
+        "When a covenant is breached, the typical sequence is: discovery → waiver negotiation → amendment → if unresolved, acceleration and potential bankruptcy.",
+        "EBITDA add-backs in modern credit agreements can materially inflate covenant EBITDA vs. reported EBITDA — a critical quality-of-earnings concern for credit analysts.",
+        "Headroom analysis quantifies how much EBITDA can decline before covenant breach — a key deliverable in bank credit reviews and investment committee presentations."
+      ],
+      "interviewTip": "The most common covenant question in leveraged finance interviews: 'What is the difference between a maintenance covenant and an incurrence covenant?' Answer: Maintenance covenants are tested every quarter and restrict the borrower's financial metrics at all times. Incurrence covenants are only triggered when the borrower takes a specific action (raising debt, paying dividends). Bank loans historically had maintenance covenants; HY bonds have always used incurrence covenants. The rise of cov-lite means most TLBs now also use incurrence covenants, which is better for borrowers but worse for lenders. Follow up with: what does this mean in a distress scenario? Cov-lite loans give lenders fewer intervention points — they cannot renegotiate until an actual payment default or voluntary action by the borrower."
+    },
+    {
+      "id": "credit_analysis_l5",
+      "title": "High Yield vs. Investment Grade — Key Differences",
+      "estimatedMinutes": 25,
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "The Most Important Line in Credit Markets"
+        },
+        {
+          "type": "p",
+          "text": "The divide between investment grade (BBB−/Baa3 and above) and high yield (BB+/Ba1 and below) is arguably the most consequential rating threshold in all of fixed income. It determines access to the world's deepest and most liquid bond market vs. a more restricted and expensive financing universe. It affects who can buy the bonds, what structural protections are required, and how the company is perceived by customers, suppliers, and counterparties. Understanding this divide in granular detail is essential for any leveraged finance or credit analyst."
+        },
+        {
+          "type": "h2",
+          "text": "Structural Differences — Bond Features Compared"
+        },
+        {
+          "type": "table",
+          "caption": "Investment Grade vs. High Yield Bonds — Structural Comparison",
+          "headers": [
+            "Feature",
+            "Investment Grade",
+            "High Yield"
+          ],
+          "rows": [
+            [
+              "Typical Rating",
+              "BBB−/Baa3 and above",
+              "BB+/Ba1 and below"
+            ],
+            [
+              "Maturity",
+              "5–30 years (very flexible)",
+              "7–10 years (shorter due to risk)"
+            ],
+            [
+              "Amortization",
+              "Bullet maturity (no amortization)",
+              "Bullet maturity"
+            ],
+            [
+              "Interest Rate",
+              "Fixed rate (almost always)",
+              "Fixed rate (typical); floating rare"
+            ],
+            [
+              "Call Provisions",
+              "Make-whole call (premium calculated from Treasuries); increasingly callable at par after first call date",
+              "Non-call 3–4 years; then callable at par + step-down premium"
+            ],
+            [
+              "Covenants",
+              "Very few; generally no incurrence covenants; negative pledge and change-of-control only",
+              "Extensive: debt basket, restricted payments, asset sales, affiliate transactions, liens"
+            ],
+            [
+              "Change of Control",
+              "Occasionally triggers rating review; not typically a 'put' right",
+              "101% put right — bondholders can force buyback at 101 if CofC occurs"
+            ],
+            [
+              "Registration",
+              "SEC-registered (public S-3/ASR), very fast issuance",
+              "144A for life (private placement to QIBs); some register after 1 year"
+            ],
+            [
+              "Market Size",
+              "$10+ trillion (U.S. IG corporate bond market)",
+              "~$1.4 trillion (U.S. HY bond market)"
+            ],
+            [
+              "Typical Issuers",
+              "Large-cap corporates: Apple, Exxon, JPMorgan",
+              "LBO companies, cyclical industrials, media, cable"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Pricing Differences — Spreads and Yields"
+        },
+        {
+          "type": "p",
+          "text": "The most visible difference between IG and HY bonds is their pricing. Both are typically quoted as a spread over U.S. Treasury securities of comparable maturity, and the spread compensates investors for credit risk (the risk of default and loss given default). Investment-grade spreads are narrow; high-yield spreads are wide and more volatile."
+        },
+        {
+          "type": "table",
+          "caption": "Credit Spreads by Rating Category (Basis Points Over Treasuries — Normal Market)",
+          "headers": [
+            "Rating Category",
+            "Typical Spread (bps)",
+            "All-in Yield (assuming 4.5% 10yr Treasury)",
+            "Notes"
+          ],
+          "rows": [
+            [
+              "AAA / Aaa",
+              "20–40 bps",
+              "4.7–4.9%",
+              "Near-risk-free; Apple, Microsoft"
+            ],
+            [
+              "AA",
+              "40–70 bps",
+              "4.9–5.2%",
+              "Very high quality; rare IG category"
+            ],
+            [
+              "A",
+              "70–120 bps",
+              "5.2–5.7%",
+              "Solid IG; most large-cap industrials"
+            ],
+            [
+              "BBB+ / BBB",
+              "100–175 bps",
+              "5.5–6.25%",
+              "Largest IG bucket; most corporate debt"
+            ],
+            [
+              "BBB− (IG floor)",
+              "150–250 bps",
+              "6.0–7.0%",
+              "Vulnerable to downgrade to HY"
+            ],
+            [
+              "BB (Highest HY)",
+              "250–400 bps",
+              "7.0–8.5%",
+              "'Crossover' credits; active IG/HY boundary"
+            ],
+            [
+              "B",
+              "400–600 bps",
+              "8.5–10.5%",
+              "Typical LBO credit 1–3 years post-deal"
+            ],
+            [
+              "CCC",
+              "600–1500+ bps",
+              "10.5–19%+",
+              "Near-distressed; high default probability"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "The Investor Base — Who Buys IG vs. HY"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Investment Grade Buyers: Insurance companies (largest buyers, liability-matching long-duration bonds), pension funds (long-duration IG bonds match long-term pension liabilities), foreign central banks and sovereign wealth funds, money market funds (short-duration IG), and mutual funds (IG bond funds available to retail investors).",
+            "High Yield Buyers: Institutional credit funds (long-only HY bond funds), high yield mutual funds available to retail investors via 401k, hedge funds (event-driven, credit-focused), Collateralized Loan Obligations (CLOs own leveraged loans not bonds, but similar credit universe), and insurance companies (limited allocation to HY for yield pickup).",
+            "Who CANNOT buy HY: Investment-grade only mandates at insurance companies and pension funds; central banks; money market funds (regulated to IG-only). This forced exclusion is what creates the 'fallen angel' spread widening."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "HY Bond Call Structure — The NC3 Example in Detail"
+        },
+        {
+          "type": "p",
+          "text": "High yield bond call structures are frequently tested in interviews and are directly relevant to leveraged buyout economics. A typical '8 NC3' (8-year maturity, non-call 3 years) structure works as follows:"
+        },
+        {
+          "type": "table",
+          "caption": "Call Schedule: $300M HY Notes, 8.5% Coupon, 8-Year Maturity, NC3",
+          "headers": [
+            "Year",
+            "Call Status",
+            "Redemption Price",
+            "Effective Yield to Call"
+          ],
+          "rows": [
+            [
+              "Years 1–3",
+              "Non-call",
+              "Cannot be redeemed at issuer's option (except make-whole at T+50bps)",
+              "N/A"
+            ],
+            [
+              "Year 4 (First Call Date)",
+              "Callable at 104.25 (par + ½ coupon)",
+              "104.25%",
+              "5.5% approx."
+            ],
+            [
+              "Year 5",
+              "Callable at 102.125 (par + ¼ coupon)",
+              "102.125%",
+              "6.5% approx."
+            ],
+            [
+              "Year 6",
+              "Callable at par",
+              "100.000%",
+              "8.5% (full coupon)"
+            ],
+            [
+              "Years 7–8",
+              "Callable at par",
+              "100.000%",
+              "8.5%"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The call premium compensates bondholders for the risk of early redemption. Without call protection, the issuer would simply refinance every time rates dropped, leaving bondholders in a constant reinvestment problem. The declining call premium structure (starting at 50% of coupon in year 4, decreasing to 25% in year 5, then par from year 6) is the market standard for most HY bonds."
+        },
+        {
+          "type": "h2",
+          "text": "Leveraged Loans vs. High Yield Bonds"
+        },
+        {
+          "type": "p",
+          "text": "Leveraged loans (Term Loan B) and high yield bonds are both below-investment-grade instruments, but they differ in important structural ways that affect investor preferences and company financing decisions:"
+        },
+        {
+          "type": "table",
+          "caption": "Leveraged Loans vs. High Yield Bonds",
+          "headers": [
+            "Feature",
+            "Leveraged Loans (TLB)",
+            "High Yield Bonds"
+          ],
+          "rows": [
+            [
+              "Interest Rate",
+              "Floating (SOFR + spread)",
+              "Fixed rate"
+            ],
+            [
+              "Seniority",
+              "Typically first lien (secured)",
+              "Typically second lien or unsecured"
+            ],
+            [
+              "Covenants",
+              "Incurrence only (cov-lite)",
+              "Incurrence (HY indenture)"
+            ],
+            [
+              "Callability",
+              "Callable at any time (101 soft call for 6 months)",
+              "NC3 hard call protection"
+            ],
+            [
+              "Market",
+              "Private (loan market, not public)",
+              "Public (144A; some SEC registered)"
+            ],
+            [
+              "Price discovery",
+              "Quoted at par; traded OTC",
+              "Quoted as percentage of par; traded by dealer"
+            ],
+            [
+              "Investor type",
+              "CLOs (60%+), credit funds, hedge funds",
+              "Mutual funds, insurance, hedge funds"
+            ],
+            [
+              "Maturity",
+              "7 years",
+              "8 years"
+            ],
+            [
+              "Prepayment risk to issuer",
+              "Low — can be prepaid without premium (after 6 months)",
+              "High cost — must pay call premium or make-whole"
+            ]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Fallen Angels and Rising Stars"
+        },
+        {
+          "type": "p",
+          "text": "Fallen angels are companies downgraded from investment grade to high yield (BBB− to BB+). Rising stars are companies upgraded from high yield to investment grade (BB+ to BBB−). Both events create significant technical price dislocations. Fallen angels see immediate spread widening and price declines as IG-mandated investors are forced to sell, but HY fund managers cannot absorb the supply immediately — this creates buying opportunities. Studies show that fallen angels, on average, outperform other HY bonds in the 12–24 months following their downgrade because they often carry better fundamentals than native HY issuers and the initial forced selling overshoots fair value."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Distressed Debt: Bonds Trading Below 70 Cents",
+          "text": "When high yield bonds trade below 70 cents on the dollar (a yield to maturity above approximately 1,000 bps over Treasuries), they are considered 'distressed.' At this price, the market is pricing in a significant probability of default and impaired recovery. Distressed debt investors (vulture funds, special situations funds) actively seek these situations because: (1) distressed debt can convert to equity in a restructuring — potentially owning a reorganized company at a significant discount; (2) if the company avoids default and recovers, bond prices can snap back dramatically from 60 cents to 90+ cents — a 50%+ return; (3) in a bankruptcy, distressed buyers who accumulate the fulcrum security gain control of the reorganization process. Famous distressed debt investors: Oaktree Capital (Howard Marks), Elliott Management, Apollo Global, Cerberus Capital."
+        }
+      ],
+      "keyTakeaways": [
+        "Investment grade bonds feature minimal covenants, long maturities (to 30yr), narrow spreads (100–250bps), and are accessible to insurance companies, pension funds, and central banks.",
+        "High yield bonds feature extensive incurrence covenants, NC3–4 call protection, 101% change-of-control puts, 8-year maturities, and spreads of 300–800+ bps over Treasuries.",
+        "HY bonds are fixed-rate while leveraged loans are floating-rate (SOFR + spread); HY has hard call protection while loans can be prepaid at any time (after soft call period).",
+        "Fallen angels (IG to HY downgrades) create forced selling by IG mandates, often overshooting to the downside and creating buying opportunities for HY and distressed investors.",
+        "Bonds trading below 70 cents on the dollar are considered distressed; they attract specialized distressed debt investors who anticipate either recovery or conversion to equity in a restructuring."
+      ],
+      "interviewTip": "When asked to compare IG vs. HY bonds in a leveraged finance interview, hit five dimensions: (1) covenants — IG has very few, HY has extensive incurrence covenants; (2) call provisions — IG has make-whole calls, HY has NC3–4 hard call protection; (3) investor base — IG accessed by pension funds and insurance companies, HY limited to institutional credit funds and mutual funds; (4) spreads — IG at 100–250bps, HY at 300–1000bps+ depending on quality; (5) structural features — HY has 101% change-of-control put, equity clawback, and basket permissions for specific restricted actions. A candidate who can walk through all five dimensions fluently signals genuine market knowledge."
+    }
+  ]
+}

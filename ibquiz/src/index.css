@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+@theme {
+  --font-serif: 'IBM Plex Serif', Georgia, serif;
+}
+
+/* ─── Design Tokens ───────────────────────────────────────────────────────── */
+:root {
+  --bg:               #e8e4d8;
+  --bg-sidebar:       #dedad0;
+  --bg-card:          #f3f0e6;
+  --bg-card-hover:    #f7f5ee;
+  --text-primary:     #1b2d1e;
+  --text-secondary:   #4d5e4e;
+  --text-muted:       #8a957c;
+  --accent:           #2c4a2f;
+  --accent-hover:     #1f3521;
+  --accent-light:     rgba(44,74,47,0.08);
+  --accent-light-md:  rgba(44,74,47,0.13);
+  --border:           rgba(44,74,47,0.1);
+  --border-strong:    rgba(44,74,47,0.2);
+  --ease-smooth:      cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-sharp:       cubic-bezier(0.25, 0, 0, 1);
+}
+
+/* ─── Base ────────────────────────────────────────────────────────────────── */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, 'Inter', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root { min-height: 100vh; }
+
+/* ─── Progress line ───────────────────────────────────────────────────────── */
+#progress-line {
+  position: fixed; top: 0; left: 0; height: 2px;
+  background: var(--accent);
+  transition: width 300ms var(--ease-smooth);
+  z-index: 9999; pointer-events: none;
+}
+
+/* ─── Card entrance animation ─────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-card-enter  { animation: fadeUp 0.3s var(--ease-smooth) both; }
+.animate-answer-reveal { animation: fadeUp 0.22s var(--ease-smooth) both; }
+
+/* Stagger for sidebar items */
+.stagger > * {
+  animation: fadeUp 0.4s var(--ease-smooth) both;
+  opacity: 0;
+}
+.stagger > *:nth-child(1)  { animation-delay: 0ms; }
+.stagger > *:nth-child(2)  { animation-delay: 35ms; }
+.stagger > *:nth-child(3)  { animation-delay: 70ms; }
+.stagger > *:nth-child(4)  { animation-delay: 105ms; }
+.stagger > *:nth-child(5)  { animation-delay: 140ms; }
+.stagger > *:nth-child(6)  { animation-delay: 175ms; }
+.stagger > *:nth-child(7)  { animation-delay: 210ms; }
+.stagger > *:nth-child(8)  { animation-delay: 245ms; }
+.stagger > *:nth-child(9)  { animation-delay: 280ms; }
+.stagger > *:nth-child(10) { animation-delay: 315ms; }
+.stagger > *:nth-child(11) { animation-delay: 350ms; }
+.stagger > *:nth-child(n+12) { animation-delay: 385ms; }
+
+/* ─── Keyboard key ────────────────────────────────────────────────────────── */
+kbd {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 20px; min-width: 20px; padding: 0 5px;
+  background: var(--bg);
+  border: 1px solid var(--border-strong);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  font-family: ui-monospace, 'SF Mono', monospace;
+  font-size: 10px;
+  color: var(--text-muted);
+  line-height: 1; user-select: none;
+}
+
+/* ─── Scrollbar ───────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 100px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* ─── Micro-interaction ───────────────────────────────────────────────────── */
+.btn-press { transition: transform 0.15s var(--ease-sharp); }
+.btn-press:active { transform: scale(0.97); }

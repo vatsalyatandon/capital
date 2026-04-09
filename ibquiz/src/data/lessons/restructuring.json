@@ -1,0 +1,566 @@
+{
+  "subcategory": "Restructuring / Distressed M&A",
+  "overview": "Restructuring and distressed M&A involve advising companies and their creditors through periods of severe financial stress, often including out-of-court negotiations, Chapter 11 bankruptcy filings, and court-supervised asset sales. Unlike traditional M&A (which maximizes deal price in a healthy environment), restructuring is about preserving and allocating value in a world where a company cannot meet its obligations. It is one of the most intellectually demanding and highest-profile areas of investment banking, requiring mastery of capital structure, bankruptcy law, valuation under stress, and stakeholder negotiation dynamics.",
+  "estimatedHours": 2.5,
+  "lessons": [
+    {
+      "id": "restructuring_l1",
+      "title": "Why Companies Restructure",
+      "estimatedMinutes": 25,
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "The Anatomy of Financial Distress"
+        },
+        {
+          "type": "p",
+          "text": "Financial distress occurs when a company cannot meet its financial obligations as they come due. This is distinct from insolvency (technically, when liabilities exceed assets at fair market value), though the two often coincide. Restructuring bankers are brought in before a company is formally bankrupt — their job is to analyze options, negotiate with creditors, and help the company find a path to viability. The key distinction that every restructuring analyst must understand is the difference between operational distress and financial distress."
+        },
+        {
+          "type": "h2",
+          "text": "Operational Distress vs. Financial Distress"
+        },
+        {
+          "type": "table",
+          "caption": "Operational Distress vs. Financial Distress — Key Distinction",
+          "headers": ["Type", "Definition", "Cause", "Solution", "Example"],
+          "rows": [
+            ["Operational Distress", "The core business is structurally impaired and cannot generate adequate cash flows regardless of capital structure", "Secular decline, loss of competitive position, technological disruption, regulatory changes", "Business transformation, operational restructuring, sale of business units, M&A; capital structure alone cannot fix it", "Kodak (digital photography destroyed film business); Sears (e-commerce destroyed retail model)"],
+            ["Financial Distress", "The underlying business is viable but the capital structure is too heavy — too much debt for the cash flow generated", "Overleveraged LBO, unexpected revenue decline, higher-than-expected capex, rising interest rates", "Reduce debt through bankruptcy/out-of-court exchange; convert debt to equity; refinance at extended maturity", "iHeartMedia (2019): viable radio business crushed by $20B+ of LBO debt; emerged with clean balance sheet"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "insight",
+          "title": "The Critical Question: Liquidity vs. Solvency",
+          "text": "In every distress situation, the first question is: is this a liquidity problem or a solvency problem? A liquidity problem is temporary — the company has a debt maturity it cannot refinance or a covenant breach, but the underlying business generates positive cash flow and the enterprise value exceeds total debt. A solvency problem is structural — the enterprise value is less than the total debt, meaning creditors are impaired even in an orderly sale. Restructuring bankers must quickly diagnose which situation they're in, because the solutions are very different. A liquidity problem may be solved with amend-and-extend or a new DIP facility; a solvency problem requires a fundamental deleveraging (debt-for-equity exchange or 363 sale)."
+        },
+        {
+          "type": "h2",
+          "text": "Early Warning Signs of Financial Distress"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Covenant breaches: The company breaches a maintenance covenant (e.g., Net Debt/EBITDA > 5.0x), triggering technical default and lender negotiations. This is often the first formal signal that restructuring advisors are needed.",
+            "Liquidity crisis: Cash and revolver availability fall below the minimum needed to fund operations (~30–60 days of operating cash burn). Management begins 'cash rationing' — delaying vendor payments, drawing fully on the revolver, halting capex.",
+            "Missed debt payments: The company misses a scheduled interest payment, triggering a grace period (typically 30 days for bonds, 3–5 days for loans). If not cured, this triggers a payment default, the most severe form of default.",
+            "Unsustainable leverage: Net Debt/EBITDA exceeds 7–8x with no near-term path to deleveraging. At this level, even strong performance cannot service the debt; the capital structure itself must change.",
+            "Negative free cash flow: EBITDA minus interest minus capex minus mandatory amortization is negative — the company is consuming its liquidity every quarter.",
+            "Maturity wall: A large debt maturity is approaching (12–24 months away) and the company's credit quality makes refinancing at manageable rates unlikely or impossible.",
+            "Auditor going concern opinion: Auditors issue a going concern qualification in the annual report — a formal indication they doubt the company can continue as a going concern for 12 months. This triggers immediate panic among lenders, customers, and employees."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Common Causes of Corporate Over-Leverage"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "LBO at cycle peak: Private equity firms acquire companies at high valuations (10–15x EBITDA) with aggressive leverage (6–7x+ EBITDA) right before an economic downturn. When EBITDA falls 20–30%, leverage spikes to 8–10x and the company is in distress. Example: Toys R Us (2005 LBO, filed 2017).",
+            "Acquisition-driven overleveraging: A company pursues a large acquisition, funding it with debt, and the synergies fail to materialize or the target underperforms post-close. Example: Caesars Entertainment's serial acquisitions, culminating in its 2015 Chapter 11.",
+            "Secular revenue decline: Revenue structurally declines due to technology disruption, demographic shifts, or regulatory changes. Even with conservative leverage, declining revenue eventually crushes interest coverage. Example: Frontier Communications (rural telecom decline).",
+            "Cost structure rigidity: Companies with high fixed costs (airlines, steel manufacturers) generate highly cyclical EBITDA. In downturns, EBITDA evaporates but interest expense stays fixed — coverage ratios collapse rapidly.",
+            "Rising interest rates: Companies with floating-rate debt (TLBs) face dramatically higher interest expense when rates rise. The Fed's rate hike cycle (2022–2023) drove SOFR from 0% to 5.25%, increasing interest expense by 525bps on floating-rate debt — an annual increase of $52.5M for every $1B of TLB outstanding."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Key Stakeholders in a Restructuring"
+        },
+        {
+          "type": "table",
+          "caption": "Restructuring Stakeholder Map",
+          "headers": ["Stakeholder", "Role / Interest", "Typical Advisor"],
+          "rows": [
+            ["Debtor (Company)", "Maximize enterprise value and stakeholder recoveries; maintain business operations; negotiate plan of reorganization", "Restructuring investment banker (e.g., Lazard, Houlihan Lokey, PJT Partners, Evercore); restructuring counsel (Kirkland & Ellis, Weil Gotshal, Skadden)"],
+            ["Secured Creditors (First Lien Lenders)", "Maximize secured debt recovery; protect collateral value; often drive restructuring outcome", "Financial advisor to ad hoc group (e.g., Centerview, Moelis); legal counsel"],
+            ["Unsecured Creditors / UCC", "Maximize recovery on unsecured claims; challenge asset valuations; negotiate for value in reorganized equity", "UCC financial advisor (FTI Consulting, Alvarez & Marsal); UCC counsel (Pachulski Stang)"],
+            ["Equity Holders", "Preserve any residual value; in deep distress, often out of the money and represented by existing management/PE sponsor", "Often no formal representation if clearly out of the money"],
+            ["US Trustee", "Government watchdog appointed by DOJ; monitors case administration, conflicts, and fee applications", "No financial advisor; legal representation"],
+            ["Bankruptcy Judge", "Approves all major decisions: DIP financing, critical vendor payments, plan of reorganization", "No financial advisor; legal clerks"]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Restructuring Advisory Mandates — Debtor-Side vs. Creditor-Side"
+        },
+        {
+          "type": "p",
+          "text": "Restructuring investment banks advise either the debtor (the company in distress) or organized creditor groups (secured lenders, unsecured creditors, bondholders). The dynamics are very different:"
+        },
+        {
+          "type": "callout",
+          "variant": "insight",
+          "title": "Debtor-Side vs. Creditor-Side Restructuring Mandates",
+          "text": "Debtor-side advisors work for the company's board and management. Their job is to explore all options (out-of-court, in-court), develop the financial model showing value for each stakeholder group, negotiate with creditors, and guide the company through the process. They are paid a monthly retainer ($200–500K/month) plus a 'completion fee' paid at successful restructuring ($5–30M depending on deal complexity). Creditor-side advisors work for organized groups of creditors (e.g., an ad hoc group of first lien lenders who appoint a steering committee). Their job is to analyze the debtor's financial model critically, develop an independent valuation of the estate, and negotiate aggressively for maximum recovery. They are often paid by the debtor as part of the restructuring support agreement (RSA) — a paradox where the company pays its creditors' advisors as part of the negotiation process."
+        }
+      ],
+      "keyTakeaways": [
+        "Financial distress occurs when a company cannot service its obligations; the critical distinction is between operational distress (broken business) and financial distress (viable business, broken capital structure).",
+        "Early warning signs include covenant breaches, liquidity crises, missed payments, 7x+ leverage, negative free cash flow, approaching debt maturity walls, and going concern audit opinions.",
+        "Common causes of distress include over-leveraged LBOs, acquisition-driven leverage, secular revenue decline, cost structure rigidity, and rising floating rates.",
+        "The key stakeholders are the debtor (advised by restructuring banker and counsel), secured creditors, unsecured creditor committee, equity holders, the US Trustee, and the bankruptcy judge.",
+        "Restructuring banks earn retainer fees plus completion fees; they advise either the debtor or organized creditor groups, with each side conducting independent financial analysis of the estate's value."
+      ],
+      "interviewTip": "In restructuring interviews, you will almost certainly be asked: 'What's the difference between operational distress and financial distress?' Answer clearly: operational distress means the business itself is broken — no amount of debt reduction will fix it; the company needs to change its business model or sell. Financial distress means the business generates real cash flow but the debt load is simply too heavy — the solution is to reduce the debt (via bankruptcy, exchange offer, or asset sale) and the surviving business can thrive. iHeartMedia is a perfect financial distress example: clear market leader in radio, viable cash-generating business, but $20B+ of LBO debt made it mathematically impossible to service — hence bankruptcy and emergence with a clean balance sheet."
+    },
+    {
+      "id": "restructuring_l2",
+      "title": "Out-of-Court Restructuring Solutions",
+      "estimatedMinutes": 25,
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Why Out-of-Court Is Always Preferred"
+        },
+        {
+          "type": "p",
+          "text": "In virtually every restructuring situation, the parties will first attempt to resolve the crisis out of court — through private negotiations between the company and its creditors without involving the bankruptcy court. The reasons are compelling: out-of-court processes are faster (weeks to months vs. 12–24 months for a contested Chapter 11), cheaper (no debtor-in-possession financing costs, lower legal fees, no US Trustee oversight), and less damaging to the business (customer relationships, employee morale, and supplier contracts are not disrupted by a bankruptcy filing). The question is not whether to attempt an out-of-court solution; the question is whether the company's creditor group is cohesive enough to agree on terms without court supervision."
+        },
+        {
+          "type": "h2",
+          "text": "Amend and Extend"
+        },
+        {
+          "type": "p",
+          "text": "An 'amend and extend' transaction is the simplest out-of-court restructuring tool: the company renegotiates its existing credit agreement to push out the maturity date, reduce or waive covenants, and sometimes increase the interest rate to compensate lenders for the extension. This is typically done when the company's core problem is a near-term maturity it cannot refinance in current market conditions, but whose underlying business is fundamentally sound. Key features:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Maturity extension: Typically 1–3 years added to the maturity date, buying time for operational improvement or for credit markets to improve.",
+            "Rate adjustment: Lenders typically demand an interest rate step-up (additional 50–150bps) and possibly a PIK option to conserve cash for lenders while increasing the economic return.",
+            "Covenant reset: Tight covenants are reset to levels the company can realistically achieve, removing the covenant breach risk.",
+            "Consent requirement: Requires majority lender consent (typically 51% by outstanding principal) for amendments; 100% consent for changes to maturity, rate, and principal (so-called 'sacred rights').",
+            "Fee payment: Lenders who consent are paid an amendment fee (typically 25–50bps on their outstanding balance) as compensation for the extension."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Debt-for-Equity Exchange"
+        },
+        {
+          "type": "p",
+          "text": "A debt-for-equity exchange (also called a 'd/e swap') is a transaction where the company cancels existing debt in exchange for giving creditors new equity in the company. This directly reduces the debt burden by converting liabilities into equity. The result: fewer creditors, lower leverage, and a new ownership structure where former lenders own the company. For this to work, creditors must agree that the company's reorganization value (as new equity) is worth more than the face value of the debt they are giving up — which implies the debt was already trading at a discount."
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Worked Example: Debt-for-Equity Exchange",
+          "text": "RetailCo has $500M of senior unsecured bonds outstanding, trading at 50 cents on the dollar (implied market value: $250M). The company's total enterprise value is estimated at $350M. Scenario: RetailCo offers bondholders new equity in the company in exchange for canceling the $500M of bonds. If bondholders exchange all bonds, total debt falls to $0 and bondholders receive 100% of the equity. At an EV of $350M, bondholders receive equity worth $350M vs. bonds worth $250M in the market — an implied 40% premium to market price. However, at face value, bondholders 'lost' $150M (they gave up $500M of face value for $350M of equity). This is why exchanges require creditors to believe (a) the equity value estimate is credible, and (b) the company has a viable plan to grow the equity value post-restructuring."
+        },
+        {
+          "type": "h2",
+          "text": "Rights Offering"
+        },
+        {
+          "type": "p",
+          "text": "A rights offering allows existing creditors (or shareholders) to purchase new equity (or debt) in the reorganized company at a discount to the implied reorganization value. Rights offerings are often backstopped by a group of large creditors (the backstop parties) who agree to purchase any shares not taken up by other creditors. Backstop parties receive a fee (typically 5–8% of the offering size) for providing this commitment. Rights offerings are commonly used in Chapter 11 plans as a mechanism to inject new capital into the reorganized company and provide recoveries to a broad class of creditors."
+        },
+        {
+          "type": "h2",
+          "text": "Liability Management Transactions (LMTs)"
+        },
+        {
+          "type": "p",
+          "text": "Liability Management Transactions (LMTs) are a category of out-of-court restructuring techniques that have exploded in prevalence since 2020. Unlike traditional restructurings which seek to resolve distress collaboratively, LMTs often pit creditors against each other — creating 'winners' (creditors who participate) and 'losers' (creditors who are left behind). The two primary LMT structures:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Dropdown Transaction (also called a 'J. Crew Maneuver' after J. Crew's 2016 execution): The company transfers valuable intellectual property or other assets to an unrestricted subsidiary that is outside the credit agreement's collateral package. The company then raises new 'super priority' secured debt at the unrestricted subsidiary, using the transferred assets as collateral. Existing creditors — whose collateral was their lien on all company assets — find their collateral stripped away. Famous examples: J. Crew (brand IP drop), PetSmart (Chewy spin-out), Envision Healthcare.",
+            "Uptier Exchange (also called 'Serta Maneuver' after Serta Simmons 2020 execution): The company approaches a majority of its existing lenders (without obtaining 100% consent) and offers them the opportunity to convert their existing loans into new 'super priority' first lien debt that sits above their original position. The minority lenders who did not participate are left with effectively subordinated debt — their original 'first lien' rights impaired. Famous examples: Serta Simmons, TriMark, Envision. Courts have been actively scrutinizing these transactions in 2023–2025 on claims of lender-of-record fraud."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "insight",
+          "title": "LMTs: The New Battleground in Distressed Debt",
+          "text": "LMTs have fundamentally changed the out-of-court restructuring landscape. Rather than negotiating consensually with all creditors, companies and their advisors can now partner with a majority creditor coalition to extract value from non-participating minority creditors. This has sparked a wave of litigation and an arms race in credit documentation — lenders now negotiate extensive protective provisions ('anti-LMT' protections) to prevent these maneuvers. The Oxford Law Blog noted in April 2026 that 'LMTs have reached their limits' as courts increasingly void these transactions under the implied covenant of good faith. This is the most actively evolving area of restructuring practice."
+        },
+        {
+          "type": "h2",
+          "text": "When Out-of-Court Fails — The Triggers for In-Court"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Creditor holdouts: In an out-of-court restructuring, any single dissenting creditor can refuse to exchange — and if they hold out, they receive full face value while others took a haircut. This 'holdout problem' is endemic to exchange offers and becomes paralyzing when the creditor base is fragmented.",
+            "100% consent for sacred rights: Changing a bond's maturity, principal amount, or interest rate requires 100% bondholder consent. A single holdout can block the entire deal — making out-of-court resolution impossible without paying holdouts in full.",
+            "Executory contract rejection: Only a bankruptcy court can reject burdensome long-term contracts (real estate leases, aircraft leases, collective bargaining agreements). An airline or retailer with 500 money-losing leases cannot shed them without Chapter 11.",
+            "Pre-existing litigation: A company facing massive tort liability (asbestos, opioids, mass torts) cannot cap and discharge that liability out of court. Chapter 11 allows creation of litigation trusts and channeling injunctions.",
+            "Tax benefits: Certain transactions — like cancellation of debt income treatment — have better tax outcomes in bankruptcy (the COD income exclusion under Section 108 is available in a Title 11 case)."
+          ]
+        }
+      ],
+      "keyTakeaways": [
+        "Out-of-court restructurings are preferred over Chapter 11 because they are faster, cheaper, and less disruptive to the business — but they require creditor consensus.",
+        "Amend-and-extend transactions push out debt maturities in exchange for higher rates and fees, buying the company time without formal default.",
+        "Debt-for-equity exchanges convert outstanding debt into equity in the reorganized company — reducing leverage while transferring ownership to creditors.",
+        "Liability Management Transactions (LMTs) — including dropdowns and uptier exchanges — allow companies to restructure their debt by partnering with a subset of creditors against others, creating significant litigation risk.",
+        "Out-of-court solutions fail when there are holdout creditors, when sacred rights require 100% consent, when executory contracts must be rejected, or when the company faces massive tort liability that needs court-supervised discharge."
+      ],
+      "interviewTip": "Restructuring interviewers frequently ask: 'When would you recommend an out-of-court vs. in-court restructuring?' Frame your answer around: (1) complexity of creditor base — a single bank lender is easy to negotiate with; 500 anonymous bondholders are impossible; (2) need for executory contract rejection — only available in Chapter 11; (3) presence of holdout risk — Chapter 11 'cramdown' eliminates holdout leverage; (4) timeline and cost — out-of-court is faster and cheaper if achievable. Then give an example: a company with three bank lenders and no leases to reject can almost certainly resolve out-of-court, while a retailer with 400 mall leases and public high yield bonds almost certainly needs Chapter 11."
+    },
+    {
+      "id": "restructuring_l3",
+      "title": "Chapter 11 Bankruptcy",
+      "estimatedMinutes": 25,
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "What Chapter 11 Is — And What It Is Not"
+        },
+        {
+          "type": "p",
+          "text": "Chapter 11 of the U.S. Bankruptcy Code is a court-supervised reorganization process that allows a financially distressed company to continue operating while it restructures its debt and obligations under court protection. Critically, Chapter 11 is reorganization — not liquidation. The company does not close its doors, terminate employees, or sell its assets immediately (that's Chapter 7 or Chapter 11 Section 363, which we cover separately). In Chapter 11, the company keeps running its business while working out a long-term plan to restructure its balance sheet. Airlines continue flying, retailers continue ringing cash registers, and restaurants continue serving food — all under Chapter 11."
+        },
+        {
+          "type": "h2",
+          "text": "The Automatic Stay — The Most Powerful Feature of Chapter 11"
+        },
+        {
+          "type": "p",
+          "text": "The moment a company files for Chapter 11, the automatic stay takes effect — an immediate, court-imposed halt on virtually all collection actions, lawsuits, foreclosures, repossessions, and setoff rights that creditors would otherwise have. This is the most powerful protection Chapter 11 provides, and it is the primary reason companies choose Chapter 11 over continuing to negotiate out of court."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "What the automatic stay stops: Creditor lawsuits, debt collection efforts, foreclosure on company property, repossession of leased assets, setoff of bank accounts, continuation of arbitration proceedings.",
+            "What the automatic stay does NOT stop: Criminal proceedings, actions by regulatory agencies (SEC, EPA), tax assessments, domestic support obligations, and actions by secured creditors on fully encumbered assets (which can seek 'relief from stay').",
+            "Strategic value: The automatic stay prevents any single creditor from racing to the courthouse to grab assets before others. It levels the playing field and ensures all creditors are treated collectively rather than in a first-come-first-served scramble.",
+            "Duration: The automatic stay remains in effect for the duration of the Chapter 11 case (unless specifically lifted by the court on a secured creditor's motion)."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Debtor-in-Possession (DIP) Financing"
+        },
+        {
+          "type": "p",
+          "text": "The most urgent need for any company entering Chapter 11 is cash. The bankruptcy filing itself can freeze credit lines, trigger vendor payment demands, and cause customers to withhold deposits — creating an immediate liquidity crisis. Debtor-in-Possession (DIP) financing is a special form of short-term credit extended to companies during their Chapter 11 case, approved by the bankruptcy court. DIP financing is privileged above all pre-petition debt claims."
+        },
+        {
+          "type": "callout",
+          "variant": "insight",
+          "title": "Why DIP Lenders Get Super-Priority Status",
+          "text": "Under Section 364 of the Bankruptcy Code, DIP lenders receive super-priority administrative expense status — meaning they get paid BEFORE all other pre-petition creditors, including existing secured lenders. They also often receive priming liens on collateral that allows them to jump above existing first-lien lenders (subject to 'adequate protection' for the primed lenders). This super-priority is essential to incentivize lenders to provide fresh capital to a distressed company. Without it, no rational lender would extend credit to a company in bankruptcy. DIP loans are typically: $50M–$5B+ in size; 6–18 month maturity; priced at SOFR + 400–700bps (a significant premium to pre-petition debt); and often provided by the existing first-lien lenders who are 'rolling' their pre-petition exposure into a DIP to maintain control."
+        },
+        {
+          "type": "h2",
+          "text": "First Day Motions"
+        },
+        {
+          "type": "p",
+          "text": "On the first day (or within the first few days) of a Chapter 11 filing, the debtor files a series of emergency motions seeking court approval for actions necessary to maintain business operations. These are heard on an expedited basis because the damage from delay is immediate and irreparable:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Cash Management: Authorization to continue using existing bank accounts and cash management systems — otherwise the company cannot pay employees or vendors from its own accounts.",
+            "Critical Vendor Payments: Permission to pay pre-petition amounts owed to suppliers whose goods or services are so essential that refusal to pay would cause immediate, irreparable harm (the supplier would stop shipping). This prevents suppliers from immediately cutting off the debtor.",
+            "Employee Wages and Benefits: Authorization to pay employee wages earned before bankruptcy — critical to prevent mass resignations and maintain workforce morale.",
+            "DIP Financing: Interim and final approval for the DIP credit facility to provide immediate liquidity.",
+            "Utility Services: Assurance to utility companies that their services will be maintained and will be paid post-petition — without this, utilities can disconnect service after a 20-day notice.",
+            "Customer Programs: Authorization to honor customer loyalty programs, gift cards, refund policies — critical for retailers and airlines."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Key Parties in Chapter 11"
+        },
+        {
+          "type": "table",
+          "caption": "Chapter 11 Key Parties and Roles",
+          "headers": ["Party", "Role", "Key Powers"],
+          "rows": [
+            ["Debtor (DIP)", "Company in bankruptcy; management retains control unless trustee appointed (rare)", "Files plan of reorganization; operates business; makes ordinary course business decisions without court approval"],
+            ["Secured Creditors (First Lien)", "Highest-priority creditors; often pre-packaged deal negotiators", "Can seek relief from automatic stay; adequate protection payments; often backstop DIP financing"],
+            ["Unsecured Creditors' Committee (UCC)", "Court-appointed committee representing all unsecured creditors (bondholders, trade creditors, employees)", "Reviews debtor's financial model; can object to motions; proposes competing plans; has standing to conduct discovery"],
+            ["US Trustee", "DOJ-appointed overseer of case administration and professionals", "Appoints UCC; monitors fee applications; can object to plan confirmation; investigates debtor misconduct"],
+            ["Bankruptcy Judge", "Federal judge assigned to the case; ultimate decision-maker", "Approves all major decisions: DIP, plan, critical vendor payments, asset sales, professional fees"],
+            ["Claims Agent", "Third-party administrator of the claims process", "Maintains claims register; distributes ballots; tabulates plan votes"]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Types of Chapter 11 Filings — Timeline and Speed"
+        },
+        {
+          "type": "table",
+          "caption": "Chapter 11 Variants — Timeline and Characteristics",
+          "headers": ["Type", "Description", "Timeline", "Who Uses It"],
+          "rows": [
+            ["Traditional Chapter 11", "No prior agreement with creditors; full negotiation occurs in court", "12–24+ months", "Companies with complex multi-party disputes; cannot achieve pre-filing consensus"],
+            ["Prearranged Chapter 11", "Debtor has a 'restructuring support agreement' (RSA) with major creditors before filing but has not solicited formal votes", "4–9 months", "Companies with organized creditor groups who agree on structure but need time to formalize"],
+            ["Prepackaged Chapter 11 (Prepack)", "Debtor negotiates AND votes on the plan BEFORE filing; court simply confirms the pre-negotiated plan", "30–60 days", "Companies with a small, organized creditor base; single class of bonds; straightforward debt-for-equity exchange"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Prepack Example: Sungard Data Systems (2022)",
+          "text": "Sungard Data Systems, a legacy IT services company, executed a textbook prepackaged bankruptcy in 2022. Facing unsustainable leverage from a 2011 LBO, the company negotiated a restructuring support agreement with 100% of its first lien lenders before filing. The Plan of Reorganization was filed simultaneously with the Chapter 11 petition — votes had already been solicited and received. The company emerged from bankruptcy in less than 30 days, having reduced its debt from $1.8 billion to approximately $300 million and converted its first lien lenders to equity owners. The speed of the prepack minimized customer disruption, employee uncertainty, and professional fees — demonstrating why prepacks are the gold standard when achievable."
+        }
+      ],
+      "keyTakeaways": [
+        "Chapter 11 is reorganization (not liquidation) — the company keeps operating while restructuring its balance sheet under court supervision and the protection of the automatic stay.",
+        "The automatic stay is Chapter 11's most powerful feature: it immediately halts all creditor collection actions, foreclosures, and lawsuits, allowing the debtor to focus on restructuring rather than fire-fighting.",
+        "DIP financing provides super-priority liquidity to fund operations during the case; DIP lenders receive first-priority claims above all pre-petition creditors.",
+        "First day motions are emergency authorizations for critical vendor payments, employee wages, cash management, and DIP financing — all needed immediately to prevent business disruption.",
+        "Prepackaged Chapter 11s can be completed in 30–60 days when pre-filing consensus is achievable; traditional contested Chapter 11 proceedings take 12–24+ months."
+      ],
+      "interviewTip": "The most common Chapter 11 question: 'Walk me through the Chapter 11 process.' Use this structure: (1) Filing triggers automatic stay — all creditor actions halted; (2) Company becomes DIP — management stays in place, runs business; (3) First day motions — critical vendors, wages, cash management; (4) DIP financing secured — provides liquidity for the case; (5) UCC appointed by US Trustee — represents unsecured creditors; (6) Company negotiates Plan of Reorganization with creditor groups, typically 6–18 months; (7) Plan confirmed by court if meets voting and legal thresholds; (8) Company emerges from bankruptcy with restructured balance sheet. Also be ready to explain the difference between a prepack (30–60 days) and a traditional contested Chapter 11 (12–24 months)."
+    },
+    {
+      "id": "restructuring_l4",
+      "title": "Plan of Reorganization (POR)",
+      "estimatedMinutes": 25,
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "The Plan of Reorganization — Blueprint for Emergence"
+        },
+        {
+          "type": "p",
+          "text": "The Plan of Reorganization (POR) is the foundational document of every Chapter 11 case — it is the roadmap that describes how the company will emerge from bankruptcy, how each class of creditors and interest holders will be treated, and what the reorganized company will look like going forward. The POR must comply with the Bankruptcy Code, receive sufficient creditor votes, and be confirmed by the bankruptcy court. Everything in a Chapter 11 case — the DIP financing, the claims process, the creditor negotiations, the valuation work — exists in service of getting a confirmable POR approved."
+        },
+        {
+          "type": "h2",
+          "text": "The Absolute Priority Rule"
+        },
+        {
+          "type": "p",
+          "text": "The Absolute Priority Rule (APR) is the foundational legal principle governing how value is distributed in a Chapter 11 reorganization. It states that no junior class can receive any distribution under the POR until every senior class has been paid in full. This rule mirrors the seniority waterfall in the capital structure and ensures that the priorities established in the credit documents are honored in bankruptcy."
+        },
+        {
+          "type": "table",
+          "caption": "Absolute Priority Rule — Distribution Waterfall",
+          "headers": ["Priority", "Claim Type", "Treatment", "Notes"],
+          "rows": [
+            ["1 (Highest)", "DIP Financing Claims", "Paid in full in cash at emergence", "Super-priority administrative claim"],
+            ["2", "Administrative Expenses (post-petition)", "Paid in full: professional fees, critical vendor balances incurred post-petition", "Must be paid to confirm plan"],
+            ["3", "Secured Claims (First Lien)", "Paid up to value of collateral: new debt, new equity, or sale proceeds", "Receive equity in reorganized company if collateral = EV"],
+            ["4", "Secured Claims (Second Lien)", "Receive recovery only if first lien paid in full; often receive new equity or deeply discounted notes", "Often the fulcrum security"],
+            ["5", "Senior Unsecured Claims (HY Bonds, Trade)", "Recovery from remaining value after secured claims paid; often pennies on the dollar in deep distress", "UCC fights for recovery here"],
+            ["6", "Subordinated / Junior Unsecured", "Paid only if all senior unsecured paid in full; typically zero", "Rare to receive anything"],
+            ["7 (Lowest)", "Existing Equity (Common Stock)", "Receives recovery only if all debt paid in full; in most HY Chapter 11s, equity is wiped out", "PE sponsors typically lose their investment"]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "The Fulcrum Security — Where Value Breaks"
+        },
+        {
+          "type": "p",
+          "text": "The fulcrum security is the most critical concept in restructuring investing and one of the most tested in interviews. It is the tranche of debt in the capital structure where the enterprise value 'runs out' — senior to the fulcrum is paid in full; junior to the fulcrum receives nothing. The fulcrum security typically converts to equity in the reorganized company because it is at the boundary of value — senior claims are made whole in cash or new debt, and the fulcrum converts to equity at the reorganized company's valuation. Identifying the fulcrum security is the central analytical task in any restructuring situation."
+        },
+        {
+          "type": "formula",
+          "label": "Fulcrum Security Identification",
+          "formula": "Fulcrum Security = The most senior class of debt for which (Cumulative Senior Claims + This Class's Claims) > Enterprise Value"
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Worked Example: Finding the Fulcrum Security",
+          "text": "RetailCo has the following capital structure: First Lien Term Loan: $300M; Second Lien Notes: $200M; Senior Unsecured Bonds: $250M; Total Debt: $750M. The bankruptcy advisor's valuation concludes that RetailCo's enterprise value is $425M (between $350M liquidation value and $500M going concern value; using midpoint $425M). Applying APR: First Lien ($300M) → Enterprise Value = $425M; first lien fully covered → 100% recovery. Second Lien ($200M) → Remaining EV = $425M – $300M = $125M. Second lien recovers $125M of its $200M claim → 62.5 cents on the dollar. FULCRUM SECURITY = SECOND LIEN NOTES. Senior Unsecured ($250M) → Remaining EV = $0 (all consumed by first and second lien) → 0% recovery. Conclusion: First lien lenders receive new debt at par. Second lien holders are the fulcrum — they receive the reorganized equity (in exchange for their $200M of notes, they receive equity valued at $125M — a 37.5% haircut to face but better than the ~40-60 cents they were likely trading at pre-bankruptcy). Unsecured bondholders receive nothing."
+        },
+        {
+          "type": "h2",
+          "text": "Classification of Claims and Voting on the POR"
+        },
+        {
+          "type": "p",
+          "text": "Under Chapter 11, all claims and interests are classified into groups. Claims in the same class must receive the same treatment. Claims are classified by their legal rights and priority — first lien secured claims are one class, second lien is another, general unsecured is another, etc. Equity holders are typically a separate class."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Unimpaired classes: Classes whose legal rights are left unaltered under the POR (e.g., first lien lenders paid in full in cash). Unimpaired classes are deemed to have accepted the plan — no vote required.",
+            "Impaired classes: Classes that receive less than the full value of their claims under the POR. Impaired classes vote: a class accepts if (a) at least 2/3 in dollar amount and (b) more than 1/2 in number of voting creditors vote to accept.",
+            "Rejecting classes: If an impaired class rejects the plan, the debtor can still confirm the plan over that class's objection through 'cramdown' — provided the plan does not discriminate unfairly and is 'fair and equitable' with respect to each rejecting class.",
+            "Deemed rejection: Equity holders that receive nothing under the plan are deemed to have rejected — no vote needed."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Cramdown — Confirming Over Creditor Objections"
+        },
+        {
+          "type": "p",
+          "text": "Cramdown allows the bankruptcy court to confirm a plan of reorganization over the objection of one or more impaired classes, provided: (1) at least one impaired class has voted to accept the plan (the 'accepting impaired class' requirement), and (2) the plan is 'fair and equitable' with respect to each rejecting class, meaning the APR is respected (no junior class gets anything while a senior rejecting class is impaired). Cramdown is the mechanism that prevents holdout minority creditors from blocking an otherwise sensible restructuring — it is the in-court analog to the out-of-court holdout problem."
+        },
+        {
+          "type": "h2",
+          "text": "Recovery Analysis — Estimating Creditor Recoveries"
+        },
+        {
+          "type": "p",
+          "text": "Recovery analysis is the financial analysis that quantifies how much each creditor class will receive under the POR. It is central to every restructuring model and requires: (1) an independent valuation of the reorganized company (going concern value), and (2) a liquidation analysis (what creditors would receive if assets were sold piecemeal in Chapter 7). The reorganized value must exceed liquidation value for Chapter 11 to be viable — otherwise, liquidation is the economically superior outcome."
+        },
+        {
+          "type": "table",
+          "caption": "Recovery Analysis: $500M Company with Layered Capital Structure",
+          "headers": ["Claim", "Face Value ($M)", "Recovery % (High)", "Recovery % (Low)", "Notes"],
+          "rows": [
+            ["DIP Financing (Super Priority)", "$50M", "100%", "100%", "Paid first; super-priority"],
+            ["First Lien Term Loan", "$200M", "100%", "90%", "Fully covered in going concern; slight impairment in liquidation"],
+            ["Second Lien Notes", "$150M", "80%", "40%", "FULCRUM — partial recovery; receives reorganized equity"],
+            ["Senior Unsecured Bonds", "$200M", "15%", "0%", "Scraps of remaining value; often gets a small equity allocation"],
+            ["Existing Common Equity", "$0", "0%", "0%", "Wiped out; PE sponsor loses investment"]
+          ]
+        }
+      ],
+      "keyTakeaways": [
+        "The Plan of Reorganization is the governing document of Chapter 11 — it specifies treatment for every class of claims and must be voted on by impaired classes and confirmed by the court.",
+        "The Absolute Priority Rule governs distributions: senior claims paid in full before junior classes receive anything; this is the foundation of all restructuring analysis.",
+        "The fulcrum security is the debt tranche where enterprise value 'runs out' — it typically converts to equity in the reorganized company and is the most contested class in any restructuring.",
+        "Cramdown allows plan confirmation over a rejecting class's objection, provided the APR is respected and at least one impaired class has accepted the plan.",
+        "Recovery analysis combines a going concern valuation and liquidation analysis to quantify expected creditor recoveries across each tranche of the capital structure."
+      ],
+      "interviewTip": "The most important restructuring technical concept: 'What is the fulcrum security and how do you find it?' Answer: the fulcrum is the most senior class of debt that will not be paid in full under the plan of reorganization — it sits at the boundary where enterprise value runs out. To find it, start with the enterprise value, then subtract each debt tranche from most senior to least senior until the EV is exhausted. The tranche where EV runs out is the fulcrum. It matters because the fulcrum security holders receive equity in the reorganized company — they are the new owners post-emergence, with the most leverage to negotiate plan terms. Distressed debt investors specifically target the fulcrum to gain control of the restructuring and maximize their recovery."
+    },
+    {
+      "id": "restructuring_l5",
+      "title": "Distressed M&A — 363 Sales and Other Structures",
+      "estimatedMinutes": 25,
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "What Is a 363 Sale?"
+        },
+        {
+          "type": "p",
+          "text": "Section 363 of the Bankruptcy Code allows a debtor to sell assets 'outside the ordinary course of business' with bankruptcy court approval. A 363 sale is not a liquidation — it is a court-supervised M&A process where the assets of a bankrupt company are sold to the highest bidder, free and clear of virtually all liens, claims, and liabilities. The 'free and clear' feature is the defining characteristic of a 363 sale and the primary reason buyers prefer to acquire distressed assets through this mechanism rather than through a traditional out-of-court purchase."
+        },
+        {
+          "type": "h2",
+          "text": "Why Buyers Prefer 363 Sales — The Free and Clear Principle"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "No successor liability: In an ordinary asset purchase, a buyer can still face successor liability for environmental claims, product liability, pension obligations, and tort claims against the seller. In a 363 sale, the court's order explicitly authorizes the transfer free and clear of all such claims — the buyer takes a clean asset without inheriting the predecessor's liabilities.",
+            "Clean title: All liens on the assets are either paid off at closing (from sale proceeds) or 'stripped off' by the court order. The buyer receives clear title.",
+            "Speed and certainty: Once the court approves bidding procedures (typically 30–60 days post-filing), the auction and sale can be completed in 30–45 additional days. A complex M&A transaction can close in as little as 90–120 days from the Chapter 11 filing.",
+            "Limited reps and warranties: Because the sale is court-approved and 'as-is,' sellers provide minimal representations and warranties. Buyers may seek R&W insurance but generally accept a lower standard of protection than in an out-of-court deal — which is why 363 sale prices are often at a discount to the equivalent out-of-court transaction.",
+            "Section 363(m) protection: Once a sale to a 'good faith purchaser' closes and the proceeds are distributed, the sale cannot be reversed on appeal unless a court-ordered stay was obtained before the sale closed. This 'mootness' doctrine provides buyers with extraordinary finality."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "The 363 Sale Process — Stalking Horse, Bidding Procedures, and Auction"
+        },
+        {
+          "type": "p",
+          "text": "A 363 sale follows a structured court-supervised process designed to maximize competitive bidding while providing the debtor with a price floor:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Stalking Horse Bidder: The debtor identifies a 'stalking horse' bidder before the formal auction — a buyer who has agreed to a binding asset purchase agreement (APA) at a specified price. The stalking horse sets the floor price against which competing bidders must beat. In exchange for this service, the stalking horse receives bid protections: a break-up fee (1–4% of deal value) payable if they are outbid, expense reimbursement, and matching rights.",
+            "Bidding Procedures Motion: The debtor files a motion asking the court to approve the auction rules: who can participate (qualified bidder requirements), minimum bid increment (typically 2–5% or a fixed dollar amount above stalking horse), timing, and stalking horse protections. The court holds a hearing to approve or modify these procedures.",
+            "Marketing Process: The debtor's investment banker runs a parallel marketing process during the court-approved period (typically 30–45 days), contacting potential buyers, distributing confidential information, and soliciting competing bids.",
+            "Auction: Qualified competing bidders participate in a live or virtual auction, with successive rounds of bidding until no higher bid is received. The highest bidder wins — even if it outbids the stalking horse.",
+            "Sale Hearing: The debtor presents the winning bid to the bankruptcy court for approval at a sale hearing. Creditors, the UCC, and other parties can object. The court approves if the sale is in the best interests of the estate.",
+            "Closing: Once court order is entered, the sale closes, proceeds flow into the bankruptcy estate, and are distributed per the priority waterfall."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "example",
+          "title": "Iconic 363 Sale: General Motors (2009)",
+          "text": "General Motors' 2009 363 sale is the largest and most famous in bankruptcy history. GM filed Chapter 11 on June 1, 2009 with approximately $173 billion in liabilities. Within 40 days, a new entity ('New GM') had purchased the viable assets of 'Old GM' through a Section 363 sale — including manufacturing operations, key brands (Chevrolet, Cadillac, Buick, GMC), dealer relationships, and intellectual property. Old GM's legacy liabilities (pension obligations, pre-petition creditor claims, tort liabilities) stayed behind. The sale price was effectively $2 billion in assumed liabilities plus equity in New GM. The U.S. Treasury (which provided DIP financing) and the UAW VEBA trust received equity in New GM. New GM emerged and relisted on the NYSE in November 2010, allowing the government to eventually recoup much of its investment. The transaction demonstrates the speed and power of 363 sales for truly urgent business preservation situations."
+        },
+        {
+          "type": "h2",
+          "text": "Credit Bidding — How Secured Lenders Use Their Debt as Currency"
+        },
+        {
+          "type": "p",
+          "text": "Credit bidding is one of the most powerful tools available to secured creditors in a 363 sale. Under Section 363(k) of the Bankruptcy Code, a secured creditor may bid at an auction by 'crediting' (offsetting) the face amount of its secured claim against the bid price — without needing to provide cash. This means a first lien lender with $300M of claims can submit a $300M credit bid without writing a check, while a competing cash buyer must actually fund $300M of cash."
+        },
+        {
+          "type": "callout",
+          "variant": "insight",
+          "title": "Strategic Implications of Credit Bidding",
+          "text": "Credit bidding creates a strategic asymmetry: secured lenders can acquire the collateral at 'face value' even when the market price is much lower, effectively foreclosing on the asset. This is powerful when the lender believes the assets are worth more than the distressed market implies — by credit bidding, they acquire the business and can run it themselves or re-sell it for a profit. However, credit bidding can also chill the auction by deterring cash buyers who don't want to compete against an effectively limitless bidder. Courts have occasionally limited credit bidding when it would significantly impair the sale process or when the creditor's lien is disputed. Buyers in distressed auctions must model whether a credit bid is likely and factor this into their bidding strategy."
+        },
+        {
+          "type": "h2",
+          "text": "Distressed Valuation — Two Frameworks"
+        },
+        {
+          "type": "p",
+          "text": "Valuing a distressed company requires two distinct analyses that bracket the range of outcomes:"
+        },
+        {
+          "type": "table",
+          "caption": "Distressed Valuation: Going Concern vs. Liquidation",
+          "headers": ["Analysis", "Purpose", "Methodology", "When Applied"],
+          "rows": [
+            ["Going Concern Value", "Value of the business assuming it continues to operate as a reorganized entity post-restructuring", "DCF at normalized cash flows; EV/EBITDA comps using recovery multiples (typically 20–30% discount to healthy peers); Precedent restructuring transactions", "Used to determine how much value is available to distribute via a POR; supports the 'best interests' test"],
+            ["Liquidation Analysis", "Value of assets if sold piecemeal in an orderly or forced liquidation (Chapter 7)", "Book value of assets × recovery percentages: PP&E 40–80% of book value, A/R 70–90%, inventory 30–60%, goodwill/intangibles 0–10%", "Floor analysis — creditors must receive at least as much under the POR as they would in liquidation (the 'best interests of creditors' test)"]
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Out-of-Court Distressed Acquisitions"
+        },
+        {
+          "type": "p",
+          "text": "Not all distressed acquisitions occur through bankruptcy court. Companies in distress often sell businesses or assets out of court, motivated by urgency, desire to avoid the stigma of bankruptcy, or the need for a quick liquidity injection. These transactions typically command significant price discounts (20–40% below fair value in normal markets) because: (1) the seller is a forced seller with limited leverage; (2) the buyer assumes more risk (no free-and-clear title protection); (3) there is compressed due diligence time; and (4) the distressed environment creates a perception that something is wrong even if the business itself is viable. Sophisticated buyers view distressed out-of-court acquisitions as opportunities to acquire high-quality assets at below-market prices."
+        },
+        {
+          "type": "h2",
+          "text": "Key Restructuring Interview Questions"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Top Restructuring / Distressed M&A Interview Questions and Framework Answers",
+          "text": "1. 'What is a 363 sale and why do buyers prefer it?' — Court-approved asset sale, free and clear of all liens and successor liabilities; provides clean title and deal finality (mootness doctrine). 2. 'What is a stalking horse bidder?' — The initial buyer who agrees to a price floor in exchange for bid protections (break-up fee, expense reimbursement); sets the minimum bar for competing bidders. 3. 'What is credit bidding?' — Secured lenders' right to bid their debt at face value in a 363 auction under Section 363(k), effectively acquiring the collateral without cash outlay. 4. 'Walk me through a plan of reorganization.' — Classifies claims, applies APR, identifies fulcrum security, proposes treatment for each class, solicits votes (2/3 dollar, majority in number), seeks court confirmation. 5. 'What's the difference between Chapter 11 and Chapter 7?' — Chapter 11 is reorganization (company continues operating, restructures balance sheet); Chapter 7 is liquidation (trustee sells all assets, distributes proceeds per APR, company ceases to exist). 6. 'Why might a restructuring deal fail?' — Inability to confirm plan (no impaired class accepts), DIP financing runs out, creditors refuse to negotiate, operational deterioration during case, buyer walkaway in 363 sale."
+        },
+        {
+          "type": "h2",
+          "text": "Stressed vs. Distressed vs. Pure Restructuring Mandates"
+        },
+        {
+          "type": "p",
+          "text": "Restructuring advisors use specific terminology to categorize where a company sits on the distress spectrum. Understanding this language is essential for client conversations and internal discussions:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Stressed: The company has meaningful leverage and faces some headwinds, but can still service its debt from cash flow. No imminent default risk. May be trading at a spread that reflects investor concern but not panic. Example: a B-rated company with 5.5x leverage and EBITDA declining 5% per year.",
+            "Distressed: The company is approaching or has breached covenant thresholds, liquidity is tight, and a restructuring or refinancing is likely within 12–24 months. Bonds trading at 60–80 cents on the dollar. Example: a CCC-rated company with 8x leverage and negative free cash flow.",
+            "In Workout / Active Restructuring: The company has retained restructuring advisors, is in active negotiations with creditors, and a restructuring is imminent. Bonds may be trading at 30–60 cents. DIP financing being arranged.",
+            "Post-Petition: The company has filed Chapter 11. Pre-petition debt is impaired; the case is actively proceeding with a targeted emergence timeline."
+          ]
+        }
+      ],
+      "keyTakeaways": [
+        "A 363 sale is a court-approved asset sale that transfers assets free and clear of all liens, claims, and successor liabilities — the 'free and clear' feature is what makes buyers prefer Chapter 11 over out-of-court distressed acquisitions.",
+        "The stalking horse bidder sets the price floor in an auction and receives bid protections (break-up fee, expense reimbursement) for providing this service.",
+        "Credit bidding allows secured creditors to bid their face-amount debt claims without cash, giving them the power to effectively foreclose on collateral at face value.",
+        "Distressed valuation requires both a going concern analysis (DCF/EBITDA comps for the reorganized entity) and a liquidation analysis (piecemeal asset recovery) as bookend scenarios.",
+        "Restructuring mandates span the spectrum from stressed advisory (early-stage, preventive) through active in-court representation to post-petition 363 sale advisory."
+      ],
+      "interviewTip": "The single most important 363 sale interview question: 'Why would a buyer prefer to acquire a bankrupt company's assets through a 363 sale rather than waiting for it to emerge from bankruptcy and then acquiring the reorganized company?' The answer has three parts: (1) free and clear of successor liability — no hidden liabilities follow the assets; (2) speed — the 363 process can close in 90–120 days vs. 12–24 months for a full Chapter 11 reorganization; (3) certainty via Section 363(m) — the mootness doctrine provides extraordinary finality once the sale closes and proceeds are distributed. The tradeoff is that buyers get limited reps and warranties in a 363 sale, so they accept more diligence risk in exchange for these protections."
+    }
+  ]
+}

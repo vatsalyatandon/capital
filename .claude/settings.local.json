@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(npm create:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(curl -s \"https://promptingcompany.com/\")",
+      "WebSearch",
+      "WebFetch(domain:mergersandinquisitions.com)",
+      "WebFetch(domain:www.wallstreetprep.com)",
+      "WebFetch(domain:ibinterviewquestions.com)",
+      "WebFetch(domain:www.wallstreetoasis.com)",
+      "WebFetch(domain:www.wallstreetmojo.com)",
+      "WebFetch(domain:corporatefinanceinstitute.com)",
+      "WebFetch(domain:www.preplounge.com)",
+      "WebFetch(domain:igotanoffer.com)",
+      "WebFetch(domain:sellsidehandbook.com)",
+      "WebFetch(domain:www.analystinterview.com)",
+      "WebFetch(domain:ibvine.io)",
+      "WebFetch(domain:mnacommunity.com)",
+      "WebFetch(domain:www.indeed.com)",
+      "WebFetch(domain:finexecutive.com)",
+      "WebFetch(domain:365financialanalyst.com)",
+      "WebFetch(domain:www.circlesquare.co.uk)",
+      "WebFetch(domain:ibankingfaq.com)",
+      "WebFetch(domain:mentormecareers.com)",
+      "WebFetch(domain:interngameplan.com)",
+      "WebFetch(domain:www.ibankingadvice.com)",
+      "WebFetch(domain:www.graduatetutor.com)",
+      "WebFetch(domain:finance-able.com)",
+      "Bash(ls -la /Users/vatsalyatandon/.claude/projects/-Users-vatsalyatandon-Desktop-Claude-IBQuiz/3b92b4ff-f78e-4426-b71a-99f1cd0d61d9/tool-results/*.json)",
+      "Bash(awk '{print $5, $9}')",
+      "Bash(grep -E \"\\\\.\\(html|css|js|json\\)$|^d\")",
+      "WebFetch(domain:nexttoken.co)",
+      "Bash(wc -l /Users/vatsalyatandon/Desktop/Claude/IBQuiz/ibquiz/src/data/lessons/*.json)",
+      "Bash(wc -c /Users/vatsalyatandon/Desktop/Claude/IBQuiz/ibquiz/src/data/lessons/*.json)"
+    ]
+  }
+}
