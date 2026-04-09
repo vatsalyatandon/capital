@@ -43,7 +43,9 @@ export default function QuizCard({
   const [correctShuffledIndex, setCorrectShuffledIndex] = useState(null)
 
   const mcq = mode === 'quiz' ? mcqData[question.id] : null
-  const hasMCQ = !!mcq
+  // Only use MCQ when all options are short enough to look good as choices.
+  // Long text fragments (conceptual finance questions) revert to reveal-and-rate.
+  const hasMCQ = !!mcq && mcq.options.every(opt => opt.length <= 100)
 
   useEffect(() => {
     setRevealed(mode === 'study')

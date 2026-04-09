@@ -7139,27 +7139,27 @@
   "puzzles_advanced_34": {
     "options": [
       "12,177",
-      "Covariance measures how two assets move together: Cov(A,B) = E[(A-μA)(B-μB)]",
-      "Turn on Switch 1 and leave it on for a few minutes",
-      "P(exactly 5 heads in 10 flips) = C(10,5) × (1/2)^5 × (1/2)^5 = C(10,5) × (1/2)^10"
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Kelly Criterion: f* = (bp - q) / b, where b = net odds (1 to 1 here), p = probability of",
+      "Approximately 9% — not 99%"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_35": {
     "options": [
-      "31 lockers — specifically those with perfect square numbers: 1, 4, 9, 16, 25,",
-      "Not exactly 0.3 — the result is approximately 0.30000000000000004",
-      "Approximately 8.9% — 8 out of 90",
-      "Random guessing: each prisoner has 50% chance individually"
+      "31 lockers — specifically those with perfect square numbers: 1, 4, 9, 16, 25, ... 961",
+      "A leveraged recap is when a company borrows significant debt and uses the proceeds to pay a large special dividend to shareholders",
+      "This follows a geometric distribution with p = 0.5 (probability of success per trial)",
+      "The yield curve plots yields for bonds of the same credit quality (typically US Treasuries) across different maturities"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_36": {
     "options": [
       "Approximately $23–25 billion in reported revenue (as of recent years)",
-      "1/36, approximately 2.78%",
-      "Approximately 120,000 to 150,000 gas stations",
-      "The yield curve plots yields for bonds of the same credit quality (typically US Treasuries) across different maturities — from 3-month to"
+      "Covariance measures how two assets move together: Cov(A,B) = E[(A-μA)(B-μB)]",
+      "Three weighings with a balance scale can distinguish up to 3^3=27 outcomes",
+      "Monthly compounding: rate per month = 6%/12 = 0.5%"
     ],
     "correctIndex": 0
   },
@@ -7167,485 +7167,485 @@
     "options": [
       "3/10, or 30%",
       "Approximately 9% — not 99%",
-      "Trap answer: (60 + 40)/2 = 50 mph — WRONG",
-      "Each fold doubles the thickness"
+      "Expected value = Σ (outcome × probability)",
+      "Kelly Criterion: f* = (bp - q) / b, where b = net odds (1 to 1 here), p = probability of"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_38": {
     "options": [
       "He is playing Monopoly",
-      "Approximately 27–30 billion diapers per year",
-      "Cumulative return: +4%",
-      "Duration measures a bond's sensitivity to interest rate changes — specifically, the approximate percentage price change for a 1% change in yield"
+      "Systematic risk (market risk): risk that affects all securities — recessions, interest rate changes, geopolitical events",
+      "Duration measures a bond's sensitivity to interest rate changes",
+      "Dividend yield = Annual dividend / Stock price = $2 / $40 = 5%"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_39": {
     "options": [
       "225",
-      "Approximately 0.0219% per day",
-      "4,950 handshakes",
-      "All 100 blue-eyed people leave on day 100"
+      "Market capitalization = current share price × shares outstanding",
+      "The yield curve plots yields for bonds of the same credit quality (typically US Treasuries) across different maturities",
+      "Expected value per flip: (50% × +$2) + (50% × -$1) = $1 - $0.50 = $0.50"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_40": {
     "options": [
       "204 squares",
-      "Each full day-night cycle: net gain = 3 - 2 = 1 foot",
-      "Dividend yield = Annual dividend / Stock price = $2 / $40 = 5%",
-      "No — a Sudoku puzzle does not necessarily have a unique solution"
+      "Swap is a derivative contract where two parties exchange cash flows",
+      "Approximately 120,000 to 150,000 gas stations",
+      "All 100 blue-eyed people leave on day 100"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_41": {
     "options": [
-      "Expected price: $100",
-      "First player wins by starting with 1",
-      "Convexity describes the curved (non-linear) relationship between bond prices and yields",
-      "Take any 13 cards from the pile and form Group 1"
+      "Expected price: $100. Expected log return: approximately -2%",
+      "Approximately $2.3–2.4 trillion",
+      "Step 1: Take the chicken across",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_42": {
     "options": [
       "Approximately $45–50 billion per year",
-      "Monthly compounding: rate per month = 6%/12 = 0.5%",
-      "Approximately $23–25 billion in reported revenue (as of recent years)",
-      "31 lockers — specifically those with perfect square numbers: 1, 4, 9, 16, 25,"
+      "1/36, approximately 2.78%",
+      "7/50, or 14%",
+      "This is a classic Fermi problem first posed by physicist Enrico Fermi"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_43": {
     "options": [
       "1,369",
-      "Expected position: E[position] = 0",
-      "A swap is a derivative contract where two parties exchange cash flows",
-      "13/27, approximately 48.1%"
+      "Approximately 100 trillion to 1 quadrillion words — on the order of 10^14",
+      "Method 1: 10% of $240 = $24",
+      "Turn on Switch 1 and leave it on for a few minutes"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_44": {
     "options": [
       "20% of your wealth per flip",
-      "Multiple valid reasons: (1) A round cover cannot fall through a round hole — no matter how you orient a circle, it's",
-      "Approximately 50%",
-      "P/E = Price / EPS = $60 / $4 = 15x"
+      "Draw from Box C (labeled 'Mixed')",
+      "3/10, or 30%",
+      "2 weighings"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_45": {
     "options": [
       "1/36, approximately 2.78%",
-      "48 mph, not 50 mph",
-      "Put exactly 1 red marble in Jar 1 and the remaining 49 red marbles plus all 50 blue marbles in Jar 2",
-      "Stock split mechanics: the company doubles the share count but halves the price"
+      "Approximately 14.7 rolls",
+      "Utility function maps wealth to 'satisfaction/happiness.' Concave utility: each additional dollar provides less marginal utility than the previous dollar (diminishing marginal utility)",
+      "Approximately $45–50 billion per year"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_46": {
     "options": [
       "House numbers — individual address numerals",
-      "This is not possible",
-      "Rule of 72: years to double = 72 / interest rate = 72/8 = 9 years",
-      "Bond prices fall"
+      "The yield curve plots yields for bonds of the same credit quality (typically US Treasuries) across different maturities",
+      "Approximately 27–30 billion diapers per year",
+      "ERP is the excess return investors demand for owning equities vs. a risk-free asset"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_47": {
     "options": [
       "Zero — you are back to the starting price",
-      "Put 1 white marble in Urn 1, and 99 white + 100 black marbles in Urn 2",
-      "Without spinning (sequential): The gun fired a blank on the previous shot",
-      "House numbers — individual address numerals"
+      "This is a class Fermi problem first posed by physicist Enrico Fermi",
+      "The first player always wins with the following strategy: Place the first penny exactly in the center of the board",
+      "Duration measures a bond's sensitivity to interest rate changes"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_48": {
     "options": [
       "34",
-      "Approximately 14.7 rolls",
-      "Day 1: $0.01",
-      "Interest coverage ratio = 1.67x"
+      "Take any 13 cards from the pile and form Group 1",
+      "Approximately $2.3–2.4 trillion",
+      "3 socks"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_49": {
     "options": [
       "Pick 1 on the first turn",
-      "Exactly 50%",
-      "Approximately $2,012 — roughly double",
-      "This is a geometric series with first term a = 1 and common ratio r = 1/2"
+      "1/36, approximately 2.78%",
+      "Expected value per flip: (50% × 2x) + (50% × 0.5x) = x + 0.25x = 1.25x",
+      "Approximately $45–50 billion per year"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_50": {
     "options": [
       "2",
-      "Work backward (dynamic programming)",
-      "Bulbs 1, 4, 9, 16, 25, 36, 49, 64, 81, 100 — the perfect squares",
-      "Not exactly 0.3 — the result is approximately 0.30000000000000004"
+      "Balance sheet: Cash (asset) increases by $100M",
+      "This is the Two Envelope Paradox",
+      "Take any 13 cards from the pile and form Group 1"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_51": {
     "options": [
       "Approximately 50.7% — just over 50%",
-      "Expected rolls = 6 × (1/1 + 1/2 + 1/3 + 1/4 + 1/5 + 1/6) = 6 × (60/60 + 30/60",
-      "First player wins with perfect strategy",
-      "Day 1: $0.01"
+      "Method 1: 10% of $240 = $24",
+      "No — it is impossible",
+      "ERP is the excess return investors demand for owning equities vs. a risk-free asset"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_52": {
     "options": [
       "1,100",
-      "Expected price: $100",
-      "Duration measures a bond's sensitivity to interest rate changes — specifically, the approximate percentage price change for a 1% change in yield",
-      "CAPM: Required return = Risk-free rate + Beta × Equity Risk Premium = 4% + 1.2 × 5% = 4% + 6%"
+      "Approximately 50.7% — just over 50%",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "3/10, or 30%"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_53": {
     "options": [
       "10.6 cards (i.e., the first ace appears as the 10.6th card on average)",
-      "Method: Fill the 5-gallon jug",
-      "They meet after 8 hours, 480 miles from New York",
-      "Proposer keeps 96 coins"
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "1,100",
+      "Approximately 27–30 billion diapers per year"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_54": {
     "options": [
       "1",
-      "Bond prices fall",
-      "Interest coverage ratio = 1.67x",
-      "1/6, approximately 16.7%"
+      "Approximately $45–50 billion per year",
+      "Total annual interest = ($300M × 5%) + ($200M × 8%) = $15M + $16M = $31M",
+      "Gordon Growth Model: P = D1 / (r - g)"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_55": {
     "options": [
       "The store loses money — approximately 6.25% of the cost price",
-      "7/50, or 14%",
-      "The yield curve plots yields for bonds of the same credit quality (typically US Treasuries) across different maturities — from 3-month to",
-      "A random walk: a sequence where each step is random and independent of all previous steps"
+      "29 games",
+      "Approximately 50.7% — just over 50%",
+      "Market capitalization = current share price × shares outstanding"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_56": {
     "options": [
-      "Cumulative return: +4%",
-      "Method: Start both hourglasses simultaneously",
-      "Three weighings with a balance scale can distinguish up to 3^3=27 outcomes, sufficient for 12 balls x 2 (heavier/lighter) = 24 possible",
-      "Work backward (dynamic programming)"
+      "Cumulative return: +4%. CAGR: approximately 2.0% per year",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "A swap is a derivative contract where two parties exchange cash flows",
+      "House numbers — individual address numerals"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_57": {
     "options": [
       "4,950 handshakes",
-      "This is a genuinely contested problem in probability with two defensible answers: Thirder (1/3): There are three equally likely situations she could",
-      "This is not possible",
-      "Expected value per flip: (50% × 2x) + (50% × 0.5x) = x + 0.25x = 1.25x"
+      "34",
+      "A bond with face value $1,000, 5% annual coupon, and 10-year maturity is currently priced at $920",
+      "The large cube has 12 edges"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_58": {
     "options": [
       "48 mph, not 50 mph",
-      "Solution 1: Take chicken across",
-      "No — a Sudoku puzzle does not necessarily have a unique solution",
-      "Loss = (Exit price - Entry price) × shares = ($80 - $50) × 100,000 = $30 × 100,000 = $3,000,000"
+      "225",
+      "ERP is the excess return investors demand for owning equities vs. a risk-free asset",
+      "Pick 1 on the first turn"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_59": {
     "options": [
       "Approximately 23.3% — 21 out of 90",
-      "Bulbs 1, 4, 9, 16, 25, 36, 49, 64, 81, 100 — the perfect squares",
-      "2 weighings",
-      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%"
+      "Approximately $45–50 billion per year",
+      "No — a Sudoku puzzle does not necessarily have a unique solution",
+      "Interest rate risk: the risk that bond prices fall because market yields rise"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_60": {
     "options": [
       "143",
-      "Current price = P/E × EPS = 20 × $5 = $100",
-      "Approximately 27–30 billion diapers per year",
-      "Approximately 120,000 to 150,000 gas stations"
+      "Approximately 50.7% — just over 50%",
+      "Draw from Box C (labeled 'Mixed')",
+      "A random walk: a sequence where each step is random and independent of all previous steps"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_61": {
     "options": [
-      "Interest coverage ratio = 1.67x",
-      "Yes, always switch",
-      "Expected price: $100",
-      "Combined earnings = $100M + $20M = $120M"
+      "Interest coverage ratio = 1.67x. This is a weak credit position",
+      "Approximately 7.7% per year",
+      "Market capitalization = current share price × shares outstanding",
+      "Mutual funds: registered with the SEC, open to retail investors, daily liquidity"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_62": {
     "options": [
       "Approximately 24.6%",
-      "Rule of 72: years to double = 72 / interest rate = 72/8 = 9 years",
-      "Beta measures a stock's sensitivity to market movements",
-      "31 lockers — specifically those with perfect square numbers: 1, 4, 9, 16, 25,"
+      "Approximately $23–25 billion in reported revenue (as of recent years)",
+      "All 100 blue-eyed people leave on day 100",
+      "Systematic risk (market risk): risk that affects all securities — recessions, interest rate changes, geopolitical events"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_63": {
     "options": [
       "1",
-      "0.142857142857",
-      "Approximately $2.3–2.4 trillion (the Federal Reserve publishes this figure",
-      "Equity value in theory is unchanged (Modigliani-Miller theorem in a world without taxes)"
+      "Cumulative return: +4%. CAGR: approximately 2.0% per year",
+      "Y is a truth-teller",
+      "This is the Two Envelope Paradox"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_64": {
     "options": [
       "1/221, approximately 0.45%",
-      "Equity value in theory is unchanged (Modigliani-Miller theorem in a world without taxes)",
-      "Expected value = Σ (outcome × probability)",
-      "This is a genuinely contested problem in probability with two defensible answers: Thirder (1/3): There are three equally likely situations she could"
+      "Y is a truth-teller",
+      "Duration measures a bond's sensitivity to interest rate changes",
+      "Method 1: 10% of $240 = $24"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_65": {
     "options": [
       "Approximately 9% — not 99%",
-      "Step 1: Take the chicken across",
-      "Turn on Switch 1 and leave it on for a few minutes",
-      "Cumulative return: +4%"
+      "Approximately $23–25 billion in reported revenue (as of recent years)",
+      "Approximately 23.3% — 21 out of 90",
+      "8 days"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_66": {
     "options": [
-      "64th square: 2^63 ≈ 9.2 x 10^18 grains (about 9.2 quintillion)",
-      "This is not possible",
-      "Approximately 24.6%",
-      "125² = (125)² = (100 + 25)² = 100² + 2×100×25 + 25² = 10,000 + 5,000 + 625 = 15,625"
+      "64th square: 2^63 ≈ 9.2 x 10^18 grains (about 9.2 quintillion). Total: 2^64 - 1 ≈ 1.84 x 10^19 grains",
+      "No — it is impossible",
+      "He is playing Monopoly",
+      "Approximately $2.3–2.4 trillion"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_67": {
     "options": [
       "387",
-      "Modern Portfolio Theory: higher expected returns generally require higher risk (standard deviation/volatility)",
-      "1/649,740, approximately 0.000154%",
-      "Zero — you are back to the starting price"
+      "Approximately 24.6%",
+      "Duration measures a bond's sensitivity to interest rate changes",
+      "This is a paradox"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_68": {
     "options": [
       "1/649,740, approximately 0.000154%",
-      "Put 1 white marble in Urn 1, and 99 white + 100 black marbles in Urn 2",
-      "Approximately 9% — not 99%",
-      "Approximately $2.3–2.4 trillion (the Federal Reserve publishes this figure"
+      "Approximately $2.3–2.4 trillion",
+      "1/36, approximately 2.78%",
+      "2 flips"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_69": {
     "options": [
       "2,550",
-      "All 100 blue-eyed people leave on day 100",
-      "Approximately 100 trillion to 1 quadrillion words — on the order of 10^14",
-      "Approximately 99.5% per year — essentially doubling each year"
+      "1/649,740, approximately 0.000154%",
+      "A random walk: a sequence where each step is random and independent of all previous steps",
+      "Gordon Growth Model: P = D1 / (r - g)"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_70": {
     "options": [
       "17 minutes",
-      "Take any 13 cards from the pile and form Group 1",
-      "Approximately $2,012 — roughly double",
-      "Approximately 120,000 to 150,000 gas stations"
+      "Approximately 14.7 rolls",
+      "Total annual interest = ($300M × 5%) + ($200M × 8%) = $15M + $16M = $31M",
+      "Combined earnings = $100M + $20M = $120M"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_71": {
     "options": [
       "96 unit cubes",
-      "There is no missing dollar — the puzzle uses deliberately misleading framing",
-      "Mean: sum of all values divided by count",
-      "Trap approach: calculate each leg of the fly's journey (requires summing an infinite series)"
+      "Expected price: $100. Expected log return: approximately -2%",
+      "Approximately 23.3% — 21 out of 90",
+      "Approximately $745,000"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_72": {
     "options": [
       "Approximately 7.7% per year",
-      "Approximately $2,012 — roughly double",
-      "Sample space of sums ≥ 10: (4,6), (5,5), (5,6), (6,4), (6,5), (6,6) — wait, let me be careful",
-      "Systematic risk (market risk): risk that affects all securities — recessions, interest rate changes, geopolitical events"
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "No — a Sudoku puzzle does not necessarily have a unique solution",
+      "Y is a truth-teller"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_73": {
     "options": [
       "67%, or 67 out of 100",
-      "Cumulative return: +4%",
-      "17 minutes",
-      "Interest rate risk: the risk that bond prices fall because market yields rise"
+      "Interest rate risk: the risk that bond prices fall because market yields rise",
+      "Without spinning (sequential): The gun fired a blank on the previous shot",
+      "Approximately 14.7 rolls"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_74": {
     "options": [
-      "Setup: three doors — one hides a car, two hide goats",
-      "Method 1: 10% of $240 = $24",
-      "A random walk: a sequence where each step is random and independent of all previous steps",
-      "CAPM: Required return = Risk-free rate + Beta × Equity Risk Premium = 4% + 1.2 × 5% = 4% + 6%"
+      "Setup: three doors — one hides a car, two hide goats. You pick Door 1. The host opens one of the other two doors revealing a goat. Switching wins 2/3 of the time",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "At most 100 seconds",
+      "CAPM: Required return = Risk-free rate + Beta × Equity Risk Premium = 4% + 1.2 × 5% = 4% + 6% = 10%"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_75": {
     "options": [
       "20,736",
-      "Approximately $23–25 billion in reported revenue (as of recent years)",
-      "State = (missionaries on left, cannibals on left, boat side)",
-      "Mean = (15+20-5+10)/4 = 40/4 = 10%"
+      "Duration measures a bond's sensitivity to interest rate changes",
+      "Kelly Criterion: f* = (bp - q) / b, where b = net odds (1 to 1 here), p = probability of",
+      "Approximately 14.7 rolls"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_76": {
     "options": [
       "1/216, approximately 0.46%",
-      "This is not possible",
-      "Solution 1: Take chicken across",
-      "Expected stock value: (50% × $150) + (50% × $70) = $75 + $35 = $110"
+      "This is a Fermi estimation problem",
+      "1/649,740, approximately 0.000154%",
+      "A random walk: a sequence where each step is random and independent of all previous steps"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_77": {
     "options": [
       "Approximately 27–30 billion diapers per year",
-      "Setup: three doors — one hides a car, two hide goats",
-      "Each full day-night cycle: net gain = 3 - 2 = 1 foot",
-      "1/649,740, approximately 0.000154%"
+      "20,736",
+      "This is a genuinely contested problem in probability with two defensible answers: Thirder (1/3): There are three equally likely situations she could",
+      "Step 1: Take the chicken across"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_78": {
     "options": [
       "Approximately 0.0219% per day",
-      "Duration risk is the risk of holding long-maturity bonds when interest rates rise — their market value falls significantly",
-      "Approximately 24.6%",
-      "Market capitalization = current share price × shares outstanding (what the market thinks the company is worth today)"
+      "Combined earnings = $100M + $20M = $120M",
+      "Approximately 14.7 rolls",
+      "Approximately $2.3–2.4 trillion"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_79": {
     "options": [
       "Approximately $621",
-      "Proposer keeps 96 coins",
-      "They meet after 8 hours, 480 miles from New York",
-      "Method: Fill the 5-gallon jug"
+      "A bond with face value $1,000, 5% annual coupon, and 10-year maturity is currently priced at $920",
+      "Put exactly 1 red marble in Jar 1 and the remaining 49 red marbles plus all 50 blue marbles in Jar 2",
+      "2 weighings"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_80": {
     "options": [
-      "Put 1 white marble in Urn 1, and 99 white + 100 black marbles in Urn 2",
-      "Bond prices fall",
-      "Investor A: $100 × 1.50 × 0.50 = $75",
-      "Day 1: $0.01"
+      "Put 1 white marble in Urn 1, and 99 white + 100 black marbles in Urn 2. P(white) ≈ 74.9%",
+      "This is a paradox",
+      "Approximately $2.3–2.4 trillion",
+      "All 100 blue-eyed people leave on day 100"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_81": {
     "options": [
       "1,369",
-      "125² = (125)² = (100 + 25)² = 100² + 2×100×25 + 25² = 10,000 + 5,000 + 625 = 15,625",
-      "Rule of 72: years to double = 72 / interest rate = 72/8 = 9 years",
-      "A swap is a derivative contract where two parties exchange cash flows"
+      "The store loses money — approximately 6.25% of the cost price",
+      "A swap is a derivative contract where two parties exchange cash flows",
+      "10.6 cards"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_82": {
     "options": [
       "Approximately $745,000",
-      "17 minutes",
-      "Investor A: $100 × 1.50 × 0.50 = $75",
-      "Approximately 99.5% per year — essentially doubling each year"
+      "This is the Two Envelope Paradox",
+      "3/10, or 30%",
+      "29 games"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_83": {
     "options": [
-      "Three weighings with a balance scale can distinguish up to 3^3=27 outcomes, sufficient for 12 balls x 2 (heavier/lighter) = 24 possible",
-      "Buy the stock",
-      "There is no missing dollar — this is a false accounting puzzle",
-      "1/216, approximately 0.46%"
+      "Three weighings with a balance scale can distinguish up to 3^3=27 outcomes, sufficient for 12 balls",
+      "143",
+      "Approximately $2.3–2.4 trillion",
+      "Turn on Switch 1 and leave it on for a few minutes"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_84": {
     "options": [
       "They meet after 8 hours, 480 miles from New York",
-      "Expected value = Σ (outcome × probability)",
-      "There is no missing dollar — this is a false accounting puzzle",
-      "Approximately $45–50 billion per year"
+      "No — it is impossible",
+      "Approximately $45–50 billion per year",
+      "ERP is the excess return investors demand for owning equities vs. a risk-free asset"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_85": {
     "options": [
-      "2^10 = 1,024 ≈ 1,000 (one thousand)",
-      "Duration measures a bond's sensitivity to interest rate changes — specifically, the approximate percentage price change for a 1% change in yield",
-      "Turn on Switch 1 and leave it on for 10 minutes",
-      "Mutual funds: registered with the SEC, open to retail investors, daily liquidity (you can redeem any day), lower fees (0.05-1%), long-only (can"
+      "2^10 = 1,024 ≈ 1,000 (one thousand). 2^20 ≈ 1,000,000. 2^30 ≈ 1,000,000,000",
+      "Approximately 27–30 billion diapers per year",
+      "Covariance measures how two assets move together: Cov(A,B) = E[(A-μA)(B-μB)]",
+      "8 days"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_86": {
     "options": [
       "Approximately $24.9 million",
-      "Day 1: $0.01",
-      "Put 1 white marble in Urn 1, and 99 white + 100 black marbles in Urn 2",
-      "Harmonic mean = n / (1/x1 + 1/x2 +"
+      "Combined earnings = $100M + $20M = $120M",
+      "This is a genuinely contested problem in probability with two defensible answers: Thirder (1/3): There are three equally likely situations she could",
+      "Y is a truth-teller"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_87": {
     "options": [
-      "Approximately $2.3–2.4 trillion (the Federal Reserve publishes this figure",
-      "Gordon Growth Model: P = D1 / (r - g), where D1 = next year's dividend, r = required return, g =",
-      "1/2, or 50%",
-      "96 unit cubes"
+      "Approximately $2.3–2.4 trillion",
+      "This is the Two Envelope Paradox",
+      "A swap is a derivative contract where two parties exchange cash flows",
+      "143"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_88": {
     "options": [
       "Approximately 8.9% — 8 out of 90",
-      "Expected value = Σ (outcome × probability)",
-      "Turn on Switch 1 and leave it on for a few minutes",
-      "Mean = (15+20-5+10)/4 = 40/4 = 10%"
+      "Approximately $24.9 million",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "A bond with face value $1,000, 5% annual coupon, and 10-year maturity is currently priced at $920"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_89": {
     "options": [
-      "Fill the 5-liter jug",
-      "7/50, or 14%",
-      "Balance sheet: Cash (asset) increases by $100M",
-      "Approximately $23–25 billion in reported revenue (as of recent years)"
+      "Fill the 5-liter jug. Pour into the 3-liter jug until full. (5L: 2L; 3L: full.) Empty the 3-liter jug. Pour the 2L from the 5-liter jug into the 3-liter jug. Fill the 5-liter jug. Pour into the 3-liter jug until full. 1 liter remains in the 5-liter jug",
+      "Approximately 8.9% — 8 out of 90",
+      "Approximately $45–50 billion per year",
+      "Systematic risk (market risk): risk that affects all securities"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_90": {
     "options": [
       "7/50, or 14%",
-      "Exactly 50%",
-      "Approximately $45–50 billion per year",
-      "Duration risk is the risk of holding long-maturity bonds when interest rates rise — their market value falls significantly"
+      "Investor A: $100 × 1.50 × 0.50 = $75",
+      "A swap is a derivative contract where two parties exchange cash flows",
+      "Take any 13 cards from the pile and form Group 1"
     ],
     "correctIndex": 0
   },
@@ -7661,666 +7661,666 @@
   "puzzles_brain_teaser_92": {
     "options": [
       "Up to $0.50 per game",
-      "Multiple valid reasons: (1) A round cover cannot fall through a round hole — no matter how you orient a circle, it's",
-      "Approximately 2.5–3 million passengers per day",
-      "Monthly compounding: rate per month = 6%/12 = 0.5%"
+      "Approximately 14.7 rolls",
+      "This is a paradox",
+      "Interest coverage ratio = 1.67x. This is a weak credit position"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_93": {
     "options": [
       "13/27, approximately 48.1%",
-      "They meet after 8 hours, 480 miles from New York",
-      "State = (missionaries on left, cannibals on left, boat side)",
-      "Approximately 8.9% — 8 out of 90"
+      "A random walk: a sequence where each step is random and independent of all previous steps",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Approximately 9% — not 99%"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_94": {
     "options": [
       "Approximately 100 trillion to 1 quadrillion words — on the order of 10^14",
-      "Expected value = Σ (outcome × probability)",
-      "Total annual interest = ($300M × 5%) + ($200M × 8%) = $15M + $16M = $31M",
-      "First player wins by starting with 1"
+      "Approximately $2.3–2.4 trillion",
+      "The store loses money — approximately 6.25% of the cost price",
+      "ERP is the excess return investors demand for owning equities vs. a risk-free asset"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_95": {
     "options": [
       "Approximately 99.5% per year — essentially doubling each year",
-      "Exactly 50%",
-      "You can take coins from a stack in any amount and in any order and place them in \nyour hand",
-      "Bond prices fall"
+      "13/27, approximately 48.1%",
+      "Method 1: 10% of $240 = $24",
+      "Approximately $621"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_96": {
     "options": [
       "Not exactly 0.3 — the result is approximately 0.30000000000000004",
-      "This is a paradox",
-      "5/6, approximately 83.3%",
-      "Duration measures a bond's sensitivity to interest rate changes — specifically, the approximate percentage price change for a 1% change in yield"
+      "Approximately $45–50 billion per year",
+      "Approximately $24.9 million",
+      "7/50, or 14%"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_97": {
     "options": [
       "14 drops",
-      "A short squeeze occurs when a heavily shorted stock rises sharply in price, forcing short sellers to buy shares to cover their",
-      "Harmonic mean = n / (1/x1 + 1/x2 +",
-      "Three weighings with a balance scale can distinguish up to 3^3=27 outcomes, sufficient for 12 balls x 2 (heavier/lighter) = 24 possible"
+      "Approximately 9% — not 99%",
+      "Combined earnings = $100M + $20M = $120M",
+      "The first player always wins with the following strategy: Place the first penny exactly in the center of the board"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_98": {
     "options": [
       "$799",
-      "Gordon Growth Model: P = D1 / (r - g), where D1 = next year's dividend, r = required return, g =",
-      "√200 = √(100 × 2) = 10√2 ≈ 10 × 1.414 = 14.14",
-      "Approximately 99.5% per year — essentially doubling each year"
+      "Without spinning (sequential): The gun fired a blank on the previous shot",
+      "Approximately 50.7% — just over 50%",
+      "Investor A: $100 × 1.50 × 0.50 = $75"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_99": {
     "options": [
       "Approximately 2.5–3 million passengers per day",
-      "Balance sheet: Cash (asset) increases by $100M",
-      "Approximately 120,000 to 150,000 gas stations",
-      "Gordon Growth Model: P = D1 / (r - g), where D1 = next year's dividend, r = required return, g ="
+      "Approximately 9% — not 99%",
+      "This is a genuinely contested problem in probability with two defensible answers: Thirder (1/3): There are three equally likely situations she could",
+      "The store loses money — approximately 6.25% of the cost price"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_100": {
     "options": [
-      "Net Debt/EBITDA: 4.0x (assuming net debt ≈ gross debt = $200M)",
-      "Approximately $24.9 million",
-      "Kelly Criterion: f* = (bp - q) / b, where b = net odds (1 to 1 here), p = probability of",
-      "Approximately $2,012 — roughly double"
+      "Net Debt/EBITDA: 4.0x. Interest coverage: 2.0x",
+      "ERP is the excess return investors demand for owning equities vs. a risk-free asset",
+      "Without spinning (sequential): The gun fired a blank on the previous shot",
+      "Approximately 27–30 billion diapers per year"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_101": {
     "options": [
-      "The Rule of 115 states that the number of years required to triple your money equals approximately 115 divided by the annual",
-      "Expected value per flip: (50% × 2x) + (50% × 0.5x) = x + 0.25x = 1.25x",
-      "EV = Market cap + Debt - Cash = $400M + $0 - $100M = $300M",
-      "1/2, or 50%"
+      "The Rule of 115 states that the number of years required to triple your money equals approximately 115 divided by the annual return rate",
+      "Approximately $24.9 million",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Approximately $2.3–2.4 trillion"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_102": {
     "options": [
       "With one non-uniform rope and one lighter, the measurable time intervals are: 60 minutes, 30 minutes, and nothing else with certainty",
-      "Optimal strategy: 17 minutes",
-      "Step 1: Take the chicken across",
-      "They meet after 8 hours, 480 miles from New York"
+      "Approximately 9% — not 99%",
+      "A random walk: a sequence where each step is random and independent of all previous steps",
+      "1,100"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_103": {
     "options": [
       "Approximately 14.7 rolls",
-      "At most 100 seconds",
-      "Random guessing: each prisoner has 50% chance individually",
-      "Bayes' Theorem applied: P(defective | positive test)"
+      "3/10, or 30%",
+      "This is the Two Envelope Paradox",
+      "Approximately $2.3–2.4 trillion"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_104": {
     "options": [
-      "Take any 13 cards from the pile and form Group 1",
-      "Rule of 72 (doubling): years ≈ 72/7 ≈ 10.3 years",
-      "Multiple valid reasons: (1) A round cover cannot fall through a round hole — no matter how you orient a circle, it's",
-      "Beta measures a stock's sensitivity to market movements"
+      "Take any 13 cards from the pile and form Group 1. The remaining 39 cards form Group 2. Then flip all cards in Group 1 over",
+      "He is playing Monopoly",
+      "Without spinning (sequential): The gun fired a blank on the previous shot",
+      "Approximately 120,000 to 150,000 gas stations"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_105": {
     "options": [
       "Bond prices fall",
-      "1/221, approximately 0.45%",
-      "The normal distribution (Gaussian) is a symmetric, bell-shaped probability distribution fully described by mean (μ) and standard deviation (σ)",
-      "First player wins with perfect strategy"
+      "Approximately $2.3–2.4 trillion",
+      "ERP is the excess return investors demand for owning equities vs. a risk-free asset",
+      "20% of your wealth per flip"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_106": {
     "options": [
-      "Current price = P/E × EPS = 20 × $5 = $100",
-      "First player wins with perfect strategy",
-      "Growth stocks: companies growing revenue/earnings significantly faster than the market average",
-      "10.6 cards (i.e., the first ace appears as the 10.6th card on average)"
+      "Current price = P/E × EPS = 20 × $5 = $100. If EPS doubles to $10 and P/E stays at 20x, new price = $200",
+      "Approximately $2.3–2.4 trillion",
+      "No — it is impossible",
+      "8 days"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_107": {
     "options": [
       "A stock represents ownership (equity) in a company",
-      "Bayes' Theorem applied: P(defective | positive test)",
-      "Mean = (15+20-5+10)/4 = 40/4 = 10%",
-      "Without spinning (sequential): The gun fired a blank on the previous shot"
+      "Pick 1 on the first turn",
+      "Approximately $621",
+      "2 weighings"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_108": {
     "options": [
-      "P/E = Price / EPS = $60 / $4 = 15x",
-      "Growth stocks: companies growing revenue/earnings significantly faster than the market average",
-      "67%, or 67 out of 100",
-      "First, fill the 3 liter bucket and pour it into the 5 liter one"
+      "P/E = Price / EPS = $60 / $4 = 15x. Investors are paying $15 for every $1 of annual earnings",
+      "2 flips",
+      "Approximately 120,000 to 150,000 gas stations",
+      "Interest rate risk: the risk that bond prices fall because market yields rise"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_109": {
     "options": [
-      "Short selling: borrow shares from a broker, sell them immediately, and hope to buy them back cheaper later",
-      "Bayes' Theorem applied: P(defective | positive test)",
-      "This is a geometric series with first term a = 1 and common ratio r = 1/2",
-      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%"
+      "Short selling: borrow shares from a broker, sell them immediately, and hope to buy them back cheaper later. Maximum profit: if stock goes to zero. Maximum loss: theoretically unlimited",
+      "Approximately 8.9% — 8 out of 90",
+      "Without spinning (sequential): The gun fired a blank on the previous shot",
+      "Approximately $2.3–2.4 trillion"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_110": {
     "options": [
       "Dividend yield = Annual dividend / Stock price = $2 / $40 = 5%",
-      "Trap answer: (60 + 40)/2 = 50 mph — WRONG",
-      "1/7 = 0.142857142857",
-      "Each fold doubles the thickness"
+      "Cumulative return: +4%. CAGR: approximately 2.0% per year",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "Approximately $621"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_111": {
     "options": [
       "EV = Market cap + Debt - Cash = $400M + $0 - $100M = $300M",
-      "This is a Fermi estimation problem",
-      "Modern Portfolio Theory: higher expected returns generally require higher risk (standard deviation/volatility)",
-      "Mutual funds: registered with the SEC, open to retail investors, daily liquidity (you can redeem any day), lower fees (0.05-1%), long-only (can"
+      "Approximately $2.3–2.4 trillion",
+      "A random walk: a sequence where each step is random and independent of all previous steps",
+      "Approximately $24.9 million"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_112": {
     "options": [
       "Typically, the stock price rises on buyback announcements for several reasons: (1) Supply reduction — fewer shares outstanding means each remaining share",
-      "After-tax cost of debt = pre-tax rate × (1 - tax rate) = 6% × (1 - 25%) = 6% × 0.75",
-      "First player wins by starting with 1",
-      "All 100 blue-eyed people leave on day 100"
+      "Three weighings with a balance scale can distinguish up to 3^3=27 outcomes",
+      "A swap is a derivative contract where two parties exchange cash flows",
+      "Approximately $45–50 billion per year"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_113": {
     "options": [
-      "Beta measures a stock's sensitivity to market movements",
-      "Random guessing: each prisoner has 50% chance individually",
-      "Y is a truth-teller",
-      "Current price = P/E × EPS = 20 × $5 = $100"
+      "Beta measures a stock's sensitivity to market movements. Beta of 1.5 means if market rises 10%, stock expected to rise 15%",
+      "A stock represents ownership (equity) in a company",
+      "Approximately 50.7% — just over 50%",
+      "Duration measures a bond's sensitivity to interest rate changes"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_114": {
     "options": [
-      "The risk-free rate is the return on an investment with zero default risk — typically proxied by short-term US Treasury bills (T-bills)",
-      "125² = (125)² = (100 + 25)² = 100² + 2×100×25 + 25² = 10,000 + 5,000 + 625 = 15,625",
-      "Solution 1: Take chicken across",
-      "Rule of 72 (doubling): years ≈ 72/7 ≈ 10.3 years"
+      "The risk-free rate is the return on an investment with zero default risk — typically proxied by US Treasury bills or the 10-year Treasury yield",
+      "Draw from Box C (labeled 'Mixed')",
+      "Approximately 23.3% — 21 out of 90",
+      "2 weighings"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_115": {
     "options": [
-      "Market capitalization = current share price × shares outstanding (what the market thinks the company is worth today)",
-      "P/E = Price / EPS = $60 / $4 = 15x",
-      "Light both ends of the first fuse and one end of the second fuse simultaneously",
-      "Equity value in theory is unchanged (Modigliani-Miller theorem in a world without taxes)"
+      "Market capitalization = current share price × shares outstanding. Book value = total assets - total liabilities. Market cap is usually higher",
+      "Approximately 8.9% — 8 out of 90",
+      "Combined earnings = $100M + $20M = $120M",
+      "Approximately $2.3–2.4 trillion"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_116": {
     "options": [
-      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
-      "7/50, or 14%",
-      "Total annual interest = ($300M × 5%) + ($200M × 8%) = $15M + $16M = $31M",
-      "Method 1: 10% of $240 = $24"
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%. Treasury yield = 4.5%. On a pure yield comparison, stocks and bonds are roughly equivalent",
+      "No — it is impossible",
+      "2 flips",
+      "1,369"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_117": {
     "options": [
-      "YTM > 5%",
-      "Approximately 50.7% — just over 50%",
-      "This is Boolos's 'Hardest Logic Puzzle Ever.' Strategy overview: Question 1: Ask god A: 'If I asked you if the god on",
-      "Duration risk is the risk of holding long-maturity bonds when interest rates rise — their market value falls significantly"
+      "YTM > 5%. When a bond trades below face value (at a discount), the yield exceeds the coupon rate",
+      "Approximately $24.9 million",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "A random walk: a sequence where each step is random and independent of all previous steps"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_118": {
     "options": [
-      "Duration measures a bond's sensitivity to interest rate changes — specifically, the approximate percentage price change for a 1% change in yield",
-      "A swap is a derivative contract where two parties exchange cash flows",
-      "The Law of Large Numbers states that as sample size increases, the sample mean converges to the true population mean",
-      "1/36, approximately 2.78%"
+      "Duration measures a bond's sensitivity to interest rate changes. Modified duration of 7 means bond price falls approximately 3.5% if yields rise 0.5%",
+      "This is a paradox",
+      "Approximately $24.9 million",
+      "Pick 1 on the first turn"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_119": {
     "options": [
-      "Gordon Growth Model: P = D1 / (r - g), where D1 = next year's dividend, r = required return, g =",
-      "Net Debt/EBITDA: 4.0x (assuming net debt ≈ gross debt = $200M)",
-      "Expected value per flip: (50% × 2x) + (50% × 0.5x) = x + 0.25x = 1.25x",
-      "5/6, approximately 83.3%"
+      "Gordon Growth Model: P = D1 / (r - g) = $3.12 / (9% - 4%) = $62.40",
+      "Duration measures a bond's sensitivity to interest rate changes",
+      "1/221, approximately 0.45%",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_120": {
     "options": [
-      "A call option gives the right (not obligation) to buy 100 shares at the strike price before expiration",
-      "A stock represents ownership (equity) in a company",
-      "Trap answer: (60 + 40)/2 = 50 mph — WRONG",
-      "There is no missing dollar — the puzzle uses deliberately misleading framing"
+      "A call option gives the right (not obligation) to buy shares at the strike price. Break-even: $110 + $5 = $115",
+      "Approximately $2.3–2.4 trillion",
+      "Approximately 50.7% — just over 50%",
+      "The large cube has 12 edges"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_121": {
     "options": [
-      "Stock split mechanics: the company doubles the share count but halves the price",
-      "Typically, the stock price rises on buyback announcements for several reasons: (1) Supply reduction — fewer shares outstanding means each remaining share",
-      "Gordon Growth Model: P = D1 / (r - g), where D1 = next year's dividend, r = required return, g =",
-      "1/7 = 0.142857142857"
+      "Stock split: share count doubles, price halves. EPS halves. P/E stays unchanged",
+      "A swap is a derivative contract where two parties exchange cash flows",
+      "Approximately 27–30 billion diapers per year",
+      "Approximately 2.5–3 million passengers per day"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_122": {
     "options": [
-      "After-tax cost of debt = pre-tax rate × (1 - tax rate) = 6% × (1 - 25%) = 6% × 0.75",
-      "125² = (125)² = (100 + 25)² = 100² + 2×100×25 + 25² = 10,000 + 5,000 + 625 = 15,625",
-      "He is playing Monopoly",
-      "Approximately $621"
+      "After-tax cost of debt = 6% × (1 - 25%) = 4.5%. Debt-to-equity ratio = $500M / $200M = 2.5x",
+      "The store loses money — approximately 6.25% of the cost price",
+      "Approximately 14.7 rolls",
+      "Without spinning (sequential): The gun fired a blank on the previous shot"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_123": {
     "options": [
-      "A short squeeze occurs when a heavily shorted stock rises sharply in price, forcing short sellers to buy shares to cover their",
-      "Market capitalization = current share price × shares outstanding (what the market thinks the company is worth today)",
-      "3/10, or 30%",
-      "The normal distribution (Gaussian) is a symmetric, bell-shaped probability distribution fully described by mean (μ) and standard deviation (σ)"
+      "A short squeeze occurs when a heavily shorted stock rises sharply in price, forcing short sellers to buy shares to cover their losses, driving the price higher",
+      "This is the Two Envelope Paradox",
+      "Approximately $745,000",
+      "Utility function maps wealth to 'satisfaction/happiness.' Concave utility: each additional dollar provides less marginal utility than the previous dollar (diminishing marginal utility)"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_124": {
     "options": [
-      "CAPM: Required return = Risk-free rate + Beta × Equity Risk Premium = 4% + 1.2 × 5% = 4% + 6%",
-      "Mutual funds: registered with the SEC, open to retail investors, daily liquidity (you can redeem any day), lower fees (0.05-1%), long-only (can",
-      "142.5 degrees",
-      "First player wins by starting with 1"
+      "CAPM: Required return = Risk-free rate + Beta × Equity Risk Premium = 4% + 1.2 × 5% = 10%",
+      "1,100",
+      "No — it is impossible",
+      "Approximately 9% — not 99%"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_125": {
     "options": [
-      "Convexity describes the curved (non-linear) relationship between bond prices and yields",
-      "Approximately 0.0219% per day",
-      "It means the current market price is below what the analyst believes the business is fundamentally worth",
-      "This is a Fermi estimation problem"
+      "Convexity describes the curved (non-linear) relationship between bond prices and yields. It benefits bondholders because price rises more than duration predicts when yields fall",
+      "Dividend yield = Annual dividend / Stock price = $2 / $40 = 5%",
+      "Approximately $745,000",
+      "1,100"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_126": {
     "options": [
-      "Systematic risk (market risk): risk that affects all securities — recessions, interest rate changes, geopolitical events",
-      "Solution 1: Take chicken across",
-      "Approximately 8.9% — 8 out of 90",
-      "Expected rolls = 6 × (1/1 + 1/2 + 1/3 + 1/4 + 1/5 + 1/6) = 6 × (60/60 + 30/60"
+      "Systematic risk (market risk): risk that affects all securities — cannot be diversified away. Unsystematic risk: company-specific — can be diversified away",
+      "Approximately $45–50 billion per year",
+      "ERP is the excess return investors demand for owning equities vs. a risk-free asset",
+      "Approximately $2.3–2.4 trillion"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_127": {
     "options": [
-      "Balance sheet: Cash (asset) increases by $100M",
-      "Approximately 50%",
-      "Approximately $23–25 billion in reported revenue (as of recent years)",
-      "The man is short (a dwarf / person of short stature)"
+      "Balance sheet: Cash (asset) increases by $100M. Common equity increases by $100M. No income statement impact. Cash flow from financing: +$100M",
+      "Approximately $45–50 billion per year",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "Approximately $2.3–2.4 trillion"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_128": {
     "options": [
-      "The yield curve plots yields for bonds of the same credit quality (typically US Treasuries) across different maturities — from 3-month to",
-      "Expected rolls = 6 × (1/1 + 1/2 + 1/3 + 1/4 + 1/5 + 1/6) = 6 × (60/60 + 30/60",
-      "Approximately 50%",
-      "31 lockers — specifically those with perfect square numbers: 1, 4, 9, 16, 25,"
+      "The yield curve plots yields across different maturities. An inverted yield curve (short rates > long rates) typically signals recession expectations",
+      "Approximately $2.3–2.4 trillion",
+      "This is a paradox",
+      "Approximately 23.3% — 21 out of 90"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_129": {
     "options": [
-      "EV/EBITDA is capital-structure-neutral — EV includes debt, and EBITDA is pre-interest, so two identical businesses with different leverage ratios will have the",
-      "Expected stock value: (50% × $150) + (50% × $70) = $75 + $35 = $110",
-      "64th square: 2^63 ≈ 9.2 x 10^18 grains (about 9.2 quintillion)",
-      "Solution 1: Take chicken across"
+      "EV/EBITDA is capital-structure-neutral. P/E is affected by leverage. Use EV/EBITDA for cross-company comparisons, P/E for equity-only analysis",
+      "Approximately $621",
+      "20% of your wealth per flip",
+      "Approximately 50.7% — just over 50%"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_130": {
     "options": [
-      "Loss = (Exit price - Entry price) × shares = ($80 - $50) × 100,000 = $30 × 100,000 = $3,000,000",
-      "Current price = P/E × EPS = 20 × $5 = $100",
-      "Buy the stock",
-      "The first player always wins with the following strategy: Place the first penny exactly in the center of the board"
+      "Loss = ($80 - $50) × 100,000 = $3,000,000. Maximum potential loss: theoretically unlimited as the stock could rise indefinitely",
+      "Approximately 9% — not 99%",
+      "Approximately 14.7 rolls",
+      "5/6, approximately 83.3%"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_131": {
     "options": [
-      "Duration risk is the risk of holding long-maturity bonds when interest rates rise — their market value falls significantly",
-      "96 unit cubes",
-      "First player wins by starting with 1",
-      "Multiple valid reasons: (1) A round cover cannot fall through a round hole — no matter how you orient a circle, it's"
+      "Duration risk is the risk of holding long-maturity bonds when interest rates rise. In 2023, SVB held long-duration assets funded by short-term deposits",
+      "Approximately $2.3–2.4 trillion",
+      "Approximately $621",
+      "3 socks"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_132": {
     "options": [
-      "A leveraged recap is when a company borrows significant debt and uses the proceeds to pay a large special dividend to shareholders",
-      "Method 1 — Decompose: 17 × 18 = 17 × (20 - 2) = (17 × 20) - (17 × 2) =",
-      "A swap is a derivative contract where two parties exchange cash flows",
-      "Method 1: 10% of $240 = $24"
+      "A leveraged recap is when a company borrows significant debt and uses the proceeds to pay a large special dividend to shareholders, dramatically increasing leverage",
+      "Duration risk is the risk of holding long-maturity bonds when interest rates rise",
+      "Approximately $45–50 billion per year",
+      "Approximately 9% — not 99%"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_133": {
     "options": [
-      "ERP is the excess return investors demand for owning equities vs",
-      "Turn on Switch 1 and leave it on for a few minutes",
-      "The Rule of 115 states that the number of years required to triple your money equals approximately 115 divided by the annual",
-      "1/6, approximately 16.7%"
+      "ERP is the excess return investors demand for owning equities vs. a risk-free asset. Estimated via historical (4-6%), implied, or survey methods",
+      "A leveraged recap is when a company borrows significant debt and uses the proceeds to pay a large special dividend to shareholders",
+      "Approximately $745,000",
+      "1,100"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_134": {
     "options": [
-      "Mutual funds: registered with the SEC, open to retail investors, daily liquidity (you can redeem any day), lower fees (0.05-1%), long-only (can",
-      "With one non-uniform rope and one lighter, the measurable time intervals are: 60 minutes, 30 minutes, and nothing else with certainty",
-      "Rule of 72: years to double = 72 / interest rate = 72/8 = 9 years",
-      "Rule of 72 (doubling): years ≈ 72/7 ≈ 10.3 years"
+      "Mutual funds: SEC-registered, open to retail investors, daily liquidity, long-only. Hedge funds: for accredited investors, lock-ups, can short/leverage, higher fees",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "Approximately $2.3–2.4 trillion",
+      "8 days"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_135": {
     "options": [
-      "Equity value in theory is unchanged (Modigliani-Miller theorem in a world without taxes)",
-      "125² = (125)² = (100 + 25)² = 100² + 2×100×25 + 25² = 10,000 + 5,000 + 625 = 15,625",
-      "Draw from Box C (labeled 'Mixed')",
-      "Without spinning (sequential): The gun fired a blank on the previous shot"
+      "Equity value in theory is unchanged (Modigliani-Miller). In practice, equity value typically increases due to the interest tax shield",
+      "Approximately 14.7 rolls",
+      "Duration risk is the risk of holding long-maturity bonds when interest rates rise",
+      "This is the Two Envelope Paradox"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_136": {
     "options": [
-      "Combined earnings = $100M + $20M = $120M",
-      "142.5 degrees",
-      "CAPM: Required return = Risk-free rate + Beta × Equity Risk Premium = 4% + 1.2 × 5% = 4% + 6%",
-      "10.6 cards (i.e., the first ace appears as the 10.6th card on average)"
+      "Combined earnings = $100M + $20M = $120M. Acquirer's equity value pre-deal = $1,500M. After paying $200M cash: equity value = $1,300M. Combined P/E = $1,300M / $120M = 10.8x — accretive deal",
+      "Duration risk is the risk of holding long-maturity bonds when interest rates rise",
+      "ERP is the excess return investors demand for owning equities vs. a risk-free asset",
+      "Approximately 14.7 rolls"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_137": {
     "options": [
-      "Investor A: $100 × 1.50 × 0.50 = $75",
-      "First player wins by starting with 1",
-      "There is no missing dollar — this is a false accounting puzzle",
-      "48 mph, not 50 mph"
+      "Investor A: $100 × 1.50 × 0.50 = $75. Investor B: $100 × 1.10 × 1.10 = $121. Investor B wins. Geometric mean vs. arithmetic mean",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Approximately $2.3–2.4 trillion",
+      "20% of your wealth per flip"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_138": {
     "options": [
-      "Expected stock value: (50% × $150) + (50% × $70) = $75 + $35 = $110",
-      "Mutual funds: registered with the SEC, open to retail investors, daily liquidity (you can redeem any day), lower fees (0.05-1%), long-only (can",
-      "ERP is the excess return investors demand for owning equities vs",
-      "This is the Two Envelope Paradox"
+      "Expected stock value: $110. Call option payoff: if stock → $150, call pays $50; if stock → $70, call pays $0. Expected call value = 50% × $50 = $25",
+      "No — it is impossible",
+      "Approximately $621",
+      "Y is a truth-teller"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_139": {
     "options": [
-      "Interest rate risk: the risk that bond prices fall because market yields rise",
-      "This is a classic Fermi problem first posed by physicist Enrico Fermi",
-      "Investor A: $100 × 1.50 × 0.50 = $75",
-      "All 100 blue-eyed people leave on day 100"
+      "Interest rate risk: bond prices fall when yields rise. Credit risk: risk of default or rating downgrade. Both affect all bonds but via different mechanisms",
+      "Approximately $24.9 million",
+      "Approximately 23.3% — 21 out of 90",
+      "This follows a geometric distribution with p = 0.5"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_140": {
     "options": [
-      "A swap is a derivative contract where two parties exchange cash flows",
-      "CAPM: Required return = Risk-free rate + Beta × Equity Risk Premium = 4% + 1.2 × 5% = 4% + 6%",
-      "This follows a geometric distribution with p = 0.5 (probability of success per trial)",
-      "Approximately 0.0219% per day"
+      "A swap is a derivative contract where two parties exchange cash flows. Interest rate swap: e.g., floating-rate payer swaps for fixed-rate payments to reduce uncertainty",
+      "Approximately $2.3–2.4 trillion",
+      "Combined earnings = $100M + $20M = $120M",
+      "Approximately 50.7% — just over 50%"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_141": {
     "options": [
-      "It means the current market price is below what the analyst believes the business is fundamentally worth",
-      "Monthly compounding: rate per month = 6%/12 = 0.5%",
-      "1/36, approximately 2.78%",
-      "P/E = Price / EPS = $60 / $4 = 15x"
+      "Trading at a discount to intrinsic value means market price < fundamental worth. Determine intrinsic value via DCF, comps, precedents, then compare to market price",
+      "A swap is a derivative contract where two parties exchange cash flows",
+      "Approximately $2.3–2.4 trillion",
+      "17 minutes"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_142": {
     "options": [
-      "Total annual interest = ($300M × 5%) + ($200M × 8%) = $15M + $16M = $31M",
-      "Investor A: $100 × 1.50 × 0.50 = $75",
-      "EV/EBITDA is capital-structure-neutral — EV includes debt, and EBITDA is pre-interest, so two identical businesses with different leverage ratios will have the",
-      "Net Debt/EBITDA: 4.0x (assuming net debt ≈ gross debt = $200M)"
+      "Total annual interest = ($300M × 5%) + ($200M × 8%) = $31M. Interest coverage = $100M / $31M = 3.2x",
+      "Approximately 14.7 rolls",
+      "Approximately $2.3–2.4 trillion",
+      "Approximately $24.9 million"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_143": {
     "options": [
-      "Growth stocks: companies growing revenue/earnings significantly faster than the market average",
-      "Mean = (15+20-5+10)/4 = 40/4 = 10%",
-      "142.5 degrees",
-      "Mutual funds: registered with the SEC, open to retail investors, daily liquidity (you can redeem any day), lower fees (0.05-1%), long-only (can"
+      "Growth stocks: high P/E, fast revenue growth. Value stocks: low P/E, undervalued relative to fundamentals. Historically value has slightly outperformed long-term",
+      "Approximately $621",
+      "Approximately $2.3–2.4 trillion",
+      "Investor A: $100 × 1.50 × 0.50 = $75"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_144": {
     "options": [
-      "Buy the stock",
-      "Approximately 7.7% per year",
-      "No — a Sudoku puzzle does not necessarily have a unique solution",
-      "He is playing Monopoly"
+      "Buy the stock. The 1-year call option expires before the 10-year doubling plays out",
+      "Approximately $24.9 million",
+      "Combined earnings = $100M + $20M = $120M",
+      "Approximately $2.3–2.4 trillion"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_145": {
     "options": [
-      "Method 1 — Decompose: 17 × 18 = 17 × (20 - 2) = (17 × 20) - (17 × 2) =",
-      "Balance sheet: Cash (asset) increases by $100M",
-      "The yield curve plots yields for bonds of the same credit quality (typically US Treasuries) across different maturities — from 3-month to",
-      "Stock split mechanics: the company doubles the share count but halves the price"
+      "Method 1: 17 × 18 = 17 × (20 - 2) = 340 - 34 = 306",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "No — it is impossible",
+      "Approximately $621"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_146": {
     "options": [
-      "Method 1: 10% of $240 = $24",
-      "Rule of 72 (doubling): years ≈ 72/7 ≈ 10.3 years",
-      "Approximately 0.0219% per day",
-      "For a 5x5 board, a closed knight's tour (returning to start) is impossible but an open tour (visiting all 25 squares without"
+      "Method 1: 10% of $240 = $24. 5% = $12. 15% = $36",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "A random walk: a sequence where each step is random and independent of all previous steps",
+      "Approximately $2.3–2.4 trillion"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_147": {
     "options": [
-      "Rule of 72: years to double = 72 / interest rate = 72/8 = 9 years",
-      "Not exactly 0.3 — the result is approximately 0.30000000000000004",
-      "It means the current market price is below what the analyst believes the business is fundamentally worth",
-      "A swap is a derivative contract where two parties exchange cash flows"
+      "Rule of 72: years to double = 72/8 = 9 years. $10,000 → $20,000",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Approximately 9% — not 99%",
+      "The store loses money — approximately 6.25% of the cost price"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_148": {
     "options": [
-      "Trap answer: (60 + 40)/2 = 50 mph — WRONG",
-      "There is no missing dollar — the puzzle uses deliberately misleading framing",
-      "Equity value in theory is unchanged (Modigliani-Miller theorem in a world without taxes)",
-      "1/2, or 50%"
+      "Average speed = total distance / total time = 240 miles / 5 hours = 48 mph",
+      "Approximately $621",
+      "The store loses money — approximately 6.25% of the cost price",
+      "Approximately 50.7% — just over 50%"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_149": {
     "options": [
-      "This is a geometric series with first term a = 1 and common ratio r = 1/2",
-      "13/27, approximately 48.1%",
-      "Duration risk is the risk of holding long-maturity bonds when interest rates rise — their market value falls significantly",
-      "√200 = √(100 × 2) = 10√2 ≈ 10 × 1.414 = 14.14"
+      "This is a geometric series with first term a = 1 and common ratio r = 1/2. Sum = 2",
+      "Approximately $2.3–2.4 trillion",
+      "ERP is the excess return investors demand for owning equities vs. a risk-free asset",
+      "Approximately $621"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_150": {
     "options": [
-      "Each fold doubles the thickness",
-      "Approximately 2.5–3 million passengers per day",
-      "Put 1 white marble in Urn 1, and 99 white + 100 black marbles in Urn 2",
-      "A leveraged recap is when a company borrows significant debt and uses the proceeds to pay a large special dividend to shareholders"
+      "Each fold doubles the thickness. 0.1mm × 2^42 ≈ 440,000 km — farther than the moon",
+      "Approximately $621",
+      "Approximately 23.3% — 21 out of 90",
+      "Duration measures a bond's sensitivity to interest rate changes"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_151": {
     "options": [
-      "√200 = √(100 × 2) = 10√2 ≈ 10 × 1.414 = 14.14",
-      "Investor A: $100 × 1.50 × 0.50 = $75",
-      "This puzzle has multiple valid configurations — let's work through it",
-      "For a 5x5 board, a closed knight's tour (returning to start) is impossible but an open tour (visiting all 25 squares without"
+      "√200 = √(100 × 2) = 10√2 ≈ 14.14",
+      "Approximately $2.3–2.4 trillion",
+      "3 socks",
+      "Approximately $24.9 million"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_152": {
     "options": [
-      "Day 1: $0.01",
-      "He is playing Monopoly",
-      "This is not possible",
-      "No — it is impossible"
+      "Day 1: $0.01. Day 30: $0.01 × 2^29 ≈ $5.37 million",
+      "Draw from Box C (labeled 'Mixed')",
+      "Approximately $621",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_153": {
     "options": [
-      "125² = (125)² = (100 + 25)² = 100² + 2×100×25 + 25² = 10,000 + 5,000 + 625 = 15,625",
-      "Rule of 72 (doubling): years ≈ 72/7 ≈ 10.3 years",
-      "Typically, the stock price rises on buyback announcements for several reasons: (1) Supply reduction — fewer shares outstanding means each remaining share",
-      "Loss = (Exit price - Entry price) × shares = ($80 - $50) × 100,000 = $30 × 100,000 = $3,000,000"
+      "125² = 15,625",
+      "Duration measures a bond's sensitivity to interest rate changes",
+      "Approximately $2.3–2.4 trillion",
+      "Approximately 14.7 rolls"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_154": {
     "options": [
-      "Expected value per flip: (50% × +$2) + (50% × -$1) = $1 - $0.50 = $0.50",
-      "10.6 cards (i.e., the first ace appears as the 10.6th card on average)",
-      "Method 1 — Decompose: 17 × 18 = 17 × (20 - 2) = (17 × 20) - (17 × 2) =",
-      "1/221, approximately 0.45%"
+      "Expected value per flip: (50% × +$2) + (50% × -$1) = $0.50. Over 100 flips: expected profit = $50. Yes, play",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Approximately $2.3–2.4 trillion",
+      "Draw from Box C (labeled 'Mixed')"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_155": {
     "options": [
-      "Expected value = Σ P(heads on flip n) × $2^n = Σ (1/2^n) × 2^n = Σ $1 = $1 + $1",
-      "Dividend yield = Annual dividend / Stock price = $2 / $40 = 5%",
-      "Expected position: E[position] = 0",
-      "Without spinning (sequential): The gun fired a blank on the previous shot"
+      "Expected value is infinite (Σ $1 per term diverges), yet no rational person would pay much due to risk aversion and diminishing marginal utility",
+      "Approximately $2.3–2.4 trillion",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "No — it is impossible"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_156": {
     "options": [
-      "Kelly Criterion: f* = (bp - q) / b, where b = net odds (1 to 1 here), p = probability of",
-      "Bulbs 1, 4, 9, 16, 25, 36, 49, 64, 81, 100 — the perfect squares",
-      "State = (missionaries on left, cannibals on left, boat side)",
-      "Draw from Box C (labeled 'Mixed')"
+      "Kelly Criterion: f* = (bp - q) / b = (1 × 0.6 - 0.4) / 1 = 0.2. Bet 20% of bankroll each time",
+      "Approximately $2.3–2.4 trillion",
+      "17 minutes",
+      "This is the Two Envelope Paradox"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_157": {
     "options": [
-      "Rule of 72 (doubling): years ≈ 72/7 ≈ 10.3 years",
-      "This is Boolos's 'Hardest Logic Puzzle Ever.' Strategy overview: Question 1: Ask god A: 'If I asked you if the god on",
-      "Expected stock value: (50% × $150) + (50% × $70) = $75 + $35 = $110",
-      "Approximately 7.7% per year"
+      "Rule of 72 (doubling): years ≈ 72/7 ≈ 10.3 years. Rule of 115 (tripling): years ≈ 115/7 ≈ 16.4 years",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Approximately $2.3–2.4 trillion",
+      "Approximately $621"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_158": {
     "options": [
-      "This follows a geometric distribution with p = 0.5 (probability of success per trial)",
-      "Light both ends of the first fuse and one end of the second fuse simultaneously",
-      "Approximately 99.5% per year — essentially doubling each year",
-      "ERP is the excess return investors demand for owning equities vs"
+      "This follows a geometric distribution with p = 0.5. Expected value = 1/p = 2 flips",
+      "Approximately $621",
+      "No — it is impossible",
+      "Draw from Box C (labeled 'Mixed')"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_159": {
     "options": [
-      "Trap approach: calculate each leg of the fly's journey (requires summing an infinite series)",
-      "Convexity describes the curved (non-linear) relationship between bond prices and yields",
-      "Current price = P/E × EPS = 20 × $5 = $100",
-      "Roosters don't lay eggs — they are male chickens"
+      "Total time for trains to meet: 100 miles / (60+40) mph = 1 hour. Fly travels at 75 mph for 1 hour = 75 miles total",
+      "Approximately $2.3–2.4 trillion",
+      "ERP is the excess return investors demand for owning equities vs. a risk-free asset",
+      "A random walk: a sequence where each step is random and independent of all previous steps"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_160": {
     "options": [
-      "Mean = (15+20-5+10)/4 = 40/4 = 10%",
-      "Duration measures a bond's sensitivity to interest rate changes — specifically, the approximate percentage price change for a 1% change in yield",
-      "Approximately 99.5% per year — essentially doubling each year",
-      "This is Boolos's 'Hardest Logic Puzzle Ever.' Strategy overview: Question 1: Ask god A: 'If I asked you if the god on"
+      "Mean = 10%. Variance = (25+100+225+0)/4 = 87.5. Standard deviation = √87.5 ≈ 9.35%",
+      "Approximately $2.3–2.4 trillion",
+      "Approximately $621",
+      "The store loses money — approximately 6.25% of the cost price"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_161": {
     "options": [
-      "Without spinning (sequential): The gun fired a blank on the previous shot",
-      "He is playing Monopoly",
-      "This is a lateral thinking puzzle with multiple acceptable solutions: (1) The murderer was already in the room and left before the",
-      "Method: Start both hourglasses simultaneously"
+      "Without spinning (sequential): The gun fired a blank on the previous shot. Given 2 adjacent bullets, not spinning gives you better odds of survival",
+      "Approximately $621",
+      "Approximately $2.3–2.4 trillion",
+      "ERP is the excess return investors demand for owning equities vs. a risk-free asset"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_162": {
     "options": [
-      "A random walk: a sequence where each step is random and independent of all previous steps",
-      "After-tax cost of debt = pre-tax rate × (1 - tax rate) = 6% × (1 - 25%) = 6% × 0.75",
-      "Put 1 white marble in Urn 1, and 99 white + 100 black marbles in Urn 2",
-      "This is the Two Envelope Paradox"
+      "A random walk: a sequence where each step is random and independent of all previous steps. For stock prices, it implies past prices don't predict future prices",
+      "Approximately 14.7 rolls",
+      "Approximately $2.3–2.4 trillion",
+      "Gordon Growth Model: P = D1 / (r - g)"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_163": {
     "options": [
-      "1/7 = 0.142857142857",
-      "204 squares",
-      "Optimal strategy: 17 minutes",
-      "Dividend yield = Annual dividend / Stock price = $2 / $40 = 5%"
+      "1/7 = 0.142857142857... The digits 142857 repeat. 2/7 = 0.285714..., 3/7 = 0.428571..., etc.",
+      "Approximately $621",
+      "Duration measures a bond's sensitivity to interest rate changes",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_164": {
     "options": [
-      "Sample space of sums ≥ 10: (4,6), (5,5), (5,6), (6,4), (6,5), (6,6) — wait, let me be careful",
-      "Total annual interest = ($300M × 5%) + ($200M × 8%) = $15M + $16M = $31M",
-      "Roosters don't lay eggs — they are male chickens",
-      "Short selling: borrow shares from a broker, sell them immediately, and hope to buy them back cheaper later"
+      "Sample space of sums ≥ 10: (4,6),(5,5),(6,4),(5,6),(6,5),(6,6) = 6 outcomes. Sum=12: only (6,6) = 1. P = 1/6",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "This is the Two Envelope Paradox",
+      "Approximately $2.3–2.4 trillion"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_165": {
     "options": [
-      "The normal distribution (Gaussian) is a symmetric, bell-shaped probability distribution fully described by mean (μ) and standard deviation (σ)",
-      "Label bags 1-10",
-      "Approximately $23–25 billion in reported revenue (as of recent years)",
-      "Method 1: 10% of $240 = $24"
+      "Normal distribution is bell-shaped. 68% of data within 1 SD, 95% within 2 SD, 99.7% within 3 SD (68-95-99.7 rule)",
+      "Approximately $2.3–2.4 trillion",
+      "A random walk: a sequence where each step is random and independent of all previous steps",
+      "This is the Two Envelope Paradox"
     ],
     "correctIndex": 0
   },
@@ -8328,440 +8328,440 @@
     "options": [
       "The Law of Large Numbers states that as sample size increases, the sample mean converges to the true population mean",
       "Approximately $621",
-      "A random walk: a sequence where each step is random and independent of all previous steps",
-      "Expected value per flip: (50% × +$2) + (50% × -$1) = $1 - $0.50 = $0.50"
+      "Duration measures a bond's sensitivity to interest rate changes",
+      "Gordon Growth Model: P = D1 / (r - g)"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_167": {
     "options": [
-      "Bayes' Theorem applied: P(defective | positive test)",
-      "96 unit cubes",
-      "Short selling: borrow shares from a broker, sell them immediately, and hope to buy them back cheaper later",
-      "This is a classic Fermi problem first posed by physicist Enrico Fermi"
+      "Bayes' Theorem: P(defective | positive test) ≈ 50%. With 1% defect rate and 99% sensitivity/specificity, half of positive tests are false positives",
+      "Approximately $2.3–2.4 trillion",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "No — it is impossible"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_168": {
     "options": [
-      "Harmonic mean = n / (1/x1 + 1/x2 +",
-      "Random guessing: each prisoner has 50% chance individually",
-      "Approximately 8.9% — 8 out of 90",
-      "Balance sheet: Cash (asset) increases by $100M"
+      "Harmonic mean = n / Σ(1/xi). Used when averaging rates (e.g., average speed, P/E ratios across a portfolio)",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Approximately $621",
+      "Approximately $2.3–2.4 trillion"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_169": {
     "options": [
-      "Expected value per flip: (50% × 2x) + (50% × 0.5x) = x + 0.25x = 1.25x",
-      "125² = (125)² = (100 + 25)² = 100² + 2×100×25 + 25² = 10,000 + 5,000 + 625 = 15,625",
-      "1/7 = 0.142857142857",
-      "After-tax cost of debt = pre-tax rate × (1 - tax rate) = 6% × (1 - 25%) = 6% × 0.75"
+      "EV positive (+25%) but geometric mean growth rate = √(2 × 0.5) - 1 = 0% — no actual wealth growth over time. Don't take this bet repeatedly",
+      "Approximately $2.3–2.4 trillion",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "This is the Two Envelope Paradox"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_170": {
     "options": [
-      "Covariance measures how two assets move together: Cov(A,B) = E[(A-μA)(B-μB)]",
-      "Dividend yield = Annual dividend / Stock price = $2 / $40 = 5%",
-      "10.6 cards (i.e., the first ace appears as the 10.6th card on average)",
-      "First player wins with perfect strategy"
+      "Covariance measures how two assets move together. Correlation = Cov/(σA × σB). Correlation of -1 means portfolio variance = (σA - σB)² — can be zero if equal",
+      "Approximately $2.3–2.4 trillion",
+      "Approximately $621",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_171": {
     "options": [
-      "Work backward (dynamic programming)",
-      "Approximately 14.7 rolls",
-      "A stock represents ownership (equity) in a company",
-      "Expected value = Σ (outcome × probability)"
+      "Work backward: stop if roll > 3.5 on round 2 (4, 5, or 6). Round 2 expected value = 4.25. On round 1: stop if roll > 4.25 (i.e., 5 or 6). Expected value ≈ $4.67",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Approximately $2.3–2.4 trillion",
+      "This is the Two Envelope Paradox"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_172": {
     "options": [
-      "Exactly 50%",
-      "ERP is the excess return investors demand for owning equities vs",
-      "Short selling: borrow shares from a broker, sell them immediately, and hope to buy them back cheaper later",
-      "Up to $0.50 per game"
+      "Exactly 50%. At any point, seat #1 and seat #100 are equally likely to be the last seat taken",
+      "Approximately $621",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "Duration measures a bond's sensitivity to interest rate changes"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_173": {
     "options": [
-      "Method: Fill the 5-gallon jug",
-      "Divide the 9 balls into three groups of 3",
-      "Draw from Box C (labeled 'Mixed')",
-      "Utility function maps wealth to 'satisfaction/happiness.' Concave utility: each additional dollar provides less marginal utility than the previous dollar (diminishing marginal utility)"
+      "Fill 5-gal. Pour into 3-gal until full. 5-gal has 2 gal left. Empty 3-gal. Pour 2 gal into 3-gal. Fill 5-gal. Pour into 3-gal until full. 5-gal has exactly 4 gal",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Approximately $2.3–2.4 trillion",
+      "Approximately $621"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_174": {
     "options": [
-      "Each full day-night cycle: net gain = 3 - 2 = 1 foot",
-      "Net Debt/EBITDA: 4.0x (assuming net debt ≈ gross debt = $200M)",
-      "Equity value in theory is unchanged (Modigliani-Miller theorem in a world without taxes)",
-      "Duration risk is the risk of holding long-maturity bonds when interest rates rise — their market value falls significantly"
+      "Each full day-night cycle: net gain = 3 - 2 = 1 foot. After 7 days: 7 feet. On day 8: climbs to 10 feet and escapes. Answer: 8 days",
+      "Approximately $621",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_175": {
     "options": [
-      "Approximately 50%",
-      "This is Boolos's 'Hardest Logic Puzzle Ever.' Strategy overview: Question 1: Ask god A: 'If I asked you if the god on",
-      "With one non-uniform rope and one lighter, the measurable time intervals are: 60 minutes, 30 minutes, and nothing else with certainty",
-      "Approximately 7.7% per year"
+      "Approximately 50%. With 23 people, P(at least one shared birthday) ≈ 50.7%",
+      "Approximately $2.3–2.4 trillion",
+      "Duration measures a bond's sensitivity to interest rate changes",
+      "A random walk: a sequence where each step is random and independent of all previous steps"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_176": {
     "options": [
-      "Monthly compounding: rate per month = 6%/12 = 0.5%",
-      "2 weighings",
-      "Roosters don't lay eggs — they are male chickens",
-      "There is no missing dollar — this is a false accounting puzzle"
+      "Monthly compounding: rate per month = 6%/12 = 0.5%. EAR = (1.005)^12 - 1 ≈ 6.168%",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Approximately $2.3–2.4 trillion",
+      "This is the Two Envelope Paradox"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_177": {
     "options": [
-      "Mean: sum of all values divided by count",
-      "Multiple valid reasons: (1) A round cover cannot fall through a round hole — no matter how you orient a circle, it's",
-      "Approximately 9% — not 99%",
-      "13/27, approximately 48.1%"
+      "Mean: average (sensitive to outliers). Median: middle value (robust). Mode: most frequent. In finance, use median for skewed data like comp packages",
+      "Approximately $621",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_178": {
     "options": [
-      "Modern Portfolio Theory: higher expected returns generally require higher risk (standard deviation/volatility)",
-      "2^10 = 1,024 ≈ 1,000 (one thousand)",
-      "2 weighings",
-      "Work backward (dynamic programming)"
+      "Higher expected return generally requires higher risk. The efficient frontier shows the max return for each risk level. Diversification reduces unsystematic risk",
+      "Approximately $2.3–2.4 trillion",
+      "Duration measures a bond's sensitivity to interest rate changes",
+      "Gordon Growth Model: P = D1 / (r - g)"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_179": {
     "options": [
-      "Expected value = Σ (outcome × probability)",
-      "Expected position: E[position] = 0",
-      "Loss = (Exit price - Entry price) × shares = ($80 - $50) × 100,000 = $30 × 100,000 = $3,000,000",
-      "Work backward (dynamic programming)"
+      "Expected value = Σ (outcome × probability). For a fair die: E = (1+2+3+4+5+6)/6 = 3.5",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Approximately $2.3–2.4 trillion",
+      "Approximately $621"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_180": {
     "options": [
-      "Utility function maps wealth to 'satisfaction/happiness.' Concave utility: each additional dollar provides less marginal utility than the previous dollar (diminishing marginal utility)",
-      "Mean = (15+20-5+10)/4 = 40/4 = 10%",
-      "Mutual funds: registered with the SEC, open to retail investors, daily liquidity (you can redeem any day), lower fees (0.05-1%), long-only (can",
-      "Market capitalization = current share price × shares outstanding (what the market thinks the company is worth today)"
+      "Concave utility means diminishing marginal utility → risk aversion. A risk-averse person prefers a certain $50 over a 50/50 shot at $100",
+      "Approximately $621",
+      "Duration measures a bond's sensitivity to interest rate changes",
+      "Gordon Growth Model: P = D1 / (r - g)"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_181": {
     "options": [
-      "2 weighings",
-      "Expected rolls = 6 × (1/1 + 1/2 + 1/3 + 1/4 + 1/5 + 1/6) = 6 × (60/60 + 30/60",
-      "Approximately 50%",
-      "This is a paradox"
+      "2 weighings. Divide into groups A(3), B(3), C(2). Weighing 1: A vs B. Weighing 2: narrow down to identify the heavy ball",
+      "Approximately $621",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Gordon Growth Model: P = D1 / (r - g)"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_182": {
     "options": [
-      "Turn on Switch 1 and leave it on for 10 minutes",
-      "EV = Market cap + Debt - Cash = $400M + $0 - $100M = $300M",
-      "Interest rate risk: the risk that bond prices fall because market yields rise",
-      "CAPM: Required return = Risk-free rate + Beta × Equity Risk Premium = 4% + 1.2 × 5% = 4% + 6%"
+      "Turn on Switch 1 for 10 min, turn off. Turn on Switch 2. Go upstairs. ON bulb = Switch 2. Warm/off bulb = Switch 1. Cold/off bulb = Switch 3",
+      "Approximately $2.3–2.4 trillion",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_183": {
     "options": [
-      "Draw from Box C (labeled 'Mixed')",
-      "Gordon Growth Model: P = D1 / (r - g), where D1 = next year's dividend, r = required return, g =",
-      "Step 1: Take the chicken across",
-      "Equity value in theory is unchanged (Modigliani-Miller theorem in a world without taxes)"
+      "Draw from Box C (labeled 'Mixed'). Since all labels are wrong, Box C contains only apples or only oranges. The drawn fruit reveals its contents, and you can deduce the rest",
+      "Approximately $621",
+      "Duration measures a bond's sensitivity to interest rate changes",
+      "Approximately $2.3–2.4 trillion"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_184": {
     "options": [
-      "Expected rolls = 6 × (1/1 + 1/2 + 1/3 + 1/4 + 1/5 + 1/6) = 6 × (60/60 + 30/60",
-      "Utility function maps wealth to 'satisfaction/happiness.' Concave utility: each additional dollar provides less marginal utility than the previous dollar (diminishing marginal utility)",
-      "The store loses money — approximately 6.25% of the cost price",
-      "This is a Fermi estimation problem"
+      "Expected rolls = 6 × (1 + 1/2 + 1/3 + 1/4 + 1/5 + 1/6) ≈ 14.7 rolls",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Approximately $621",
+      "Gordon Growth Model: P = D1 / (r - g)"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_185": {
     "options": [
-      "Roosters don't lay eggs — they are male chickens",
-      "There is no missing dollar — the puzzle uses deliberately misleading framing",
-      "Method: Start both hourglasses simultaneously",
-      "1/2, or 50%"
+      "Roosters don't lay eggs — they are male chickens. There is no egg",
+      "Approximately $621",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_186": {
     "options": [
-      "Method: Start both hourglasses simultaneously",
-      "Typically, the stock price rises on buyback announcements for several reasons: (1) Supply reduction — fewer shares outstanding means each remaining share",
-      "4,950 handshakes",
-      "Sample space of sums ≥ 10: (4,6), (5,5), (5,6), (6,4), (6,5), (6,6) — wait, let me be careful"
+      "Start both hourglasses. When 4-min finishes (t=4), flip it. When 7-min finishes (t=7), flip 4-min. 4-min had run 3 min, so 1 min remains. When it finishes (t=8), start timing 9 min from t=7+flip logic — total 9 min measured",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Approximately $2.3–2.4 trillion",
+      "Duration measures a bond's sensitivity to interest rate changes"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_187": {
     "options": [
       "A map",
-      "Gordon Growth Model: P = D1 / (r - g), where D1 = next year's dividend, r = required return, g =",
-      "7/50, or 14%",
-      "Three weighings with a balance scale can distinguish up to 3^3=27 outcomes, sufficient for 12 balls x 2 (heavier/lighter) = 24 possible"
+      "Approximately $621",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "Approximately $2.3–2.4 trillion"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_188": {
     "options": [
-      "Multiple valid reasons: (1) A round cover cannot fall through a round hole — no matter how you orient a circle, it's",
-      "5/6, approximately 83.3%",
-      "P(exactly 5 heads in 10 flips) = C(10,5) × (1/2)^5 × (1/2)^5 = C(10,5) × (1/2)^10",
-      "Method 1: 10% of $240 = $24"
+      "Multiple reasons: (1) A round cover cannot fall through its hole — no matter orientation, a circle is always wider than its hole. (2) Easier to roll. (3) No need to align",
+      "Approximately $621",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Duration measures a bond's sensitivity to interest rate changes"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_189": {
     "options": [
-      "Label bags 1-10",
-      "Harmonic mean = n / (1/x1 + 1/x2 +",
-      "13/27, approximately 48.1%",
-      "Proposer keeps 96 coins"
+      "Label bags 1–10. Take n coins from bag n. Total = 55 coins. Expected weight if all real = 550g. Actual weight = 550g - (bag number with fakes). Difference identifies the fake bag",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Approximately $2.3–2.4 trillion",
+      "Gordon Growth Model: P = D1 / (r - g)"
     ],
     "correctIndex": 0
   },
   "puzzles_basic_190": {
     "options": [
-      "34",
-      "Expected value = Σ P(heads on flip n) × $2^n = Σ (1/2^n) × 2^n = Σ $1 = $1 + $1",
-      "Approximately 7.7% per year",
-      "Mean = (15+20-5+10)/4 = 40/4 = 10%"
+      "34. This is the Fibonacci sequence — each number is the sum of the two preceding ones",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Approximately $621",
+      "Gordon Growth Model: P = D1 / (r - g)"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_191": {
     "options": [
-      "This puzzle has multiple valid configurations — let's work through it",
-      "After-tax cost of debt = pre-tax rate × (1 - tax rate) = 6% × (1 - 25%) = 6% × 0.75",
-      "Setup: three doors — one hides a car, two hide goats",
-      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%"
+      "This puzzle has multiple valid configurations. If A is truth-teller: A says 'B is a liar' — true. B says 'C is the alternator' — lie. C alternates. Consistent",
+      "Approximately $621",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Approximately $2.3–2.4 trillion"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_192": {
     "options": [
-      "State = (missionaries on left, cannibals on left, boat side)",
-      "This is a paradox",
-      "Divide the 9 balls into three groups of 3",
-      "Mutual funds: registered with the SEC, open to retail investors, daily liquidity (you can redeem any day), lower fees (0.05-1%), long-only (can"
+      "State = (missionaries on left, cannibals on left, boat side). Start: (3,3,L). Solution requires 11 steps with careful ordering to ensure missionaries are never outnumbered",
+      "Approximately $621",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "Duration measures a bond's sensitivity to interest rate changes"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_193": {
     "options": [
-      "Random guessing: each prisoner has 50% chance individually",
-      "Buy the stock",
-      "All 100 blue-eyed people leave on day 100",
-      "Approximately $45–50 billion per year"
+      "Random guessing: P(all survive) ≈ 10^-30. Loop strategy: each prisoner follows the loop starting from their own number. P(all survive) ≈ 31.2%",
+      "Approximately $2.3–2.4 trillion",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Gordon Growth Model: P = D1 / (r - g)"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_194": {
     "options": [
-      "This is a lateral thinking puzzle with multiple acceptable solutions: (1) The murderer was already in the room and left before the",
-      "Rule of 72: years to double = 72 / interest rate = 72/8 = 9 years",
-      "Y is a truth-teller",
-      "1/2, or 50%"
+      "This is a lateral thinking puzzle. Acceptable solutions: murderer already in room and hid; victim was murdered elsewhere then moved; murderer left via window and locked it with a string; suicide",
+      "Approximately $621",
+      "Approximately $2.3–2.4 trillion",
+      "Duration measures a bond's sensitivity to interest rate changes"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_195": {
     "options": [
-      "For a 5x5 board, a closed knight's tour (returning to start) is impossible but an open tour (visiting all 25 squares without",
+      "For a 5x5 board, a closed knight's tour is impossible but an open tour is possible. Proof via coloring: closed tour would require equal black/white squares, but 5x5 has unequal distribution",
+      "Approximately $2.3–2.4 trillion",
       "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
-      "Gordon Growth Model: P = D1 / (r - g), where D1 = next year's dividend, r = required return, g =",
-      "This is the Two Envelope Paradox"
+      "Gordon Growth Model: P = D1 / (r - g)"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_196": {
     "options": [
-      "Optimal strategy: 17 minutes",
-      "17 minutes",
-      "No — it is impossible",
-      "Dividend yield = Annual dividend / Stock price = $2 / $40 = 5%"
+      "17 minutes. Step 1: A+B cross (2 min). Step 2: A returns (1 min). Step 3: C+D cross (10 min). Step 4: B returns (2 min). Step 5: A+B cross (2 min). Total: 17 min",
+      "Approximately $621",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Gordon Growth Model: P = D1 / (r - g)"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_197": {
     "options": [
-      "Y is a truth-teller",
-      "Approximately 27–30 billion diapers per year",
-      "Approximately 2.5–3 million passengers per day",
-      "Step 1: Take the chicken across"
+      "Y is a truth-teller. Regardless of whether X is a truth-teller or liar, X will always say 'I am a truth-teller.' Y confirms this, so Y must be telling the truth",
+      "Approximately $621",
+      "Approximately $2.3–2.4 trillion",
+      "Duration measures a bond's sensitivity to interest rate changes"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_198": {
     "options": [
-      "No — a Sudoku puzzle does not necessarily have a unique solution",
-      "Loss = (Exit price - Entry price) × shares = ($80 - $50) × 100,000 = $30 × 100,000 = $3,000,000",
-      "Expected price: $100",
-      "Expected position: E[position] = 0"
+      "No — a Sudoku puzzle does not necessarily have a unique solution; it depends on the number and placement of given clues",
+      "Approximately $2.3–2.4 trillion",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Gordon Growth Model: P = D1 / (r - g)"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_199": {
     "options": [
-      "At most 100 seconds",
-      "Approximately 50.7% — just over 50%",
-      "Put 1 white marble in Urn 1, and 99 white + 100 black marbles in Urn 2",
-      "Interest coverage ratio = 1.67x"
+      "At most 100 seconds. Key insight: ants 'passing through' each other is equivalent to bouncing. Track the last ant position — maximum distance any ant must travel is ≤100 cm at 1 cm/sec",
+      "Approximately $621",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Gordon Growth Model: P = D1 / (r - g)"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_200": {
     "options": [
-      "All 100 blue-eyed people leave on day 100",
-      "This is not possible",
-      "Expected position: E[position] = 0",
-      "125² = (125)² = (100 + 25)² = 100² + 2×100×25 + 25² = 10,000 + 5,000 + 625 = 15,625"
+      "All 100 blue-eyed people leave on day 100. This is inductive reasoning: with n blue-eyed people, all leave on day n",
+      "Approximately $621",
+      "Duration measures a bond's sensitivity to interest rate changes",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_201": {
     "options": [
-      "Proposer keeps 96 coins",
-      "A leveraged recap is when a company borrows significant debt and uses the proceeds to pay a large special dividend to shareholders",
-      "Trap approach: calculate each leg of the fly's journey (requires summing an infinite series)",
-      "Approximately $23–25 billion in reported revenue (as of recent years)"
+      "Proposer keeps 96 coins, gives 1 coin each to pirates 3, 4, 5. Solved via backward induction",
+      "Approximately $621",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_202": {
     "options": [
-      "The man is short (a dwarf / person of short stature)",
-      "Approximately 8.9% — 8 out of 90",
-      "Mean = (15+20-5+10)/4 = 40/4 = 10%",
-      "Light both ends of the first fuse and one end of the second fuse simultaneously"
+      "The man is short (a dwarf / person of short stature) — he can reach the ground floor button but cannot reach the 30th floor button",
+      "Approximately $621",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Gordon Growth Model: P = D1 / (r - g)"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_203": {
     "options": [
-      "Yes, always switch",
-      "1/7 = 0.142857142857",
-      "Bond prices fall",
-      "First player wins by starting with 1"
+      "Yes, always switch. Switching wins 2/3 of the time. P(car behind Door 1) = 1/3. Host revealing goat gives Door 2/3 combined probability 2/3, all on the remaining door",
+      "Approximately $621",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Gordon Growth Model: P = D1 / (r - g)"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_204": {
     "options": [
-      "This is a paradox",
-      "A swap is a derivative contract where two parties exchange cash flows",
-      "Balance sheet: Cash (asset) increases by $100M",
-      "Net Debt/EBITDA: 4.0x (assuming net debt ≈ gross debt = $200M)"
+      "This is a paradox. The naive switching argument is flawed because it doesn't account for the prior distribution of amounts in the envelopes",
+      "Approximately $621",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Duration measures a bond's sensitivity to interest rate changes"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_205": {
     "options": [
-      "The first player always wins with the following strategy: Place the first penny exactly in the center of the board",
-      "Expected price: $100",
-      "Duration measures a bond's sensitivity to interest rate changes — specifically, the approximate percentage price change for a 1% change in yield",
-      "The Law of Large Numbers states that as sample size increases, the sample mean converges to the true population mean"
+      "The first player always wins with the following strategy: Place the first penny exactly in the center of the board and mirror every opponent move",
+      "Approximately $621",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_206": {
     "options": [
-      "Expected position: E[position] = 0",
-      "Random guessing: each prisoner has 50% chance individually",
-      "Setup: three doors — one hides a car, two hide goats",
-      "Approximately 8.9% — 8 out of 90"
+      "Expected position: 0. Expected distance from origin = E[|X|] ≈ √(100 × 2/π) ≈ 7.98. Standard deviation = √100 = 10",
+      "Approximately $621",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Gordon Growth Model: P = D1 / (r - g)"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_207": {
     "options": [
-      "First player wins with perfect strategy",
-      "Mean = (15+20-5+10)/4 = 40/4 = 10%",
-      "This is a lateral thinking puzzle with multiple acceptable solutions: (1) The murderer was already in the room and left before the",
-      "Trap approach: calculate each leg of the fly's journey (requires summing an infinite series)"
+      "First player wins. Strategy: Player 1 places the first coin at the center. For every coin Player 2 places, Player 1 mirrors it symmetrically through the center",
+      "Approximately $621",
+      "Duration measures a bond's sensitivity to interest rate changes",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_208": {
     "options": [
-      "There is no missing dollar — this is a false accounting puzzle",
-      "Typically, the stock price rises on buyback announcements for several reasons: (1) Supply reduction — fewer shares outstanding means each remaining share",
-      "This puzzle has multiple valid configurations — let's work through it",
-      "There is no missing dollar — the puzzle uses deliberately misleading framing"
+      "There is no missing dollar — this is a false accounting puzzle. Friends paid $27 net. $25 went to hotel, $2 to bellboy. $27 = $25 + $2. The $3 returned is already accounted for",
+      "Approximately $621",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Gordon Growth Model: P = D1 / (r - g)"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_209": {
     "options": [
-      "Solution 1: Take chicken across",
-      "1/36, approximately 2.78%",
-      "5/6, approximately 83.3%",
-      "First, fill the 3 liter bucket and pour it into the 5 liter one"
+      "Take chicken across. Return alone. Take fox across. Bring chicken back. Take corn across. Return alone. Take chicken across. 7 trips total",
+      "Approximately $621",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Duration measures a bond's sensitivity to interest rate changes"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_210": {
     "options": [
-      "This is a genuinely contested problem in probability with two defensible answers: Thirder (1/3): There are three equally likely situations she could",
-      "1/2, or 50%",
-      "Approximately 120,000 to 150,000 gas stations",
-      "Interest coverage ratio = 1.67x"
+      "This is a genuinely contested problem. Thirder position (1/3): three equally likely situations she could be in. Halfer position (1/2): the coin was fair, so P(heads) = 1/2",
+      "Approximately $621",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_211": {
     "options": [
-      "Bulbs 1, 4, 9, 16, 25, 36, 49, 64, 81, 100 — the perfect squares",
-      "Day 1: $0.01",
-      "There is no missing dollar — this is a false accounting puzzle",
-      "Setup: three doors — one hides a car, two hide goats"
+      "Bulbs 1, 4, 9, 16, 25, 36, 49, 64, 81, 100 — the perfect squares. A bulb is on if toggled an odd number of times, which only happens for perfect squares",
+      "Approximately $621",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Duration measures a bond's sensitivity to interest rate changes"
     ],
     "correctIndex": 0
   },
   "puzzles_advanced_212": {
     "options": [
-      "P(exactly 5 heads in 10 flips) = C(10,5) × (1/2)^5 × (1/2)^5 = C(10,5) × (1/2)^10",
-      "A swap is a derivative contract where two parties exchange cash flows",
-      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
-      "A call option gives the right (not obligation) to buy 100 shares at the strike price before expiration"
+      "P(exactly 5 heads) = C(10,5) × (1/2)^10 = 252/1024 ≈ 24.6%",
+      "Approximately $621",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_213": {
     "options": [
-      "First player wins by starting with 1",
-      "Approximately 8.9% — 8 out of 90",
-      "Setup: three doors — one hides a car, two hide goats",
-      "Typically, the stock price rises on buyback announcements for several reasons: (1) Supply reduction — fewer shares outstanding means each remaining share"
+      "First player wins by starting with 1. Strategy: always pick a number that brings the running total to a multiple of 11 plus 1 (i.e., 1, 12). Then total reaches 100 exactly",
+      "Approximately $621",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%",
+      "Duration measures a bond's sensitivity to interest rate changes"
     ],
     "correctIndex": 0
   },
   "puzzles_brain_teaser_214": {
     "options": [
-      "This is Boolos's 'Hardest Logic Puzzle Ever.' Strategy overview: Question 1: Ask god A: 'If I asked you if the god on",
-      "Balance sheet: Cash (asset) increases by $100M",
-      "125² = (125)² = (100 + 25)² = 100² + 2×100×25 + 25² = 10,000 + 5,000 + 625 = 15,625",
-      "A stock represents ownership (equity) in a company"
+      "Boolos's Hardest Logic Puzzle. Use a question like: 'If I asked you whether you are Random, would you say ja?' to distinguish Random from non-Random, then identify Truth and Liar",
+      "Approximately $621",
+      "Gordon Growth Model: P = D1 / (r - g)",
+      "S&P 500 earnings yield = 1 / P/E = 1/22 = 4.55%"
     ],
     "correctIndex": 0
   }
