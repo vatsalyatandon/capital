@@ -2,15 +2,15 @@ import { useState, useEffect } from 'react'
 import QuizRating from './QuizRating'
 
 const DIFF_TOP_BORDER = {
-  'Basic':        '#4a7c59',
-  'Advanced':     '#a07620',
-  'Brain Teaser': '#7a5aa0',
+  'Basic':        'var(--accent)',
+  'Advanced':     'var(--accent-amber)',
+  'Brain Teaser': 'var(--accent-purple)',
 }
 
 const DIFF_BADGE = {
-  'Basic':        { color: '#2c4a2f', bg: 'rgba(44,74,47,0.1)' },
-  'Advanced':     { color: '#7c5a14', bg: 'rgba(124,90,20,0.1)' },
-  'Brain Teaser': { color: '#5a3f7a', bg: 'rgba(90,63,122,0.1)' },
+  'Basic':        { color: 'var(--accent)',              bg: 'var(--accent-light)' },
+  'Advanced':     { color: 'var(--accent-amber-dark)',   bg: 'var(--accent-amber-light)' },
+  'Brain Teaser': { color: 'var(--accent-purple-dark)',  bg: 'var(--accent-purple-light)' },
 }
 
 const SUB_PILL = { color: 'var(--accent)', bg: 'var(--accent-light)' }

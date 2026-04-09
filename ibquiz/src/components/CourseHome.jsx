@@ -1,15 +1,15 @@
 const MODULE_COLORS = {
   'Accounting':                     '#4a7c59',
-  'Valuation':                      '#a07620',
-  'Restructuring / Distressed M&A': '#7a5aa0',
+  'Valuation':                      'var(--accent-amber)',
+  'Restructuring / Distressed M&A': 'var(--accent-purple)',
   'DCF':                            '#4a7c59',
   'Enterprise / Equity Value':      '#4a6a7c',
   'Merger Model':                   '#7c4a5a',
   'Credit Analysis':                '#5a7c4a',
-  'LBO Model':                      '#a07620',
+  'LBO Model':                      'var(--accent-amber)',
   'Private Equity':                 '#4a5a7c',
   'Capital Markets':                '#7c6a4a',
-  'Brain Teasers':                  '#7a5aa0',
+  'Brain Teasers':                  'var(--accent-purple)',
 }
 
 function ModuleCard({ sub, stats, onOpenModule }) {
@@ -60,7 +60,7 @@ function ModuleCard({ sub, stats, onOpenModule }) {
               <span style={{ color: 'var(--border-strong)', fontSize: 10 }}>·</span>
               <span
                 className="font-mono text-[10px]"
-                style={{ color: quizPct >= 80 ? 'var(--accent)' : '#a07620' }}
+                style={{ color: quizPct >= 80 ? 'var(--accent)' : 'var(--accent-amber)' }}
               >
                 Quiz: {quizPct}%
               </span>
@@ -106,7 +106,7 @@ function ModuleCard({ sub, stats, onOpenModule }) {
           className="flex-1 py-1.5 rounded-full text-[11px] font-medium btn-press"
           style={{
             border: '1px solid var(--border-strong)',
-            color: quizPct !== null ? (quizPct >= 80 ? 'var(--accent)' : '#a07620') : 'var(--text-secondary)',
+            color: quizPct !== null ? (quizPct >= 80 ? 'var(--accent)' : 'var(--accent-amber)') : 'var(--text-secondary)',
             background: 'transparent',
             letterSpacing: '-0.01em',
             transition: 'all 0.15s',
@@ -115,7 +115,7 @@ function ModuleCard({ sub, stats, onOpenModule }) {
           onMouseLeave={e => {
             e.currentTarget.style.background = 'transparent'
             e.currentTarget.style.borderColor = 'var(--border-strong)'
-            e.currentTarget.style.color = quizPct !== null ? (quizPct >= 80 ? 'var(--accent)' : '#a07620') : 'var(--text-secondary)'
+            e.currentTarget.style.color = quizPct !== null ? (quizPct >= 80 ? 'var(--accent)' : 'var(--accent-amber)') : 'var(--text-secondary)'
           }}
         >
           {quizPct !== null ? `${quizPct}% ↻` : 'Quiz'}
@@ -133,24 +133,34 @@ export default function CourseHome({ subcategoryList, moduleStats, onOpenModule 
   return (
     <div className="flex-1 overflow-y-auto">
       <div className="max-w-5xl mx-auto px-8 pt-12 pb-16">
-        <div className="mb-10">
-          <p className="font-mono text-[10px] uppercase tracking-widest mb-3" style={{ color: 'var(--text-muted)' }}>
+        <div className="mb-12">
+          <p
+            className="font-mono uppercase mb-4"
+            style={{ fontSize: 10, letterSpacing: '0.22em', color: 'var(--text-muted)' }}
+          >
             Finance Course
           </p>
           <h1
             className="font-serif"
-            style={{ fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: 400, letterSpacing: '-0.03em', lineHeight: 1.1, color: 'var(--text-primary)' }}
+            style={{
+              fontSize: 'clamp(52px, 7vw, 80px)',
+              fontWeight: 300,
+              letterSpacing: '-0.04em',
+              lineHeight: 1.0,
+              color: 'var(--text-primary)',
+            }}
           >
             Capital
           </h1>
-          <p className="mt-3 text-sm" style={{ color: 'var(--text-secondary)', letterSpacing: '-0.01em' }}>
+          <p className="mt-4 text-sm" style={{ color: 'var(--text-secondary)', letterSpacing: '-0.005em', lineHeight: 1.6 }}>
             {totalLessons} lessons · {totalQuestions} practice questions · {subcategoryList.length} modules.
-            {completedLessons > 0 && ` ${completedLessons}/${totalLessons} lessons complete.`}
+            {completedLessons > 0 && ` ${completedLessons} of ${totalLessons} lessons complete.`}
           </p>
+          <div style={{ marginTop: 32, height: 1, background: 'var(--border-strong)' }} />
         </div>
 
         <div
-          className="stagger"
+          className="stagger-focus"
           style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '16px' }}
         >
           {subcategoryList.map(sub => (

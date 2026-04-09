@@ -9,7 +9,20 @@ import ScoreScreen from './components/ScoreScreen'
 import LessonList from './components/LessonList'
 import LessonViewer from './components/LessonViewer'
 
-const subcategoryList = [...new Set(questions.map(q => q.subcategory))]
+// Pedagogical order: foundations → valuation → deal modeling → advanced → interview prep
+const subcategoryList = [
+  'Accounting',
+  'Enterprise / Equity Value',
+  'DCF',
+  'Valuation',
+  'LBO Model',
+  'Credit Analysis',
+  'Merger Model',
+  'Restructuring / Distressed M&A',
+  'Private Equity',
+  'Capital Markets',
+  'Brain Teasers',
+]
 
 function shuffle(arr) {
   const a = [...arr]

@@ -1,27 +1,46 @@
+const CALLOUT_ICONS = {
+  tip: (color) => (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/>
+    </svg>
+  ),
+  example: (color) => (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="13" y2="15"/>
+    </svg>
+  ),
+  insight: (color) => (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/>
+    </svg>
+  ),
+  warning: (color) => (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+    </svg>
+  ),
+}
+
 const CALLOUT_STYLES = {
   tip: {
     bg: 'rgba(44,74,47,0.07)',
     border: 'var(--accent)',
     titleColor: 'var(--accent)',
-    icon: '💡',
   },
   example: {
-    bg: 'rgba(160,118,32,0.08)',
-    border: '#a07620',
-    titleColor: '#7c5a14',
-    icon: '📐',
+    bg: 'var(--accent-amber-light)',
+    border: 'var(--accent-amber)',
+    titleColor: 'var(--accent-amber-dark)',
   },
   insight: {
-    bg: 'rgba(90,63,122,0.07)',
-    border: '#7a5aa0',
-    titleColor: '#5a3f7a',
-    icon: '✦',
+    bg: 'var(--accent-purple-light)',
+    border: 'var(--accent-purple)',
+    titleColor: 'var(--accent-purple-dark)',
   },
   warning: {
     bg: 'rgba(180,60,60,0.07)',
     border: '#b43c3c',
     titleColor: '#8b2020',
-    icon: '⚠',
   },
 }
 
@@ -147,7 +166,7 @@ function Block({ block }) {
               className="font-mono text-[10px] uppercase tracking-widest mb-2 flex items-center gap-1.5"
               style={{ color: s.titleColor }}
             >
-              <span>{s.icon}</span>
+              {CALLOUT_ICONS[block.variant]?.(s.titleColor)}
               <span>{block.title}</span>
             </div>
           )}
@@ -240,11 +259,12 @@ export default function LessonViewer({ lesson, lessonIndex, totalLessons, isRead
         {lesson.interviewTip && (
           <div
             className="mt-4 rounded-xl px-5 py-4"
-            style={{ background: 'rgba(160,118,32,0.08)', borderLeft: '3px solid #a07620' }}
+            style={{ background: 'var(--accent-amber-light)', borderLeft: '3px solid var(--accent-amber)' }}
           >
-            <p className="font-mono text-[10px] uppercase tracking-widest mb-2" style={{ color: '#7c5a14' }}>
-              📐 Interview Tip
-            </p>
+            <div className="font-mono text-[10px] uppercase tracking-widest mb-2 flex items-center gap-1.5" style={{ color: 'var(--accent-amber-dark)' }}>
+              {CALLOUT_ICONS.example('var(--accent-amber-dark)')}
+              <span>Interview Tip</span>
+            </div>
             <p className="text-sm leading-relaxed m-0" style={{ color: 'var(--text-secondary)', lineHeight: 1.7 }}>
               {lesson.interviewTip}
             </p>
